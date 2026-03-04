@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 8 - Grammar Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --grade-amber: #f59e0b; /* Bernstein/Orange für Klasse 8 */
+            --bg-dark: #0f172a;
+        }
+        body { 
+            background: linear-gradient(135deg, #0f172a 0%, #78350f 100%); 
+            color: #f8fafc; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+        .nav-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .nav-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--grade-amber);
+            box-shadow: 0 10px 20px -5px rgba(245, 158, 11, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .nav-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background: var(--grade-amber);
+            opacity: 0.8;
+        }
+        .badge-done {
+            position: absolute;
+            top: 15px; right: 15px;
+            background: #fbbf24; /* Gold */
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: none; /* Wird per JS eingeblendet */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        .is-completed .badge-done {
+            display: inline-block;
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+        .is-completed {
+            border-color: #fbbf24;
+        }
+        .is-completed::before {
+            background: #fbbf24;
+        }
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12 flex flex-col items-center">
+
+    <!-- Header -->
+    <header class="text-center mb-16 w-full max-w-5xl relative">
+        <a href="index.html" class="absolute left-0 top-2 text-amber-300 hover:text-white transition hidden md:block">← Hauptportal</a>
+        <div class="text-amber-500 text-sm font-bold tracking-widest uppercase mb-2">Ignaz-Reder-Realschule</div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Grammar Mastery <span class="text-amber-500">Klasse 8</span></h1>
+        <p class="text-lg text-amber-100 opacity-80 max-w-2xl mx-auto">Wähle ein Thema aus. Sobald du alle Übungen in einem Bereich fehlerfrei absolviert hast, erhältst du den Master-Badge!</p>
+        <a href="index.html" class="mt-6 inline-block text-amber-300 hover:text-white transition md:hidden border border-amber-500/30 px-4 py-2 rounded-lg">← Hauptportal</a>
+    </header>
+
+    <!-- Main Navigation Grid -->
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl w-full">
+        
+        <!-- 1. Passive Voice -->
+        <a href="klasse8-passive.html" id="card-passive" class="nav-card p-6 rounded-2xl flex flex-col justify-start">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">🏗️</div>
+            <h2 class="text-xl font-bold mb-2">Passive Voice</h2>
+            <p class="text-amber-100 text-sm opacity-80 mt-auto">Aktiv vs. Passiv. Fokus auf die Handlung. Bildung: form of "to be" + past participle (3. Form).</p>
+        </a>
+
+        <!-- 2. Personal Passive -->
+        <a href="klasse8-personal-passive.html" id="card-personal-passive" class="nav-card p-6 rounded-2xl flex flex-col justify-start">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">👤</div>
+            <h2 class="text-xl font-bold mb-2">Personal Passive</h2>
+            <p class="text-amber-100 text-sm opacity-80 mt-auto">Sonderform im Englischen: Das indirekte Objekt wird zum Subjekt ("I was given a book").</p>
+        </a>
+
+        <!-- 3. If-clauses Type 3 -->
+        <a href="klasse8-if3.html" id="card-if3" class="nav-card p-6 rounded-2xl flex flex-col justify-start">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">⏪</div>
+            <h2 class="text-xl font-bold mb-2">If-clauses Type 3</h2>
+            <p class="text-amber-100 text-sm opacity-80 mt-auto">Zu spät! Bedingungen in der Vergangenheit (had + 3. Form // would have + 3. Form).</p>
+        </a>
+
+        <!-- 4. If-clauses Revision -->
+        <a href="klasse8-if-revision.html" id="card-if-rev" class="nav-card p-6 rounded-2xl flex flex-col justify-start">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">🔀</div>
+            <h2 class="text-xl font-bold mb-2">If-clauses Revision (0-3)</h2>
+            <p class="text-amber-100 text-sm opacity-80 mt-auto">Der große Mix. Erkenne den Unterschied zwischen Fakten, Plänen, Träumen und der Vergangenheit.</p>
+        </a>
+
+        <!-- 5. Pronouns -->
+        <a href="klasse8-pronouns.html" id="card-pronouns" class="nav-card p-6 rounded-2xl flex flex-col justify-start">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">🪞</div>
+            <h2 class="text-xl font-bold mb-2">Reflexive & Reciprocal</h2>
+            <p class="text-amber-100 text-sm opacity-80 mt-auto">myself, yourself etc. (rückbezüglich/betonend) und "each other" (einander).</p>
+        </a>
+
+        <!-- 6. Questions -->
+        <a href="klasse8-questions.html" id="card-questions" class="nav-card p-6 rounded-2xl flex flex-col justify-start">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">❓</div>
+            <h2 class="text-xl font-bold mb-2">Asking Questions</h2>
+            <p class="text-amber-100 text-sm opacity-80 mt-auto">Subjekt- vs. Objektfragen (Wer vs. Wen) und verneinte Fragen (Didn't you know?).</p>
+        </a>
+
+    </main>
+
+    <!-- Footer / Information -->
+    <footer class="mt-16 text-amber-500/50 text-sm text-center">
+        <button onclick="resetAllG8()" class="hover:text-red-400 transition underline mb-4">Alle Klasse 8 Fortschritte löschen</button>
+        <p>&copy; 2024 Grammar Mastery - Ignaz-Reder-Realschule</p>
+    </footer>
+
+    <script>
+        // Diese Funktion prüft beim Laden der Seite, ob die Einzeldateien 
+        // bereits den Master-Badge-Status im Browser gespeichert haben.
+        function checkProgress() {
+            // Die Keys für die 8. Klasse
+            const topics = [
+                { id: 'passive', storageKey: 'grammar_g8_passive_mastered' },
+                { id: 'personal-passive', storageKey: 'grammar_g8_personal_passive_mastered' },
+                { id: 'if3', storageKey: 'grammar_g8_if3_mastered' },
+                { id: 'if-rev', storageKey: 'grammar_g8_if_rev_mastered' },
+                { id: 'pronouns', storageKey: 'grammar_g8_pronouns_mastered' },
+                { id: 'questions', storageKey: 'grammar_g8_questions_mastered' }
+            ];
+
+            topics.forEach(topic => {
+                // Liest den Status aus dem Browser-Speicher
+                const isMastered = localStorage.getItem(topic.storageKey) === 'true';
+                
+                if (isMastered) {
+                    const card = document.getElementById('card-' + topic.id);
+                    if (card) {
+                        card.classList.add('is-completed');
+                    }
+                }
+            });
+        }
+
+        // Erlaubt es, alle Fortschritte der 8. Klasse auf einmal zu löschen
+        function resetAllG8() {
+            if(confirm("Möchtest du wirklich alle gesammelten Badges der 8. Klasse löschen?")) {
+                localStorage.removeItem('grammar_g8_passive_mastered');
+                localStorage.removeItem('grammar_g8_personal_passive_mastered');
+                localStorage.removeItem('grammar_g8_if3_mastered');
+                localStorage.removeItem('grammar_g8_if_rev_mastered');
+                localStorage.removeItem('grammar_g8_pronouns_mastered');
+                localStorage.removeItem('grammar_g8_questions_mastered');
+                location.reload();
+            }
+        }
+
+        // Führe die Prüfung aus, sobald die Seite geladen ist
+        window.onload = checkProgress;
+    </script>
+</body>
+</html>

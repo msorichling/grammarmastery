@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 6 - Future Forms</title>
+    <style>
+        :root {
+            --grade-color: #8b5cf6; /* Violett für Klasse 6 */
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #2e1065 100%);
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --text-color: #e6f7ff;
+            --success-color: #4caf50;
+            --error-color: #f44336;
+            --warning-color: #ff9800;
+            --gold: #ffd700;
+            --neutral-border: rgba(255, 255, 255, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient); background-attachment: fixed;
+            color: var(--text-color); margin: 0; padding: 0; min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 1100px; padding: 40px 20px; margin: 0 auto; box-sizing: border-box; }
+        .view { display: none; width: 100%; }
+        .view.active { display: block; animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        header { text-align: center; margin-bottom: 40px; }
+        .school-name { font-size: 1.2rem; color: var(--neutral-border); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        h1 { color: #c4b5fd; text-shadow: 0 0 15px rgba(139, 92, 246, 0.4); font-size: 2.5rem; margin-bottom: 10px; }
+
+        .info-box {
+            background: rgba(139, 92, 246, 0.1); border: 2px solid var(--grade-color); border-radius: 15px; padding: 20px;
+            margin-bottom: 30px; box-shadow: 0 0 20px rgba(139, 92, 246, 0.2); text-align: left;
+        }
+        .info-box h4 { margin-top: 0; color: var(--grade-color); font-size: 1.2rem; }
+        .info-box .example-box { background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border-left: 4px solid var(--grade-color); margin-bottom: 10px; line-height: 1.6;}
+
+        .exercise-button {
+            padding: 15px; color: white; background: rgba(139, 92, 246, 0.15); border: 1px solid var(--grade-color);
+            border-radius: 12px; font-weight: bold; cursor: pointer; text-align: center; transition: 0.3s; display: inline-block;
+        }
+        .exercise-button:hover { background: var(--grade-color); color: #fff; }
+        .exercise-button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); }
+        .accordion-header:hover { background: rgba(255,255,255,0.05); }
+        .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item.active .accordion-content { display: block; }
+        .accordion-item.done { border-color: var(--success-color); }
+        .done-header { background: rgba(76, 175, 80, 0.1) !important; }
+
+        /* Sorter Styles */
+        .pool { margin-bottom: 25px; min-height: 80px; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; text-align: center; }
+        .sort-item { background: var(--grade-color); color: white; padding: 8px 14px; border-radius: 6px; margin: 6px; cursor: pointer; display: inline-block; font-weight: bold; user-select: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3); transition: transform 0.1s; }
+        .sort-item:hover { transform: scale(1.05); }
+        .sort-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .sort-box { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; min-height: 150px; border: 2px dashed rgba(255,255,255,0.2); text-align: center; cursor: pointer; }
+
+        /* Cloze Styles */
+        .cloze-text { font-size: 1.1rem; line-height: 2.8; text-align: left; }
+        .gap-input { width: 170px; padding: 8px; border: 2px solid var(--neutral-border); border-radius: 8px; background: rgba(0,0,0,0.4); color: white; text-align: center; font-size: 1rem; transition: border-color 0.3s; margin: 0 5px; }
+        .gap-input:focus { border-color: var(--grade-color); outline: none; }
+        .gap-input.correct { border-color: var(--success-color); background: rgba(76, 175, 80, 0.2); }
+        .gap-input.incorrect { border-color: var(--error-color); background: rgba(244, 67, 54, 0.2); }
+        .gap-input.warning { border-color: var(--warning-color); background: rgba(255, 152, 0, 0.2); }
+        .gap-prompt { color: var(--grade-color); font-weight: bold; font-size: 0.9em; margin-left: 2px; }
+        
+        /* Inline Feedback Box */
+        .feedback-box { color: #ff9e9e; font-size: 0.9em; margin-left: 5px; padding: 4px 8px; border-left: 3px solid var(--error-color); background: rgba(244, 67, 54, 0.1); display: none; border-radius: 5px; vertical-align: middle; }
+        .feedback-box.warning { color: var(--warning-color); border-left-color: var(--warning-color); background: rgba(255, 152, 0, 0.1); }
+        
+        .master-badge { display: none; background: linear-gradient(145deg, #ffd700, #b8860b); color: #000; padding: 25px; border-radius: 20px; margin-top: 40px; font-weight: bold; text-align: center; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+        .back-btn { background: transparent; border: 1.5px solid var(--grade-color); color: var(--text-color); padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-bottom: 20px; font-weight: bold; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .back-btn:hover { background: var(--grade-color); color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <a href="klasse6.html" class="back-btn">← Zurück zum Dashboard</a>
+        
+        <header>
+            <div class="school-name">Ignaz-Reder-Realschule</div>
+            <h1>Future Forms</h1>
+        </header>
+
+        <div class="info-box" id="topic-info">
+            <h4>Grammar Check</h4>
+            <div class="example-box">
+                <b>will-future:</b> Spontane Entscheidungen, Vorhersagen, Vermutungen und Versprechen. <br>
+                <i>I think it will rain. / I will open the window!</i> (Signalwörter: I think, maybe, probably, hope)<br><br>
+                <b>going to-future:</b> Feste Pläne, Absichten und logische Schlussfolgerungen (man sieht schon, was gleich passiert).<br>
+                <i>We are going to visit London. / Look at those clouds, it is going to rain.</i> (Bildung: am/is/are + going to)
+            </div>
+        </div>
+        
+        <!-- Accordion -->
+        <div id="exercise-accordion">
+            <div class="accordion-item" id="item-ex1"><div class="accordion-header" onclick="toggleAccordion(1)"><span id="label-ex1">Exercise 1: Rule Sorter</span><span class="status-icon" id="status-ex1">🔒 Locked</span></div><div class="accordion-content" id="content-ex1"></div></div>
+            <div class="accordion-item" id="item-ex2"><div class="accordion-header" onclick="toggleAccordion(2)"><span id="label-ex2">Exercise 2: Going to (Plans)</span><span class="status-icon" id="status-ex2">🔒 Locked</span></div><div class="accordion-content" id="content-ex2"></div></div>
+            <div class="accordion-item" id="item-ex3"><div class="accordion-header" onclick="toggleAccordion(3)"><span id="label-ex3">Exercise 3: Will (Spontaneous)</span><span class="status-icon" id="status-ex3">🔒 Locked</span></div><div class="accordion-content" id="content-ex3"></div></div>
+            <div class="accordion-item" id="item-ex4"><div class="accordion-header" onclick="toggleAccordion(4)"><span id="label-ex4">Exercise 4: Mixed Dialogues</span><span class="status-icon" id="status-ex4">🔒 Locked</span></div><div class="accordion-content" id="content-ex4"></div></div>
+            <div class="accordion-item" id="item-ex5"><div class="accordion-header" onclick="toggleAccordion(5)"><span id="label-ex5">Exercise 5: The Big Mix</span><span class="status-icon" id="status-ex5">🔒 Locked</span></div><div class="accordion-content" id="content-ex5"></div></div>
+        </div>
+        
+        <div id="master-badge-container" class="master-badge">
+            🏆 MASTER BADGE EARNED: Future Forms Master!<br>
+            <span style="font-size: 0.9rem; font-weight: normal; margin-top: 5px; display: block;">Du hast alle Übungen erfolgreich abgeschlossen. Der Stern auf dem Dashboard leuchtet nun!</span>
+        </div>
+    </div>
+
+    <script>
+        // Lokaler State für die Übungen AUF DIESER SEITE
+        let state = JSON.parse(localStorage.getItem('grammar_g6_future_state')) || {};
+        let activeSortingElement = null;
+
+        const exerciseData = {
+            '1': { 
+                type: 'sort', 
+                left: "WILL Future", 
+                right: "GOING TO Future", 
+                items: [
+                    {word:'Spontane Entscheidung',cat:'left'}, {word:'I think / maybe',cat:'left'}, {word:'Vorhersage / Vermutung',cat:'left'}, {word:'Versprechen',cat:'left'},
+                    {word:'Fester Plan',cat:'right'}, {word:'Absicht / Vorhaben',cat:'right'}, {word:'Beweis in der Gegenwart',cat:'right'}, {word:'Look at those dark clouds!',cat:'right'}
+                ] 
+            },
+            '2': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"I have bought the tickets. We", prompt:"(fly)", textAfter:"to London.", correct:["are going to fly"]},
+                    {textBefore:"She", prompt:"(visit)", textAfter:"her grandma on Sunday.", correct:["is going to visit"]},
+                    {textBefore:"They", prompt:"(play)", textAfter:"football tomorrow afternoon.", correct:["are going to play"]},
+                    {textBefore:"He", prompt:"(not / watch)", textAfter:"TV tonight. He has a test.", correct:["is not going to watch", "isn't going to watch", "is not going to watch"]},
+                    {textBefore:"", prompt:"(you / buy)", textAfter:"a new bike?", correct:["Are you going to buy"]},
+                    {textBefore:"I", prompt:"(study)", textAfter:"harder next year.", correct:["am going to study", "'m going to study"]}
+                ] 
+            },
+            '3': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"I think our team", prompt:"(win)", textAfter:"the match.", correct:["will win"]},
+                    {textBefore:"The phone is ringing. I", prompt:"(answer)", textAfter:"it!", correct:["will answer", "'ll answer"]},
+                    {textBefore:"Maybe it", prompt:"(rain)", textAfter:"tomorrow.", correct:["will rain"]},
+                    {textBefore:"I promise I", prompt:"(help)", textAfter:"you.", correct:["will help", "'ll help"]},
+                    {textBefore:"I'm sure you", prompt:"(pass)", textAfter:"the test.", correct:["will pass", "'ll pass"]},
+                    {textBefore:"I", prompt:"(not / tell)", textAfter:"anyone your secret.", correct:["will not tell", "won't tell"]}
+                ] 
+            },
+            '4': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"A: It's cold! B: I", prompt:"(close)", textAfter:"the window.", correct:["will close", "'ll close"]},
+                    {textBefore:"Look at those dark clouds! It", prompt:"(rain)", textAfter:".", correct:["is going to rain"]},
+                    {textBefore:"Next year, we", prompt:"(travel)", textAfter:"to Spain. It's planned.", correct:["are going to travel"]},
+                    {textBefore:"A: We don't have any milk. B: Really? I", prompt:"(get)", textAfter:"some.", correct:["will get", "'ll get"]},
+                    {textBefore:"Watch out! You", prompt:"(drop)", textAfter:"the glasses!", correct:["are going to drop"]}
+                ] 
+            },
+            '5': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"I hope the teacher", prompt:"(not / give)", textAfter:"us homework.", correct:["will not give", "won't give"]},
+                    {textBefore:"He", prompt:"(study)", textAfter:"maths at university next year.", correct:["is going to study"]},
+                    {textBefore:"Perhaps they", prompt:"(arrive)", textAfter:"late.", correct:["will arrive"]},
+                    {textBefore:"", prompt:"(she / invite)", textAfter:"Tom to her party?", correct:["Is she going to invite"]},
+                    {textBefore:"A: I'm really hungry. B: I", prompt:"(make)", textAfter:"you a sandwich.", correct:["will make", "'ll make"]},
+                    {textBefore:"I", prompt:"(stay)", textAfter:"at home tonight. I've already rented a movie.", correct:["am going to stay", "'m going to stay"]}
+                ] 
+            }
+        };
+
+        function toggleAccordion(num) {
+            const item = document.getElementById('item-ex'+num); 
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+            if(!isActive) { 
+                item.classList.add('active'); 
+                renderEx(num); 
+            }
+        }
+
+        function renderEx(num) {
+            const container = document.getElementById('content-ex'+num);
+            if(container.innerHTML !== "") return;
+            
+            const data = exerciseData[num];
+            
+            if(data.type === 'cloze') renderCloze(num, container);
+            else if(data.type === 'sort') renderSort(num, container);
+        }
+
+        // --- SORTIER ÜBUNG (Will vs Going to) ---
+        function renderSort(id, container) {
+            const d = exerciseData[id]; 
+            container.innerHTML = `<p>Ordne die Konzepte und Signalwörter der richtigen Zukunftsform zu!</p>
+                                   <div id="p-${id}" class="pool"></div>
+                                   <div class="sort-container">
+                                     <div class="sort-box" id="bl-${id}"><strong>${d.left}</strong><hr></div>
+                                     <div class="sort-box" id="br-${id}"><strong>${d.right}</strong><hr></div>
+                                   </div>
+                                   <div style="text-align: center;">
+                                     <button class="exercise-button" style="margin-top:20px" onclick="checkSort('${id}')">Check</button>
+                                   </div>`;
+            
+            const p = document.getElementById('p-'+id);
+            [...d.items].sort(() => 0.5 - Math.random()).forEach(it => {
+                const s = document.createElement('span'); 
+                s.className = 'sort-item'; 
+                s.innerText = it.word;
+                s.onclick = (e) => { 
+                    e.stopPropagation(); 
+                    activeSortingElement = s; 
+                    document.querySelectorAll('.sort-item').forEach(x => x.style.boxShadow = "0 2px 5px rgba(0,0,0,0.3)"); 
+                    s.style.boxShadow = "0 0 15px white, 0 0 5px white"; 
+                };
+                p.appendChild(s);
+            });
+            
+            container.querySelector('#bl-'+id).onclick = () => { 
+                if(activeSortingElement){ 
+                    document.getElementById('bl-'+id).appendChild(activeSortingElement); 
+                    activeSortingElement.style.boxShadow = "0 2px 5px rgba(0,0,0,0.3)"; 
+                    activeSortingElement = null; 
+                } 
+            };
+            container.querySelector('#br-'+id).onclick = () => { 
+                if(activeSortingElement){ 
+                    document.getElementById('br-'+id).appendChild(activeSortingElement); 
+                    activeSortingElement.style.boxShadow = "0 2px 5px rgba(0,0,0,0.3)"; 
+                    activeSortingElement = null; 
+                } 
+            };
+            
+            window.checkSort = (xid) => {
+                const data = exerciseData[xid];
+                let err = 0; 
+                data.items.forEach(o => { 
+                    const el = Array.from(document.querySelectorAll(`#content-ex${xid} .sort-item`)).find(x => x.innerText === o.word); 
+                    if(!el || !el.parentElement.id.includes(o.cat === 'left' ? 'bl' : 'br')) {
+                        err++; 
+                        if(el) el.style.backgroundColor = "var(--error-color)";
+                    } else {
+                        if(el) el.style.backgroundColor = "var(--success-color)";
+                    }
+                });
+                
+                if(err === 0) {
+                    document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => x.style.pointerEvents = "none");
+                    markDone(xid); 
+                } else {
+                    alert(`Du hast noch ${err} Fehler. Bitte korrigieren!`);
+                    setTimeout(() => {
+                        document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => x.style.backgroundColor = "var(--grade-color)");
+                    }, 2000);
+                }
+            };
+        }
+
+        // --- CLOZE (LÜCKENTEXT) ---
+        function renderCloze(id, container) {
+            const d = exerciseData[id]; 
+            const items = d.items; 
+            
+            let h = `<div class="cloze-text">`;
+            items.forEach((item, i) => {
+                h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : ""}</span> ${item.textAfter} <span id="fb-${id}-${i}" class="feedback-box"></span> <br>`;
+            });
+            h += `</div><div style="text-align: center;"><button class="exercise-button" style="margin-top:20px;" onclick="checkCloze('${id}')">Check</button></div>`;
+            container.innerHTML = h;
+            
+            window.checkCloze = (xid) => {
+                const dt = exerciseData[xid]; 
+                const its = dt.items; 
+                let ok = 0;
+                
+                its.forEach((it, i) => {
+                    const el = document.getElementById(`gap-${xid}-${i}`); 
+                    const fb = document.getElementById(`fb-${xid}-${i}`);
+                    const val = el.value.toLowerCase().trim();
+                    const correctArr = it.correct.map(x => x.toLowerCase().trim());
+
+                    // Intelligente Warnung für fehlendes am/is/are bei going to
+                    const needsGoingTo = correctArr.some(c => c.includes('going to'));
+                    const hasAmIsAre = val.includes('am ') || val.includes('is ') || val.includes('are ') || val.includes("'m ") || val.includes("'re ") || val.includes("isn't") || val.includes("aren't");
+                    
+                    if (val !== "" && needsGoingTo && val.includes('going to') && !hasAmIsAre && !val.startsWith("are you") && !val.startsWith("is she")) {
+                        el.className = "gap-input warning";
+                        fb.innerHTML = "Vergiss nicht <b>am, is</b> oder <b>are</b> vor going to!";
+                        fb.className = "feedback-box warning";
+                        fb.style.display = "inline-block";
+                        return;
+                    }
+
+                    if(correctArr.includes(val)) { 
+                        el.className="gap-input correct"; 
+                        fb.style.display="none"; 
+                        ok++; 
+                    } else { 
+                        el.className="gap-input incorrect"; 
+                        fb.innerHTML=`Lösung: <b>${it.correct[0]}</b>`; 
+                        fb.className = "feedback-box";
+                        fb.style.display="inline-block"; 
+                    }
+                });
+                
+                if(ok === its.length) markDone(xid);
+            };
+        }
+
+        // --- PROGRESS & MASTERY SYSTEM ---
+        function markDone(num) {
+            state[num] = true; 
+            localStorage.setItem('grammar_g6_future_state', JSON.stringify(state));
+            updateStatus(num); 
+            checkMaster(); 
+            setTimeout(() => alert("Klasse! Übung abgeschlossen."), 50);
+        }
+
+        function updateStatus(num) {
+            const item = document.getElementById('item-ex' + num); 
+            const status = document.getElementById('status-ex' + num); 
+            const header = item.querySelector('.accordion-header');
+            
+            if (state[num]) { 
+                item.classList.add('done'); 
+                status.innerText = "✅ Completed"; 
+                header.classList.add('done-header'); 
+            } else { 
+                item.classList.remove('done'); 
+                status.innerText = "🔒 Locked"; 
+                header.classList.remove('done-header'); 
+            }
+        }
+
+        function checkMaster() {
+            const totalExercises = 5;
+            const all = []; 
+            for(let i=1; i<=totalExercises; i++) { 
+                all.push(state[`${i}`]); 
+            }
+            
+            if (all.every(val => val === true)) {
+                document.getElementById('master-badge-container').style.display = 'block';
+                // Hier passiert die Magie: Wir speichern den Master-Badge für das übergeordnete Dashboard!
+                localStorage.setItem('grammar_g6_future_mastered', 'true');
+            } else { 
+                document.getElementById('master-badge-container').style.display = 'none'; 
+            }
+        }
+
+        window.onload = () => { 
+            for(let i=1; i<=5; i++) {
+                updateStatus(i);
+            }
+            checkMaster();
+        };
+    </script>
+</body>
+</html>

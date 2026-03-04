@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 6 - Simple Past vs. Past Progressive</title>
+    <style>
+        :root {
+            --grade-color: #8b5cf6; /* Violett für Klasse 6 */
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #2e1065 100%);
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --text-color: #e6f7ff;
+            --success-color: #4caf50;
+            --error-color: #f44336;
+            --warning-color: #ff9800;
+            --gold: #ffd700;
+            --neutral-border: rgba(255, 255, 255, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient); background-attachment: fixed;
+            color: var(--text-color); margin: 0; padding: 0; min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 1100px; padding: 40px 20px; margin: 0 auto; box-sizing: border-box; }
+        .view { display: none; width: 100%; }
+        .view.active { display: block; animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        header { text-align: center; margin-bottom: 40px; }
+        .school-name { font-size: 1.2rem; color: var(--neutral-border); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        h1 { color: #c4b5fd; text-shadow: 0 0 15px rgba(139, 92, 246, 0.4); font-size: 2.5rem; margin-bottom: 10px; }
+
+        .info-box {
+            background: rgba(139, 92, 246, 0.1); border: 2px solid var(--grade-color); border-radius: 15px; padding: 20px;
+            margin-bottom: 30px; box-shadow: 0 0 20px rgba(139, 92, 246, 0.2); text-align: left;
+        }
+        .info-box h4 { margin-top: 0; color: var(--grade-color); font-size: 1.2rem; }
+        .info-box .example-box { background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border-left: 4px solid var(--grade-color); margin-bottom: 10px; line-height: 1.6;}
+
+        .exercise-button {
+            padding: 15px; color: white; background: rgba(139, 92, 246, 0.15); border: 1px solid var(--grade-color);
+            border-radius: 12px; font-weight: bold; cursor: pointer; text-align: center; transition: 0.3s; display: inline-block;
+        }
+        .exercise-button:hover { background: var(--grade-color); color: #fff; }
+        .exercise-button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); }
+        .accordion-header:hover { background: rgba(255,255,255,0.05); }
+        .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item.active .accordion-content { display: block; }
+        .accordion-item.done { border-color: var(--success-color); }
+        .done-header { background: rgba(76, 175, 80, 0.1) !important; }
+
+        /* Factory Table Styles (für die Spelling-Übung) */
+        .factory-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .factory-table th, .factory-table td { padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: left; }
+        .factory-table th { color: var(--grade-color); }
+
+        /* Cloze Styles */
+        .cloze-text { font-size: 1.1rem; line-height: 2.8; text-align: left; }
+        .gap-input { width: 150px; padding: 8px; border: 2px solid var(--neutral-border); border-radius: 8px; background: rgba(0,0,0,0.4); color: white; text-align: center; font-size: 1rem; transition: border-color 0.3s; margin: 0 5px; }
+        .gap-input:focus { border-color: var(--grade-color); outline: none; }
+        .gap-input.correct { border-color: var(--success-color); background: rgba(76, 175, 80, 0.2); }
+        .gap-input.incorrect { border-color: var(--error-color); background: rgba(244, 67, 54, 0.2); }
+        .gap-input.warning { border-color: var(--warning-color); background: rgba(255, 152, 0, 0.2); }
+        .gap-prompt { color: var(--grade-color); font-weight: bold; font-size: 0.9em; margin-left: 2px; }
+        
+        /* Inline Feedback Box */
+        .feedback-box { color: #ff9e9e; font-size: 0.9em; margin-left: 5px; padding: 4px 8px; border-left: 3px solid var(--error-color); background: rgba(244, 67, 54, 0.1); display: none; border-radius: 5px; vertical-align: middle; }
+        .feedback-box.warning { color: var(--warning-color); border-left-color: var(--warning-color); background: rgba(255, 152, 0, 0.1); }
+        
+        /* Checkbox Styles für Background Check */
+        .check-group { background: rgba(255,255,255,0.05); padding: 12px 15px; border-radius: 8px; display: flex; align-items: center; transition: 0.3s; border: 1px solid transparent; }
+        .check-group:hover { background: rgba(255,255,255,0.1); }
+        .check-group input[type="checkbox"] { transform: scale(1.3); margin-right: 15px; cursor: pointer; accent-color: var(--grade-color); }
+        .check-group label { cursor: pointer; width: 100%; font-size: 1.1rem; }
+        
+        .master-badge { display: none; background: linear-gradient(145deg, #ffd700, #b8860b); color: #000; padding: 25px; border-radius: 20px; margin-top: 40px; font-weight: bold; text-align: center; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+        .back-btn { background: transparent; border: 1.5px solid var(--grade-color); color: var(--text-color); padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-bottom: 20px; font-weight: bold; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .back-btn:hover { background: var(--grade-color); color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <a href="klasse6.html" class="back-btn">← Zurück zum Dashboard</a>
+        
+        <header>
+            <div class="school-name">Ignaz-Reder-Realschule</div>
+            <h1>Simple Past vs. Past Progressive</h1>
+        </header>
+
+        <div class="info-box" id="topic-info">
+            <h4>Grammar Check</h4>
+            <div class="example-box">
+                <b>Past Progressive:</b> Bildet den <b>Hintergrund</b> / die Szene. Die Handlung war bereits im Gange.<br>
+                <i>The sun was shining and we were walking in the park.</i><br><br>
+                <b>Simple Past:</b> Das plötzliche, unterbrechende <b>Ereignis</b>.<br>
+                <i>Suddenly, it started to rain.</i><br><br>
+                <b>Signalwörter:</b><br>
+                <b>while</b> (während) -> meistens mit Past Progressive.<br>
+                <b>when</b> (als plötzlich) -> meistens mit Simple Past.
+            </div>
+        </div>
+        
+        <!-- Accordion -->
+        <div id="exercise-accordion">
+            <div class="accordion-item" id="item-ex1"><div class="accordion-header" onclick="toggleAccordion(1)"><span id="label-ex1">Exercise 1: Background Check</span><span class="status-icon" id="status-ex1">🔒 Locked</span></div><div class="accordion-content" id="content-ex1"></div></div>
+            <div class="accordion-item" id="item-ex2"><div class="accordion-header" onclick="toggleAccordion(2)"><span id="label-ex2">Exercise 2: The -ing Forge</span><span class="status-icon" id="status-ex2">🔒 Locked</span></div><div class="accordion-content" id="content-ex2"></div></div>
+            <div class="accordion-item" id="item-ex3"><div class="accordion-header" onclick="toggleAccordion(3)"><span id="label-ex3">Exercise 3: Police Report</span><span class="status-icon" id="status-ex3">🔒 Locked</span></div><div class="accordion-content" id="content-ex3"></div></div>
+            <div class="accordion-item" id="item-ex4"><div class="accordion-header" onclick="toggleAccordion(4)"><span id="label-ex4">Exercise 4: Sports Report</span><span class="status-icon" id="status-ex4">🔒 Locked</span></div><div class="accordion-content" id="content-ex4"></div></div>
+            <div class="accordion-item" id="item-ex5"><div class="accordion-header" onclick="toggleAccordion(5)"><span id="label-ex5">Exercise 5: A Scary Night</span><span class="status-icon" id="status-ex5">🔒 Locked</span></div><div class="accordion-content" id="content-ex5"></div></div>
+        </div>
+        
+        <div id="master-badge-container" class="master-badge">
+            🏆 MASTER BADGE EARNED: Contrast Master!<br>
+            <span style="font-size: 0.9rem; font-weight: normal; margin-top: 5px; display: block;">Du hast alle Übungen erfolgreich abgeschlossen. Der Stern auf dem Dashboard leuchtet nun!</span>
+        </div>
+    </div>
+
+    <script>
+        // Lokaler State für die Übungen AUF DIESER SEITE
+        let state = JSON.parse(localStorage.getItem('grammar_g6_contrast_state')) || {};
+
+        const exerciseData = {
+            '1': { 
+                type: 'background', 
+                items: [
+                    { s: "The sun was shining.", isBG: true },
+                    { s: "Birds were singing.", isBG: true },
+                    { s: "Suddenly, a dog barked.", isBG: false },
+                    { s: "We were walking in the park.", isBG: true },
+                    { s: "Then it started to rain.", isBG: false }
+                ] 
+            },
+            '2': { 
+                type: 'spelling', 
+                items: [
+                    {inf:"make", correct:"making", warning:"makeing"},
+                    {inf:"run", correct:"running"},
+                    {inf:"play", correct:"playing"},
+                    {inf:"sit", correct:"sitting"},
+                    {inf:"lie", correct:"lying"},
+                    {inf:"write", correct:"writing", warning:"writeing"},
+                    {inf:"swim", correct:"swimming"},
+                    {inf:"travel", correct:"travelling"},
+                    {inf:"dance", correct:"dancing", warning:"danceing"},
+                    {inf:"study", correct:"studying"}
+                ] 
+            },
+            '3': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"I", prompt:"(walk)", textAfter:"home when I saw the accident.", correct:["was walking"]},
+                    {textBefore:"The driver", prompt:"(not / drive)", textAfter:"fast when he hit the tree.", correct:["was not driving", "wasn't driving"]},
+                    {textBefore:"People", prompt:"(stand)", textAfter:"on the street.", correct:["were standing"]},
+                    {textBefore:"A policeman", prompt:"(talk)", textAfter:"to a woman.", correct:["was talking"]},
+                    {textBefore:"While I", prompt:"(watch)", textAfter:", my phone rang.", correct:["was watching"]},
+                    {textBefore:"It was my mum. She", prompt:"(call)", textAfter:"me.", correct:["called"]}, 
+                    {textBefore:"I", prompt:"(tell)", textAfter:"her what was happening.", correct:["told"]},     
+                    {textBefore:"We", prompt:"(go)", textAfter:"home together later.", correct:["went"]}        
+                ] 
+            },
+            '4': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"The match started while it", prompt:"(rain)", textAfter:".", correct:["was raining"]},
+                    {textBefore:"The players", prompt:"(run)", textAfter:"fast.", correct:["were running"]},
+                    {textBefore:"Fans", prompt:"(shout)", textAfter:"loudly.", correct:["were shouting"]},
+                    {textBefore:"Suddenly, a player", prompt:"(fall)", textAfter:".", correct:["fell"]},
+                    {textBefore:"He", prompt:"(not / move)", textAfter:"at first.", correct:["did not move", "didn't move"]},
+                    {textBefore:"While the doctor", prompt:"(check)", textAfter:"him, we waited.", correct:["was checking"]},
+                    {textBefore:"Finally, he", prompt:"(stand)", textAfter:"up.", correct:["stood"]},
+                    {textBefore:"The crowd", prompt:"(clap)", textAfter:".", correct:["clapped"]}
+                ] 
+            },
+            '5': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"It was a dark night. The wind", prompt:"(blow)", textAfter:".", correct:["was blowing"]},
+                    {textBefore:"I", prompt:"(read)", textAfter:"a book in bed.", correct:["was reading"]},
+                    {textBefore:"Suddenly, I", prompt:"(hear)", textAfter:"a noise.", correct:["heard"]},
+                    {textBefore:"Someone", prompt:"(knock)", textAfter:"at the door.", correct:["was knocking"]},
+                    {textBefore:"I", prompt:"(be)", textAfter:"scared.", correct:["was"]},
+                    {textBefore:"I", prompt:"(go)", textAfter:"downstairs slowly.", correct:["went"]},
+                    {textBefore:"While I", prompt:"(walk)", textAfter:", the light went out.", correct:["was walking"]},
+                    {textBefore:"Then I saw my cat. She", prompt:"(play)", textAfter:"with a toy.", correct:["was playing"]}
+                ] 
+            }
+        };
+
+        function toggleAccordion(num) {
+            const item = document.getElementById('item-ex'+num); 
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+            if(!isActive) { 
+                item.classList.add('active'); 
+                renderEx(num); 
+            }
+        }
+
+        function renderEx(num) {
+            const container = document.getElementById('content-ex'+num);
+            if(container.innerHTML !== "") return;
+            
+            const data = exerciseData[num];
+            
+            if(data.type === 'cloze') renderCloze(num, container);
+            else if(data.type === 'background') renderBackgroundCheck(num, container);
+            else if(data.type === 'spelling') renderSpelling(num, container);
+        }
+
+        // --- BACKGROUND CHECK (Checkboxen) ---
+        function renderBackgroundCheck(id, container) {
+            const d = exerciseData[id];
+            let h = `<p style="font-size: 1.1rem; margin-bottom: 20px;">Welche dieser Sätze beschreiben den <b>Hintergrund (Past Progressive)</b> einer Situation? Setze bei diesen Sätzen einen Haken!</p>
+                     <div style="display:flex; flex-direction:column; gap:12px;">`;
+            d.items.forEach((it, i) => {
+                h += `<div class="check-group" id="bg-group-${id}-${i}">
+                        <input type="checkbox" id="bg-${id}-${i}"> 
+                        <label for="bg-${id}-${i}">${it.s}</label>
+                      </div>`;
+            });
+            h += `</div><div style="text-align: center;"><button class="exercise-button" style="margin-top:25px;" onclick="checkBackground('${id}')">Check</button></div>`;
+            container.innerHTML = h;
+
+            window.checkBackground = (xid) => {
+                const items = exerciseData[xid].items;
+                let allCorrect = true;
+                
+                items.forEach((it, i) => {
+                    const cb = document.getElementById(`bg-${xid}-${i}`);
+                    const parent = document.getElementById(`bg-group-${xid}-${i}`);
+                    
+                    if (cb.checked === it.isBG) {
+                        parent.style.backgroundColor = "rgba(76, 175, 80, 0.3)"; // Grün bei Richtig
+                        parent.style.borderColor = "var(--success-color)";
+                    } else {
+                        parent.style.backgroundColor = "rgba(244, 67, 54, 0.3)"; // Rot bei Falsch
+                        parent.style.borderColor = "var(--error-color)";
+                        allCorrect = false;
+                    }
+                });
+                
+                if(allCorrect) {
+                    // Sperre Checkboxen
+                    items.forEach((it, i) => document.getElementById(`bg-${xid}-${i}`).disabled = true);
+                    markDone(xid);
+                } else {
+                    alert("Noch nicht ganz richtig! Überprüfe die rot markierten Sätze noch einmal. (Tipp: Hintergrund = was/were + ing).");
+                    // Fehler zurücksetzen nach 2 Sekunden
+                    setTimeout(() => {
+                        items.forEach((it, i) => {
+                            const parent = document.getElementById(`bg-group-${xid}-${i}`);
+                            parent.style.backgroundColor = "rgba(255,255,255,0.05)";
+                            parent.style.borderColor = "transparent";
+                        });
+                    }, 2500);
+                }
+            };
+        }
+
+        // --- SPELLING FORGE (-ing Anhängen) ---
+        function renderSpelling(id, container) {
+            const d = exerciseData[id];
+            let h = `<p>Bilde die <b>-ing Form</b>. Pass auf Ausnahmen auf (z.B. stummes 'e' am Ende oder Verdopplung von Konsonanten)!</p>
+                     <table class="factory-table"><thead><tr><th>Infinitive</th><th>-ing Form</th><th></th></tr></thead><tbody>`;
+            d.items.forEach((it, i) => {
+                h += `<tr>
+                        <td style="font-weight: bold; font-size: 1.1em;">${it.inf}</td>
+                        <td><input type="text" id="spl-${id}-${i}" class="gap-input" style="width:150px" data-correct="${it.correct}" ${it.warning ? `data-warn="${it.warning}"` : ''} autocomplete="off" spellcheck="false"></td>
+                        <td><span id="spl-fb-${id}-${i}" style="margin-left:10px; font-size:0.9rem; font-weight:bold;"></span></td>
+                      </tr>`;
+            });
+            h += `</tbody></table>
+                  <div style="text-align: center;">
+                    <button class="exercise-button" style="margin-top:20px;" onclick="checkSpelling('${id}')">Check</button>
+                  </div>`;
+            container.innerHTML = h;
+            
+            window.checkSpelling = (xid) => {
+                const items = exerciseData[xid].items;
+                let corrects = 0;
+                items.forEach((it, i) => {
+                    const el = document.getElementById(`spl-${xid}-${i}`);
+                    const fb = document.getElementById(`spl-fb-${xid}-${i}`);
+                    const val = el.value.toLowerCase().trim();
+                    
+                    if (val === it.correct) {
+                        el.className = "gap-input correct";
+                        fb.innerText = "✓ Richtig"; 
+                        fb.style.color = "var(--success-color)";
+                        corrects++;
+                    } else if (it.warning && val === it.warning) {
+                        el.className = "gap-input warning";
+                        fb.innerText = "⚠️ Watch out! Das stumme 'e' fällt weg!"; 
+                        fb.style.color = "var(--warning-color)";
+                    } else {
+                        el.className = "gap-input incorrect";
+                        fb.innerText = "✗ Falsch geschrieben"; 
+                        fb.style.color = "var(--error-color)";
+                    }
+                });
+                if(corrects === items.length) markDone(xid);
+            };
+        }
+
+        // --- CLOZE (LÜCKENTEXT) ---
+        function renderCloze(id, container) {
+            const d = exerciseData[id]; 
+            const items = d.items; 
+            
+            let h = `<div class="cloze-text">`;
+            items.forEach((item, i) => {
+                h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : ""}</span> ${item.textAfter} <span id="fb-${id}-${i}" class="feedback-box"></span> `;
+            });
+            h += `</div><div style="text-align: center;"><button class="exercise-button" style="margin-top:20px;" onclick="checkCloze('${id}')">Check</button></div>`;
+            container.innerHTML = h;
+            
+            window.checkCloze = (xid) => {
+                const dt = exerciseData[xid]; 
+                const its = dt.items; 
+                let ok = 0;
+                
+                its.forEach((it, i) => {
+                    const el = document.getElementById(`gap-${xid}-${i}`); 
+                    const fb = document.getElementById(`fb-${xid}-${i}`);
+                    const val = el.value.toLowerCase().trim();
+                    const correctArr = it.correct.map(x => x.toLowerCase().trim());
+
+                    if(correctArr.includes(val)) { 
+                        el.className="gap-input correct"; 
+                        fb.style.display="none"; 
+                        ok++; 
+                    } else { 
+                        el.className="gap-input incorrect"; 
+                        fb.innerHTML=`Lösung: <b>${it.correct[0]}</b>`; 
+                        fb.className = "feedback-box";
+                        fb.style.display="inline-block"; 
+                    }
+                });
+                
+                if(ok === its.length) markDone(xid);
+            };
+        }
+
+        // --- PROGRESS & MASTERY SYSTEM ---
+        function markDone(num) {
+            state[num] = true; 
+            localStorage.setItem('grammar_g6_contrast_state', JSON.stringify(state));
+            updateStatus(num); 
+            checkMaster(); 
+            setTimeout(() => alert("Klasse! Übung abgeschlossen."), 50);
+        }
+
+        function updateStatus(num) {
+            const item = document.getElementById('item-ex' + num); 
+            const status = document.getElementById('status-ex' + num); 
+            const header = item.querySelector('.accordion-header');
+            
+            if (state[num]) { 
+                item.classList.add('done'); 
+                status.innerText = "✅ Completed"; 
+                header.classList.add('done-header'); 
+            } else { 
+                item.classList.remove('done'); 
+                status.innerText = "🔒 Locked"; 
+                header.classList.remove('done-header'); 
+            }
+        }
+
+        function checkMaster() {
+            const totalExercises = 5;
+            const all = []; 
+            for(let i=1; i<=totalExercises; i++) { 
+                all.push(state[`${i}`]); 
+            }
+            
+            if (all.every(val => val === true)) {
+                document.getElementById('master-badge-container').style.display = 'block';
+                // Hier passiert die Magie: Wir speichern den Master-Badge für das übergeordnete Dashboard!
+                localStorage.setItem('grammar_g6_contrast_mastered', 'true');
+            } else { 
+                document.getElementById('master-badge-container').style.display = 'none'; 
+            }
+        }
+
+        window.onload = () => { 
+            for(let i=1; i<=5; i++) {
+                updateStatus(i);
+            }
+            checkMaster();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 8 - Reflexive & Reciprocal Pronouns</title>
+    <style>
+        :root {
+            --grade-color: #f59e0b; /* Bernstein/Orange für Klasse 8 */
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #78350f 100%);
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --text-color: #e6f7ff;
+            --success-color: #4caf50;
+            --error-color: #f44336;
+            --warning-color: #ff9800;
+            --gold: #ffd700;
+            --neutral-border: rgba(255, 255, 255, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient); background-attachment: fixed;
+            color: var(--text-color); margin: 0; padding: 0; min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 1100px; padding: 40px 20px; margin: 0 auto; box-sizing: border-box; }
+        .view { display: none; width: 100%; }
+        .view.active { display: block; animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        header { text-align: center; margin-bottom: 40px; }
+        .school-name { font-size: 1.2rem; color: var(--neutral-border); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        h1 { color: #fcd34d; text-shadow: 0 0 15px rgba(245, 158, 11, 0.4); font-size: 2.5rem; margin-bottom: 10px; }
+
+        .info-box {
+            background: rgba(245, 158, 11, 0.1); border: 2px solid var(--grade-color); border-radius: 15px; padding: 25px;
+            margin-bottom: 30px; box-shadow: 0 0 20px rgba(245, 158, 11, 0.2); text-align: left;
+        }
+        .info-box h4 { margin-top: 0; color: var(--grade-color); font-size: 1.4rem; border-bottom: 1px solid rgba(245,158,11,0.3); padding-bottom: 10px;}
+        .info-box .example-box { background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; border-left: 4px solid var(--grade-color); margin-bottom: 10px; line-height: 1.6;}
+        
+        .grammar-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 1rem; }
+        .grammar-table th, .grammar-table td { padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: left; }
+        .grammar-table th { color: var(--gold); }
+        .grammar-table tr:hover { background: rgba(255,255,255,0.05); }
+
+        .exercise-button {
+            padding: 15px; color: white; background: rgba(245, 158, 11, 0.15); border: 1px solid var(--grade-color);
+            border-radius: 12px; font-weight: bold; cursor: pointer; text-align: center; transition: 0.3s; display: inline-block;
+        }
+        .exercise-button:hover { background: var(--grade-color); color: #0f172a; }
+
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); font-size: 1.1rem;}
+        .accordion-header:hover { background: rgba(255,255,255,0.05); }
+        .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item.active .accordion-content { display: block; }
+        .accordion-item.done { border-color: var(--success-color); }
+        .done-header { background: rgba(76, 175, 80, 0.1) !important; }
+
+        /* Multiple Choice Styles */
+        .mc-item { margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 12px; border-left: 4px solid var(--grade-color); }
+        .mc-options { display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
+        .mc-btn { padding: 10px 20px; border-radius: 8px; border: 1px solid var(--grade-color); background: rgba(245, 158, 11, 0.1); color: white; cursor: pointer; transition: 0.2s; font-weight: bold; font-size: 1rem;}
+        .mc-btn:hover { background: rgba(245, 158, 11, 0.3); }
+        .mc-btn.correct { background: var(--success-color); border-color: var(--success-color); color: white; }
+        .mc-btn.wrong { animation: shake 0.4s ease; background: var(--error-color); border-color: var(--error-color); color: white; }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+
+        /* Scramble Styles */
+        .scramble-item { margin-bottom: 25px; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 15px; border-left: 5px solid var(--grade-color); }
+        .scramble-pool, .scramble-result { display: flex; flex-wrap: wrap; gap: 10px; min-height: 45px; padding: 10px; }
+        .scramble-word { background: var(--grade-color); color: #0f172a; font-weight: bold; padding: 8px 16px; border-radius: 6px; cursor: pointer; user-select: none; box-shadow: 0 2px 4px rgba(0,0,0,0.3); transition: transform 0.1s; }
+        .scramble-word:hover { transform: scale(1.05); }
+        .scramble-result { border-bottom: 2px dashed var(--grade-color); background: rgba(0,0,0,0.2); border-radius: 5px; margin-top: 15px; }
+
+        /* Cloze Styles */
+        .cloze-text { font-size: 1.1rem; line-height: 2.8; text-align: left; }
+        .gap-input { width: 140px; padding: 8px; border: 2px solid var(--neutral-border); border-radius: 8px; background: rgba(0,0,0,0.4); color: white; text-align: center; font-size: 1rem; transition: border-color 0.3s; margin: 0 5px; }
+        .gap-input:focus { border-color: var(--grade-color); outline: none; }
+        .gap-input.correct { border-color: var(--success-color); background: rgba(76, 175, 80, 0.2); }
+        .gap-input.incorrect { border-color: var(--error-color); background: rgba(244, 67, 54, 0.2); }
+        .gap-input.warning { border-color: var(--warning-color); background: rgba(255, 152, 0, 0.2); }
+        .gap-prompt { color: var(--grade-color); font-weight: bold; font-size: 0.9em; margin-left: 2px; }
+        
+        .feedback-box { color: #ff9e9e; font-size: 0.9em; margin-left: 5px; padding: 4px 8px; border-left: 3px solid var(--error-color); background: rgba(244, 67, 54, 0.1); display: none; border-radius: 5px; vertical-align: middle; }
+        .feedback-box.warning { color: var(--warning-color); border-left-color: var(--warning-color); background: rgba(255, 152, 0, 0.1); }
+        .task-instruction { margin-bottom: 15px; font-weight: bold; color: var(--gold); background: rgba(255, 215, 0, 0.1); padding: 10px; border-radius: 8px; border-left: 4px solid var(--gold); }
+        
+        .master-badge { display: none; background: linear-gradient(145deg, #ffd700, #b8860b); color: #000; padding: 25px; border-radius: 20px; margin-top: 40px; font-weight: bold; text-align: center; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+        .back-btn { background: transparent; border: 1.5px solid var(--grade-color); color: var(--text-color); padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-bottom: 20px; font-weight: bold; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .back-btn:hover { background: var(--grade-color); color: #0f172a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <a href="klasse8.html" class="back-btn">← Zurück zum Dashboard</a>
+        
+        <header>
+            <div class="school-name">Ignaz-Reder-Realschule</div>
+            <h1>Reflexive & Reciprocal Pronouns</h1>
+        </header>
+
+        <div class="info-box" id="topic-info">
+            <h4>Grammar Check: Myself vs. Each other</h4>
+            <div class="example-box">
+                <b>1. Reflexive Pronouns (Rückbezüglich):</b><br>
+                Subjekt und Objekt sind dieselbe Person (z.B. "sich selbst").<br>
+                <i>I cut <b>myself</b>. (Ich habe mich geschnitten.)</i><br>
+                Formen: <i>myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.</i> (Achtung auf das "-ves" im Plural!)<br><br>
+
+                <b>2. Emphatic Pronouns (Betonend):</b><br>
+                Gleiche Wörter, aber sie betonen, dass man es <b>selbst (ohne Hilfe)</b> gemacht hat.<br>
+                <i>I baked this cake <b>myself</b>. (Ich habe den Kuchen selbst gebacken.)</i><br><br>
+
+                <b>3. Reciprocal Pronoun (Einander):</b><br>
+                <b>each other</b> bedeutet "einander" oder "sich gegenseitig".<br>
+                <i>Tom and Lisa looked at <b>themselves</b> in the mirror. = Jeder schaute sich selbst an.</i><br>
+                <i>Tom and Lisa looked at <b>each other</b>. = Sie schauten sich gegenseitig an!</i>
+            </div>
+        </div>
+        
+        <!-- Accordion -->
+        <div id="exercise-accordion">
+            <div class="accordion-item" id="item-ex1"><div class="accordion-header" onclick="toggleAccordion(1)"><span id="label-ex1">Exercise 1: The Mirror Room</span><span class="status-icon" id="status-ex1">🔒 Locked</span></div><div class="accordion-content" id="content-ex1"></div></div>
+            <div class="accordion-item" id="item-ex2"><div class="accordion-header" onclick="toggleAccordion(2)"><span id="label-ex2">Exercise 2: Themselves vs. Each other</span><span class="status-icon" id="status-ex2">🔒 Locked</span></div><div class="accordion-content" id="content-ex2"></div></div>
+            <div class="accordion-item" id="item-ex3"><div class="accordion-header" onclick="toggleAccordion(3)"><span id="label-ex3">Exercise 3: The Emphatic Use</span><span class="status-icon" id="status-ex3">🔒 Locked</span></div><div class="accordion-content" id="content-ex3"></div></div>
+            <div class="accordion-item" id="item-ex4"><div class="accordion-header" onclick="toggleAccordion(4)"><span id="label-ex4">Exercise 4: Sentence Scramble</span><span class="status-icon" id="status-ex4">🔒 Locked</span></div><div class="accordion-content" id="content-ex4"></div></div>
+            <div class="accordion-item" id="item-ex5"><div class="accordion-header" onclick="toggleAccordion(5)"><span id="label-ex5">Exercise 5: The DIY Disaster</span><span class="status-icon" id="status-ex5">🔒 Locked</span></div><div class="accordion-content" id="content-ex5"></div></div>
+        </div>
+        
+        <div id="master-badge-container" class="master-badge">
+            🏆 MASTER BADGE EARNED: Pronouns Master!<br>
+            <span style="font-size: 0.9rem; font-weight: normal; margin-top: 5px; display: block;">Du hast alle Übungen erfolgreich abgeschlossen. Der Stern auf dem Dashboard leuchtet nun!</span>
+        </div>
+    </div>
+
+    <script>
+        // Lokaler State für die Übungen AUF DIESER SEITE
+        let state = JSON.parse(localStorage.getItem('grammar_g8_pronouns_state')) || {};
+
+        const exerciseData = {
+            '1': { 
+                type: 'cloze', 
+                instruction: "The Mirror Room: Setze das richtige Reflexivpronomen (myself, yourself, himself...) ein. Achte auf Pluralformen!",
+                items: [
+                    {textBefore:"I looked at", prompt:"(ich)", textAfter:"in the mirror.", correct:["myself"]},
+                    {textBefore:"He burned", prompt:"(er)", textAfter:"on the hot stove.", correct:["himself"]},
+                    {textBefore:"She taught", prompt:"(sie)", textAfter:"to play the piano.", correct:["herself"]},
+                    {textBefore:"The cat washed", prompt:"(es)", textAfter:"after eating.", correct:["itself"]},
+                    {textBefore:"We really enjoyed", prompt:"(wir)", textAfter:"at the party.", correct:["ourselves"]},
+                    {textBefore:"They bought", prompt:"(sie/Plural)", textAfter:"new clothes.", correct:["themselves"]},
+                    {textBefore:"Did you hurt", prompt:"(du)", textAfter:", Tom?", correct:["yourself"]},
+                    {textBefore:"Please help", prompt:"(ihr)", textAfter:"to some sandwiches, kids!", correct:["yourselves"]}
+                ] 
+            },
+            '2': { 
+                type: 'mc', 
+                instruction: "Themselves vs. Each other: Meinen sie sich selbst oder sich gegenseitig?",
+                questions: [
+                    {text: "Romeo and Juliet loved ___ very much.", options: ["themselves", "each other"], correct: "each other"},
+                    {text: "The two monkeys looked in the mirror and saw ___.", options: ["themselves", "each other"], correct: "themselves"},
+                    {text: "After the argument, Tom and Peter didn't speak to ___.", options: ["themselves", "each other"], correct: "each other"},
+                    {text: "The players blamed ___ for losing the match.", options: ["themselves", "each other"], correct: "themselves"},
+                    {text: "My brother and I help ___ with the homework.", options: ["ourselves", "each other"], correct: "each other"}
+                ] 
+            },
+            '3': { 
+                type: 'cloze', 
+                instruction: "The Emphatic Use: Wer hat es ganz ohne Hilfe getan? Setze das richtige Pronomen ein.",
+                items: [
+                    {textBefore:"Did you write this fantastic poem all by", prompt:"(du)", textAfter:"?", correct:["yourself"]},
+                    {textBefore:"Wow! I built this computer all by", prompt:"(ich)", textAfter:".", correct:["myself"]},
+                    {textBefore:"The Queen", prompt:"(sie)", textAfter:"opened the new hospital.", correct:["herself"]},
+                    {textBefore:"We cleaned the whole house", prompt:"(wir)", textAfter:", no one helped us.", correct:["ourselves"]},
+                    {textBefore:"The boss", prompt:"(er)", textAfter:"called me to say sorry.", correct:["himself"]}
+                ] 
+            },
+            '4': {
+                type: 'scramble',
+                instruction: "Sentence Scramble: Bringe die Wörter in die richtige Reihenfolge.",
+                sentences: [
+                    {correct: "They looked at each other and smiled.", words: ["They", "looked", "at", "each", "other", "and", "smiled."]},
+                    {correct: "I fixed the broken bike all by myself.", words: ["I", "fixed", "the", "broken", "bike", "all", "by", "myself."]},
+                    {correct: "Please make yourselves at home.", words: ["Please", "make", "yourselves", "at", "home."]},
+                    {correct: "She cut herself with a sharp knife.", words: ["She", "cut", "herself", "with", "a", "sharp", "knife."]},
+                    {correct: "We often help each other with our homework.", words: ["We", "often", "help", "each", "other", "with", "our", "homework."]}
+                ]
+            },
+            '5': { 
+                type: 'cloze', 
+                continuous: true,
+                instruction: "The DIY Disaster: Fülle die Lücken mit Reflexivpronomen oder 'each other'.",
+                items: [
+                    {textBefore:"Last weekend, my brother and I decided to build a treehouse by", prompt:"(wir)", textAfter:".", correct:["ourselves"]},
+                    {textBefore:"We told", prompt:"(einander)", textAfter:"that it would be an easy job.", correct:["each other"]},
+                    {textBefore:"First, my brother hit", prompt:"(er)", textAfter:"with the heavy hammer.", correct:["himself"]},
+                    {textBefore:"Then, I accidentally cut", prompt:"(ich)", textAfter:"with the sharp saw.", correct:["myself"]},
+                    {textBefore:"Our dad came out and asked, 'Did you do this all by", prompt:"(ihr)", textAfter:"? It looks terrible!'", correct:["yourselves"]},
+                    {textBefore:"My sister laughed at us. She was building a small birdhouse by", prompt:"(sie)", textAfter:"and it looked perfect.", correct:["herself"]},
+                    {textBefore:"Now, the birds wash", prompt:"(sie/Plural)", textAfter:"happily in the birdbath next to it.", correct:["themselves"]},
+                    {textBefore:"In the end, my brother and I just looked at", prompt:"(einander)", textAfter:"and decided to buy a finished treehouse.", correct:["each other"]}
+                ] 
+            }
+        };
+
+        function toggleAccordion(num) {
+            const item = document.getElementById('item-ex'+num); 
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+            if(!isActive) { 
+                item.classList.add('active'); 
+                renderEx(num); 
+            }
+        }
+
+        function renderEx(num) {
+            const container = document.getElementById('content-ex'+num);
+            if(container.innerHTML !== "") return;
+            
+            const data = exerciseData[num];
+            if(data.type === 'cloze') renderCloze(num, container);
+            else if(data.type === 'mc') renderMC(num, container);
+            else if(data.type === 'scramble') renderScramble(num, container);
+        }
+
+        // --- MC FORMAT ---
+        function renderMC(id, container) {
+            const d = exerciseData[id]; 
+            container.innerHTML = `<p style="margin-bottom:15px; color:var(--gold); font-weight:bold;">${d.instruction}</p><div id="mc-box-${id}"></div>`;
+            const box = document.getElementById(`mc-box-${id}`);
+            
+            const renderQ = (idx) => {
+                if(idx >= d.questions.length) { 
+                    box.innerHTML = `<h3 style='color:var(--success-color); text-align:center;'>Super! Du hast alle Fragen richtig beantwortet.</h3>`; 
+                    markDone(id); 
+                    return; 
+                }
+                const q = d.questions[idx]; 
+                box.innerHTML = `<div class="mc-item">
+                                    <div style="font-size:1.1rem; margin-bottom:10px;">
+                                        <span style="color:var(--gold); font-size:0.9rem; font-weight:bold;">Satz ${idx+1}/${d.questions.length}</span><br>
+                                        <div style="margin-top: 5px; font-size: 1.1rem; line-height: 1.5;">${q.text.replace("___", "______")}</div>
+                                    </div>
+                                    <div class="mc-options"></div>
+                                 </div>`;
+                
+                // Mische die Optionen
+                const shuffledOptions = [...q.options].sort(() => 0.5 - Math.random());
+
+                shuffledOptions.forEach(opt => {
+                    const btn = document.createElement('button'); 
+                    btn.className = "mc-btn"; 
+                    btn.innerText = opt;
+                    btn.onclick = () => {
+                        if(opt === q.correct) {
+                            btn.className = "mc-btn correct"; 
+                            box.querySelectorAll('.mc-btn').forEach(b => b.disabled = true);
+                            setTimeout(() => renderQ(idx+1), 700);
+                        } else { 
+                            btn.className = "mc-btn wrong"; 
+                            setTimeout(() => btn.className = "mc-btn", 600); 
+                        }
+                    };
+                    box.querySelector('.mc-options').appendChild(btn);
+                });
+            };
+            renderQ(0);
+        }
+
+        // --- SCRAMBLE (Satzbau) ---
+        function renderScramble(id, container) {
+            const d = exerciseData[id];
+            container.innerHTML = `<p style="margin-bottom:15px; color:var(--gold); font-weight:bold;">${d.instruction}</p>`;
+            
+            d.sentences.forEach((s, idx) => {
+                const w = document.createElement('div'); w.className="scramble-item";
+                
+                const p = document.createElement('div'); p.className="scramble-pool";
+                const r = document.createElement('div'); r.className="scramble-result"; r.id=`scr-res-${id}-${idx}`;
+                
+                [...s.words].sort(()=>0.5-Math.random()).forEach(word => {
+                    const sp = document.createElement('span'); sp.className="scramble-word"; sp.innerText=word;
+                    sp.onclick = () => { 
+                        if(sp.parentElement === p) r.appendChild(sp); 
+                        else p.appendChild(sp); 
+                    };
+                    p.appendChild(sp);
+                });
+                w.appendChild(p); w.appendChild(r); container.appendChild(w);
+            });
+            
+            const btn = document.createElement('button'); 
+            btn.className='exercise-button'; btn.innerText="Check"; btn.style.margin="20px auto"; btn.style.display="block";
+            
+            btn.onclick = () => {
+                let ok = 0; 
+                d.sentences.forEach((s, i) => {
+                    const txt = Array.from(document.getElementById(`scr-res-${id}-${i}`).children).map(c=>c.innerText).join(' ');
+                    if(txt.toLowerCase() === s.correct.toLowerCase()) {
+                        ok++;
+                        document.getElementById(`scr-res-${id}-${i}`).style.borderColor = "var(--success-color)";
+                    } else {
+                        document.getElementById(`scr-res-${id}-${i}`).style.borderColor = "var(--error-color)";
+                    }
+                });
+                
+                if(ok === d.sentences.length) {
+                    markDone(id); 
+                } else { 
+                    alert(ok + " von " + d.sentences.length + " Sätzen sind richtig. Prüfe die rot markierten Sätze noch einmal!"); 
+                }
+            };
+            container.appendChild(btn);
+        }
+
+        // --- CLOZE (LÜCKENTEXT) ---
+        function renderCloze(id, container) {
+            const d = exerciseData[id]; 
+            const items = d.items; 
+            
+            let h = `<div class="cloze-text">${d.instruction ? `<div class="task-instruction">${d.instruction}</div>` : ''}`;
+            items.forEach((item, i) => {
+                h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : ""}</span> ${item.textAfter} <span id="fb-${id}-${i}" class="feedback-box"></span> ${d.continuous ? '' : '<br>'}`;
+            });
+            h += `</div><div style="text-align: center;"><button class="exercise-button" style="margin-top:20px;" onclick="checkCloze('${id}')">Check</button></div>`;
+            container.innerHTML = h;
+            
+            window.checkCloze = (xid) => {
+                const dt = exerciseData[xid]; 
+                const its = dt.items; 
+                let ok = 0;
+                
+                its.forEach((it, i) => {
+                    const el = document.getElementById(`gap-${xid}-${i}`); 
+                    const fb = document.getElementById(`fb-${xid}-${i}`);
+                    const val = el.value.toLowerCase().trim().replace(/’/g, "'");
+                    const correctArr = it.correct.map(x => x.toLowerCase().trim());
+
+                    // Clevere Rechtschreib-Warnungen
+                    if (val !== "") {
+                        if (val === "ourself" || val === "ourselfs") {
+                            el.className = "gap-input warning";
+                            fb.innerHTML = "Tipp: Im Plural endet das Pronomen immer auf <b>-ves</b> (ourselves)!";
+                            fb.className = "feedback-box warning";
+                            fb.style.display = "inline-block";
+                            return;
+                        }
+                        if (val === "themself" || val === "theirselves") {
+                            el.className = "gap-input warning";
+                            fb.innerHTML = "Tipp: Das Reflexivpronomen von 'they' heißt <b>themselves</b>!";
+                            fb.className = "feedback-box warning";
+                            fb.style.display = "inline-block";
+                            return;
+                        }
+                        if (val === "hisself") {
+                            el.className = "gap-input warning";
+                            fb.innerHTML = "Tipp: Bei 'he' heißt es <b>himself</b> (nicht hisself)!";
+                            fb.className = "feedback-box warning";
+                            fb.style.display = "inline-block";
+                            return;
+                        }
+                    }
+
+                    if(correctArr.includes(val)) { 
+                        el.className="gap-input correct"; 
+                        fb.style.display="none"; 
+                        ok++; 
+                    } else { 
+                        el.className="gap-input incorrect"; 
+                        fb.innerHTML=`Lösung: <b>${it.correct[0]}</b>`; 
+                        fb.className = "feedback-box";
+                        fb.style.display="inline-block"; 
+                    }
+                });
+                
+                if(ok === its.length) markDone(xid);
+            };
+        }
+
+        // --- PROGRESS & MASTERY SYSTEM ---
+        function markDone(num) {
+            state[num] = true; 
+            localStorage.setItem('grammar_g8_pronouns_state', JSON.stringify(state));
+            updateStatus(num); 
+            checkMaster(); 
+            setTimeout(() => alert("Klasse! Übung abgeschlossen."), 50);
+        }
+
+        function updateStatus(num) {
+            const item = document.getElementById('item-ex' + num); 
+            const status = document.getElementById('status-ex' + num); 
+            const header = item.querySelector('.accordion-header');
+            
+            if (state[num]) { 
+                item.classList.add('done'); 
+                status.innerText = "✅ Completed"; 
+                header.classList.add('done-header'); 
+            } else { 
+                item.classList.remove('done'); 
+                status.innerText = "🔒 Locked"; 
+                header.classList.remove('done-header'); 
+            }
+        }
+
+        function checkMaster() {
+            const totalExercises = 5;
+            const all = []; 
+            for(let i=1; i<=totalExercises; i++) { 
+                all.push(state[`${i}`]); 
+            }
+            
+            if (all.every(val => val === true)) {
+                document.getElementById('master-badge-container').style.display = 'block';
+                // Hier speichern wir das Master-Badge ab, auf das klasse8.html hört!
+                localStorage.setItem('grammar_g8_pronouns_mastered', 'true');
+            } else { 
+                document.getElementById('master-badge-container').style.display = 'none'; 
+            }
+        }
+
+        window.onload = () => { 
+            for(let i=1; i<=5; i++) {
+                updateStatus(i);
+            }
+            checkMaster();
+        };
+    </script>
+</body>
+</html>

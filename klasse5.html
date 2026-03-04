@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 5 - Grammar Mastery</title>
+    <style>
+        :root {
+            /* Angepasst auf ein Klasse-5-Blau, restliches Design exakt wie in deiner Vorlage */
+            --grade-color: #3b82f6; 
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #001f3f 100%);
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --text-color: #e6f7ff;
+            --success-color: #4caf50;
+            --error-color: #f44336;
+            --warning-color: #ff9800;
+            --gold: #ffd700;
+            --neutral-border: rgba(255, 255, 255, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient); background-attachment: fixed;
+            color: var(--text-color); margin: 0; padding: 0; min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 1100px; padding: 40px 20px; margin: 0 auto; box-sizing: border-box; }
+        .view { display: none; width: 100%; }
+        .view.active { display: block; animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        header { text-align: center; margin-bottom: 40px; }
+        .school-name { font-size: 1.2rem; color: var(--neutral-border); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        h1 { color: #90caf9; text-shadow: 0 0 15px rgba(59, 130, 246, 0.4); font-size: 2.5rem; margin-bottom: 10px; }
+
+        .info-box {
+            background: rgba(59, 130, 246, 0.1); border: 2px solid var(--grade-color); border-radius: 15px; padding: 20px;
+            margin-bottom: 30px; box-shadow: 0 0 20px rgba(59, 130, 246, 0.2); text-align: left;
+        }
+        .info-box h4 { margin-top: 0; color: var(--grade-color); font-size: 1.2rem; }
+        .info-box .example-box { background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border-left: 4px solid var(--grade-color); margin-bottom: 10px; }
+        .info-box .example-sentence { font-style: italic; color: var(--gold); display: block; margin-top: 5px; }
+
+        .category-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .category { background-color: var(--card-bg); border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-top: 5px solid var(--grade-color); }
+        .category h2 { color: var(--grade-color); border-bottom: 2px solid rgba(59,130,246,0.2); padding-bottom: 10px; margin-top: 0; font-size: 1.4rem; }
+        .button-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; }
+
+        .exercise-button {
+            padding: 15px; color: white; background: rgba(59,130,246,0.15); border: 1px solid var(--grade-color);
+            border-radius: 12px; font-weight: bold; cursor: pointer; text-align: left; transition: 0.3s; display: flex; justify-content: space-between; align-items: center;
+        }
+        .exercise-button:hover { background: var(--grade-color); color: #001f3f; }
+        .exercise-button.completed { border: 2px solid var(--gold); }
+        .exercise-button.completed::after { content: "★ Badge"; font-size: 0.75rem; background: var(--gold); color: #000; padding: 2px 8px; border-radius: 10px; }
+
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); }
+        .accordion-header:hover { background: rgba(255,255,255,0.05); }
+        .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item.active .accordion-content { display: block; }
+        .accordion-item.done { border-color: var(--success-color); }
+
+        .cloze-text { font-size: 1.1rem; line-height: 2.8; text-align: left; }
+        .gap-input { width: 150px; padding: 8px; border: 2px solid var(--neutral-border); border-radius: 8px; background: rgba(0,0,0,0.4); color: white; text-align: center; font-size: 1rem; transition: border-color 0.3s; }
+        .gap-input:focus { border-color: var(--grade-color); outline: none; }
+        .gap-input.correct { border-color: var(--success-color); background: rgba(76, 175, 80, 0.2); }
+        .gap-input.incorrect { border-color: var(--error-color); background: rgba(244, 67, 54, 0.2); }
+        .gap-input.warning { border-color: var(--warning-color); background: rgba(255, 152, 0, 0.2); }
+        
+        .feedback-box { color: #ff9e9e; font-size: 0.9em; margin-left: 5px; padding: 4px 8px; border-left: 3px solid var(--error-color); background: rgba(244, 67, 54, 0.1); display: none; border-radius: 5px; vertical-align: middle; }
+        .feedback-box.warning { color: var(--warning-color); border-left-color: var(--warning-color); background: rgba(255, 152, 0, 0.1); }
+        .task-instruction { margin-bottom: 15px; font-weight: bold; color: var(--gold); background: rgba(255, 215, 0, 0.1); padding: 10px; border-radius: 8px; border-left: 4px solid var(--gold); }
+        .gap-prompt { color: var(--grade-color); font-weight: bold; font-size: 0.9em; margin-left: 5px; }
+
+        .master-badge { display: none; background: linear-gradient(145deg, #ffd700, #b8860b); color: #000; padding: 25px; border-radius: 20px; margin-top: 40px; font-weight: bold; text-align: center; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+        .back-btn { background: transparent; border: 1.5px solid var(--grade-color); color: var(--grade-color); padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-bottom: 20px; font-weight: bold; transition: 0.3s;}
+        .back-btn:hover { background: var(--grade-color); color: #001f3f; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- DASHBOARD -->
+        <div id="view-dashboard" class="view active">
+            <header>
+                <div class="school-name">Ignaz-Reder-Realschule</div>
+                <h1>Grammar Mastery - Klasse 5</h1>
+            </header>
+            
+            <div class="category-container">
+                <div class="category">
+                    <h2>Lehrplan Klasse 5</h2>
+                    <div class="button-grid">
+                        <button class="exercise-button" id="btn-5_PRES_CONTRAST" onclick="showTopic('5_PRES_CONTRAST')">Simple Present vs. Present Progressive</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; display: flex; justify-content: center; gap: 20px;">
+                <a href="index.html" style="color: #90caf9; text-decoration: none; font-weight: bold;">← Hauptportal</a>
+                <span style="color: var(--neutral-border);">|</span>
+                <button onclick="resetProgress()" style="background:none; border:none; color: var(--error-color); cursor: pointer; font-family: inherit; font-weight: bold; text-decoration: underline;">Fortschritt löschen</button>
+            </div>
+        </div>
+
+        <!-- TOPIC VIEW -->
+        <div id="view-topic" class="view">
+            <button class="back-btn" onclick="showView('dashboard')">← Zurück</button>
+            <header><h2 id="topic-title">Thema</h2></header>
+            <div class="info-box" id="topic-info"></div>
+            
+            <!-- Accordion -->
+            <div id="exercise-accordion">
+                <div class="accordion-item" id="item-ex1"><div class="accordion-header" onclick="toggleAccordion(1)"><span id="label-ex1">Exercise 1</span><span class="status-icon" id="status-ex1">🔒 Locked</span></div><div class="accordion-content" id="content-ex1"></div></div>
+                <div class="accordion-item" id="item-ex2"><div class="accordion-header" onclick="toggleAccordion(2)"><span id="label-ex2">Exercise 2</span><span class="status-icon" id="status-ex2">🔒 Locked</span></div><div class="accordion-content" id="content-ex2"></div></div>
+                <div class="accordion-item" id="item-ex3"><div class="accordion-header" onclick="toggleAccordion(3)"><span id="label-ex3">Exercise 3</span><span class="status-icon" id="status-ex3">🔒 Locked</span></div><div class="accordion-content" id="content-ex3"></div></div>
+                <div class="accordion-item" id="item-ex4"><div class="accordion-header" onclick="toggleAccordion(4)"><span id="label-ex4">Exercise 4</span><span class="status-icon" id="status-ex4">🔒 Locked</span></div><div class="accordion-content" id="content-ex4"></div></div>
+                <div class="accordion-item" id="item-ex5"><div class="accordion-header" onclick="toggleAccordion(5)"><span id="label-ex5">Exercise 5</span><span class="status-icon" id="status-ex5">🔒 Locked</span></div><div class="accordion-content" id="content-ex5"></div></div>
+            </div>
+            
+            <div id="master-badge-container" class="master-badge">
+                🏆 MASTER BADGE EARNED: <span id="master-badge-name">...</span>!<br>
+                <span style="font-size: 0.8rem; font-family: monospace;">Validation Code: <span id="master-code-display">---</span></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const secretKey = "IGNAZ-REDER-KEY-2024";
+        let state = JSON.parse(localStorage.getItem('grammar_g5_mastery_final')) || {};
+        let currentTopicId = null;
+
+        const topicMeta = {
+            '5_PRES_CONTRAST': { 
+                title: "Simple Present vs. Present Progressive", 
+                count: 5, 
+                labels: ["My Morning Routine", "Hobbies & Free Time", "School vs. Holidays", "London Alive", "Postcard from Scotland"], 
+                info: `<h4>Present Tenses</h4><div class="example-box"><b>Simple Present:</b> Habit/Fact (always, usually, every day). <br><b>Present Progressive:</b> Now (look, listen, at the moment).</div>` 
+            }
+        };
+
+        const exerciseData = {
+            '5_PRES_CONTRAST_1': { type: 'cloze', instruction:"My Morning Routine (Routine vs. Today)", items: [
+                {textBefore:"I usually", prompt:"(get up)", textAfter:"at 7 o'clock.", correct:["get up"]},
+                {textBefore:"But today is Sunday, so I", prompt:"(sleep)", textAfter:"long.", correct:["am sleeping"]},
+                {textBefore:"My mum", prompt:"(make)", textAfter:"breakfast every day.", correct:["makes"]},
+                {textBefore:"Listen! She", prompt:"(sing)", textAfter:"in the kitchen.", correct:["is singing"]},
+                {textBefore:"We always", prompt:"(eat)", textAfter:"toast.", correct:["eat"]},
+                {textBefore:"Look! The cat", prompt:"(play)", textAfter:"with the milk.", correct:["is playing"]},
+                {textBefore:"Buses usually", prompt:"(run)", textAfter:"often.", correct:["run"]},
+                {textBefore:"But now they", prompt:"(stop)", textAfter:"here.", correct:["are stopping"]},
+                {textBefore:"I", prompt:"(not / go)", textAfter:"to school on Sundays.", correct:["do not go", "don't go"]},
+                {textBefore:"I", prompt:"(relax)", textAfter:"at the moment.", correct:["am relaxing"]}
+            ] },
+            '5_PRES_CONTRAST_2': { type: 'cloze', instruction:"Hobbies (Habit vs. Now)", items: [
+                {textBefore:"Tom", prompt:"(play)", textAfter:"football every Tuesday.", correct:["plays"]},
+                {textBefore:"Look! He", prompt:"(run)", textAfter:"very fast.", correct:["is running"]},
+                {textBefore:"We often", prompt:"(watch)", textAfter:"movies.", correct:["watch"]},
+                {textBefore:"Right now, we", prompt:"(watch)", textAfter:"a comedy.", correct:["are watching"]},
+                {textBefore:"Sarah", prompt:"(dance)", textAfter:"regularly.", correct:["dances"]},
+                {textBefore:"At the moment, she", prompt:"(practice)", textAfter:"a new song.", correct:["is practicing"]},
+                {textBefore:"You always", prompt:"(help)", textAfter:"me.", correct:["help"]},
+                {textBefore:"But today you", prompt:"(not / help)", textAfter:".", correct:["are not helping", "aren't helping"]},
+                {textBefore:"", prompt:"(they / sing)", textAfter:"often?", correct:["Do they sing"]},
+                {textBefore:"Why", prompt:"(they / shout)", textAfter:"now?", correct:["are they shouting"]}
+            ] },
+            '5_PRES_CONTRAST_3': { type: 'cloze', instruction:"School vs. Holiday (General vs. Now)", items: [
+                {textBefore:"We usually", prompt:"(sit)", textAfter:"at desks.", correct:["sit"]},
+                {textBefore:"But now we", prompt:"(sit)", textAfter:"on the grass.", correct:["are sitting"]},
+                {textBefore:"Our teacher", prompt:"(write)", textAfter:"on the board every day.", correct:["writes"]},
+                {textBefore:"Look! He", prompt:"(eat)", textAfter:"an ice cream.", correct:["is eating"]},
+                {textBefore:"Students", prompt:"(listen)", textAfter:"in class.", correct:["listen"]},
+                {textBefore:"They", prompt:"(play)", textAfter:"frisbee now.", correct:["are playing"]},
+                {textBefore:"School", prompt:"(start)", textAfter:"at 8 am.", correct:["starts"]},
+                {textBefore:"The sun", prompt:"(shine)", textAfter:"at the moment.", correct:["is shining"]},
+                {textBefore:"We", prompt:"(not / learn)", textAfter:"maths now.", correct:["are not learning", "aren't learning"]},
+                {textBefore:"We", prompt:"(have)", textAfter:"fun right now.", correct:["are having"]}
+            ] },
+            '5_PRES_CONTRAST_4': { type: 'cloze', instruction:"London Alive (Facts vs. Action)", items: [
+                {textBefore:"London", prompt:"(have)", textAfter:"many sights.", correct:["has"]},
+                {textBefore:"Tourists", prompt:"(visit)", textAfter:"the Eye every day.", correct:["visit"]},
+                {textBefore:"Look! They", prompt:"(take)", textAfter:"photos.", correct:["are taking"]},
+                {textBefore:"The Queen", prompt:"(live)", textAfter:"in the Palace.", correct:["lives"]},
+                {textBefore:"The flag", prompt:"(fly)", textAfter:"today.", correct:["is flying"]},
+                {textBefore:"Traffic", prompt:"(move)", textAfter:"on the left.", correct:["moves"]},
+                {textBefore:"Listen! Big Ben", prompt:"(ring)", textAfter:".", correct:["is ringing"]},
+                {textBefore:"Boats", prompt:"(sail)", textAfter:"on the Thames often.", correct:["sail"]},
+                {textBefore:"That boat", prompt:"(go)", textAfter:"under the bridge now.", correct:["is going"]},
+                {textBefore:"It", prompt:"(not / rain)", textAfter:"at the moment.", correct:["is not raining", "isn't raining"]}
+            ] },
+            '5_PRES_CONTRAST_5': { type: 'cloze', instruction:"Postcard from Scotland (General vs. Now)", items: [
+                {textBefore:"It often", prompt:"(rain)", textAfter:"in Scotland.", correct:["rains"]},
+                {textBefore:"But look! The sun", prompt:"(shine)", textAfter:"today.", correct:["is shining"]},
+                {textBefore:"Scots", prompt:"(wear)", textAfter:"kilts sometimes.", correct:["wear"]},
+                {textBefore:"Look! That man", prompt:"(wear)", textAfter:"one.", correct:["is wearing"]},
+                {textBefore:"He", prompt:"(play)", textAfter:"bagpipes right now.", correct:["is playing"]},
+                {textBefore:"People", prompt:"(watch)", textAfter:"him.", correct:["are watching"]},
+                {textBefore:"Nessie", prompt:"(live)", textAfter:"in the Loch.", correct:["lives"]},
+                {textBefore:"We", prompt:"(look)", textAfter:"for her now.", correct:["are looking"]},
+                {textBefore:"We", prompt:"(not / take)", textAfter:"photos at the moment.", correct:["are not taking", "aren't taking"]},
+                {textBefore:"We", prompt:"(enjoy)", textAfter:"the trip.", correct:["are enjoying"]}
+            ] }
+        };
+
+        // --- CORE FUNCTIONS ---
+        function showView(id) { 
+            document.querySelectorAll('.view').forEach(v => v.classList.remove('active')); 
+            document.getElementById('view-' + id).classList.add('active'); 
+            window.scrollTo(0,0); 
+        }
+
+        function showTopic(id) {
+            currentTopicId = id; 
+            const meta = topicMeta[id];
+            document.getElementById('topic-title').innerText = meta.title;
+            document.getElementById('topic-info').innerHTML = meta.info;
+            document.getElementById('master-badge-name').innerText = meta.title;
+            
+            for(let i=1; i<=5; i++) {
+                const item = document.getElementById('item-ex'+i);
+                if(i > meta.count) {
+                    item.style.display = "none";
+                } else { 
+                    item.style.display = "block"; 
+                    document.getElementById('label-ex'+i).innerText = `Exercise ${i}: ${meta.labels[i-1]}`; 
+                    document.getElementById('content-ex'+i).innerHTML = ""; 
+                    updateStatus(i); 
+                }
+            }
+            checkMaster(); 
+            showView('topic');
+        }
+
+        function toggleAccordion(num) {
+            const item = document.getElementById('item-ex'+num); 
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+            if(!isActive) { 
+                item.classList.add('active'); 
+                renderEx(num); 
+            }
+        }
+
+        function renderEx(num) {
+            const container = document.getElementById('content-ex'+num);
+            if(container.innerHTML !== "") return;
+            const fullId = `${currentTopicId}_${num}`;
+            const data = exerciseData[fullId];
+            
+            if(!data) { container.innerHTML = "In Kürze..."; return; }
+            if(data.type === 'cloze') renderCloze(fullId, container);
+        }
+
+        function renderCloze(id, container) {
+            const d = exerciseData[id]; 
+            if(!d) return; 
+            const items = d.items; 
+            
+            let h = `<div class="cloze-text">${d.instruction ? `<div class="task-instruction">${d.instruction}</div>` : ''}`;
+            
+            items.forEach((item, i) => {
+                h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : ""}</span> ${item.textAfter} <span id="fb-${id}-${i}" class="feedback-box"></span> `;
+            });
+            
+            h += `</div><button class="exercise-button" style="margin:20px auto; display:block;" onclick="checkCloze('${id}')">Check</button>`;
+            container.innerHTML = h;
+            
+            window.checkCloze = (xid) => {
+                const dt = exerciseData[xid]; 
+                const its = dt.items; 
+                let ok = 0;
+                
+                its.forEach((it, i) => {
+                    const el = document.getElementById(`gap-${xid}-${i}`); 
+                    const fb = document.getElementById(`fb-${xid}-${i}`);
+                    const val = el.value.toLowerCase().trim();
+                    const correctArr = it.correct.map(x => x.toLowerCase().trim());
+                    
+                    // Spezielle Warnung für fehlendes 's' bei He/She/It im Simple Present
+                    if (val !== "" && correctArr[0].endsWith('s') && !val.endsWith('s') && correctArr[0] === val + 's') {
+                        el.className = "gap-input warning";
+                        fb.innerHTML = "Remember: He, she, it – das 's' muss mit!";
+                        fb.className = "feedback-box warning";
+                        fb.style.display = "inline-block";
+                        return;
+                    }
+
+                    if(correctArr.includes(val)) { 
+                        el.className="gap-input correct"; 
+                        fb.style.display="none"; 
+                        ok++; 
+                    } else { 
+                        el.className="gap-input incorrect"; 
+                        fb.innerHTML=`Lösung: <b>${it.correct[0]}</b>`; 
+                        fb.className = "feedback-box";
+                        fb.style.display="inline-block"; 
+                    }
+                });
+                
+                if(ok === its.length) markDone(xid.split('_').pop());
+            };
+        }
+
+        function markDone(num) {
+            const fid = `${currentTopicId}_${num}`; 
+            state[fid] = true; 
+            localStorage.setItem('grammar_g5_mastery_final', JSON.stringify(state));
+            updateStatus(num); 
+            checkMaster(); 
+            alert("Klasse! Übung abgeschlossen.");
+        }
+
+        function updateStatus(num) {
+            const id = `${currentTopicId}_${num}`; 
+            const item = document.getElementById('item-ex' + num); 
+            const status = document.getElementById('status-ex' + num); 
+            const header = item.querySelector('.accordion-header');
+            
+            if (state[id]) { 
+                item.classList.add('done'); 
+                status.innerText = "✅ Completed"; 
+                header.classList.add('done-header'); 
+            } else { 
+                item.classList.remove('done'); 
+                status.innerText = "🔒 Locked"; 
+                header.classList.remove('done-header'); 
+            }
+        }
+
+        function checkMaster() {
+            const meta = topicMeta[currentTopicId]; 
+            if (!meta) return;
+            
+            const all = []; 
+            for(let i=1; i<=meta.count; i++) { 
+                all.push(state[`${currentTopicId}_${i}`]); 
+            }
+            
+            if (all.every(val => val === true)) {
+                document.getElementById('master-badge-container').style.display = 'block';
+                document.getElementById('master-code-display').innerText = generateCode(currentTopicId + "_MASTER");
+                const btn = document.getElementById('btn-' + currentTopicId); 
+                if(btn) btn.classList.add('completed');
+            } else { 
+                document.getElementById('master-badge-container').style.display = 'none'; 
+            }
+        }
+
+        function generateCode(id) { 
+            let hash = 0; 
+            const str = id + secretKey; 
+            for (let i = 0; i < str.length; i++) { 
+                hash = ((hash << 5) - hash) + str.charCodeAt(i); 
+                hash |= 0; 
+            } 
+            return id + "-" + Math.abs(hash).toString(16).toUpperCase().substring(0, 4); 
+        }
+
+        function resetProgress() {
+            if(confirm("Möchtest du deinen gesamten Fortschritt in dieser Klasse löschen?")) {
+                localStorage.removeItem('grammar_g5_mastery_final');
+                location.reload();
+            }
+        }
+
+        window.onload = () => { 
+            Object.keys(topicMeta).forEach(t => { 
+                const meta = topicMeta[t]; 
+                const all = []; 
+                for(let i=1; i<=meta.count; i++) { 
+                    all.push(state[`${t}_${i}`]); 
+                }
+                if(all.every(v => v === true)) { 
+                    const btn = document.getElementById('btn-' + t); 
+                    if(btn) btn.classList.add('completed'); 
+                } 
+            }); 
+        };
+    </script>
+</body>
+</html>

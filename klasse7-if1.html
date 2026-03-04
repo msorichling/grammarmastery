@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 7 - If-clauses Types 0/1</title>
+    <style>
+        :root {
+            --grade-color: #10b981; /* Smaragdgrün für Klasse 7 */
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #064e3b 100%);
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --text-color: #e6f7ff;
+            --success-color: #4caf50;
+            --error-color: #f44336;
+            --warning-color: #ff9800;
+            --gold: #ffd700;
+            --neutral-border: rgba(255, 255, 255, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient); background-attachment: fixed;
+            color: var(--text-color); margin: 0; padding: 0; min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 1100px; padding: 40px 20px; margin: 0 auto; box-sizing: border-box; }
+        .view { display: none; width: 100%; }
+        .view.active { display: block; animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        header { text-align: center; margin-bottom: 40px; }
+        .school-name { font-size: 1.2rem; color: var(--neutral-border); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        h1 { color: #6ee7b7; text-shadow: 0 0 15px rgba(16, 185, 129, 0.4); font-size: 2.5rem; margin-bottom: 10px; }
+
+        .info-box {
+            background: rgba(16, 185, 129, 0.1); border: 2px solid var(--grade-color); border-radius: 15px; padding: 20px;
+            margin-bottom: 30px; box-shadow: 0 0 20px rgba(16, 185, 129, 0.2); text-align: left;
+        }
+        .info-box h4 { margin-top: 0; color: var(--grade-color); font-size: 1.2rem; }
+        .info-box .example-box { background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; border-left: 4px solid var(--grade-color); margin-bottom: 10px; line-height: 1.6;}
+
+        .exercise-button {
+            padding: 15px; color: white; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--grade-color);
+            border-radius: 12px; font-weight: bold; cursor: pointer; text-align: center; transition: 0.3s; display: inline-block;
+        }
+        .exercise-button:hover { background: var(--grade-color); color: #0f172a; }
+
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); font-size: 1.1rem; }
+        .accordion-header:hover { background: rgba(255,255,255,0.05); }
+        .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item.active .accordion-content { display: block; }
+        .accordion-item.done { border-color: var(--success-color); }
+        .done-header { background: rgba(76, 175, 80, 0.1) !important; }
+
+        /* Multiple Choice Styles (Match the Halves) */
+        .mc-item { margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 12px; border-left: 4px solid var(--grade-color); }
+        .mc-options { display: flex; gap: 10px; margin-top: 15px; flex-direction: column; }
+        .mc-btn { padding: 12px 24px; border-radius: 8px; border: 1px solid var(--grade-color); background: rgba(16, 185, 129, 0.1); color: white; cursor: pointer; transition: 0.2s; font-weight: bold; font-size: 1.05rem; text-align: left; }
+        .mc-btn:hover { background: rgba(16, 185, 129, 0.3); }
+        .mc-btn.correct { background: var(--success-color); border-color: var(--success-color); color: white; }
+        .mc-btn.wrong { animation: shake 0.4s ease; background: var(--error-color); border-color: var(--error-color); color: white; }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+
+        /* Scramble Styles */
+        .scramble-item { margin-bottom: 25px; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 15px; border-left: 5px solid var(--grade-color); }
+        .scramble-pool, .scramble-result { display: flex; flex-wrap: wrap; gap: 10px; min-height: 45px; padding: 10px; }
+        .scramble-word { background: var(--grade-color); color: #0f172a; font-weight: bold; padding: 8px 16px; border-radius: 6px; cursor: pointer; user-select: none; box-shadow: 0 2px 4px rgba(0,0,0,0.3); transition: transform 0.1s; }
+        .scramble-word:hover { transform: scale(1.05); }
+        .scramble-result { border-bottom: 2px dashed var(--grade-color); background: rgba(0,0,0,0.2); border-radius: 5px; margin-top: 15px; }
+
+        /* Cloze Styles */
+        .cloze-text { font-size: 1.1rem; line-height: 2.8; text-align: left; }
+        .gap-input { width: 140px; padding: 8px; border: 2px solid var(--neutral-border); border-radius: 8px; background: rgba(0,0,0,0.4); color: white; text-align: center; font-size: 1rem; transition: border-color 0.3s; margin: 0 5px; }
+        .gap-input:focus { border-color: var(--grade-color); outline: none; }
+        .gap-input.correct { border-color: var(--success-color); background: rgba(76, 175, 80, 0.2); }
+        .gap-input.incorrect { border-color: var(--error-color); background: rgba(244, 67, 54, 0.2); }
+        .gap-input.warning { border-color: var(--warning-color); background: rgba(255, 152, 0, 0.2); }
+        .gap-prompt { color: var(--grade-color); font-weight: bold; font-size: 0.9em; margin-left: 2px; }
+        
+        /* Inline Feedback Box */
+        .feedback-box { color: #ff9e9e; font-size: 0.9em; margin-left: 5px; padding: 4px 8px; border-left: 3px solid var(--error-color); background: rgba(244, 67, 54, 0.1); display: none; border-radius: 5px; vertical-align: middle; }
+        .feedback-box.warning { color: var(--warning-color); border-left-color: var(--warning-color); background: rgba(255, 152, 0, 0.1); }
+        .task-instruction { margin-bottom: 15px; font-weight: bold; color: var(--gold); background: rgba(255, 215, 0, 0.1); padding: 10px; border-radius: 8px; border-left: 4px solid var(--gold); }
+        
+        .master-badge { display: none; background: linear-gradient(145deg, #ffd700, #b8860b); color: #000; padding: 25px; border-radius: 20px; margin-top: 40px; font-weight: bold; text-align: center; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+        .back-btn { background: transparent; border: 1.5px solid var(--grade-color); color: var(--text-color); padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-bottom: 20px; font-weight: bold; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .back-btn:hover { background: var(--grade-color); color: #0f172a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <a href="klasse7.html" class="back-btn">← Zurück zum Dashboard</a>
+        
+        <header>
+            <div class="school-name">Ignaz-Reder-Realschule</div>
+            <h1>If-clauses: Type 0 & 1</h1>
+        </header>
+
+        <div class="info-box" id="topic-info">
+            <h4>Grammar Check</h4>
+            <div class="example-box">
+                <b>Type 0 (Fakten & Naturgesetze):</b><br>
+                if + Simple Present, Simple Present.<br>
+                <i>If you heat ice, it melts. (Wenn man Eis erhitzt, schmilzt es.)</i><br><br>
+
+                <b>Type 1 (Reale Bedingungen in der Zukunft):</b><br>
+                if + Simple Present, will-future.<br>
+                <i>If it rains, we will stay at home. (Wenn es regnet, werden wir zuhause bleiben.)</i><br><br>
+
+                ⚠️ <b>Die wichtigste Regel:</b><br>
+                <span style="color:var(--gold); font-weight:bold;">"If und will ist der Grammatik-Kill!"</span><br>
+                Im Teil mit dem "If" darf <b>niemals</b> ein "will" stehen!
+            </div>
+        </div>
+        
+        <!-- Accordion -->
+        <div id="exercise-accordion">
+            <div class="accordion-item" id="item-ex1"><div class="accordion-header" onclick="toggleAccordion(1)"><span id="label-ex1">Exercise 1: Type 0 (Facts)</span><span class="status-icon" id="status-ex1">🔒 Locked</span></div><div class="accordion-content" id="content-ex1"></div></div>
+            <div class="accordion-item" id="item-ex2"><div class="accordion-header" onclick="toggleAccordion(2)"><span id="label-ex2">Exercise 2: Type 1 (Plans)</span><span class="status-icon" id="status-ex2">🔒 Locked</span></div><div class="accordion-content" id="content-ex2"></div></div>
+            <div class="accordion-item" id="item-ex3"><div class="accordion-header" onclick="toggleAccordion(3)"><span id="label-ex3">Exercise 3: Type Mix (0 & 1)</span><span class="status-icon" id="status-ex3">🔒 Locked</span></div><div class="accordion-content" id="content-ex3"></div></div>
+            <div class="accordion-item" id="item-ex4"><div class="accordion-header" onclick="toggleAccordion(4)"><span id="label-ex4">Exercise 4: Match the Halves</span><span class="status-icon" id="status-ex4">🔒 Locked</span></div><div class="accordion-content" id="content-ex4"></div></div>
+            <div class="accordion-item" id="item-ex5"><div class="accordion-header" onclick="toggleAccordion(5)"><span id="label-ex5">Exercise 5: Sentence Scramble</span><span class="status-icon" id="status-ex5">🔒 Locked</span></div><div class="accordion-content" id="content-ex5"></div></div>
+        </div>
+        
+        <div id="master-badge-container" class="master-badge">
+            🏆 MASTER BADGE EARNED: If-clauses 0/1 Master!<br>
+            <span style="font-size: 0.9rem; font-weight: normal; margin-top: 5px; display: block;">Du hast alle 5 Übungen erfolgreich abgeschlossen. Der Stern auf dem Dashboard leuchtet nun!</span>
+        </div>
+        
+        <div id="master-badge-container" class="master-badge">
+            🏆 MASTER BADGE EARNED: If-clauses 0/1 Master!<br>
+            <span style="font-size: 0.9rem; font-weight: normal; margin-top: 5px; display: block;">Du hast alle 3 Übungen erfolgreich abgeschlossen. Der Stern auf dem Dashboard leuchtet nun!</span>
+        </div>
+    </div>
+
+    <script>
+        // Lokaler State für die Übungen AUF DIESER SEITE
+        let state = JSON.parse(localStorage.getItem('grammar_g7_if1_state')) || {};
+
+        const exerciseData = {
+            '1': { 
+                type: 'cloze', 
+                instruction: "Type 0: Hier geht es um Dinge, die immer wahr sind (Fakten). Beide Satzteile stehen im <b>Simple Present</b>.",
+                items: [
+                    {textBefore:"If you heat ice, it", prompt:"(melt)", textAfter:".", correct:["melts"]},
+                    {textBefore:"Plants die if they", prompt:"(not / get)", textAfter:"water.", correct:["don't get", "do not get"]},
+                    {textBefore:"If you", prompt:"(mix)", textAfter:"blue and yellow, you get green.", correct:["mix"]},
+                    {textBefore:"If it is 12 o'clock in London, it", prompt:"(be)", textAfter:"1 pm in Berlin.", correct:["is"]},
+                    {textBefore:"Snakes bite if they", prompt:"(be)", textAfter:"scared.", correct:["are"]},
+                    {textBefore:"If you", prompt:"(not / eat)", textAfter:", you get hungry.", correct:["don't eat", "do not eat"]},
+                    {textBefore:"Ice turns to water if you", prompt:"(leave)", textAfter:"it in the sun.", correct:["leave"]},
+                    {textBefore:"If you press the button, the light", prompt:"(come)", textAfter:"on.", correct:["comes"]}
+                ] 
+            },
+            '2': { 
+                type: 'cloze', 
+                instruction: "Type 1: Reale Bedingungen. Der if-Satz steht im <b>Simple Present</b>, der Hauptsatz im <b>will-future</b>.",
+                items: [
+                    {textBefore:"If I have enough money, I", prompt:"(buy)", textAfter:"that new game.", correct:["will buy", "'ll buy"]},
+                    {textBefore:"We will go out if it", prompt:"(not / rain)", textAfter:".", correct:["doesn't rain", "does not rain"]},
+                    {textBefore:"If you", prompt:"(help)", textAfter:"me, I will finish faster.", correct:["help"]},
+                    {textBefore:"She will be angry if you", prompt:"(be)", textAfter:"late.", correct:["are"]},
+                    {textBefore:"If he", prompt:"(study)", textAfter:", he will pass.", correct:["studies"]},
+                    {textBefore:"I", prompt:"(call)", textAfter:"you if I find it.", correct:["will call", "'ll call"]},
+                    {textBefore:"If we", prompt:"(hurry)", textAfter:", we will catch it.", correct:["hurry"]},
+                    {textBefore:"They will stay if they", prompt:"(feel)", textAfter:"ill.", correct:["feel"]}
+                ] 
+            },
+            '3': { 
+                type: 'cloze', 
+                instruction: "Mix of Type 0 and 1: Entscheide selbst, ob es ein Fakt (Typ 0) oder eine Zukunftsbedingung (Typ 1) ist. Und Vorsicht vor dem Grammatik-Kill!",
+                items: [
+                    {textBefore:"If I see him, I", prompt:"(tell)", textAfter:"him.", correct:["will tell", "'ll tell"]}, 
+                    {textBefore:"Ice melts if you", prompt:"(heat)", textAfter:"it.", correct:["heat"]}, 
+                    {textBefore:"If we", prompt:"(not / hurry)", textAfter:", we will be late.", correct:["do not hurry", "don't hurry"]}, 
+                    {textBefore:"You get green if you", prompt:"(mix)", textAfter:"blue and yellow.", correct:["mix"]}, 
+                    {textBefore:"If she", prompt:"(come)", textAfter:", I will be happy.", correct:["comes"]}, 
+                    {textBefore:"Plants die if they", prompt:"(not / get)", textAfter:"water.", correct:["do not get", "don't get"]}, 
+                    {textBefore:"I", prompt:"(help)", textAfter:"you if I have time.", correct:["will help", "'ll help"]}, 
+                    {textBefore:"If the sun", prompt:"(shine)", textAfter:", we go out.", correct:["shines"]}
+                ] 
+            },
+            '4': {
+                type: 'mc',
+                questions: [
+                    {text: "If you don't wear a jacket, ...", options: ["... you will catch a cold.", "... you catch a cold.", "... you would catch a cold."], correct: "... you will catch a cold."},
+                    {text: "Ice melts ...", options: ["... if you heat it.", "... if you will heat it.", "... if you heated it."], correct: "... if you heat it."},
+                    {text: "We will stay at home ...", options: ["... if it rains tomorrow.", "... if it will rain tomorrow.", "... if it raining."], correct: "... if it rains tomorrow."},
+                    {text: "If I find your keys, ...", options: ["... I will call you.", "... I call you.", "... I would call you."], correct: "... I will call you."},
+                    {text: "You get green ...", options: ["... if you mix blue and yellow.", "... if you will mix blue and yellow.", "... if you are mixing blue and yellow."], correct: "... if you mix blue and yellow."}
+                ]
+            },
+            '5': {
+                type: 'scramble',
+                sentences: [
+                    {correct: "If it rains, we will stay at home.", words: ["If", "it", "rains,", "we", "will", "stay", "at", "home."]},
+                    {correct: "We will stay at home if it rains.", words: ["We", "will", "stay", "at", "home", "if", "it", "rains."]},
+                    {correct: "If she comes, I will be happy.", words: ["If", "she", "comes,", "I", "will", "be", "happy."]},
+                    {correct: "I will call you if I find it.", words: ["I", "will", "call", "you", "if", "I", "find", "it."]},
+                    {correct: "Ice turns to water if you heat it.", words: ["Ice", "turns", "to", "water", "if", "you", "heat", "it."]}
+                ]
+            }
+        };
+
+        function toggleAccordion(num) {
+            const item = document.getElementById('item-ex'+num); 
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+            if(!isActive) { 
+                item.classList.add('active'); 
+                renderEx(num); 
+            }
+        }
+
+        function renderEx(num) {
+            const container = document.getElementById('content-ex'+num);
+            if(container.innerHTML !== "") return;
+            
+            const data = exerciseData[num];
+            if(data.type === 'cloze') renderCloze(num, container);
+            else if(data.type === 'mc') renderMC(num, container);
+            else if(data.type === 'scramble') renderScramble(num, container);
+        }
+
+        // --- MATCH THE HALVES (MC-Format) ---
+        function renderMC(id, container) {
+            const d = exerciseData[id]; 
+            container.innerHTML = `<p style="margin-bottom:15px;">Wähle die richtige Satzhälfte aus, um den Satz sinnvoll und grammatikalisch korrekt zu beenden!</p><div id="mc-box-${id}"></div>`;
+            const box = document.getElementById(`mc-box-${id}`);
+            
+            const renderQ = (idx) => {
+                if(idx >= d.questions.length) { 
+                    box.innerHTML = `<h3 style='color:var(--success-color); text-align:center;'>Super! Du hast alle Sätze richtig verbunden.</h3>`; 
+                    markDone(id); 
+                    return; 
+                }
+                const q = d.questions[idx]; 
+                box.innerHTML = `<div class="mc-item">
+                                    <div style="font-size:1.1rem; margin-bottom:10px;">
+                                        <span style="color:var(--gold); font-size:0.9rem; font-weight:bold;">Satz ${idx+1}/${d.questions.length}</span><br>
+                                        <strong>${q.text}</strong>
+                                    </div>
+                                    <div class="mc-options"></div>
+                                 </div>`;
+                
+                // Mische die Optionen, damit die richtige Antwort nicht immer an derselben Stelle ist
+                const shuffledOptions = [...q.options].sort(() => 0.5 - Math.random());
+                
+                shuffledOptions.forEach(opt => {
+                    const btn = document.createElement('button'); 
+                    btn.className = "mc-btn"; 
+                    btn.innerText = opt;
+                    btn.onclick = () => {
+                        if(opt === q.correct) {
+                            btn.className = "mc-btn correct"; 
+                            box.querySelectorAll('.mc-btn').forEach(b => b.disabled = true);
+                            setTimeout(() => renderQ(idx+1), 700);
+                        } else { 
+                            btn.className = "mc-btn wrong"; 
+                            setTimeout(() => btn.className = "mc-btn", 600); 
+                        }
+                    };
+                    box.querySelector('.mc-options').appendChild(btn);
+                });
+            };
+            renderQ(0);
+        }
+
+        // --- SCRAMBLE (Satzbau) ---
+        function renderScramble(id, container) {
+            const d = exerciseData[id];
+            container.innerHTML = `<p style="margin-bottom:15px;">Achte auf die Kommasetzung! Steht das "if" am Anfang, kommt ein Komma in die Mitte. Steht das "if" in der Mitte, gibt es <b>kein</b> Komma!</p>`;
+            
+            d.sentences.forEach((s, idx) => {
+                const w = document.createElement('div'); w.className="scramble-item";
+                const p = document.createElement('div'); p.className="scramble-pool";
+                const r = document.createElement('div'); r.className="scramble-result"; r.id=`scr-res-${id}-${idx}`;
+                
+                [...s.words].sort(()=>0.5-Math.random()).forEach(word => {
+                    const sp = document.createElement('span'); sp.className="scramble-word"; sp.innerText=word;
+                    sp.onclick = () => { 
+                        if(sp.parentElement === p) r.appendChild(sp); 
+                        else p.appendChild(sp); 
+                    };
+                    p.appendChild(sp);
+                });
+                w.appendChild(p); w.appendChild(r); container.appendChild(w);
+            });
+            
+            const btn = document.createElement('button'); 
+            btn.className='exercise-button'; btn.innerText="Check"; btn.style.margin="20px auto"; btn.style.display="block";
+            
+            btn.onclick = () => {
+                let ok = 0; 
+                d.sentences.forEach((s, i) => {
+                    const txt = Array.from(document.getElementById(`scr-res-${id}-${i}`).children).map(c=>c.innerText).join(' ');
+                    if(txt.toLowerCase() === s.correct.toLowerCase()) {
+                        ok++;
+                        document.getElementById(`scr-res-${id}-${i}`).style.borderColor = "var(--success-color)";
+                    } else {
+                        document.getElementById(`scr-res-${id}-${i}`).style.borderColor = "var(--error-color)";
+                    }
+                });
+                
+                if(ok === d.sentences.length) {
+                    markDone(id); 
+                } else { 
+                    alert(ok + " von " + d.sentences.length + " Sätzen sind richtig. Prüfe die rot markierten Sätze noch einmal!"); 
+                }
+            };
+            container.appendChild(btn);
+        }
+
+        // --- CLOZE (LÜCKENTEXT) ---
+        function renderCloze(id, container) {
+            const d = exerciseData[id]; 
+            const items = d.items; 
+            
+            let h = `<div class="cloze-text">${d.instruction ? `<div class="task-instruction">${d.instruction}</div>` : ''}`;
+            items.forEach((item, i) => {
+                h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : ""}</span> ${item.textAfter} <span id="fb-${id}-${i}" class="feedback-box"></span> <br>`;
+            });
+            h += `</div><div style="text-align: center;"><button class="exercise-button" style="margin-top:20px;" onclick="checkCloze('${id}')">Check</button></div>`;
+            container.innerHTML = h;
+            
+            window.checkCloze = (xid) => {
+                const dt = exerciseData[xid]; 
+                const its = dt.items; 
+                let ok = 0;
+                
+                its.forEach((it, i) => {
+                    const el = document.getElementById(`gap-${xid}-${i}`); 
+                    const fb = document.getElementById(`fb-${xid}-${i}`);
+                    const val = el.value.toLowerCase().trim().replace(/’/g, "'");
+                    const correctArr = it.correct.map(x => x.toLowerCase().trim());
+
+                    // Intelligente Warnung: "If und will ist der Grammatik-Kill!"
+                    if (val.includes("will") || val.includes("'ll")) {
+                        // Prüfen, ob "will" wirklich falsch ist (wenn es nicht in den Lösungen steht)
+                        if (!correctArr.some(c => c.includes("will") || c.includes("'ll"))) {
+                            el.className = "gap-input warning";
+                            fb.innerHTML = "Tipp: <b>'If' und 'will' ist der Grammatik-Kill!</b> Kein 'will' im if-Satz.";
+                            fb.className = "feedback-box warning";
+                            fb.style.display = "inline-block";
+                            return;
+                        }
+                    }
+
+                    // Intelligente Warnung: 3. Person Singular "s" vergessen (bei Typ 0 und 1 sehr häufig!)
+                    if (val !== "" && correctArr[0].endsWith('s') && !val.endsWith('s') && correctArr[0] === val + 's') {
+                        el.className = "gap-input warning";
+                        fb.innerHTML = "Remember: He, she, it – das 's' muss mit!";
+                        fb.className = "feedback-box warning";
+                        fb.style.display = "inline-block";
+                        return;
+                    }
+
+                    if(correctArr.includes(val)) { 
+                        el.className="gap-input correct"; 
+                        fb.style.display="none"; 
+                        ok++; 
+                    } else { 
+                        el.className="gap-input incorrect"; 
+                        fb.innerHTML=`Lösung: <b>${it.correct[0]}</b>`; 
+                        fb.className = "feedback-box";
+                        fb.style.display="inline-block"; 
+                    }
+                });
+                
+                if(ok === its.length) markDone(xid);
+            };
+        }
+
+        // --- PROGRESS & MASTERY SYSTEM ---
+        function markDone(num) {
+            state[num] = true; 
+            localStorage.setItem('grammar_g7_if1_state', JSON.stringify(state));
+            updateStatus(num); 
+            checkMaster(); 
+            setTimeout(() => alert("Klasse! Übung abgeschlossen."), 50);
+        }
+
+        function updateStatus(num) {
+            const item = document.getElementById('item-ex' + num); 
+            const status = document.getElementById('status-ex' + num); 
+            const header = item.querySelector('.accordion-header');
+            
+            if (state[num]) { 
+                item.classList.add('done'); 
+                status.innerText = "✅ Completed"; 
+                header.classList.add('done-header'); 
+            } else { 
+                item.classList.remove('done'); 
+                status.innerText = "🔒 Locked"; 
+                header.classList.remove('done-header'); 
+            }
+        }
+
+        function checkMaster() {
+            const totalExercises = 5; // Hier gibt es jetzt 5 Übungen!
+            const all = []; 
+            for(let i=1; i<=totalExercises; i++) { 
+                all.push(state[`${i}`]); 
+            }
+            
+            if (all.every(val => val === true)) {
+                document.getElementById('master-badge-container').style.display = 'block';
+                // Wichtig: Key entspricht dem, was das Grade 7 Dashboard abfragt!
+                localStorage.setItem('grammar_g7_if1_mastered', 'true');
+            } else { 
+                document.getElementById('master-badge-container').style.display = 'none'; 
+            }
+        }
+
+        window.onload = () => { 
+            for(let i=1; i<=5; i++) {
+                updateStatus(i);
+            }
+            checkMaster();
+        };
+    </script>
+</body>
+</html>

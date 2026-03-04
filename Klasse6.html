@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 6 - Grammar Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --grade-violet: #8b5cf6;
+            --bg-dark: #0f172a;
+        }
+        body { 
+            background: linear-gradient(135deg, #0f172a 0%, #2e1065 100%); 
+            color: #f8fafc; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+        .nav-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .nav-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--grade-violet);
+            box-shadow: 0 10px 20px -5px rgba(139, 92, 246, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .nav-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background: var(--grade-violet);
+            opacity: 0.8;
+        }
+        .badge-done {
+            position: absolute;
+            top: 15px; right: 15px;
+            background: #fbbf24; /* Gold */
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: none; /* Wird per JS eingeblendet */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        .is-completed .badge-done {
+            display: inline-block;
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+        .is-completed {
+            border-color: #fbbf24;
+        }
+        .is-completed::before {
+            background: #fbbf24;
+        }
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12 flex flex-col items-center">
+
+    <!-- Header -->
+    <header class="text-center mb-16 w-full max-w-4xl relative">
+        <a href="index.html" class="absolute left-0 top-2 text-violet-300 hover:text-white transition hidden md:block">← Hauptportal</a>
+        <div class="text-violet-400 text-sm font-bold tracking-widest uppercase mb-2">Ignaz-Reder-Realschule</div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Grammar Mastery <span class="text-violet-400">Klasse 6</span></h1>
+        <p class="text-lg text-violet-200 opacity-80 max-w-2xl mx-auto">Wähle ein Thema aus. Sobald du alle Übungen in einem Bereich fehlerfrei absolviert hast, erhältst du den Master-Badge!</p>
+        <a href="index.html" class="mt-6 inline-block text-violet-300 hover:text-white transition md:hidden border border-violet-500/30 px-4 py-2 rounded-lg">← Hauptportal</a>
+    </header>
+
+    <!-- Main Navigation Grid -->
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full">
+        
+        <!-- 1. Simple Past -->
+        <a href="klasse6-simplepast.html" id="card-simplepast" class="nav-card p-8 rounded-2xl flex flex-col justify-center">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">🕰️</div>
+            <h2 class="text-2xl font-bold mb-2">Simple Past</h2>
+            <p class="text-violet-200 text-sm opacity-80">Regelmäßige und unregelmäßige Verben. Abgeschlossene Handlungen in der Vergangenheit.</p>
+        </a>
+
+        <!-- 2. Past Progressive -->
+        <a href="klasse6-pastprog.html" id="card-pastprog" class="nav-card p-8 rounded-2xl flex flex-col justify-center">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">⏳</div>
+            <h2 class="text-2xl font-bold mb-2">Past Progressive</h2>
+            <p class="text-violet-200 text-sm opacity-80">was/were + ing. Handlungen, die zu einem bestimmten Zeitpunkt in der Vergangenheit andauerten.</p>
+        </a>
+
+        <!-- 3. Contrast: Simple Past vs. Past Prog. -->
+        <a href="klasse6-contrast.html" id="card-contrast" class="nav-card p-8 rounded-2xl flex flex-col justify-center md:col-span-2 md:w-3/4 mx-auto">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">⚡</div>
+            <h2 class="text-2xl font-bold mb-2">Simple Past vs. Past Progressive</h2>
+            <p class="text-violet-200 text-sm opacity-80">Der Hintergrund (Progressive) und die plötzlich eintretende Handlung (Simple Past). While & When.</p>
+        </a>
+
+        <!-- 4. Present Perfect -->
+        <a href="klasse6-presperf.html" id="card-presperf" class="nav-card p-8 rounded-2xl flex flex-col justify-center">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">🎯</div>
+            <h2 class="text-2xl font-bold mb-2">Present Perfect</h2>
+            <p class="text-violet-200 text-sm opacity-80">have/has + 3. Form. Resultate in der Gegenwart, Erfahrungen und "Since vs. For".</p>
+        </a>
+
+        <!-- 5. Future Forms -->
+        <a href="klasse6-future.html" id="card-future" class="nav-card p-8 rounded-2xl flex flex-col justify-center">
+            <span class="badge-done">MASTERED ★</span>
+            <div class="text-4xl mb-4">🔮</div>
+            <h2 class="text-2xl font-bold mb-2">Future Forms</h2>
+            <p class="text-violet-200 text-sm opacity-80">will-future vs. going to-future. Vorhersagen, spontane Entschlüsse und feste Pläne.</p>
+        </a>
+
+    </main>
+
+    <!-- Footer / Information -->
+    <footer class="mt-16 text-violet-400/50 text-sm text-center">
+        <button onclick="resetAllG6()" class="hover:text-red-400 transition underline mb-4">Alle Klasse 6 Fortschritte löschen</button>
+        <p>&copy; 2024 Grammar Mastery - Ignaz-Reder-Realschule</p>
+    </footer>
+
+    <script>
+        // Diese Funktion prüft beim Laden der Seite, ob die Einzeldateien 
+        // bereits den Master-Badge-Status im Browser gespeichert haben.
+        function checkProgress() {
+            // Die Keys, die wir in den jeweiligen Einzeldateien verwenden werden:
+            const topics = [
+                { id: 'simplepast', storageKey: 'grammar_g6_simplepast_mastered' },
+                { id: 'pastprog', storageKey: 'grammar_g6_pastprog_mastered' },
+                { id: 'contrast', storageKey: 'grammar_g6_contrast_mastered' },
+                { id: 'presperf', storageKey: 'grammar_g6_presperf_mastered' },
+                { id: 'future', storageKey: 'grammar_g6_future_mastered' }
+            ];
+
+            topics.forEach(topic => {
+                // Liest den Status aus dem Browser-Speicher
+                const isMastered = localStorage.getItem(topic.storageKey) === 'true';
+                
+                if (isMastered) {
+                    const card = document.getElementById('card-' + topic.id);
+                    if (card) {
+                        card.classList.add('is-completed');
+                    }
+                }
+            });
+        }
+
+        // Erlaubt es, alle Fortschritte der 6. Klasse auf einmal zu löschen
+        function resetAllG6() {
+            if(confirm("Möchtest du wirklich alle gesammelten Badges der 6. Klasse löschen?")) {
+                localStorage.removeItem('grammar_g6_simplepast_mastered');
+                localStorage.removeItem('grammar_g6_pastprog_mastered');
+                localStorage.removeItem('grammar_g6_contrast_mastered');
+                localStorage.removeItem('grammar_g6_presperf_mastered');
+                localStorage.removeItem('grammar_g6_future_mastered');
+                location.reload();
+            }
+        }
+
+        // Führe die Prüfung aus, sobald die Seite geladen ist
+        window.onload = checkProgress;
+    </script>
+</body>
+</html>

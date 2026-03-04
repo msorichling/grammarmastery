@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 6 - Past Progressive</title>
+    <style>
+        :root {
+            --grade-color: #8b5cf6; /* Violett für Klasse 6 */
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #2e1065 100%);
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --text-color: #e6f7ff;
+            --success-color: #4caf50;
+            --error-color: #f44336;
+            --warning-color: #ff9800;
+            --gold: #ffd700;
+            --neutral-border: rgba(255, 255, 255, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient); background-attachment: fixed;
+            color: var(--text-color); margin: 0; padding: 0; min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 1100px; padding: 40px 20px; margin: 0 auto; box-sizing: border-box; }
+        .view { display: none; width: 100%; }
+        .view.active { display: block; animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        header { text-align: center; margin-bottom: 40px; }
+        .school-name { font-size: 1.2rem; color: var(--neutral-border); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        h1 { color: #c4b5fd; text-shadow: 0 0 15px rgba(139, 92, 246, 0.4); font-size: 2.5rem; margin-bottom: 10px; }
+
+        .info-box {
+            background: rgba(139, 92, 246, 0.1); border: 2px solid var(--grade-color); border-radius: 15px; padding: 20px;
+            margin-bottom: 30px; box-shadow: 0 0 20px rgba(139, 92, 246, 0.2); text-align: left;
+        }
+        .info-box h4 { margin-top: 0; color: var(--grade-color); font-size: 1.2rem; }
+        .info-box .example-box { background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border-left: 4px solid var(--grade-color); margin-bottom: 10px; }
+
+        .exercise-button {
+            padding: 15px; color: white; background: rgba(139, 92, 246, 0.15); border: 1px solid var(--grade-color);
+            border-radius: 12px; font-weight: bold; cursor: pointer; text-align: center; transition: 0.3s; display: inline-block;
+        }
+        .exercise-button:hover { background: var(--grade-color); color: #fff; }
+
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); }
+        .accordion-header:hover { background: rgba(255,255,255,0.05); }
+        .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item.active .accordion-content { display: block; }
+        .accordion-item.done { border-color: var(--success-color); }
+        .done-header { background: rgba(76, 175, 80, 0.1) !important; }
+
+        /* Sorter Styles */
+        .pool { margin-bottom: 25px; min-height: 80px; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; text-align: center; }
+        .sort-item { background: var(--grade-color); color: white; padding: 8px 14px; border-radius: 6px; margin: 6px; cursor: pointer; display: inline-block; font-weight: bold; user-select: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3); transition: transform 0.1s; }
+        .sort-item:hover { transform: scale(1.05); }
+        .sort-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .sort-box { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; min-height: 150px; border: 2px dashed rgba(255,255,255,0.2); text-align: center; cursor: pointer; }
+        
+        /* Factory Table Styles (für die Spelling-Übung) */
+        .factory-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .factory-table th, .factory-table td { padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: left; }
+        .factory-table th { color: var(--grade-color); }
+
+        /* Cloze Styles */
+        .cloze-text { font-size: 1.1rem; line-height: 2.8; text-align: left; }
+        .gap-input { width: 150px; padding: 8px; border: 2px solid var(--neutral-border); border-radius: 8px; background: rgba(0,0,0,0.4); color: white; text-align: center; font-size: 1rem; transition: border-color 0.3s; margin: 0 5px; }
+        .gap-input:focus { border-color: var(--grade-color); outline: none; }
+        .gap-input.correct { border-color: var(--success-color); background: rgba(76, 175, 80, 0.2); }
+        .gap-input.incorrect { border-color: var(--error-color); background: rgba(244, 67, 54, 0.2); }
+        .gap-input.warning { border-color: var(--warning-color); background: rgba(255, 152, 0, 0.2); }
+        .gap-prompt { color: var(--grade-color); font-weight: bold; font-size: 0.9em; margin-left: 2px; }
+        
+        /* Inline Feedback Box */
+        .feedback-box { color: #ff9e9e; font-size: 0.9em; margin-left: 5px; padding: 4px 8px; border-left: 3px solid var(--error-color); background: rgba(244, 67, 54, 0.1); display: none; border-radius: 5px; vertical-align: middle; }
+        .feedback-box.warning { color: var(--warning-color); border-left-color: var(--warning-color); background: rgba(255, 152, 0, 0.1); }
+        
+        .master-badge { display: none; background: linear-gradient(145deg, #ffd700, #b8860b); color: #000; padding: 25px; border-radius: 20px; margin-top: 40px; font-weight: bold; text-align: center; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+        .back-btn { background: transparent; border: 1.5px solid var(--grade-color); color: var(--text-color); padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-bottom: 20px; font-weight: bold; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .back-btn:hover { background: var(--grade-color); color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <a href="klasse6.html" class="back-btn">← Zurück zum Dashboard</a>
+        
+        <header>
+            <div class="school-name">Ignaz-Reder-Realschule</div>
+            <h1>Past Progressive</h1>
+        </header>
+
+        <div class="info-box" id="topic-info">
+            <h4>Grammar Check</h4>
+            <div class="example-box">
+                <b>Verwendung:</b> Handlungen, die zu einem bestimmten Zeitpunkt in der Vergangenheit im Gange waren ("Ich war gerade dabei..."). Wird oft für Hintergrundbeschreibungen genutzt.<br>
+                <b>Bildung:</b> <b>was / were + verb-ing</b>.<br>
+                <b>I / he / she / it</b> = was.<br>
+                <b>you / we / they</b> = were.<br>
+            </div>
+        </div>
+        
+        <!-- Accordion -->
+        <div id="exercise-accordion">
+            <div class="accordion-item" id="item-ex1"><div class="accordion-header" onclick="toggleAccordion(1)"><span id="label-ex1">Exercise 1: Was or Were?</span><span class="status-icon" id="status-ex1">🔒 Locked</span></div><div class="accordion-content" id="content-ex1"></div></div>
+            <div class="accordion-item" id="item-ex2"><div class="accordion-header" onclick="toggleAccordion(2)"><span id="label-ex2">Exercise 2: The -ing Forge</span><span class="status-icon" id="status-ex2">🔒 Locked</span></div><div class="accordion-content" id="content-ex2"></div></div>
+            <div class="accordion-item" id="item-ex3"><div class="accordion-header" onclick="toggleAccordion(3)"><span id="label-ex3">Exercise 3: A Strange Day</span><span class="status-icon" id="status-ex3">🔒 Locked</span></div><div class="accordion-content" id="content-ex3"></div></div>
+            <div class="accordion-item" id="item-ex4"><div class="accordion-header" onclick="toggleAccordion(4)"><span id="label-ex4">Exercise 4: Family Chaos</span><span class="status-icon" id="status-ex4">🔒 Locked</span></div><div class="accordion-content" id="content-ex4"></div></div>
+            <div class="accordion-item" id="item-ex5"><div class="accordion-header" onclick="toggleAccordion(5)"><span id="label-ex5">Exercise 5: The Accident</span><span class="status-icon" id="status-ex5">🔒 Locked</span></div><div class="accordion-content" id="content-ex5"></div></div>
+        </div>
+        
+        <div id="master-badge-container" class="master-badge">
+            🏆 MASTER BADGE EARNED: Past Progressive!<br>
+            <span style="font-size: 0.9rem; font-weight: normal; margin-top: 5px; display: block;">Du hast alle Übungen erfolgreich abgeschlossen. Der Stern auf dem Dashboard leuchtet nun!</span>
+        </div>
+    </div>
+
+    <script>
+        // Lokaler State für die Übungen AUF DIESER SEITE
+        let state = JSON.parse(localStorage.getItem('grammar_g6_pastprog_state')) || {};
+        let activeSortingElement = null;
+
+        const exerciseData = {
+            '1': { 
+                type: 'sort', 
+                left: "WAS", 
+                right: "WERE", 
+                items: [
+                    {word:'The kids', cat:'right'}, {word:'My dog', cat:'left'},
+                    {word:'You', cat:'right'}, {word:'Sarah and I', cat:'right'},
+                    {word:'It', cat:'left'}, {word:'The bus', cat:'left'},
+                    {word:'We', cat:'right'}, {word:'He', cat:'left'},
+                    {word:'They', cat:'right'}, {word:'The man', cat:'left'}
+                ] 
+            },
+            '2': { 
+                type: 'spelling', 
+                items: [
+                    {inf:"make", correct:"making", warning:"makeing"},
+                    {inf:"run", correct:"running"},
+                    {inf:"play", correct:"playing"},
+                    {inf:"sit", correct:"sitting"},
+                    {inf:"lie", correct:"lying"},
+                    {inf:"write", correct:"writing", warning:"writeing"},
+                    {inf:"swim", correct:"swimming"},
+                    {inf:"travel", correct:"travelling"},
+                    {inf:"dance", correct:"dancing", warning:"danceing"},
+                    {inf:"study", correct:"studying"}
+                ] 
+            },
+            '3': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"Yesterday at 3pm, the sun", prompt:"(shine)", textAfter:".", correct:["was shining"]},
+                    {textBefore:"The birds", prompt:"(sing)", textAfter:"in the trees.", correct:["were singing"]},
+                    {textBefore:"I", prompt:"(sit)", textAfter:"on a bench.", correct:["was sitting"]},
+                    {textBefore:"Two dogs", prompt:"(play)", textAfter:"with a ball.", correct:["were playing"]},
+                    {textBefore:"A man", prompt:"(read)", textAfter:"a newspaper.", correct:["was reading"]},
+                    {textBefore:"He", prompt:"(not / look)", textAfter:"at the ducks.", correct:["was not looking", "wasn't looking"]},
+                    {textBefore:"Some kids", prompt:"(run)", textAfter:"around.", correct:["were running"]},
+                    {textBefore:"We", prompt:"(enjoy)", textAfter:"the afternoon.", correct:["were enjoying"]}
+                ] 
+            },
+            '4': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"Last night, we", prompt:"(have)", textAfter:"dinner.", correct:["were having"]},
+                    {textBefore:"My dad", prompt:"(cook)", textAfter:"pasta.", correct:["was cooking"]},
+                    {textBefore:"My sister", prompt:"(help)", textAfter:"him.", correct:["was helping"]},
+                    {textBefore:"I", prompt:"(not / do)", textAfter:"anything.", correct:["was not doing", "wasn't doing"]},
+                    {textBefore:"You", prompt:"(watch)", textAfter:"TV.", correct:["were watching"]},
+                    {textBefore:"The cat", prompt:"(sleep)", textAfter:"on the sofa.", correct:["was sleeping"]},
+                    {textBefore:"It", prompt:"(not / rain)", textAfter:"outside.", correct:["was not raining", "wasn't raining"]},
+                    {textBefore:"We", prompt:"(wait)", textAfter:"for mum.", correct:["were waiting"]}
+                ] 
+            },
+            '5': { 
+                type: 'cloze', 
+                items: [
+                    {textBefore:"I", prompt:"(walk)", textAfter:"home when I saw the accident.", correct:["was walking"]},
+                    {textBefore:"The driver", prompt:"(not / drive)", textAfter:"fast when he hit the tree.", correct:["was not driving", "wasn't driving"]},
+                    {textBefore:"People", prompt:"(stand)", textAfter:"on the street.", correct:["were standing"]},
+                    {textBefore:"A policeman", prompt:"(talk)", textAfter:"to a woman.", correct:["was talking"]},
+                    {textBefore:"While I", prompt:"(watch)", textAfter:", my phone rang.", correct:["was watching"]},
+                    {textBefore:"It was my mum. She", prompt:"(call)", textAfter:"me.", correct:["called"]}, /* Trick-Frage: Simple Past hier, weil unterbrechend! (aus deiner Vorlage) */
+                    {textBefore:"I", prompt:"(tell)", textAfter:"her what was happening.", correct:["told"]},     /* Simple Past */
+                    {textBefore:"We", prompt:"(go)", textAfter:"home together later.", correct:["went"]}        /* Simple Past */
+                ] 
+            }
+        };
+
+        function toggleAccordion(num) {
+            const item = document.getElementById('item-ex'+num); 
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+            if(!isActive) { 
+                item.classList.add('active'); 
+                renderEx(num); 
+            }
+        }
+
+        function renderEx(num) {
+            const container = document.getElementById('content-ex'+num);
+            if(container.innerHTML !== "") return;
+            
+            const data = exerciseData[num];
+            
+            if(data.type === 'cloze') renderCloze(num, container);
+            else if(data.type === 'sort') renderSort(num, container);
+            else if(data.type === 'spelling') renderSpelling(num, container);
+        }
+
+        // --- SORTIER ÜBUNG (WAS or WERE) ---
+        function renderSort(id, container) {
+            const d = exerciseData[id]; 
+            container.innerHTML = `<p>Ordne die Subjekte der richtigen Form von "to be" zu!</p>
+                                   <div id="p-${id}" class="pool"></div>
+                                   <div class="sort-container">
+                                     <div class="sort-box" id="bl-${id}"><strong>${d.left}</strong><hr></div>
+                                     <div class="sort-box" id="br-${id}"><strong>${d.right}</strong><hr></div>
+                                   </div>
+                                   <div style="text-align: center;">
+                                     <button class="exercise-button" style="margin-top:20px" onclick="checkSort('${id}')">Check</button>
+                                   </div>`;
+            
+            const p = document.getElementById('p-'+id);
+            [...d.items].sort(() => 0.5 - Math.random()).forEach(it => {
+                const s = document.createElement('span'); 
+                s.className = 'sort-item'; 
+                s.innerText = it.word;
+                s.onclick = (e) => { 
+                    e.stopPropagation(); 
+                    activeSortingElement = s; 
+                    document.querySelectorAll('.sort-item').forEach(x => x.style.boxShadow = "0 2px 5px rgba(0,0,0,0.3)"); 
+                    s.style.boxShadow = "0 0 15px white, 0 0 5px white"; 
+                };
+                p.appendChild(s);
+            });
+            
+            container.querySelector('#bl-'+id).onclick = () => { 
+                if(activeSortingElement){ 
+                    document.getElementById('bl-'+id).appendChild(activeSortingElement); 
+                    activeSortingElement.style.boxShadow = "0 2px 5px rgba(0,0,0,0.3)"; 
+                    activeSortingElement = null; 
+                } 
+            };
+            container.querySelector('#br-'+id).onclick = () => { 
+                if(activeSortingElement){ 
+                    document.getElementById('br-'+id).appendChild(activeSortingElement); 
+                    activeSortingElement.style.boxShadow = "0 2px 5px rgba(0,0,0,0.3)"; 
+                    activeSortingElement = null; 
+                } 
+            };
+            
+            window.checkSort = (xid) => {
+                const data = exerciseData[xid];
+                let err = 0; 
+                data.items.forEach(o => { 
+                    const el = Array.from(document.querySelectorAll(`#content-ex${xid} .sort-item`)).find(x => x.innerText === o.word); 
+                    if(!el || !el.parentElement.id.includes(o.cat === 'left' ? 'bl' : 'br')) {
+                        err++; 
+                        if(el) el.style.backgroundColor = "var(--error-color)";
+                    } else {
+                        if(el) el.style.backgroundColor = "var(--success-color)";
+                    }
+                });
+                
+                if(err === 0) {
+                    document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => x.style.pointerEvents = "none");
+                    markDone(xid); 
+                } else {
+                    alert(`Du hast noch ${err} Fehler. Bitte korrigieren!`);
+                    setTimeout(() => {
+                        document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => x.style.backgroundColor = "var(--grade-color)");
+                    }, 2000);
+                }
+            };
+        }
+
+        // --- SPELLING FORGE (-ing Anhängen) ---
+        function renderSpelling(id, container) {
+            const d = exerciseData[id];
+            let h = `<p>Bilde die <b>-ing Form</b>. Pass auf Ausnahmen auf (z.B. stummes 'e' am Ende oder Verdopplung von Konsonanten)!</p>
+                     <table class="factory-table"><thead><tr><th>Infinitive</th><th>-ing Form</th><th></th></tr></thead><tbody>`;
+            d.items.forEach((it, i) => {
+                h += `<tr>
+                        <td style="font-weight: bold; font-size: 1.1em;">${it.inf}</td>
+                        <td><input type="text" id="spl-${id}-${i}" class="gap-input" style="width:150px" data-correct="${it.correct}" ${it.warning ? `data-warn="${it.warning}"` : ''} autocomplete="off" spellcheck="false"></td>
+                        <td><span id="spl-fb-${id}-${i}" style="margin-left:10px; font-size:0.9rem; font-weight:bold;"></span></td>
+                      </tr>`;
+            });
+            h += `</tbody></table>
+                  <div style="text-align: center;">
+                    <button class="exercise-button" style="margin-top:20px;" onclick="checkSpelling('${id}')">Check</button>
+                  </div>`;
+            container.innerHTML = h;
+            
+            window.checkSpelling = (xid) => {
+                const items = exerciseData[xid].items;
+                let corrects = 0;
+                items.forEach((it, i) => {
+                    const el = document.getElementById(`spl-${xid}-${i}`);
+                    const fb = document.getElementById(`spl-fb-${xid}-${i}`);
+                    const val = el.value.toLowerCase().trim();
+                    
+                    if (val === it.correct) {
+                        el.className = "gap-input correct";
+                        fb.innerText = "✓ Richtig"; 
+                        fb.style.color = "var(--success-color)";
+                        corrects++;
+                    } else if (it.warning && val === it.warning) {
+                        el.className = "gap-input warning";
+                        fb.innerText = "⚠️ Watch out! Das stumme 'e' fällt weg!"; 
+                        fb.style.color = "var(--warning-color)";
+                    } else {
+                        el.className = "gap-input incorrect";
+                        fb.innerText = "✗ Falsch geschrieben"; 
+                        fb.style.color = "var(--error-color)";
+                    }
+                });
+                if(corrects === items.length) markDone(xid);
+            };
+        }
+
+        // --- CLOZE (LÜCKENTEXT) ---
+        function renderCloze(id, container) {
+            const d = exerciseData[id]; 
+            const items = d.items; 
+            
+            let h = `<div class="cloze-text">`;
+            items.forEach((item, i) => {
+                h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : ""}</span> ${item.textAfter} <span id="fb-${id}-${i}" class="feedback-box"></span> `;
+            });
+            h += `</div><div style="text-align: center;"><button class="exercise-button" style="margin-top:20px;" onclick="checkCloze('${id}')">Check</button></div>`;
+            container.innerHTML = h;
+            
+            window.checkCloze = (xid) => {
+                const dt = exerciseData[xid]; 
+                const its = dt.items; 
+                let ok = 0;
+                
+                its.forEach((it, i) => {
+                    const el = document.getElementById(`gap-${xid}-${i}`); 
+                    const fb = document.getElementById(`fb-${xid}-${i}`);
+                    const val = el.value.toLowerCase().trim();
+                    const correctArr = it.correct.map(x => x.toLowerCase().trim());
+
+                    if(correctArr.includes(val)) { 
+                        el.className="gap-input correct"; 
+                        fb.style.display="none"; 
+                        ok++; 
+                    } else { 
+                        el.className="gap-input incorrect"; 
+                        fb.innerHTML=`Lösung: <b>${it.correct[0]}</b>`; 
+                        fb.className = "feedback-box";
+                        fb.style.display="inline-block"; 
+                    }
+                });
+                
+                if(ok === its.length) markDone(xid);
+            };
+        }
+
+        // --- PROGRESS & MASTERY SYSTEM ---
+        function markDone(num) {
+            state[num] = true; 
+            localStorage.setItem('grammar_g6_pastprog_state', JSON.stringify(state));
+            updateStatus(num); 
+            checkMaster(); 
+            // Kleiner Delay für den Alert, damit CSS aktualisiert wird
+            setTimeout(() => alert("Klasse! Übung abgeschlossen."), 50);
+        }
+
+        function updateStatus(num) {
+            const item = document.getElementById('item-ex' + num); 
+            const status = document.getElementById('status-ex' + num); 
+            const header = item.querySelector('.accordion-header');
+            
+            if (state[num]) { 
+                item.classList.add('done'); 
+                status.innerText = "✅ Completed"; 
+                header.classList.add('done-header'); 
+            } else { 
+                item.classList.remove('done'); 
+                status.innerText = "🔒 Locked"; 
+                header.classList.remove('done-header'); 
+            }
+        }
+
+        function checkMaster() {
+            const totalExercises = 5;
+            const all = []; 
+            for(let i=1; i<=totalExercises; i++) { 
+                all.push(state[`${i}`]); 
+            }
+            
+            if (all.every(val => val === true)) {
+                document.getElementById('master-badge-container').style.display = 'block';
+                // Hier passiert die Magie: Wir speichern den Master-Badge für das übergeordnete Dashboard!
+                localStorage.setItem('grammar_g6_pastprog_mastered', 'true');
+            } else { 
+                document.getElementById('master-badge-container').style.display = 'none'; 
+            }
+        }
+
+        window.onload = () => { 
+            // Stelle den Status beim Laden der Seite wieder her
+            for(let i=1; i<=5; i++) {
+                updateStatus(i);
+            }
+            checkMaster();
+        };
+    </script>
+</body>
+</html>
