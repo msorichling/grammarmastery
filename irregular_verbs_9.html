@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery Test: Irregular Verbs (9. Klasse)</title>
+    
+    <!-- Tailwind CSS & Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shared-gamification.css">
+    <script src="shared-gamification.js" defer></script>
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #881337 100%);
+            min-height: 100vh;
+        }
+        
+        .quiz-card {
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            border-radius: 24px;
+        }
+
+        /* Specific premium styles for inputs inside irregular verbs grid */
+        .verb-input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .verb-field {
+            width: 100%;
+            padding: 10px 40px 10px 12px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .verb-field:focus {
+            border-color: #f43f5e; /* rose accent for G9 */
+            box-shadow: 0 0 15px rgba(244, 63, 94, 0.3);
+        }
+
+        .verb-field.correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.15) !important;
+            color: #a7f3d0 !important;
+            box-shadow: 0 0 12px rgba(16, 185, 129, 0.2) !important;
+        }
+
+        .verb-field.incorrect {
+            border-color: #f43f5e !important;
+            background: rgba(244, 63, 94, 0.15) !important;
+            color: #fecdd3 !important;
+            box-shadow: 0 0 12px rgba(244, 63, 94, 0.2) !important;
+            animation: shake 0.4s ease-in-out;
+        }
+
+        .verb-field.gm-hinted {
+            border-color: #f59e0b;
+            background: rgba(245, 158, 11, 0.12) !important;
+            color: #fde68a !important;
+            box-shadow: 0 0 10px rgba(245, 158, 11, 0.2) !important;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            75% { transform: translateX(4px); }
+        }
+
+        .verb-correction {
+            font-size: 0.8rem;
+            color: #fda4af;
+            font-weight: 700;
+            margin-top: 4px;
+            display: none;
+        }
+
+        /* Length option cards */
+        .option-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .option-card:hover {
+            transform: translateY(-3px) scale(1.02);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: #f43f5e;
+            box-shadow: 0 10px 20px rgba(244, 63, 94, 0.15);
+        }
+
+        .gm-back-btn {
+            background: none;
+            border: 1.5px solid #f43f5e;
+            color: #f43f5e;
+            padding: 8px 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        
+        .gm-back-btn:hover {
+            background: rgba(244, 63, 94, 0.1);
+            transform: translateX(-3px);
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12 flex flex-col items-center justify-center relative">
+
+    <!-- Glowing Background Blobs -->
+    <div class="gm-glow-blob gm-blob-blue"></div>
+    <div class="gm-glow-blob gm-blob-purple"></div>
+
+    <div class="max-w-xl w-full z-10">
+        
+        <!-- Back Button to Grade Dashboard -->
+        <a href="klasse9-10.html" class="gm-back-btn">← Zurück zum Dashboard</a>
+
+        <!-- START SCREEN: Choose Quiz Length -->
+        <div id="start-screen" class="quiz-card p-8 text-center">
+            <div class="w-16 h-16 rounded-2xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-3xl mx-auto mb-6">
+                ⚡
+            </div>
+            <h1 class="text-3xl font-extrabold text-white mb-2">Irregular Verbs Test</h1>
+            <p class="text-rose-400 font-bold uppercase tracking-widest text-xs mb-6">Klasse 9 • Vokabeltrainer</p>
+            
+            <p class="text-slate-300 text-sm mb-8">
+                Teste dein Wissen über die unregelmäßischen Verben der 9. Klasse. Wähle aus, wie viele Verben du in dieser Runde trainieren möchtest:
+            </p>
+
+            <div class="grid grid-cols-1 gap-4 mb-8">
+                <!-- Option 10 -->
+                <div class="option-card p-5 flex items-center justify-between" onclick="startQuiz(10)">
+                    <div class="text-left">
+                        <h4 class="font-extrabold text-white text-base">🟢 Schnelle Runde</h4>
+                        <p class="text-xs text-slate-400">10 zufällige Verben zum Aufwärmen</p>
+                    </div>
+                    <div class="px-3 py-1 bg-emerald-500/20 border border-emerald-500/30 rounded-lg text-emerald-400 font-extrabold text-sm">
+                        +100 XP max
+                    </div>
+                </div>
+
+                <!-- Option 25 -->
+                <div class="option-card p-5 flex items-center justify-between" onclick="startQuiz(25)">
+                    <div class="text-left">
+                        <h4 class="font-extrabold text-white text-base">🔵 Standard-Training</h4>
+                        <p class="text-xs text-slate-400">25 unregelmäßige Verben im Check</p>
+                    </div>
+                    <div class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-lg text-blue-400 font-extrabold text-sm">
+                        +250 XP max
+                    </div>
+                </div>
+
+                <!-- Option All -->
+                <div class="option-card p-5 flex items-center justify-between" onclick="startQuiz('all')">
+                    <div class="text-left">
+                        <h4 class="font-extrabold text-white text-base">🔥 Marathon-Modus</h4>
+                        <p class="text-xs text-slate-400">Alle 102 unregelmäßigen Verben der 9. Klasse</p>
+                    </div>
+                    <div class="px-3 py-1 bg-rose-500/20 border border-rose-500/30 rounded-lg text-rose-400 font-extrabold text-sm">
+                        +1020 XP max
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-slate-400 text-xs italic">
+                Tipp: Jedes komplett richtige Verb gibt dir +10 XP. Ein genutzter Tipp kostet dich -5 XP.
+            </p>
+        </div>
+
+        <!-- QUIZ SCREEN -->
+        <div id="quiz-screen" class="quiz-card p-8 hidden">
+            <!-- Progress & Header -->
+            <div class="flex justify-between items-center mb-6">
+                <span class="text-xs font-extrabold tracking-widest text-rose-400 uppercase">Irregular Verbs G9</span>
+                <span id="quiz-progress" class="text-xs font-bold text-slate-400">Verb 1 von 10</span>
+            </div>
+
+            <!-- German Word Display -->
+            <div class="text-center py-6 mb-6 bg-white/5 border border-white/10 rounded-2xl">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1">Deutsches Verb:</span>
+                <span id="de-word" class="text-3xl font-extrabold text-white">---</span>
+            </div>
+
+            <!-- Input fields grid -->
+            <div class="space-y-5 mb-8">
+                
+                <!-- Infinitive -->
+                <div class="space-y-1 text-left">
+                    <label class="text-xs font-bold text-slate-300 uppercase tracking-wide">1. Stammform (Infinitive)</label>
+                    <div class="verb-input-wrapper">
+                        <span class="absolute left-3 text-slate-500 font-bold pointer-events-none text-sm">(to)</span>
+                        <input type="text" id="inf-input" class="verb-field pl-12" autocomplete="off" placeholder="Stammform">
+                        
+                        <!-- Hint Bulb -->
+                        <button type="button" class="gm-hint-btn" id="hint-inf" data-tooltip="Tipp nutzen (-5 XP)" title="Ersten Buchstaben anzeigen (-5 XP)">💡</button>
+                        <span class="gm-hint-cost-badge" id="badge-inf">-5 XP</span>
+                    </div>
+                    <div id="inf-corr" class="verb-correction">Richtig: ---</div>
+                </div>
+
+                <!-- Simple Past -->
+                <div class="space-y-1 text-left">
+                    <label class="text-xs font-bold text-slate-300 uppercase tracking-wide">2. Stammform (Simple Past)</label>
+                    <div class="verb-input-wrapper">
+                        <input type="text" id="sp-input" class="verb-field" autocomplete="off" placeholder="Vergangenheit">
+                        
+                        <!-- Hint Bulb -->
+                        <button type="button" class="gm-hint-btn" id="hint-sp" data-tooltip="Tipp nutzen (-5 XP)" title="Ersten Buchstaben anzeigen (-5 XP)">💡</button>
+                        <span class="gm-hint-cost-badge" id="badge-sp">-5 XP</span>
+                    </div>
+                    <div id="sp-corr" class="verb-correction">Richtig: ---</div>
+                </div>
+
+                <!-- Past Participle -->
+                <div class="space-y-1 text-left">
+                    <label class="text-xs font-bold text-slate-300 uppercase tracking-wide">3. Stammform (Past Participle)</label>
+                    <div class="verb-input-wrapper">
+                        <input type="text" id="pp-input" class="verb-field" autocomplete="off" placeholder="Partizip">
+                        
+                        <!-- Hint Bulb -->
+                        <button type="button" class="gm-hint-btn" id="hint-pp" data-tooltip="Tipp nutzen (-5 XP)" title="Ersten Buchstaben anzeigen (-5 XP)">💡</button>
+                        <span class="gm-hint-cost-badge" id="badge-pp">-5 XP</span>
+                    </div>
+                    <div id="pp-corr" class="verb-correction">Richtig: ---</div>
+                </div>
+
+            </div>
+
+            <!-- Action Button -->
+            <button id="main-btn" onclick="handleButtonClick()" class="w-full py-4 bg-rose-500 hover:bg-rose-600 border border-rose-400/20 text-white font-extrabold text-lg rounded-xl shadow-lg shadow-rose-500/20 transition-all hover:scale-[1.02] active:scale-[0.98]">
+                Prüfen
+            </button>
+            <p class="text-slate-400 text-[0.75rem] text-center mt-4">
+                Tipp: Drücke die <b>Enter-Taste</b> für eine schnelle Prüfung und Navigation!
+            </p>
+        </div>
+
+        <!-- RESULT SCREEN -->
+        <div id="result-screen" class="quiz-card p-8 text-center hidden">
+            <div class="w-16 h-16 rounded-full bg-yellow-500/20 border border-yellow-500/30 flex items-center justify-center text-3xl mx-auto mb-6">
+                🏆
+            </div>
+            <h2 class="text-3xl font-extrabold text-white mb-2">Test abgeschlossen!</h2>
+            <p class="text-rose-400 font-bold uppercase tracking-widest text-xs mb-6">Klasse 9 Leistungsauswertung</p>
+
+            <div class="bg-white/5 border border-white/10 rounded-2xl py-6 px-4 mb-8">
+                <p id="final-score" class="text-4xl font-extrabold text-white mb-1">0 von 10</p>
+                <p class="text-xs text-slate-400 uppercase tracking-widest font-bold">Verben komplett richtig gelöst</p>
+            </div>
+
+            <p id="summary-text" class="text-slate-200 font-medium mb-8 px-4 text-base">
+                Super! Du hast prima gearbeitet.
+            </p>
+
+            <div class="flex gap-4">
+                <button onclick="location.reload()" class="flex-1 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl transition">
+                    Nochmal üben
+                </button>
+                <a href="klasse9-10.html" class="flex-1 py-3 bg-rose-500 hover:bg-rose-600 border border-rose-400/20 text-white font-extrabold rounded-xl text-center shadow-md shadow-rose-500/10 flex items-center justify-center">
+                    Zum Dashboard
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Verbs Database & logic script -->
+    <script>
+        const verbData = [
+            { de: "sein", inf: "be", sp: "was/were", pp: "been" },
+            { de: "ertragen, aushalten", inf: "bear", sp: "bore", pp: "borne" },
+            { de: "schlagen, besiegen", inf: "beat", sp: "beat", pp: "beaten" },
+            { de: "werden", inf: "become", sp: "became", pp: "become" },
+            { de: "anfangen, beginnen", inf: "begin", sp: "began", pp: "begun" },
+            { de: "beißen; stechen", inf: "bite", sp: "bit", pp: "bitten" },
+            { de: "bluten", inf: "bleed", sp: "bled", pp: "bled" },
+            { de: "pusten, blasen; wehen", inf: "blow", sp: "blew", pp: "blown" },
+            { de: "brechen", inf: "break", sp: "broke", pp: "broken" },
+            { de: "bringen, mitbringen", inf: "bring", sp: "brought", pp: "brought" },
+            { de: "bauen", inf: "build", sp: "built", pp: "built" },
+            { de: "brennen, verbrennen", inf: "burn", sp: "burnt", pp: "burnt" },
+            { de: "brechen, bersten, platzen", inf: "burst", sp: "burst", pp: "burst" },
+            { de: "kaufen", inf: "buy", sp: "bought", pp: "bought" },
+            { de: "fangen; erwischen", inf: "catch", sp: "caught", pp: "caught" },
+            { de: "wählen, auswählen", inf: "choose", sp: "chose", pp: "chosen" },
+            { de: "kommen", inf: "come", sp: "came", pp: "come" },
+            { de: "kosten", inf: "cost", sp: "cost", pp: "cost" },
+            { de: "schneiden; mähen", inf: "cut", sp: "cut", pp: "cut" },
+            { de: "sich kümmern um; behandeln", inf: "deal", sp: "dealt", pp: "dealt" },
+            { de: "tun, machen", inf: "do", sp: "did", pp: "done" },
+            { de: "graben", inf: "dig", sp: "dug", pp: "dug" },
+            { de: "zeichnen", inf: "draw", sp: "drew", pp: "drawn" },
+            { de: "trinken", inf: "drink", sp: "drank", pp: "drunk" },
+            { de: "fahren", inf: "drive", sp: "drove", pp: "driven" },
+            { de: "essen", inf: "eat", sp: "ate", pp: "eaten" },
+            { de: "fallen", inf: "fall", sp: "fell", pp: "fallen" },
+            { de: "füttern", inf: "feed", sp: "fed", pp: "fed" },
+            { de: "fühlen, sich fühlen", inf: "feel", sp: "felt", pp: "felt" },
+            { de: "kämpfen, bekämpfen", inf: "fight", sp: "fought", pp: "fought" },
+            { de: "finden", inf: "find", sp: "found", pp: "found" },
+            { de: "fliegen", inf: "fly", sp: "flew", pp: "flown" },
+            { de: "vergessen", inf: "forget", sp: "forgot", pp: "forgotten" },
+            { de: "gefrieren; erstarren", inf: "freeze", sp: "froze", pp: "frozen" },
+            { de: "bekommen; holen", inf: "get", sp: "got", pp: "got" },
+            { de: "geben", inf: "give", sp: "gave", pp: "given" },
+            { de: "gehen, fahren", inf: "go", sp: "went", pp: "gone" },
+            { de: "anbauen; wachsen", inf: "grow", sp: "grew", pp: "grown" },
+            { de: "hängen", inf: "hang", sp: "hung", pp: "hung" },
+            { de: "haben", inf: "have", sp: "had", pp: "had" },
+            { de: "hören", inf: "hear", sp: "heard", pp: "heard" },
+            { de: "verstecken", inf: "hide", sp: "hid", pp: "hidden" },
+            { de: "treffen, schlagen", inf: "hit", sp: "hit", pp: "hit" },
+            { de: "halten", inf: "hold", sp: "held", pp: "held" },
+            { de: "verletzen; wehtun", inf: "hurt", sp: "hurt", pp: "hurt" },
+            { de: "behalten", inf: "keep", sp: "kept", pp: "kept" },
+            { de: "knien", inf: "kneel", sp: "knelt", pp: "knelt" },
+            { de: "wissen; kennen", inf: "know", sp: "knew", pp: "known" },
+            { de: "führen, leiten", inf: "lead", sp: "led", pp: "led" },
+            { de: "verlassen", inf: "leave", sp: "left", pp: "left" },
+            { de: "leihen", inf: "lend", sp: "lent", pp: "lent" },
+            { de: "lassen", inf: "let", sp: "let", pp: "let" },
+            { de: "anzünden", inf: "light", sp: "lit", pp: "lit" },
+            { de: "verlieren", inf: "lose", sp: "lost", pp: "lost" },
+            { de: "machen, herstellen", inf: "make", sp: "made", pp: "made" },
+            { de: "bedeuten", inf: "mean", sp: "meant", pp: "meant" },
+            { de: "treffen", inf: "meet", sp: "met", pp: "met" },
+            { de: "bezahlen", inf: "pay", sp: "paid", pp: "paid" },
+            { de: "legen, stellen", inf: "put", sp: "put", pp: "put" },
+            { de: "lesen", inf: "read", sp: "read", pp: "read" },
+            { de: "zurücksetzen", inf: "reset", sp: "reset", pp: "reset" },
+            { de: "neu schreiben", inf: "rewrite", sp: "rewrote", pp: "rewritten" },
+            { de: "reiten; fahren", inf: "ride", sp: "rode", pp: "ridden" },
+            { de: "läuten, klingeln", inf: "ring", sp: "rang", pp: "rung" },
+            { de: "ansteigen; erheben", inf: "rise", sp: "rose", pp: "risen" },
+            { de: "rennen, laufen", inf: "run", sp: "ran", pp: "run" },
+            { de: "sagen", inf: "say", sp: "said", pp: "said" },
+            { de: "sehen", inf: "see", sp: "saw", pp: "seen" },
+            { de: "suchen", inf: "seek", sp: "sought", pp: "sought" },
+            { de: "verkaufen", inf: "sell", sp: "sold", pp: "sold" },
+            { de: "senden, schicken", inf: "send", sp: "sent", pp: "sent" },
+            { de: "setzen, legen", inf: "set", sp: "set", pp: "set" },
+            { de: "nähen", inf: "sew", sp: "sewed", pp: "sewn" },
+            { de: "schütteln", inf: "shake", sp: "shook", pp: "shaken" },
+            { de: "schießen", inf: "shoot", sp: "shot", pp: "shot" },
+            { de: "zeigen", inf: "show", sp: "showed", pp: "shown" },
+            { de: "schließen", inf: "shut", sp: "shut", pp: "shut" },
+            { de: "singen", inf: "sing", sp: "sang", pp: "sung" },
+            { de: "sitzen", inf: "sit", sp: "sat", pp: "sat" },
+            { de: "schlafen", inf: "sleep", sp: "slept", pp: "slept" },
+            { de: "gleiten", inf: "slide", sp: "slid", pp: "slid" },
+            { de: "sprechen", inf: "speak", sp: "spoke", pp: "spoken" },
+            { de: "rasen", inf: "speed", sp: "sped", pp: "sped" },
+            { de: "ausgeben, verbringen", inf: "spend", sp: "spent", pp: "spent" },
+            { de: "drehen", inf: "spin", sp: "spun", pp: "spun" },
+            { de: "verbreiten", inf: "spread", sp: "spread", pp: "spread" },
+            { de: "stehen", inf: "stand", sp: "stood", pp: "stood" },
+            { de: "stehlen", inf: "steal", sp: "stole", pp: "stolen" },
+            { de: "kleben", inf: "stick", sp: "stuck", pp: "stuck" },
+            { de: "stechen", inf: "sting", sp: "stung", pp: "stung" },
+            { de: "fegen", inf: "sweep", sp: "swept", pp: "swept" },
+            { de: "schwimmen", inf: "swim", sp: "swam", pp: "swum" },
+            { de: "schwingen", inf: "swing", sp: "swung", pp: "swung" },
+            { de: "nehmen; bringen", inf: "take", sp: "took", pp: "taken" },
+            { de: "lehren, unterrichten", inf: "teach", sp: "taught", pp: "taught" },
+            { de: "sagen, erzählen", inf: "tell", sp: "told", pp: "told" },
+            { de: "denken, glauben", inf: "think", sp: "thought", pp: "thought" },
+            { de: "werfen", inf: "throw", sp: "threw", pp: "thrown" },
+            { de: "verstehen", inf: "understand", sp: "understood", pp: "understood" },
+            { de: "aufwachen", inf: "wake up", sp: "woke up", pp: "woken up" },
+            { de: "tragen (Kleidung)", inf: "wear", sp: "wore", pp: "worn" },
+            { de: "gewinnen", inf: "win", sp: "won", pp: "won" },
+            { de: "schreiben", inf: "write", sp: "wrote", pp: "written" }
+        ];
+
+        let shuffledVerbs = [];
+        let currentIndex = 0;
+        let score = 0;
+        let totalCount = 0;
+        let isCheckingMode = true;
+
+        const mainBtn = document.getElementById('main-btn');
+        const inputs = {
+            inf: document.getElementById('inf-input'),
+            sp: document.getElementById('sp-input'),
+            pp: document.getElementById('pp-input')
+        };
+        const corrections = {
+            inf: document.getElementById('inf-corr'),
+            sp: document.getElementById('sp-corr'),
+            pp: document.getElementById('pp-corr')
+        };
+        const hintBtns = {
+            inf: document.getElementById('hint-inf'),
+            sp: document.getElementById('hint-sp'),
+            pp: document.getElementById('hint-pp')
+        };
+        const badges = {
+            inf: document.getElementById('badge-inf'),
+            sp: document.getElementById('badge-sp'),
+            pp: document.getElementById('badge-pp')
+        };
+
+        // Initialize start screen
+        function startQuiz(lengthOption) {
+            shuffledVerbs = [...verbData].sort(() => Math.random() - 0.5);
+            
+            if (lengthOption === 'all') {
+                totalCount = shuffledVerbs.length;
+            } else {
+                totalCount = Math.min(lengthOption, shuffledVerbs.length);
+                shuffledVerbs = shuffledVerbs.slice(0, totalCount);
+            }
+
+            document.getElementById('start-screen').classList.add('hidden');
+            document.getElementById('quiz-screen').classList.remove('hidden');
+            
+            currentIndex = 0;
+            score = 0;
+            loadVerb();
+        }
+
+        // Setup individual interactive hints
+        function setupHint(key) {
+            const btn = hintBtns[key];
+            const input = inputs[key];
+            const badge = badges[key];
+
+            btn.onclick = function(e) {
+                e.stopPropagation();
+                if (input.disabled || input.classList.contains('gm-hinted')) return;
+
+                const currentVerb = shuffledVerbs[currentIndex];
+                const targetForm = currentVerb[key].trim();
+                
+                if (targetForm.length > 0) {
+                    const firstLetter = targetForm.charAt(0);
+                    input.value = firstLetter;
+                    input.classList.add('gm-hinted');
+                    input.focus();
+                    
+                    // Deduct 5 XP and trigger chime
+                    if (window.gmDeductXp) window.gmDeductXp(5);
+                    if (window.gmTriggerChime) window.gmTriggerChime('hint');
+                    
+                    btn.classList.add('used');
+                    btn.style.opacity = '0.3';
+                    btn.style.pointerEvents = 'none';
+                    btn.setAttribute('data-tooltip', 'Tipp genutzt!');
+                    btn.title = "Tipp bereits genutzt";
+                    badge.style.display = 'none';
+                }
+            };
+        }
+
+        // Initialize tips
+        setupHint('inf');
+        setupHint('sp');
+        setupHint('pp');
+
+        function loadVerb() {
+            if (currentIndex < totalCount) {
+                const verb = shuffledVerbs[currentIndex];
+                document.getElementById('de-word').innerText = verb.de;
+                document.getElementById('quiz-progress').innerText = `Verb ${currentIndex + 1} von ${totalCount}`;
+                
+                for (let key in inputs) {
+                    inputs[key].value = "";
+                    inputs[key].className = "verb-field";
+                    if (key === 'inf') inputs[key].classList.add('pl-12'); // keep prefix space for (to)
+                    inputs[key].disabled = false;
+                    
+                    corrections[key].style.display = "none";
+                    corrections[key].innerText = "";
+
+                    // Reset hints
+                    hintBtns[key].classList.remove('used');
+                    hintBtns[key].style.opacity = '1';
+                    hintBtns[key].style.pointerEvents = 'auto';
+                    hintBtns[key].setAttribute('data-tooltip', 'Tipp nutzen (-5 XP)');
+                    hintBtns[key].title = "Ersten Buchstaben anzeigen (-5 XP)";
+                    badges[key].style.display = 'inline-block';
+                }
+                
+                mainBtn.innerText = "Prüfen";
+                mainBtn.className = "w-full py-4 bg-rose-500 hover:bg-rose-600 border border-rose-400/20 text-white font-extrabold text-lg rounded-xl shadow-lg shadow-rose-500/20 transition-all hover:scale-[1.02] active:scale-[0.98]";
+                
+                isCheckingMode = true;
+                inputs.inf.focus();
+            } else {
+                finishQuiz();
+            }
+        }
+
+        function handleButtonClick() {
+            if (isCheckingMode) {
+                checkAnswer();
+            } else {
+                currentIndex++;
+                loadVerb();
+            }
+        }
+
+        function checkAnswer() {
+            const verb = shuffledVerbs[currentIndex];
+            let allCorrect = true;
+
+            const check = (key, correctValue) => {
+                const userVal = inputs[key].value.trim();
+                const variants = correctValue.split('/').map(v => v.trim().toLowerCase());
+                
+                if (variants.includes(userVal.toLowerCase())) {
+                    inputs[key].classList.add('correct');
+                } else {
+                    inputs[key].classList.add('incorrect');
+                    corrections[key].innerText = `Richtig: ${correctValue}`;
+                    corrections[key].style.display = "block";
+                    allCorrect = false;
+                }
+                inputs[key].disabled = true;
+                
+                // Disable hints once checked
+                hintBtns[key].classList.add('used');
+                hintBtns[key].style.opacity = '0.3';
+                hintBtns[key].style.pointerEvents = 'none';
+                badges[key].style.display = 'none';
+            };
+
+            check('inf', verb.inf);
+            check('sp', verb.sp);
+            check('pp', verb.pp);
+
+            if (allCorrect) {
+                score++;
+                // Award +10 XP for full correct verb forms and play success chime
+                if (window.gmAwardXp) window.gmAwardXp(10);
+                if (window.gmTriggerChime) window.gmTriggerChime('correct');
+            } else {
+                // play buzz chime on mistake (anxiety-free, 0 XP)
+                if (window.gmTriggerChime) window.gmTriggerChime('incorrect');
+            }
+
+            mainBtn.innerText = "Nächstes Verb";
+            mainBtn.className = "w-full py-4 bg-blue-500 hover:bg-blue-600 border border-blue-400/20 text-white font-extrabold text-lg rounded-xl shadow-lg shadow-blue-500/20 transition-all hover:scale-[1.02] active:scale-[0.98]";
+            isCheckingMode = false;
+        }
+
+        // Support Enter key press
+        window.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                handleButtonClick();
+            }
+        });
+
+        function finishQuiz() {
+            // Unlocked badge grammar state for dashboard card gold stars
+            if (score === totalCount && totalCount >= 10) {
+                // Unlocked fully fehlerfrei
+                localStorage.setItem('grammar_g9_verbs_mastered', 'true');
+            }
+            
+            // Show dynamic celebration success overlay
+            if (window.gmShowSuccessOverlay) {
+                window.gmShowSuccessOverlay(50, 'G9 Verb Master 🏆', () => {
+                    showResult();
+                });
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            document.getElementById('quiz-screen').classList.add('hidden');
+            document.getElementById('result-screen').classList.remove('hidden');
+            
+            document.getElementById('final-score').innerText = `${score} von ${totalCount}`;
+            
+            const percent = (score / totalCount) * 100;
+            let msg = "";
+            if (percent === 100) msg = "Hervorragend! Ein perfektes Ergebnis! Du bist ein wahrer Verb-Champion! 🏆🌟";
+            else if (percent >= 80) msg = "Fantastisch! Du beherrschst fast alle Formen einwandfrei. Weiter so! ⭐";
+            else if (percent >= 50) msg = "Gute Arbeit! Das meiste sitzt schon fest. Ein bisschen Übung noch und du bist perfekt! 📚";
+            else msg = "Kopf hoch! Nutze das nächste Training zum Wiederholen. Regelmäßiges Üben macht dich stark! 💪";
+            
+            document.getElementById('summary-text').innerText = msg;
+        }
+    </script>
+
+</body>
+</html>

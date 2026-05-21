@@ -1,0 +1,593 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasse 9 & 10 - Mixed Grammar Mastery</title>
+    <link rel="stylesheet" href="shared-gamification.css">
+    <script src="shared-gamification.js" defer></script>
+    <style>
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            padding: 40px 20px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .view { display: none; width: 100%; }
+        .view.active { display: block; animation: fadeIn 0.4s ease; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header { text-align: center; margin-bottom: 40px; }
+        
+        /* Category container grid */
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .category {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            transition: all 0.3s ease;
+        }
+
+        .category:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .category h2 { 
+            color: #93c5fd; 
+            border-bottom: 2px solid rgba(147, 197, 253, 0.2); 
+            padding-bottom: 10px; 
+            margin-top: 0; 
+            font-size: 1.5rem;
+        }
+
+        /* 5-button grid for exercises */
+        .button-grid { 
+            display: grid; 
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 8px; 
+        }
+
+        .exercise-button {
+            padding: 12px 2px;
+            color: white;
+            background: linear-gradient(145deg, #1e3a8a, #1d4ed8);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.85rem;
+        }
+
+        .exercise-button:hover { 
+            transform: translateY(-2px) scale(1.05); 
+            box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
+            border-color: rgba(96, 165, 250, 0.4);
+        }
+
+        .exercise-button.completed { 
+            border: 2px solid var(--color-warning); 
+            background: linear-gradient(145deg, #78350f, #92400e);
+        }
+        
+        .exercise-button.completed::after {
+            content: "★";
+            position: absolute;
+            top: -6px; right: -6px;
+            background: var(--color-warning);
+            color: #000;
+            border-radius: 50%;
+            width: 18px; height: 18px;
+            font-size: 11px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 900;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .back-btn { 
+            background: none; 
+            border: 1.5px solid #60a5fa; 
+            color: #60a5fa; 
+            padding: 8px 18px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            margin-bottom: 24px; 
+            font-weight: 700; 
+            text-decoration: none; 
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        
+        .back-btn:hover { 
+            background: rgba(96, 165, 250, 0.1); 
+            transform: translateX(-3px);
+        }
+        
+        .cloze-text { 
+            font-size: 1.15rem; 
+            line-height: 2.8; 
+            margin-bottom: 30px; 
+            text-align: left; 
+        }
+
+        .gap-prompt { 
+            display: block; 
+            font-size: 0.75rem; 
+            color: #94a3b8; 
+            text-align: center; 
+            font-weight: 700; 
+            margin-top: 4px; 
+            user-select: none;
+        }
+        
+        .badge-list {
+            margin-top: 40px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+        }
+
+        .badge-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .badge-item {
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0.2;
+            filter: grayscale(1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .badge-item.unlocked { 
+            opacity: 1; 
+            filter: grayscale(0); 
+            transform: scale(1.05); 
+        }
+        
+        .badge-svg { 
+            width: 75px; 
+            height: 75px; 
+            margin-bottom: 10px; 
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+        }
+        
+        .badge-label { 
+            font-size: 0.85rem; 
+            font-weight: 800; 
+            margin-bottom: 5px; 
+            color: #fbbf24; 
+        }
+        
+        #card-verbs9:hover, #card-verbs10:hover {
+            border-color: #f43f5e !important;
+            box-shadow: 0 10px 30px rgba(244, 63, 94, 0.25) !important;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- DASHBOARD -->
+        <div id="dashboard" class="view active">
+            <a href="index.html" class="back-btn">← Zurück zum Hauptportal</a>
+            <header>
+                <div style="font-size: 1rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; font-weight: 800;">Ignaz-Reder-Realschule</div>
+                <h1 style="font-size: 3rem; margin: 0 0 10px 0; background: linear-gradient(to right, #93c5fd, #c4b5fd, #fda4af); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Grammar Mastery</h1>
+                <p style="color: #cbd5e1; font-size: 1.1rem; margin: 0;">Mixed Grammar Übungen für die 9. & 10. Jahrgangsstufe</p>
+            </header>
+
+            <div class="category-container" id="category-list"></div>
+
+            <!-- Irregular Verbs Section -->
+            <div class="verbs-section" style="margin-top: 40px; margin-bottom: 40px;">
+                <h3 style="margin-top: 0; color: #fda4af; font-size: 1.6rem; font-weight: 800; text-align: center; margin-bottom: 24px;">📖 Unregelmäßige Verben Training</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+                    <!-- Verbs 9 -->
+                    <a href="irregular_verbs_9.html" id="card-verbs9" class="category" style="display: flex; flex-direction: column; justify-content: start; text-decoration: none; position: relative; border-color: rgba(244, 63, 94, 0.2); transition: all 0.3s ease;">
+                        <span class="badge-done" id="badge-verbs9" style="position: absolute; top: 15px; right: 15px; background: #fbbf24; color: #000; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; display: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3);">MASTERED ★</span>
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">⚡</div>
+                        <h2 style="color: #fda4af; border-bottom: 2px solid rgba(244, 63, 94, 0.2); padding-bottom: 10px; margin: 0 0 10px 0; font-size: 1.5rem;">Irregular Verbs G9</h2>
+                        <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: auto; line-height: 1.4;">Das Training für die 9. Klasse. Meistere alle 102 unregelmäßigen Verben fehlerfrei!</p>
+                    </a>
+                    
+                    <!-- Verbs 10 -->
+                    <a href="irregular_verbs_10.html" id="card-verbs10" class="category" style="display: flex; flex-direction: column; justify-content: start; text-decoration: none; position: relative; border-color: rgba(244, 63, 94, 0.2); transition: all 0.3s ease;">
+                        <span class="badge-done" id="badge-verbs10" style="position: absolute; top: 15px; right: 15px; background: #fbbf24; color: #000; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; display: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3);">MASTERED ★</span>
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🔥</div>
+                        <h2 style="color: #fda4af; border-bottom: 2px solid rgba(244, 63, 94, 0.2); padding-bottom: 10px; margin: 0 0 10px 0; font-size: 1.5rem;">Irregular Verbs G10</h2>
+                        <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: auto; line-height: 1.4;">Die Königsklasse für die 10. Klasse. Meistere alle 108 unregelmäßigen Verben fehlerfrei!</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="badge-list">
+                <h3 style="margin-top: 0; color: #fbbf24; font-size: 1.6rem; font-weight: 800;">🏆 Deine Stufen-Badges</h3>
+                <p style="font-size: 0.95rem; color: #cbd5e1; margin-bottom: 24px;">Meistere alle 5 Übungen einer Stufe fehlerfrei, um den Master-Badge freizuschalten!</p>
+                <div class="badge-grid" id="global-badge-grid"></div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <button onclick="resetProgress()" style="background: none; border: none; color: #f43f5e; cursor: pointer; font-family: inherit; font-weight: 800; text-decoration: underline; font-size: 0.9rem; transition: color 0.2s;" onmouseover="this.style.color='#fda4af'" onmouseout="this.style.color='#f43f5e'">Fortschritt für diese Jahrgangsstufe zurücksetzen</button>
+            </div>
+        </div>
+
+        <!-- EXERCISE -->
+        <div id="exercise-view" class="view">
+            <div class="exercise-card gm-glass-card" style="padding: 35px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6); backdrop-filter: blur(15px);">
+                <button class="back-btn" onclick="showDashboard()">← Abbrechen</button>
+                <h2 id="ex-title" style="margin-bottom: 24px; color: #93c5fd; font-size: 1.8rem;">Übung</h2>
+                <div id="ex-content"></div>
+                
+                <div class="status-container" style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span style="font-size: 0.85rem; color: #94a3b8; font-weight: 700;">Übungsfortschritt</span>
+                        <span id="progress-percentage-label" style="font-size: 0.85rem; color: #34d399; font-weight: 800;">0%</span>
+                    </div>
+                    <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div id="ex-progress" style="height: 100%; width: 0%; background: linear-gradient(90deg, #10b981, #34d399); transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const categories = ['Beginner', 'Intermediate', 'Expert'];
+        const exercises = {
+            'BEG1': { cat: 'Beginner', num: 1, title: 'Mixed Grammar 1', content: [
+                { prompt: "(walk - often)", textBefore: "Every morning, my neighbor Sarah", textAfter: "her dog in the park.", correct: ["often walks"], fb: "Routine (Simple Present). Sarah = 3. Person Singular." },
+                { prompt: "(not - play)", textBefore: "Yesterday evening, the children", textAfter: "outside because it was raining heavily.", correct: ["did not play", "didn't play"], fb: "Signalwort 'Yesterday' verlangt Simple Past." },
+                { prompt: "(???)", textBefore: "She is interested", textAfter: "reading fantasy books.", correct: ["in"], fb: "Feste Präposition: 'interested in'." },
+                { prompt: "(go)", textBefore: "My brother enjoys", textAfter: "hiking on weekends.", correct: ["going"], fb: "Nach 'enjoy' folgt das Gerundium (-ing)." },
+                { prompt: "(speak - slow)", textBefore: "The old man had to", textAfter: "for us to understand him.", correct: ["speak slowly"], fb: "Adverb benötigt, um 'speak' zu beschreiben." },
+                { prompt: "(be)", textBefore: "The apples", textAfter: "picked by the farmer last Tuesday.", correct: ["were"], fb: "Simple Past Passive (Plural)." },
+                { prompt: "(???)", textBefore: "The blue car is bigger", textAfter: "the red one.", correct: ["than"], fb: "Vergleich mit 'than'." },
+                { prompt: "(to - see)", textBefore: "We decided", textAfter: "the new movie.", correct: ["to see"], fb: "Nach 'decide' folgt der To-Infinitive." },
+                { prompt: "(wait)", textBefore: "Please stop", textAfter: "and start doing your homework now.", correct: ["waiting"], fb: "Stop + Gerund = Tätigkeit beenden." },
+                { prompt: "(clean - not)", textBefore: "The floor looks terrible. It", textAfter: "today, so we need to do it.", correct: ["has not been cleaned", "hasn't been cleaned"], fb: "Present Perfect Passive (yet)." }
+            ]},
+            'BEG2': { cat: 'Beginner', num: 2, title: 'Mixed Grammar 2', content: [
+                { prompt: "(travel)", textBefore: "Last year, my family and I", textAfter: "to Italy for a holiday.", correct: ["traveled", "travelled"], fb: "Simple Past (Last year)." },
+                { prompt: "(not - go)", textBefore: "We", textAfter: "to Rome, but we saw Florence.", correct: ["did not go", "didn't go"], fb: "Verneinung im Simple Past." },
+                { prompt: "(learn)", textBefore: "We started", textAfter: "some Italian phrases before the trip.", correct: ["learning", "to learn"], fb: "Start + Gerund oder To-Infinitive." },
+                { prompt: "(difficult)", textBefore: "My brother, however, still finds the language quite", textAfter: "to understand.", correct: ["difficult"], fb: "Adjektiv benötigt." },
+                { prompt: "(???)", textBefore: "We spent most afternoons", textAfter: "the beach.", correct: ["at", "on"], fb: "Präposition für Ort." },
+                { prompt: "(already - visit)", textBefore: "My mother", textAfter: "this region of Italy before.", correct: ["had already visited", "already visited"], fb: "Vorzeitigkeit: Past Perfect." },
+                { prompt: "(prepare)", textBefore: "The local pasta dishes", textAfter: "by a famous chef every morning.", correct: ["were prepared"], fb: "Passiv in der Vergangenheit." },
+                { prompt: "(???)", textBefore: "I am really proud", textAfter: "how much Italian I picked up.", correct: ["of"], fb: "Feste Präposition: 'proud of'." },
+                { prompt: "(return)", textBefore: "We hope", textAfter: "next year.", correct: ["to return"], fb: "Hope + To-Infinitive." },
+                { prompt: "(good)", textBefore: "The food there was much", textAfter: "the food back home.", correct: ["better than"], fb: "Komparativ von good + than." }
+            ]},
+            'BEG3': { cat: 'Beginner', num: 3, title: 'Mixed Grammar 3', content: [
+                { prompt: "(write)", textBefore: "Right now, my older sister Emily", textAfter: "an essay.", correct: ["is writing"], fb: "Momentan (Present Progressive)." },
+                { prompt: "(sit)", textBefore: "She", textAfter: "at her desk when I came into the room.", correct: ["was sitting"], fb: "Handlung im Gange (Past Progressive)." },
+                { prompt: "(not - answer)", textBefore: "If you call her now, she", textAfter: "because she is focused.", correct: ["will not answer", "won't answer"], fb: "If-Satz Typ 1." },
+                { prompt: "(work - careful)", textBefore: "Emily is a very dedicated person; she always", textAfter: "on her projects.", correct: ["works carefully"], fb: "Routine + Adverb." },
+                { prompt: "(read)", textBefore: "When I arrived home from school, she", textAfter: "a heavy novel.", correct: ["was reading"], fb: "Past Progressive." },
+                { prompt: "(help)", textBefore: "I asked her", textAfter: "me with my math homework.", correct: ["to help"], fb: "Ask + To-Infinitive." },
+                { prompt: "(???)", textBefore: "She is very good", textAfter: "explaining difficult concepts.", correct: ["at"], fb: "Präposition: Good at + -ing." },
+                { prompt: "(break)", textBefore: "The expensive vase", textAfter: "by the cat yesterday afternoon.", correct: ["was broken"], fb: "Simple Past Passive." },
+                { prompt: "(know - just)", textBefore: "The winner of the competition", textAfter: ".", correct: ["has just been known"], fb: "Present Perfect Passive." },
+                { prompt: "(stop)", textBefore: "He promised", textAfter: "smoking next month.", correct: ["to stop"], fb: "Promise + To-Infinitive." }
+            ]},
+            'BEG4': { cat: 'Beginner', num: 4, title: 'Mixed Grammar 4', content: [
+                { prompt: "(walk)", textBefore: "Yesterday morning, I", textAfter: "to the market.", correct: ["walked"], fb: "Simple Past (Yesterday)." },
+                { prompt: "(already - buy)", textBefore: "When I arrived, I saw that my sister", textAfter: "all the good oranges.", correct: ["had already bought"], fb: "Past Perfect." },
+                { prompt: "(not - waste)", textBefore: "I decided", textAfter: "any more time.", correct: ["not to waste"], fb: "Verneinter To-Infinitive." },
+                { prompt: "(discover)", textBefore: "While I", textAfter: "a small stall, my phone rang.", correct: ["was discovering"], fb: "Past Progressive." },
+                { prompt: "(ring - loud)", textBefore: "The phone", textAfter: "and surprised everyone nearby.", correct: ["rang loudly"], fb: "Simple Past + Adverb." },
+                { prompt: "(???)", textBefore: "The pineapples looked much better", textAfter: "the mangoes.", correct: ["than"], fb: "Vergleich mit 'than'." },
+                { prompt: "(sell)", textBefore: "The best vegetables", textAfter: "by the small farmer.", correct: ["were sold"], fb: "Simple Past Passive." },
+                { prompt: "(play)", textBefore: "After", textAfter: "tennis, we always feel hungry.", correct: ["playing"], fb: "Präposition + Gerundium." },
+                { prompt: "(not - fail)", textBefore: "If he works hard, he", textAfter: "the exam.", correct: ["will not fail", "won't fail"], fb: "If-Satz Typ 1." },
+                { prompt: "(???)", textBefore: "The students are looking forward", textAfter: "their holidays.", correct: ["to"], fb: "Look forward to." }
+            ]},
+            'BEG5': { cat: 'Beginner', num: 5, title: 'Mixed Grammar 5', content: [
+                { prompt: "(currently - read)", textBefore: "My cousin Jim", textAfter: "a long historical novel.", correct: ["is currently reading"], fb: "Present Progressive (currently)." },
+                { prompt: "(arrive)", textBefore: "He", textAfter: "at the library two hours ago.", correct: ["arrived"], fb: "Simple Past (ago)." },
+                { prompt: "(not - see)", textBefore: "The book", textAfter: "by many critics before its release.", correct: ["was not seen", "wasn't seen"], fb: "Simple Past Passive." },
+                { prompt: "(keep)", textBefore: "He loves reading and can usually", textAfter: "studying for hours.", correct: ["keep"], fb: "Modalverb + Infinitiv." },
+                { prompt: "(finish)", textBefore: "Before he started the novel, he", textAfter: "a short story collection.", correct: ["had finished"], fb: "Vorzeitigkeit (Past Perfect)." },
+                { prompt: "(call)", textBefore: "If he needs help with his research, he", textAfter: "his professor.", correct: ["will call"], fb: "If-Satz Typ 1." },
+                { prompt: "(???)", textBefore: "Many people believe", textAfter: "luck.", correct: ["in"], fb: "Feste Wendung: believe in." },
+                { prompt: "(move - slow)", textBefore: "The old clock on the wall was", textAfter: "and almost silent.", correct: ["moving slowly"], fb: "Past Progressive + Adverb." },
+                { prompt: "(drive)", textBefore: "The librarian offered", textAfter: "him home.", correct: ["to drive"], fb: "Offer + To-Infinitive." },
+                { prompt: "(???)", textBefore: "The library is much quieter", textAfter: "the café downstairs.", correct: ["than"], fb: "Vergleich mit 'than'." }
+            ]},
+            'INT1': { cat: 'Intermediate', num: 6, title: 'Tense Review & Gerunds', content: [
+                { prompt: "(develop)", textBefore: "We live in an incredibly advanced time. While most of our technology", textAfter: "since the Industrial Revolution, many products we use today have a much longer history.", correct: ["has developed", "has been developed"], fb: "Present Perfect." },
+                { prompt: "(be)", textBefore: "Before the famous perfume named Chanel No. 5 was invented, there", textAfter: "perfume production in Cyprus some 4,000 years ago.", correct: ["had been"], fb: "Past Perfect." },
+                { prompt: "(wide)", textBefore: "Among the most", textAfter: "used instruments is the odometer, which can measure the distance travelled by a vehicle.", correct: ["widely"], fb: "Adverb." },
+                { prompt: "(come)", textBefore: "If you look for the inventor who created this tool, you", textAfter: "across Vitruvius, who is often credited with inventing it in 15 BC.", correct: ["will come"], fb: "If-Satz Typ 1." },
+                { prompt: "(have)", textBefore: "Today, nearly every smartphone", textAfter: "an integrated compass.", correct: ["has"], fb: "Simple Present." },
+                { prompt: "(???)", textBefore: "Historians think that the first people", textAfter: "construct a sophisticated compass were China’s Han Dynasty, around 200 BC.", correct: ["to"], fb: "To-Infinitive nach Ordnungszahlen." },
+                { prompt: "(magnetize)", textBefore: "The needle of the Chinese compass was actually an iron spoon that", textAfter: "with ore, making it point north or south.", correct: ["was magnetized"], fb: "Simple Past Passive." },
+                { prompt: "(early)", textBefore: "The", textAfter: "maps of geographical places were created in Babylonia on clay tablets around 2300 BC.", correct: ["earliest"], fb: "Superlativ." },
+                { prompt: "(know)", textBefore: "The oldest", textAfter: "map of the world is considered to be the Babylonian World Map.", correct: ["known"], fb: "Partizip als Adjektiv." },
+                { prompt: "(???)", textBefore: "To end on a sweet note, chocolate has been around for more", textAfter: "3,000 years and we have to thank the civilizations of ancient Mesoamerica for this sweetness in our lives.", correct: ["than"], fb: "More than." }
+            ]},
+            'INT2': { cat: 'Intermediate', num: 7, title: 'Outback Adventure', content: [
+                { prompt: "(drive)", textBefore: "Before we saw Uluru, we", textAfter: "for hours without seeing another car.", correct: ["had been driving", "had driven"], fb: "Past Perfect." },
+                { prompt: "(not - discover)", textBefore: "The history of this remote area", textAfter: "by many tourists until recently.", correct: ["was not discovered", "wasn't discovered"], fb: "Simple Past Passive." },
+                { prompt: "(take)", textBefore: "We were keen on", textAfter: "pictures of the unique fauna.", correct: ["taking"], fb: "Keen on + Gerundium." },
+                { prompt: "(bring)", textBefore: "If we", textAfter: "a satellite phone, we would have contacted help.", correct: ["had not brought", "hadn't brought"], fb: "If-Satz Typ 3." },
+                { prompt: "(bright)", textBefore: "The sun shone", textAfter: "on the red sand.", correct: ["brightly"], fb: "Adverb." },
+                { prompt: "(cross)", textBefore: "While the snake", textAfter: "the road, we stopped the car.", correct: ["was crossing"], fb: "Past Progressive." },
+                { prompt: "(???)", textBefore: "Australia is famous", textAfter: "its unique marsupials.", correct: ["for"], fb: "Famous for." },
+                { prompt: "(repair - just)", textBefore: "The old truck", textAfter: "by the mechanic, so we hope it's fine.", correct: ["has just been repaired"], fb: "Present Perfect Passive." },
+                { prompt: "(???)", textBefore: "The spiders were much larger", textAfter: "the ones back home.", correct: ["than"], fb: "Vergleich." },
+                { prompt: "(buy)", textBefore: "We decided", textAfter: "plenty of water.", correct: ["to buy"], fb: "Decide + To-Infinitive." }
+            ]},
+            'INT3': { cat: 'Intermediate', num: 8, title: 'NZ Hiking', content: [
+                { prompt: "(climb)", textBefore: "By the time we reached the summit, we", textAfter: "for over seven hours.", correct: ["had been climbing"], fb: "Past Perfect Progressive." },
+                { prompt: "(never - see)", textBefore: "I", textAfter: "a landscape so dramatic before.", correct: ["have never seen"], fb: "Present Perfect (Erfahrung)." },
+                { prompt: "(damage)", textBefore: "Many parts of the hiking tracks", textAfter: "by recent heavy rain.", correct: ["were damaged"], fb: "Simple Past Passive." },
+                { prompt: "(check)", textBefore: "We had to stop", textAfter: "the map regularly.", correct: ["to check"], fb: "Stop + To (um zu)." },
+                { prompt: "(awe)", textBefore: "The view was absolutely", textAfter: "and left us speechless.", correct: ["awe-inspiring", "breathtaking"], fb: "Adjektiv." },
+                { prompt: "(hike)", textBefore: "After two days, we finally finished", textAfter: "the famous Routeburn Track.", correct: ["hiking"], fb: "Finish + Gerundium." },
+                { prompt: "(not - bring)", textBefore: "If we", textAfter: "waterproof gear, we would have been soaked.", correct: ["had not brought", "hadn't brought"], fb: "If Typ 3." },
+                { prompt: "(high)", textBefore: "The peak is far", textAfter: "any other in the range.", correct: ["higher than"], fb: "Vergleich." },
+                { prompt: "(???)", textBefore: "The rangers are responsible", textAfter: "protecting the environment.", correct: ["for"], fb: "Responsible for." },
+                { prompt: "(prepare)", textBefore: "While the guides", textAfter: "the campsite, we rested.", correct: ["were preparing"], fb: "Past Progressive." }
+            ]},
+            'INT4': { cat: 'Intermediate', num: 9, title: 'Conservation', content: [
+                { prompt: "(try)", textBefore: "New Zealand's Department of Conservation", textAfter: "to achieve its 2050 goal.", correct: ["is trying"], fb: "Present Progressive." },
+                { prompt: "(expect)", textBefore: "Many native birds", textAfter: "to be fully protected soon.", correct: ["are expected"], fb: "Simple Present Passive." },
+                { prompt: "(avoid)", textBefore: "Conservationists strictly", textAfter: "discussing controversial methods.", correct: ["avoid"], fb: "Simple Present." },
+                { prompt: "(used - see)", textBefore: "Locals are accustomed", textAfter: "rare species in their gardens.", correct: ["to seeing"], fb: "Accustomed to + -ing." },
+                { prompt: "(succeed)", textBefore: "They have already", textAfter: "in reintroducing species.", correct: ["succeeded"], fb: "Present Perfect." },
+                { prompt: "(report)", textBefore: "Yesterday, a new protected area", textAfter: "in the South Island.", correct: ["was reported"], fb: "Simple Past Passive." },
+                { prompt: "(not - implement)", textBefore: "If these measures", textAfter: "the Kiwi would have become extinct.", correct: ["had not been implemented"], fb: "If Typ 3 Passive." },
+                { prompt: "(responsible)", textBefore: "We act", textAfter: "towards the environment.", correct: ["responsibly"], fb: "Adverb." },
+                { prompt: "(???)", textBefore: "The challenge is harder", textAfter: "ever before.", correct: ["than"], fb: "Vergleich." },
+                { prompt: "(not - allow)", textBefore: "The reserve rules", textAfter: "pets inside.", correct: ["do not allow", "don't allow"], fb: "Regel." }
+            ]},
+            'INT5': { cat: 'Intermediate', num: 10, title: 'Great Barrier Reef', content: [
+                { prompt: "(monitor)", textBefore: "For years, marine biologists", textAfter: "the health of the reef.", correct: ["have monitored"], fb: "Present Perfect. Present Perfect Progressive also possible" },
+                { prompt: "(discover)", textBefore: "When the team arrived, coral", textAfter: "due to rising temperatures.", correct: ["was being bleached"], fb: "Past Progressive Passive." },
+                { prompt: "(stop)", textBefore: "The government attempted", textAfter: "sediment running into the water.", correct: ["to stop"], fb: "Attempt + To." },
+                { prompt: "(???)", textBefore: "Bleaching is one of the most serious threats", textAfter: "the ecosystem.", correct: ["to"], fb: "Threat to." },
+                { prompt: "(if - current weather conditions - continue)", textBefore: "The reef will recover slowly", textAfter: ", but it will take decades.", correct: ["if current weather conditions continue", "if the current weather conditions continue"], fb: "If Typ 1." },
+                { prompt: "(not - manage)", textBefore: "Unfortunately, clean-up efforts", textAfter: "to prevent the destruction.", correct: ["had not managed"], fb: "Past Perfect." },
+                { prompt: "(be)", textBefore: "The more we ignore it, the worse the damage", textAfter: ".", correct: ["will be"], fb: "Double Comparison." },
+                { prompt: "(see)", textBefore: "Diving in healthy areas is worth", textAfter: "at least once.", correct: ["seeing"], fb: "Worth + Gerundium." },
+                { prompt: "(careful)", textBefore: "Divers must navigate", textAfter: "through fragile gardens.", correct: ["carefully"], fb: "Adverb." },
+                { prompt: "(not - stop)", textBefore: "If global warming", textAfter: "the damage would have been irreversible.", correct: ["had not stopped"], fb: "If Typ 3." }
+            ]},
+            'EXP1': { cat: 'Expert', num: 11, title: 'Advanced Voice & Tenses 1', content: [
+                { prompt: "(reveal)", textBefore: "It", textAfter: "that the new enzyme was only active below freezing.", correct: ["was revealed"], fb: "Reporting Passive." },
+                { prompt: "(go)", textBefore: "The lead researcher regretted", textAfter: "ahead before safety protocols were checked.", correct: ["going"], fb: "Regret + Gerund." },
+                { prompt: "(fail)", textBefore: "If the initial simulation", textAfter: "the project would have been delayed.", correct: ["had failed"], fb: "If Typ 3." },
+                { prompt: "(be)", textBefore: "The new technology is believed", textAfter: "a revolutionary breakthrough.", correct: ["to be"], fb: "Passive + To." },
+                { prompt: "(analyse)", textBefore: "The samples", textAfter: "since yesterday, but results are not clear.", correct: ["have been analysed", "have been analyzed"], fb: "Present Perfect Passive." },
+                { prompt: "(???)", textBefore: "The discovery was far more significant", textAfter: "forecasts predicted.", correct: ["than"], fb: "Vergleich." },
+                { prompt: "(publish)", textBefore: "The student was keen on", textAfter: "her findings.", correct: ["publishing"], fb: "Keen on + Gerund." },
+                { prompt: "(examine)", textBefore: "The mineral", textAfter: "before the fire broke out.", correct: ["had been examined"], fb: "Past Perfect Passive." },
+                { prompt: "(risk)", textBefore: "The final experiment was considered highly", textAfter: ".", correct: ["risky"], fb: "Adjektiv." },
+                { prompt: "(not - be)", textBefore: "If the temperature", textAfter: "controlled, the reaction would have failed.", correct: ["had not been"], fb: "If Typ 3 Passive." }
+            ]},
+            'EXP2': { cat: 'Expert', num: 12, title: 'Advanced Voice & Tenses 2', content: [
+                { prompt: "(acquire)", textBefore: "Many businesses must cease", textAfter: "operations when facing competitors.", correct: ["acquiring"], fb: "Cease + Gerundium." },
+                { prompt: "(question)", textBefore: "The rise of international brands", textAfter: "by local artisans for decades.", correct: ["has been questioned"], fb: "Present Perfect Passive." },
+                { prompt: "(???)", textBefore: "Never", textAfter: "so many foreign films been shown.", correct: ["have"], fb: "Inversion." },
+                { prompt: "(feel)", textBefore: "If people", textAfter: "culturally threatened, they would not be resistant.", correct: ["did not feel", "didn't feel"], fb: "If Typ 2." },
+                { prompt: "(write)", textBefore: "Having", textAfter: "their petition, the group submitted it.", correct: ["written"], fb: "Perfect Participle." },
+                { prompt: "(assume)", textBefore: "It is widely", textAfter: "that digital media has the biggest impact.", correct: ["assumed"], fb: "Passiv." },
+                { prompt: "(???)", textBefore: "The global market is much more complex", textAfter: "it was ten years ago.", correct: ["than"], fb: "Vergleich." },
+                { prompt: "(find)", textBefore: "Should you", textAfter: "any difficulty, please consult the guide.", correct: ["find"], fb: "Should = If." },
+                { prompt: "(explain)", textBefore: "The historian insisted", textAfter: "the nuances.", correct: ["on explaining"], fb: "Insist on + Gerund." },
+                { prompt: "(be)", textBefore: "The effects of this shift", textAfter: "felt in smaller communities for decades.", correct: ["will be"], fb: "Future Passive." }
+            ]},
+            'EXP3': { cat: 'Expert', num: 13, title: 'Advanced Voice & Tenses 3', content: [
+                { prompt: "(impact)", textBefore: "The new policy is said", textAfter: "the economy significantly.", correct: ["to impact", "to have impacted"], fb: "Reporting Passive." },
+                { prompt: "(implement - already)", textBefore: "New recycling programs", textAfter: "since the beginning of the year.", correct: ["have already been implemented"], fb: "Present Perfect Passive." },
+                { prompt: "(work)", textBefore: "Citizens generally object", textAfter: "longer hours.", correct: ["to working"], fb: "Object to + Gerund." },
+                { prompt: "(high)", textBefore: "The more ambitious the goals, the", textAfter: "the investment.", correct: ["higher"], fb: "Double Comparison." },
+                { prompt: "(overwhelm)", textBefore: "The sheer volume of regulations can be", textAfter: ".", correct: ["overwhelming"], fb: "Adjektiv." },
+                { prompt: "(realize)", textBefore: "The commission started", textAfter: "the scale of the problem.", correct: ["to realize", "realizing"], fb: "Start + Inf/Ger." },
+                { prompt: "(expect)", textBefore: "It", textAfter: "that the opposition will veto the bill.", correct: ["is expected"], fb: "Passiv." },
+                { prompt: "(retrain)", textBefore: "The government has committed", textAfter: "hundreds of workers.", correct: ["to retraining"], fb: "Commit to + Gerund." },
+                { prompt: "(???)", textBefore: "The new proposal is considerably tougher", textAfter: "the old one.", correct: ["than"], fb: "Vergleich." },
+                { prompt: "(not - invest)", textBefore: "If the state", textAfter: "heavily, the shift would not be happening.", correct: ["had not invested"], fb: "Mixed Conditional." }
+            ]},
+            'EXP4': { cat: 'Expert', num: 14, title: 'Advanced Voice & Tenses 4', content: [
+                { prompt: "(report)", textBefore: "The fortress is currently", textAfter: "to have been stone masons' work.", correct: ["reported"], fb: "Reporting Passive." },
+                { prompt: "(find)", textBefore: "More artifacts", textAfter: "after the rubble had been cleared.", correct: ["were found"], fb: "Simple Past Passive." },
+                { prompt: "(not - complete)", textBefore: "Only if the excavations", textAfter: "will the full truth be known.", correct: ["are completed"], fb: "If Typ 1 Passive." },
+                { prompt: "(believe)", textBefore: "The city leaders are believed", textAfter: "the site centuries ago.", correct: ["to have abandoned"], fb: "Perfect Infinitive." },
+                { prompt: "(valuable)", textBefore: "The jewellery was far more", textAfter: "the golden coins.", correct: ["valuable than"], fb: "Vergleich." },
+                { prompt: "(refuse)", textBefore: "The team agreed", textAfter: "to disclose the location.", correct: ["to refuse"], fb: "Agree + To." },
+                { prompt: "(not - admit)", textBefore: "The director", textAfter: "the possibility of a cover-up.", correct: ["did not admit", "didn't admit"], fb: "Simple Past." },
+                { prompt: "(keep)", textBefore: "They had to have the artifacts", textAfter: "under lock and key.", correct: ["kept"], fb: "Causative (have sth done)." },
+                { prompt: "(not - be)", textBefore: "If it", textAfter: "for the volunteers, the work would have stopped.", correct: ["had not been"], fb: "Conditionals." },
+                { prompt: "(protest)", textBefore: "Several local groups succeeded", textAfter: "the construction.", correct: ["in protesting"], fb: "Succeed in + Gerund." }
+            ]},
+            'EXP5': { cat: 'Expert', num: 15, title: 'Advanced Voice & Tenses 5', content: [
+                { prompt: "(warn)", textBefore: "The health organization is understood", textAfter: "the public weeks ago.", correct: ["to have warned"], fb: "Perfect Infinitive." },
+                { prompt: "(know - little)", textBefore: "At that time, little", textAfter: "about the transmission.", correct: ["was known"], fb: "Simple Past Passive." },
+                { prompt: "(publish)", textBefore: "Having", textAfter: "the initial data, source could be traced.", correct: ["published"], fb: "Perfect Participle." },
+                { prompt: "(???)", textBefore: "The quicker the response, the fewer lives", textAfter: "lost.", correct: ["will be"], fb: "Future Passive." },
+                { prompt: "(prevent)", textBefore: "The board was intent", textAfter: "a public panic.", correct: ["on preventing"], fb: "Intent on + Gerund." },
+                { prompt: "(implement - now)", textBefore: "Crucial containment protocols", textAfter: "by the main hospitals right now.", correct: ["are now being implemented"], fb: "Present Progressive Passive." },
+                { prompt: "(find)", textBefore: "We strongly advise against", textAfter: "shortcuts.", correct: ["finding"], fb: "Advise against + Gerund." },
+                { prompt: "(be)", textBefore: "The new measures", textAfter: "both complex and sensitive.", correct: ["were"], fb: "Simple Past." },
+                { prompt: "(if - know)", textBefore: "The situation would not be so dire if the risks", textAfter: "better understood.", correct: ["had been"], fb: "If Typ 3 Passive." },
+                { prompt: "(not - allow)", textBefore: "The government would not", textAfter: "the borders to remain open.", correct: ["have allowed"], fb: "Past Modal." }
+            ]}
+        };
+
+        let state = JSON.parse(localStorage.getItem('grammar_g9_10_state') || '{}');
+
+        function initDashboard() {
+            const list = document.getElementById('category-list');
+            const globalBadges = document.getElementById('global-badge-grid');
+            list.innerHTML = ''; globalBadges.innerHTML = '';
+
+            categories.forEach(cat => {
+                const div = document.createElement('div');
+                div.className = 'category';
+                let html = `<h2>${cat}</h2><div class="button-grid">`;
+                
+                let allDoneInCat = true;
+                let catExercises = Object.keys(exercises).filter(k => exercises[k].cat === cat).sort((a,b) => exercises[a].num - exercises[b].num);
+                
+                catExercises.forEach(id => {
+                    const isDone = state[id];
+                    if (!isDone) allDoneInCat = false;
+                    html += `<button class="exercise-button ${isDone ? 'completed' : ''}" onclick="openEx('${id}')">Ex ${exercises[id].num}</button>`;
+                });
+                
+                html += `</div>`; 
+                div.innerHTML = html; 
+                list.appendChild(div);
+
+                // Create a single master badge per category
+                const badge = document.createElement('div');
+                badge.className = `badge-item ${allDoneInCat ? 'unlocked' : ''}`;
+                const color = cat === 'Beginner' ? '#3b82f6' : cat === 'Intermediate' ? '#fbbf24' : '#f43f5e';
+                badge.innerHTML = `
+                    <svg class="badge-svg" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="${color}" stroke="#fff" stroke-width="3"/>
+                        <text x="50" y="65" text-anchor="middle" fill="${cat==='Intermediate'?'#000':'#fff'}" font-size="40" font-weight="bold">★</text>
+                    </svg>
+                    <span class="badge-label">${cat} Master</span>
+                `;
+                globalBadges.appendChild(badge);
+            });
+
+            // Check Mastered status for Irregular Verbs
+            const isVerbs9Mastered = localStorage.getItem('grammar_g9_verbs_mastered') === 'true';
+            const cardVerbs9 = document.getElementById('card-verbs9');
+            const badgeVerbs9 = document.getElementById('badge-verbs9');
+            if (isVerbs9Mastered && cardVerbs9 && badgeVerbs9) {
+                cardVerbs9.style.borderColor = '#fbbf24';
+                badgeVerbs9.style.display = 'inline-block';
+            }
+
+            const isVerbs10Mastered = localStorage.getItem('grammar_g10_verbs_mastered') === 'true';
+            const cardVerbs10 = document.getElementById('card-verbs10');
+            const badgeVerbs10 = document.getElementById('badge-verbs10');
+            if (isVerbs10Mastered && cardVerbs10 && badgeVerbs10) {
+                cardVerbs10.style.borderColor = '#fbbf24';
+                badgeVerbs10.style.display = 'inline-block';
+            }
+        }
+
+        let currentExId = null;
+        function openEx(id) {
+            currentExId = id;
+            const ex = exercises[id];
+            document.getElementById('ex-title').innerText = `${ex.cat} Übung ${ex.num}: ${ex.title}`;
+            document.getElementById('dashboard').classList.remove('active');
+            document.getElementById('exercise-view').classList.add('active');
+            
+            let html = '<div class="cloze-text">';
+            ex.content.forEach((item, i) => {
+                html += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${i}"><span class="gap-prompt">${item.prompt}</span></span> ${item.textAfter} `;
+            });
+            html += '</div>';
+            document.getElementById('ex-content').innerHTML = html;
+            
+            document.getElementById('ex-progress').style.width = "0%";
+            document.getElementById('progress-percentage-label').innerText = "0%";
+            window.scrollTo(0,0);
+
+            // Hook inputs to global gamification system
+            ex.content.forEach((item, i) => {
+                const inputEl = document.getElementById(`gap-${i}`);
+                window.gmRegisterInput(inputEl, item.correct, item.fb, ex.cat + " Tense", () => {
+                    updateExerciseProgress(ex);
+                });
+            });
+        }
+
+        function updateExerciseProgress(ex) {
+            const inputs = document.querySelectorAll('.gap-input');
+            let corrects = 0;
+            inputs.forEach(input => {
+                if (input.classList.contains('correct')) {
+                    corrects++;
+                }
+            });
+            
+            const perc = Math.round((corrects / ex.content.length) * 100);
+            document.getElementById('ex-progress').style.width = perc + "%";
+            document.getElementById('progress-percentage-label').innerText = perc + "%";
+            
+            if (corrects === ex.content.length) {
+                state[currentExId] = true;
+                localStorage.setItem('grammar_g9_10_state', JSON.stringify(state));
+                
+                // Überprüfe, ob die gesamte Stage abgeschlossen wurde
+                const catExs = Object.keys(exercises).filter(k => exercises[k].cat === ex.cat);
+                const stageCompleted = catExs.every(k => state[k]);
+                
+                let badgeTitle = null;
+                if (stageCompleted) {
+                    badgeTitle = `${ex.cat} Master`;
+                    
+                    // Unlock globally
+                    let badges = JSON.parse(localStorage.getItem('gm_unlocked_badges') || '[]');
+                    const badgeKey = `${ex.cat.toLowerCase().substring(0,3)}_master`; // beg_master, int_master, exp_master
+                    if (!badges.includes(badgeKey)) {
+                        badges.push(badgeKey);
+                        localStorage.setItem('gm_unlocked_badges', JSON.stringify(badges));
+                    }
+                }
+                
+                // Award 50 XP completion bonus and show beautiful full-screen celebration
+                window.gmShowSuccessOverlay(50, badgeTitle, () => {
+                    showDashboard();
+                });
+            }
+        }
+
+        function showDashboard() {
+            document.getElementById('exercise-view').classList.remove('active');
+            document.getElementById('dashboard').classList.add('active');
+            initDashboard();
+        }
+        
+        function resetProgress() {
+            if(confirm("Möchtest du deinen gesamten Fortschritt für die 9. und 10. Klasse wirklich unwiderruflich löschen?")) {
+                localStorage.removeItem('grammar_g9_10_state');
+                localStorage.removeItem('grammar_g9_verbs_mastered');
+                localStorage.removeItem('grammar_g10_verbs_mastered');
+                state = {};
+                initDashboard();
+            }
+        }
+
+        window.onload = initDashboard;
+    </script>
+</body>
+</html>
