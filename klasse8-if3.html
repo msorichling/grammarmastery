@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -50,13 +50,15 @@
         }
         .exercise-button:hover { background: var(--grade-color); color: #0f172a; }
 
-        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); transition: opacity 0.3s ease; }
         .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); font-size: 1.1rem;}
         .accordion-header:hover { background: rgba(255,255,255,0.05); }
         .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
         .accordion-item.active .accordion-content { display: block; }
         .accordion-item.done { border-color: var(--success-color); }
         .done-header { background: rgba(76, 175, 80, 0.1) !important; }
+        .accordion-item.locked { opacity: 0.5; }
+        .accordion-item.locked .accordion-header { cursor: not-allowed; }
 
         /* Multiple Choice Styles */
         .mc-item { margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 12px; border-left: 4px solid var(--grade-color); }
@@ -202,6 +204,12 @@
         };
 
         function toggleAccordion(num) {
+            // Schutz-Logik: Blockiert das Vorab-Öffnen nicht freigeschalteter Aufgaben
+            if (num > 1 && !state[num - 1]) {
+                alert("Löse erst die vorherige Aufgabe, um diesen Bereich freizuschalten!");
+                return;
+            }
+
             const item = document.getElementById('item-ex'+num); 
             const isActive = item.classList.contains('active');
             document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
@@ -230,7 +238,7 @@
             const renderQ = (idx) => {
                 if(idx >= d.questions.length) { 
                     box.innerHTML = `<h3 style='color:var(--success-color); text-align:center;'>Super! Du hast die Regeln für Type 3 verstanden.</h3>`; 
-                    window.gmTriggerChime('correct');
+                    if (window.gmTriggerChime) window.gmTriggerChime('correct');
                     markDone(id); 
                     return; 
                 }
@@ -252,13 +260,13 @@
                     btn.onclick = () => {
                         if(opt === q.correct) {
                             btn.className = "mc-btn correct";
-                            window.gmTriggerChime("correct");
-                            window.gmAwardXp(10); 
+                            if (window.gmTriggerChime) window.gmTriggerChime("correct");
+                            if (window.gmAwardXp) window.gmAwardXp(10); 
                             box.querySelectorAll('.mc-btn').forEach(b => b.disabled = true);
                             setTimeout(() => renderQ(idx+1), 700);
                         } else { 
                             btn.className = "mc-btn wrong";
-                            window.gmTriggerChime("incorrect"); 
+                            if (window.gmTriggerChime) window.gmTriggerChime("incorrect"); 
                             setTimeout(() => btn.className = "mc-btn", 600); 
                         }
                     };
@@ -306,7 +314,7 @@
                 });
                 
                 if(ok === d.sentences.length) {
-                    window.gmTriggerChime('correct');
+                    if (window.gmTriggerChime) window.gmTriggerChime('correct');
                     markDone(id); 
                 } else { 
                     alert(ok + " von " + d.sentences.length + " Sätzen sind richtig. Prüfe die rot markierten Sätze noch einmal!"); 
@@ -316,7 +324,7 @@
         }
 
         // --- CLOZE (LÜCKENTEXT) ---
-                function renderCloze(id, container) {
+        function renderCloze(id, container) {
             const d = exerciseData[id]; 
             if(!d) return;
             const items = d.items; 
@@ -326,7 +334,6 @@
                 h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : "" }</span> ${item.textAfter} ${d.continuous ? '' : '<br>'}`;
             });
             
-            // Add real-time exercise progress bar and score label
             h += `</div>
                   <div class="ex-progress-wrapper" style="margin-top:20px; display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); padding:10px 15px; border-radius:12px;">
                       <span style="font-size:0.85rem; font-weight:800; color:#10b981;">Fortschritt:</span>
@@ -337,17 +344,18 @@
                   </div>`;
             container.innerHTML = h;
             
-            // Register inputs to the global engine
             items.forEach((item, i) => {
                 const inputEl = document.getElementById(`gap-${id}-${i}`);
-                const fbText = item.fb || "Tipp: Achte im Passiv auf die richtige Form von 'to be' + Past Participle (3. Spalte)!";
+                // Didaktisch präziser Hilfetext für Bedingungssätze Typ 3
+                const fbText = item.fb || "Tipp: Achte genau auf die Struktur des Typs 3. Im if-Satz bildest du das Past Perfect (had + 3. Verbform), im Hauptsatz nutzt du 'would have' + die 3. Verbform (past participle)!";
                 
-                window.gmRegisterInput(inputEl, item.correct, fbText, "KLASSE 8 - IF3", () => {
-                    updateProgress(id);
-                });
+                if (window.gmRegisterInput) {
+                    window.gmRegisterInput(inputEl, item.correct, fbText, "KLASSE 8 - IF3", () => {
+                        updateProgress(id);
+                    });
+                }
             });
 
-            // Initial progress display
             updateProgress(id);
         }
 
@@ -369,20 +377,23 @@
             if (lbl) lbl.innerText = perc + "%";
 
             if (corrects === items.length) {
-                window.gmTriggerChime('correct');
-                    markDone(id);
+                if (window.gmTriggerChime) window.gmTriggerChime('correct');
+                markDone(id);
             }
         }
 
         // --- PROGRESS & MASTERY SYSTEM ---
-                function markDone(num) {
-            if (state[num]) return; // Avoid duplicate XP rewards
+        function markDone(num) {
+            if (state[num]) return; 
             
             state[num] = true; 
             localStorage.setItem('grammar_g8_if3_state', JSON.stringify(state));
-            updateStatus(num); 
             
-            // Check if all exercises are complete
+            // Kaskadierendes Kachel-Update für die Schlösser
+            for(let i = 1; i <= 5; i++) {
+                updateStatus(i);
+            }
+            
             let allDone = true;
             for(let i=1; i<=5; i++) {
                 if(!state[i]) allDone = false;
@@ -394,15 +405,20 @@
                 localStorage.setItem('grammar_g8_if3_mastered', 'true');
             }
 
-            // Show beautiful global celebration modal with +50 XP completion reward
-            window.gmShowSuccessOverlay(50, badgeTitle, () => {
+            if (window.gmShowSuccessOverlay) {
+                window.gmShowSuccessOverlay(50, badgeTitle, () => {
+                    const nextNum = parseInt(num) + 1;
+                    if (nextNum <= 5) {
+                        toggleAccordion(nextNum);
+                    } else {
+                        checkMaster();
+                    }
+                });
+            } else {
                 const nextNum = parseInt(num) + 1;
-                if (nextNum <= 5) {
-                    toggleAccordion(nextNum);
-                } else {
-                    checkMaster();
-                }
-            });
+                if (nextNum <= 5) toggleAccordion(nextNum);
+                checkMaster();
+            }
         }
 
         function updateStatus(num) {
@@ -411,11 +427,17 @@
             const header = item.querySelector('.accordion-header');
             
             if (state[num]) { 
+                item.classList.remove('locked');
                 item.classList.add('done'); 
                 status.innerText = "✅ Completed"; 
                 header.classList.add('done-header'); 
+            } else if (num === 1 || state[num - 1]) { 
+                item.classList.remove('locked', 'done'); 
+                status.innerText = "🔓 Open"; 
+                header.classList.remove('done-header');
             } else { 
-                item.classList.remove('done'); 
+                item.classList.remove('done');
+                item.classList.add('locked'); 
                 status.innerText = "🔒 Locked"; 
                 header.classList.remove('done-header'); 
             }
@@ -430,7 +452,6 @@
             
             if (all.every(val => val === true)) {
                 document.getElementById('master-badge-container').style.display = 'block';
-                // Hier speichern wir das Master-Badge ab, auf das klasse8.html hört!
                 localStorage.setItem('grammar_g8_if3_mastered', 'true');
             } else { 
                 document.getElementById('master-badge-container').style.display = 'none'; 
