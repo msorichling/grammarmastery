@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -45,13 +45,15 @@
         }
         .exercise-button:hover { background: var(--grade-color); color: #0f172a; }
 
-        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); transition: opacity 0.3s ease; }
         .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); }
         .accordion-header:hover { background: rgba(255,255,255,0.05); }
         .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
         .accordion-item.active .accordion-content { display: block; }
         .accordion-item.done { border-color: var(--success-color); }
         .done-header { background: rgba(76, 175, 80, 0.1) !important; }
+        .accordion-item.locked { opacity: 0.5; }
+        .accordion-item.locked .accordion-header { cursor: not-allowed; }
 
         /* Sorter Styles */
         .pool { margin-bottom: 25px; min-height: 80px; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; text-align: center; }
@@ -79,6 +81,7 @@
         /* Inline Feedback Box */
         .feedback-box { color: #ff9e9e; font-size: 0.9em; margin-left: 5px; padding: 4px 8px; border-left: 3px solid var(--error-color); background: rgba(244, 67, 54, 0.1); display: none; border-radius: 5px; vertical-align: middle; }
         .feedback-box.warning { color: var(--warning-color); border-left-color: var(--warning-color); background: rgba(255, 152, 0, 0.1); }
+        .task-instruction { margin-bottom: 15px; font-weight: bold; color: var(--gold); background: rgba(255, 215, 0, 0.1); padding: 10px; border-radius: 8px; border-left: 4px solid var(--gold); }
         
         .master-badge { display: none; background: linear-gradient(145deg, #ffd700, #b8860b); color: #000; padding: 25px; border-radius: 20px; margin-top: 40px; font-weight: bold; text-align: center; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
         .back-btn { background: transparent; border: 1.5px solid var(--grade-color); color: var(--text-color); padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-bottom: 20px; font-weight: bold; transition: 0.3s; text-decoration: none; display: inline-block; }
@@ -183,6 +186,12 @@
         };
 
         function toggleAccordion(num) {
+            // Schutz-Logik: Blockiert das Vorab-Öffnen nicht freigeschalteter Aufgaben
+            if (num > 1 && !state[num - 1]) {
+                alert("Löse erst die vorherige Aufgabe, um diesen Bereich freizuschalten!");
+                return;
+            }
+
             const item = document.getElementById('item-ex'+num); 
             const isActive = item.classList.contains('active');
             document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
@@ -260,13 +269,17 @@
                 
                 if(err === 0) {
                     document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => x.style.pointerEvents = "none");
-                    window.gmTriggerChime('correct');
+                    if (window.gmTriggerChime) window.gmTriggerChime('correct');
                     markDone(xid); 
                 } else {
-                    window.gmTriggerChime('incorrect');
-                    alert(Du hast noch \ Fehler. Bitte korrigieren!);
+                    if (window.gmTriggerChime) window.gmTriggerChime('incorrect');
+                    alert("Du hast noch Fehler. Bitte korrigieren!");
                     setTimeout(() => {
-                        document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => x.style.backgroundColor = "var(--grade-color)");
+                        document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => {
+                            if(x.style.backgroundColor === "var(--error-color)") {
+                                x.style.backgroundColor = "var(--grade-color)";
+                            }
+                        });
                     }, 2000);
                 }
             };
@@ -307,7 +320,7 @@
                 });
                 
                 if(ok === d.sentences.length) {
-                    window.gmTriggerChime('correct');
+                    if (window.gmTriggerChime) window.gmTriggerChime('correct');
                     markDone(id); 
                 } else { 
                     alert(ok + " von " + d.sentences.length + " Sätzen sind richtig. Prüfe die rot markierten Sätze noch einmal!"); 
@@ -317,7 +330,7 @@
         }
 
         // --- CLOZE (LÜCKENTEXT) ---
-                function renderCloze(id, container) {
+        function renderCloze(id, container) {
             const d = exerciseData[id]; 
             if(!d) return;
             const items = d.items; 
@@ -327,7 +340,6 @@
                 h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : "" }</span> ${item.textAfter} ${d.continuous ? '' : '<br>'}`;
             });
             
-            // Add real-time exercise progress bar and score label
             h += `</div>
                   <div class="ex-progress-wrapper" style="margin-top:20px; display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); padding:10px 15px; border-radius:12px;">
                       <span style="font-size:0.85rem; font-weight:800; color:#10b981;">Fortschritt:</span>
@@ -338,17 +350,18 @@
                   </div>`;
             container.innerHTML = h;
             
-            // Register inputs to the global engine
             items.forEach((item, i) => {
                 const inputEl = document.getElementById(`gap-${id}-${i}`);
-                const fbText = item.fb || "Tipp: Achte auf die SignalwÃ¶rter wie 'since/for' (Present Perfect) vs. 'yesterday/ago' (Simple Past)!";
+                // Didaktische Korrektur des Feedback-Hilfetextes
+                const fbText = item.fb || "Tipp: Unterscheide genau zwischen Verbot (mustn't / must not) und fehlender Notwendigkeit (don't/doesn't have to). Bei he/she/it wird 'don't' zu 'doesn't'!";
                 
-                window.gmRegisterInput(inputEl, item.correct, fbText, "KLASSE 7 - MODALS", () => {
-                    updateProgress(id);
-                });
+                if (window.gmRegisterInput) {
+                    window.gmRegisterInput(inputEl, item.correct, fbText, "KLASSE 7 - MODALS", () => {
+                        updateProgress(id);
+                    });
+                }
             });
 
-            // Initial progress display
             updateProgress(id);
         }
 
@@ -370,20 +383,23 @@
             if (lbl) lbl.innerText = perc + "%";
 
             if (corrects === items.length) {
-                window.gmTriggerChime('correct');
-                    markDone(id);
+                if (window.gmTriggerChime) window.gmTriggerChime('correct');
+                markDone(id);
             }
         }
 
         // --- PROGRESS & MASTERY SYSTEM ---
-                function markDone(num) {
-            if (state[num]) return; // Avoid duplicate XP rewards
+        function markDone(num) {
+            if (state[num]) return; 
             
             state[num] = true; 
             localStorage.setItem('grammar_g7_modals_state', JSON.stringify(state));
-            updateStatus(num); 
             
-            // Check if all exercises are complete
+            // Kaskadierendes Update der Schlösser
+            for(let i = 1; i <= 5; i++) {
+                updateStatus(i);
+            }
+            
             let allDone = true;
             for(let i=1; i<=5; i++) {
                 if(!state[i]) allDone = false;
@@ -395,15 +411,20 @@
                 localStorage.setItem('grammar_g7_modals_mastered', 'true');
             }
 
-            // Show beautiful global celebration modal with +50 XP completion reward
-            window.gmShowSuccessOverlay(50, badgeTitle, () => {
+            if (window.gmShowSuccessOverlay) {
+                window.gmShowSuccessOverlay(50, badgeTitle, () => {
+                    const nextNum = parseInt(num) + 1;
+                    if (nextNum <= 5) {
+                        toggleAccordion(nextNum);
+                    } else {
+                        checkMaster();
+                    }
+                });
+            } else {
                 const nextNum = parseInt(num) + 1;
-                if (nextNum <= 5) {
-                    toggleAccordion(nextNum);
-                } else {
-                    checkMaster();
-                }
-            });
+                if (nextNum <= 5) toggleAccordion(nextNum);
+                checkMaster();
+            }
         }
 
         function updateStatus(num) {
@@ -412,11 +433,17 @@
             const header = item.querySelector('.accordion-header');
             
             if (state[num]) { 
+                item.classList.remove('locked');
                 item.classList.add('done'); 
                 status.innerText = "✅ Completed"; 
                 header.classList.add('done-header'); 
+            } else if (num === 1 || state[num - 1]) { 
+                item.classList.remove('locked', 'done'); 
+                status.innerText = "🔓 Open"; 
+                header.classList.remove('done-header');
             } else { 
-                item.classList.remove('done'); 
+                item.classList.remove('done');
+                item.classList.add('locked'); 
                 status.innerText = "🔒 Locked"; 
                 header.classList.remove('done-header'); 
             }
@@ -431,7 +458,6 @@
             
             if (all.every(val => val === true)) {
                 document.getElementById('master-badge-container').style.display = 'block';
-                // Wichtig: Key entspricht dem, was das Grade 7 Dashboard abfragt!
                 localStorage.setItem('grammar_g7_modals_mastered', 'true');
             } else { 
                 document.getElementById('master-badge-container').style.display = 'none'; 
