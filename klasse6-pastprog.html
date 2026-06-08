@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -45,13 +45,15 @@
         }
         .exercise-button:hover { background: var(--grade-color); color: #fff; }
 
-        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .accordion-item { background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); transition: opacity 0.3s ease; }
         .accordion-header { padding: 18px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(255,255,255,0.02); }
         .accordion-header:hover { background: rgba(255,255,255,0.05); }
         .accordion-content { display: none; padding: 25px; border-top: 1px solid rgba(255,255,255,0.1); }
         .accordion-item.active .accordion-content { display: block; }
         .accordion-item.done { border-color: var(--success-color); }
         .done-header { background: rgba(76, 175, 80, 0.1) !important; }
+        .accordion-item.locked { opacity: 0.5; }
+        .accordion-item.locked .accordion-header { cursor: not-allowed; }
 
         /* Sorter Styles */
         .pool { margin-bottom: 25px; min-height: 80px; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; text-align: center; }
@@ -188,14 +190,20 @@
                     {textBefore:"People", prompt:"(stand)", textAfter:"on the street.", correct:["were standing"]},
                     {textBefore:"A policeman", prompt:"(talk)", textAfter:"to a woman.", correct:["was talking"]},
                     {textBefore:"While I", prompt:"(watch)", textAfter:", my phone rang.", correct:["was watching"]},
-                    {textBefore:"It was my mum. She", prompt:"(call)", textAfter:"me.", correct:["called"]}, /* Trick-Frage: Simple Past hier, weil unterbrechend! (aus deiner Vorlage) */
-                    {textBefore:"I", prompt:"(tell)", textAfter:"her what was happening.", correct:["told"]},     /* Simple Past */
-                    {textBefore:"We", prompt:"(go)", textAfter:"home together later.", correct:["went"]}        /* Simple Past */
+                    {textBefore:"It was my mum. She", prompt:"(call)", textAfter:"me.", correct:["called"]}, 
+                    {textBefore:"I", prompt:"(tell)", textAfter:"her what was happening.", correct:["told"]},     
+                    {textBefore:"We", prompt:"(go)", textAfter:"home together later.", correct:["went"]}        
                 ] 
             }
         };
 
         function toggleAccordion(num) {
+            // Schutz-Logik: Blockiert das Vorab-Öffnen nicht freigeschalteter Aufgaben
+            if (num > 1 && !state[num - 1]) {
+                alert("Löse erst die vorherige Aufgabe, um diesen Bereich freizuschalten!");
+                return;
+            }
+
             const item = document.getElementById('item-ex'+num); 
             const isActive = item.classList.contains('active');
             document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
@@ -273,13 +281,17 @@
                 
                 if(err === 0) {
                     document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => x.style.pointerEvents = "none");
-                    window.gmTriggerChime('correct');
+                    if (window.gmTriggerChime) window.gmTriggerChime('correct');
                     markDone(xid); 
                 } else {
-                    window.gmTriggerChime('incorrect');
-                    alert(Du hast noch \ Fehler. Bitte korrigieren!);
+                    if (window.gmTriggerChime) window.gmTriggerChime('incorrect');
+                    alert("Du hast noch Fehler. Bitte korrigieren!");
                     setTimeout(() => {
-                        document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => x.style.backgroundColor = "var(--grade-color)");
+                        document.querySelectorAll(`#content-ex${xid} .sort-item`).forEach(x => {
+                            if(x.style.backgroundColor === "var(--error-color)") {
+                                x.style.backgroundColor = "var(--grade-color)";
+                            }
+                        });
                     }, 2000);
                 }
             };
@@ -288,7 +300,7 @@
         // --- SPELLING FORGE (-ing Anhängen) ---
         function renderSpelling(id, container) {
             const d = exerciseData[id];
-            let h = `<p>Bilde die <b>-ing Form</b>. Pass auf Ausnahmen auf (z.B. stummes 'e' am Ende oder Verdopplung von Konsonanten)!</p>
+            let h = `<p>Bilde die <b>-ing Form</b>. Pass auf Ausnahmen auf (z.B. stummes 'e' am Ende oder Verdopplung vonamp; Konsonanten)!</p>
                      <table class="factory-table"><thead><tr><th>Infinitive</th><th>-ing Form</th><th></th></tr></thead><tbody>`;
             d.items.forEach((it, i) => {
                 h += `<tr>
@@ -326,13 +338,17 @@
                         fb.style.color = "var(--error-color)";
                     }
                 });
-                if(corrects === items.length) window.gmTriggerChime('correct');
+                if(corrects === items.length) {
+                    if (window.gmTriggerChime) window.gmTriggerChime('correct');
                     markDone(xid);
+                } else {
+                    if (window.gmTriggerChime) window.gmTriggerChime('incorrect');
+                }
             };
         }
 
         // --- CLOZE (LÜCKENTEXT) ---
-                function renderCloze(id, container) {
+        function renderCloze(id, container) {
             const d = exerciseData[id]; 
             if(!d) return;
             const items = d.items; 
@@ -342,7 +358,6 @@
                 h += `${item.textBefore} <span class="gap-input-wrapper"><input type="text" id="gap-${id}-${i}" class="gap-input" autocomplete="off" spellcheck="false">${item.prompt ? `<span class="gap-prompt">${item.prompt}</span>` : "" }</span> ${item.textAfter} ${d.continuous ? '' : '<br>'}`;
             });
             
-            // Add real-time exercise progress bar and score label
             h += `</div>
                   <div class="ex-progress-wrapper" style="margin-top:20px; display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); padding:10px 15px; border-radius:12px;">
                       <span style="font-size:0.85rem; font-weight:800; color:#10b981;">Fortschritt:</span>
@@ -353,17 +368,18 @@
                   </div>`;
             container.innerHTML = h;
             
-            // Register inputs to the global engine
             items.forEach((item, i) => {
                 const inputEl = document.getElementById(`gap-${id}-${i}`);
-                const fbText = item.fb || "Tipp: Achte im Simple Past auf das -ed bei regelmÃ¤ÃŸigen Verben und lerne die unregelmÃ¤ÃŸigen Formen gut auswendig!";
+                // Didaktische Anpassung des Fehler-Hilfetextes an das Past Progressive
+                const fbText = item.fb || "Tipp: Verwende die Vergangenheitsform des Progressive. Du brauchst immer 'was' oder 'were' + die '-ing'-Form des Verbs in der Klammer!";
                 
-                window.gmRegisterInput(inputEl, item.correct, fbText, "KLASSE 6 - PASTPROG", () => {
-                    updateProgress(id);
-                });
+                if (window.gmRegisterInput) {
+                    window.gmRegisterInput(inputEl, item.correct, fbText, "KLASSE 6 - PASTPROG", () => {
+                        updateProgress(id);
+                    });
+                }
             });
 
-            // Initial progress display
             updateProgress(id);
         }
 
@@ -385,19 +401,23 @@
             if (lbl) lbl.innerText = perc + "%";
 
             if (corrects === items.length) {
+                if (window.gmTriggerChime) window.gmTriggerChime('correct');
                 markDone(id);
             }
         }
 
         // --- PROGRESS & MASTERY SYSTEM ---
-                function markDone(num) {
-            if (state[num]) return; // Avoid duplicate XP rewards
+        function markDone(num) {
+            if (state[num]) return; 
             
             state[num] = true; 
             localStorage.setItem('grammar_g6_pastprog_state', JSON.stringify(state));
-            updateStatus(num); 
             
-            // Check if all exercises are complete
+            // Kaskadierendes Schloss-Update für alle Akkordeon-Kacheln
+            for(let i = 1; i <= 5; i++) {
+                updateStatus(i);
+            }
+            
             let allDone = true;
             for(let i=1; i<=5; i++) {
                 if(!state[i]) allDone = false;
@@ -409,15 +429,20 @@
                 localStorage.setItem('grammar_g6_pastprog_mastered', 'true');
             }
 
-            // Show beautiful global celebration modal with +50 XP completion reward
-            window.gmShowSuccessOverlay(50, badgeTitle, () => {
+            if (window.gmShowSuccessOverlay) {
+                window.gmShowSuccessOverlay(50, badgeTitle, () => {
+                    const nextNum = parseInt(num) + 1;
+                    if (nextNum <= 5) {
+                        toggleAccordion(nextNum);
+                    } else {
+                        checkMaster();
+                    }
+                });
+            } else {
                 const nextNum = parseInt(num) + 1;
-                if (nextNum <= 5) {
-                    toggleAccordion(nextNum);
-                } else {
-                    checkMaster();
-                }
-            });
+                if (nextNum <= 5) toggleAccordion(nextNum);
+                checkMaster();
+            }
         }
 
         function updateStatus(num) {
@@ -426,11 +451,17 @@
             const header = item.querySelector('.accordion-header');
             
             if (state[num]) { 
+                item.classList.remove('locked');
                 item.classList.add('done'); 
                 status.innerText = "✅ Completed"; 
                 header.classList.add('done-header'); 
+            } else if (num === 1 || state[num - 1]) { 
+                item.classList.remove('locked', 'done'); 
+                status.innerText = "🔓 Open"; 
+                header.classList.remove('done-header');
             } else { 
-                item.classList.remove('done'); 
+                item.classList.remove('done');
+                item.classList.add('locked'); 
                 status.innerText = "🔒 Locked"; 
                 header.classList.remove('done-header'); 
             }
@@ -445,7 +476,6 @@
             
             if (all.every(val => val === true)) {
                 document.getElementById('master-badge-container').style.display = 'block';
-                // Hier passiert die Magie: Wir speichern den Master-Badge für das übergeordnete Dashboard!
                 localStorage.setItem('grammar_g6_pastprog_mastered', 'true');
             } else { 
                 document.getElementById('master-badge-container').style.display = 'none'; 
@@ -453,7 +483,6 @@
         }
 
         window.onload = () => { 
-            // Stelle den Status beim Laden der Seite wieder her
             for(let i=1; i<=5; i++) {
                 updateStatus(i);
             }
