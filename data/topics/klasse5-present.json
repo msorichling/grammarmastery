@@ -1,0 +1,752 @@
+{
+  "id": "klasse5-present",
+  "legacyStorageKey": "grammar_g5_mastery_final",
+  "legacyMasteredKey": "grammar_g5_pres_contrast_mastered",
+  "legacyStateKey": "grammar_g5_mastery_final",
+  "legacyMasteryKey": "grammar_g5_presentcontrast_mastered",
+  "title": "Simple Present vs. Present Progressive",
+  "grade": "5",
+  "category": "Grundlagen & Erste Zeiten",
+  "icon": "🌱",
+  "accentColor": "blue",
+  "description": "Unterscheide sicher zwischen regelmäßigen Gewohnheiten (Simple Present) und Handlungen, die genau jetzt passieren (Present Progressive).",
+  "rules": {
+    "summary": "Achte auf das Signalwort im Satz: Passiert etwas regelmäßig/immer (Simple Present) oder genau in diesem Moment (Present Progressive)?",
+    "warning": "⚠️ Merksatz: 'He, she, it – das -s muss mit!' (im Simple Present) · 'am / is / are + Verb-ing' (im Present Progressive).",
+    "sections": [
+      {
+        "title": "Simple Present (Gewohnheiten & Fakten)",
+        "formula": "Grundform (Infinitiv) · bei he/she/it + -s (Verneinung: don't / doesn't + Infinitiv)",
+        "signalWords": [
+          "always",
+          "usually",
+          "often",
+          "sometimes",
+          "never",
+          "every day",
+          "on Sundays"
+        ],
+        "examples": [
+          "I usually get up at 7 o'clock.",
+          "My mum makes breakfast every morning.",
+          "I don't go to school on Sundays."
+        ]
+      },
+      {
+        "title": "Present Progressive (Genau jetzt)",
+        "formula": "am / is / are + Verb-ing (Verneinung: am not / isn't / aren't + Verb-ing)",
+        "signalWords": [
+          "now",
+          "right now",
+          "at the moment",
+          "Look!",
+          "Listen!",
+          "today"
+        ],
+        "examples": [
+          "Listen! She is singing in the kitchen.",
+          "Look! The cat is playing with the milk.",
+          "We aren't learning maths right now."
+        ]
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "My Morning Routine (Einzelsätze)",
+      "type": "single_sentence",
+      "instruction": "Entscheide anhand der Signalwörter: Ist es eine tägliche Routine (Simple Present) oder passiert es genau heute/jetzt (Present Progressive)?",
+      "sentences": [
+        {
+          "id": "s1",
+          "text": "I usually {{gap}} at 7 o'clock.",
+          "gaps": [
+            {
+              "id": "g1",
+              "gap": "get up",
+              "prompt": "get up",
+              "grammarHint": "Signalwort: usually · 1. Pers. Sg.",
+              "hints": [
+                "Signalwort 'usually' = Gewohnheit (Simple Present).",
+                "Bei 'I' bleibt das Verb in der Grundform: get up."
+              ],
+              "solutions": [
+                "get up"
+              ],
+              "explanation": "Das Signalwort 'usually' zeigt eine regelmäßige Gewohnheit an → Simple Present ('get up').",
+              "acceptedAnswers": [
+                "get up"
+              ],
+              "answer": "get up"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "text": "But today is Sunday, so I {{gap}} late.",
+          "gaps": [
+            {
+              "id": "g2",
+              "gap": "sleep",
+              "prompt": "sleep",
+              "grammarHint": "Ausnahme heute: today · 1. Pers. Sg.",
+              "hints": [
+                "'Today is Sunday' beschreibt, was gerade heute anders läuft (Present Progressive).",
+                "Bilde: am + Verb-ing."
+              ],
+              "solutions": [
+                "am sleeping",
+                "'m sleeping"
+              ],
+              "explanation": "'Today' im Kontrast zu 'usually' verlangt das Present Progressive: am sleeping.",
+              "acceptedAnswers": [
+                "am sleeping",
+                "'m sleeping"
+              ],
+              "answer": "am sleeping"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "My mum {{gap}} breakfast every day.",
+          "gaps": [
+            {
+              "id": "g3",
+              "gap": "make",
+              "prompt": "make",
+              "grammarHint": "Signalwort: every day · 3. Pers. Sg.",
+              "hints": [
+                "'every day' = Routine (Simple Present).",
+                "My mum = she → 'He, she, it, das -s muss mit!'"
+              ],
+              "solutions": [
+                "makes"
+              ],
+              "explanation": "'Every day' steht für eine Gewohnheit. Da 'My mum' (she) 3. Person Singular ist, hängt man ein -s an: 'makes'.",
+              "acceptedAnswers": [
+                "makes"
+              ],
+              "answer": "makes"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "Listen! She {{gap}} in the kitchen right now.",
+          "gaps": [
+            {
+              "id": "g4",
+              "gap": "sing",
+              "prompt": "sing",
+              "grammarHint": "Signalwort: Listen! / right now · 3. Pers. Sg.",
+              "hints": [
+                "'Listen!' und 'right now' zeigen: Es passiert genau jetzt!",
+                "She + is + Verb-ing."
+              ],
+              "solutions": [
+                "is singing",
+                "'s singing"
+              ],
+              "explanation": "'Listen!' und 'right now' sind klassische Signalwörter für das Present Progressive → 'is singing'.",
+              "acceptedAnswers": [
+                "is singing",
+                "'s singing"
+              ],
+              "answer": "is singing"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "text": "We always {{gap}} toast for breakfast.",
+          "gaps": [
+            {
+              "id": "g5",
+              "gap": "eat",
+              "prompt": "eat",
+              "grammarHint": "Signalwort: always · 1. Pers. Pl.",
+              "hints": [
+                "'always' = immer / Gewohnheit (Simple Present).",
+                "Bei 'we' nutzt du die Grundform."
+              ],
+              "solutions": [
+                "eat"
+              ],
+              "explanation": "'Always' zeigt eine feste Gewohnheit an → Simple Present ('eat').",
+              "acceptedAnswers": [
+                "eat"
+              ],
+              "answer": "eat"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "Look! The cat {{gap}} with a ball of wool.",
+          "gaps": [
+            {
+              "id": "g6",
+              "gap": "play",
+              "prompt": "play",
+              "grammarHint": "Signalwort: Look! · 3. Pers. Sg.",
+              "hints": [
+                "'Look!' zeigt, dass du die Handlung gerade beobachtest.",
+                "The cat (it) + is + playing."
+              ],
+              "solutions": [
+                "is playing",
+                "'s playing"
+              ],
+              "explanation": "Bei 'Look!' passiert die Handlung genau vor deinen Augen → Present Progressive ('is playing').",
+              "acceptedAnswers": [
+                "is playing",
+                "'s playing"
+              ],
+              "answer": "is playing"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "text": "I {{gap}} to school on Sundays.",
+          "gaps": [
+            {
+              "id": "g7",
+              "gap": "not / go",
+              "prompt": "not / go",
+              "grammarHint": "Signalwort: on Sundays · Verneinung",
+              "hints": [
+                "'on Sundays' = jeden Sonntag (Simple Present).",
+                "Verneinung bei 'I' mit don't / do not + Grundform."
+              ],
+              "solutions": [
+                "don't go",
+                "do not go"
+              ],
+              "explanation": "'On Sundays' bedeutet jeden Sonntag (Routine). Die Verneinung im Simple Present bei 'I' lautet 'don't go' (do not go).",
+              "acceptedAnswers": [
+                "don't go",
+                "do not go"
+              ],
+              "answer": "don't go"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "text": "At the moment, my dad and I {{gap}} on the sofa.",
+          "gaps": [
+            {
+              "id": "g8",
+              "gap": "relax",
+              "prompt": "relax",
+              "grammarHint": "Signalwort: At the moment · Plural (we)",
+              "hints": [
+                "'At the moment' = genau jetzt (Present Progressive).",
+                "My dad and I (= we) + are + relaxing."
+              ],
+              "solutions": [
+                "are relaxing"
+              ],
+              "explanation": "'At the moment' verlangt das Present Progressive. Da 'my dad and I' Plural (we) ist, nutzt man 'are relaxing'.",
+              "acceptedAnswers": [
+                "are relaxing"
+              ],
+              "answer": "are relaxing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Hobbies & Free Time (Einzelsätze)",
+      "type": "single_sentence",
+      "instruction": "Bilde die richtige Zeitform (Aussagesätze, Verneinungen und Fragen).",
+      "sentences": [
+        {
+          "id": "s1",
+          "text": "Tom {{gap}} football every Tuesday.",
+          "gaps": [
+            {
+              "id": "g1",
+              "gap": "play",
+              "prompt": "play",
+              "grammarHint": "Signalwort: every Tuesday · 3. Pers. Sg.",
+              "hints": [
+                "'every Tuesday' = regelmäßiges Hobby (Simple Present).",
+                "Tom = he → +s!"
+              ],
+              "solutions": [
+                "plays"
+              ],
+              "explanation": "'Every Tuesday' ist eine Gewohnheit. Bei 'Tom' (he) braucht das Verb im Simple Present ein -s: 'plays'.",
+              "acceptedAnswers": [
+                "plays"
+              ],
+              "answer": "plays"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "text": "Look! He {{gap}} very fast across the pitch.",
+          "gaps": [
+            {
+              "id": "g2",
+              "gap": "run",
+              "prompt": "run",
+              "grammarHint": "Signalwort: Look! · Achtung: Konsonantenverdopplung",
+              "hints": [
+                "'Look!' = Present Progressive (is + -ing).",
+                "Bei 'run' verdoppelt sich das 'n': running."
+              ],
+              "solutions": [
+                "is running",
+                "'s running"
+              ],
+              "explanation": "Nach kurzem betontem Vokal wird der Endkonsonant verdoppelt: run → is running.",
+              "acceptedAnswers": [
+                "is running",
+                "'s running"
+              ],
+              "answer": "is running"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "Sarah {{gap}} in a dance club regularly.",
+          "gaps": [
+            {
+              "id": "g3",
+              "gap": "dance",
+              "prompt": "dance",
+              "grammarHint": "Signalwort: regularly · 3. Pers. Sg.",
+              "hints": [
+                "'regularly' = regelmäßig (Simple Present).",
+                "Sarah (she) → dances."
+              ],
+              "solutions": [
+                "dances"
+              ],
+              "explanation": "'Regularly' signalisiert eine Gewohnheit → Simple Present mit -s bei she: 'dances'.",
+              "acceptedAnswers": [
+                "dances"
+              ],
+              "answer": "dances"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "At the moment, she {{gap}} a new song.",
+          "gaps": [
+            {
+              "id": "g4",
+              "gap": "practice",
+              "prompt": "practice",
+              "grammarHint": "Signalwort: At the moment · Stummes -e fällt weg",
+              "hints": [
+                "'At the moment' = Present Progressive.",
+                "Das stumme -e am Ende von practice fällt vor -ing weg!"
+              ],
+              "solutions": [
+                "is practicing",
+                "is practising",
+                "'s practicing",
+                "'s practising"
+              ],
+              "explanation": "Vor der Endung -ing entfällt das stumme -e am Wortende: practice → is practicing (BE: is practising).",
+              "acceptedAnswers": [
+                "is practicing",
+                "is practising",
+                "'s practicing",
+                "'s practising"
+              ],
+              "answer": "is practicing"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "text": "You always help me, but today you {{gap}} me at all!",
+          "gaps": [
+            {
+              "id": "g5",
+              "gap": "not / help",
+              "prompt": "not / help",
+              "grammarHint": "Signalwort: today · Verneinung mit you",
+              "hints": [
+                "'today' im Gegensatz zu 'always' → Present Progressive.",
+                "Verneinung: are not / aren't helping."
+              ],
+              "solutions": [
+                "aren't helping",
+                "are not helping"
+              ],
+              "explanation": "Die Handlung findet heute (gerade jetzt) nicht statt → Present Progressive verneint: 'aren't helping'.",
+              "acceptedAnswers": [
+                "aren't helping",
+                "are not helping"
+              ],
+              "answer": "aren't helping"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "text": "Why {{gap}} so loudly right now?",
+          "gaps": [
+            {
+              "id": "g6",
+              "gap": "they / shout",
+              "prompt": "they / shout",
+              "grammarHint": "Fragesatz · Signalwort: right now",
+              "hints": [
+                "Bei Fragen im Present Progressive steht 'are' VOR dem Subjekt 'they'.",
+                "are + they + shouting"
+              ],
+              "solutions": [
+                "are they shouting"
+              ],
+              "explanation": "Im Fragesatz des Present Progressive rückt das Hilfsverb vor das Subjekt: 'Why are they shouting right now?'",
+              "acceptedAnswers": [
+                "are they shouting"
+              ],
+              "answer": "are they shouting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "London Alive (Lückentext)",
+      "type": "cloze_text",
+      "instruction": "Lies den zusammenhängenden Bericht aus London. Tippe auf eine Lücke und gib die passende Form im unteren Eingabefeld ein.",
+      "sentences": [
+        {
+          "id": "s1",
+          "text": "London {{gap}} many famous sights and millions of tourists {{gap}} the London Eye every year.",
+          "gaps": [
+            {
+              "id": "g1",
+              "gap": "have",
+              "prompt": "have",
+              "grammarHint": "Allgemeiner Fakt · London = it",
+              "hints": [
+                "Allgemeine Tatsache über London (Simple Present).",
+                "Achtung: Die 3. Person Singular von 'have' heißt 'has'."
+              ],
+              "solutions": [
+                "has"
+              ],
+              "explanation": "Allgemeine Fakten stehen im Simple Present. Bei 'London' (it) wird 'have' zu 'has'.",
+              "acceptedAnswers": [
+                "has"
+              ],
+              "answer": "has"
+            },
+            {
+              "id": "g2",
+              "gap": "visit",
+              "prompt": "visit",
+              "grammarHint": "Signalwort: every year · Plural",
+              "hints": [
+                "'every year' = regelmäßig (Simple Present).",
+                "Tourists = Plural (they) → Grundform."
+              ],
+              "solutions": [
+                "visit"
+              ],
+              "explanation": "'Every year' beschreibt eine wiederkehrende Tatsache. 'Tourists' steht im Plural → 'visit'.",
+              "acceptedAnswers": [
+                "visit"
+              ],
+              "answer": "visit"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "text": "Right now, we {{gap}} in front of Buckingham Palace and my sister {{gap}} lots of photos.",
+          "gaps": [
+            {
+              "id": "g3",
+              "gap": "stand",
+              "prompt": "stand",
+              "grammarHint": "Signalwort: Right now · 1. Pers. Pl.",
+              "hints": [
+                "'Right now' = genau jetzt (Present Progressive).",
+                "we + are + standing."
+              ],
+              "solutions": [
+                "are standing",
+                "'re standing"
+              ],
+              "explanation": "'Right now' zeigt an, dass sie genau jetzt dort stehen → 'are standing'.",
+              "acceptedAnswers": [
+                "are standing",
+                "'re standing"
+              ],
+              "answer": "are standing"
+            },
+            {
+              "id": "g4",
+              "gap": "take",
+              "prompt": "take",
+              "grammarHint": "Gleicher Moment · 3. Pers. Sg. (my sister)",
+              "hints": [
+                "Passiert ebenfalls genau jetzt (Present Progressive).",
+                "take ohne -e + ing: is taking."
+              ],
+              "solutions": [
+                "is taking",
+                "'s taking"
+              ],
+              "explanation": "Auch diese Handlung läuft im selben Moment ab: 'my sister is taking' (stummes -e entfällt).",
+              "acceptedAnswers": [
+                "is taking",
+                "'s taking"
+              ],
+              "answer": "is taking"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "In Great Britain, traffic always {{gap}} on the left, and red buses {{gap}} past us at the moment.",
+          "gaps": [
+            {
+              "id": "g5",
+              "gap": "move",
+              "prompt": "move",
+              "grammarHint": "Signalwort: always · traffic = unzählbar (it)",
+              "hints": [
+                "Allgemeine Verkehrsregel mit 'always' (Simple Present).",
+                "'traffic' ist im Englischen Singular (it) → moves."
+              ],
+              "solutions": [
+                "moves"
+              ],
+              "explanation": "'Always' und eine allgemeine Regel verlangen das Simple Present: 'traffic moves'.",
+              "acceptedAnswers": [
+                "moves"
+              ],
+              "answer": "moves"
+            },
+            {
+              "id": "g6",
+              "gap": "drive",
+              "prompt": "drive",
+              "grammarHint": "Signalwort: at the moment · Plural",
+              "hints": [
+                "'at the moment' = genau jetzt (Present Progressive).",
+                "red buses (they) + are + driving."
+              ],
+              "solutions": [
+                "are driving"
+              ],
+              "explanation": "'At the moment' verlangt das Present Progressive im Plural: 'are driving'.",
+              "acceptedAnswers": [
+                "are driving"
+              ],
+              "answer": "are driving"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "text": "Listen! Big Ben {{gap}} loudly, and luckily it {{gap}} right now!",
+          "gaps": [
+            {
+              "id": "g7",
+              "gap": "ring",
+              "prompt": "ring",
+              "grammarHint": "Signalwort: Listen! · 3. Pers. Sg.",
+              "hints": [
+                "'Listen!' = man hört es genau jetzt.",
+                "Big Ben (it) + is + ringing."
+              ],
+              "solutions": [
+                "is ringing",
+                "'s ringing"
+              ],
+              "explanation": "'Listen!' zeigt eine gerade ablaufende Handlung an → 'is ringing'.",
+              "acceptedAnswers": [
+                "is ringing",
+                "'s ringing"
+              ],
+              "answer": "is ringing"
+            },
+            {
+              "id": "g8",
+              "gap": "not / rain",
+              "prompt": "not / rain",
+              "grammarHint": "Signalwort: right now · Verneinung mit it",
+              "hints": [
+                "'right now' = Present Progressive.",
+                "it + isn't / is not + raining."
+              ],
+              "solutions": [
+                "isn't raining",
+                "is not raining",
+                "'s not raining"
+              ],
+              "explanation": "Verneinung im Present Progressive bei 'it': 'isn't raining' (is not raining).",
+              "acceptedAnswers": [
+                "isn't raining",
+                "is not raining",
+                "'s not raining"
+              ],
+              "answer": "isn't raining"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Postcard from Scotland (Lückentext)",
+      "type": "cloze_text",
+      "instruction": "Vervollständige die Urlaubspostkarte aus Schottland im scrollfreien Lückentext-Modus.",
+      "sentences": [
+        {
+          "id": "s1",
+          "text": "Dear Leo, it often {{gap}} in Scotland, but look – the sun {{gap}} warmly today!",
+          "gaps": [
+            {
+              "id": "g1",
+              "gap": "rain",
+              "prompt": "rain",
+              "grammarHint": "Signalwort: often · 3. Pers. Sg. (it)",
+              "hints": [
+                "'often' beschreibt das typische Wetter (Simple Present).",
+                "it + rains."
+              ],
+              "solutions": [
+                "rains"
+              ],
+              "explanation": "'Often' drückt eine allgemeine Regelmäßigkeit aus → Simple Present ('rains').",
+              "acceptedAnswers": [
+                "rains"
+              ],
+              "answer": "rains"
+            },
+            {
+              "id": "g2",
+              "gap": "shine",
+              "prompt": "shine",
+              "grammarHint": "Signalwort: look / today · 3. Pers. Sg.",
+              "hints": [
+                "'look' und 'today' zeigen die Ausnahme im jetzigen Moment.",
+                "shine → is shining (ohne -e)."
+              ],
+              "solutions": [
+                "is shining",
+                "'s shining"
+              ],
+              "explanation": "Die Sonne scheint genau jetzt ('look / today') → Present Progressive ('is shining').",
+              "acceptedAnswers": [
+                "is shining",
+                "'s shining"
+              ],
+              "answer": "is shining"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "text": "Scottish men sometimes {{gap}} kilts for special events. Look over there! That man {{gap}} the bagpipes right now.",
+          "gaps": [
+            {
+              "id": "g3",
+              "gap": "wear",
+              "prompt": "wear",
+              "grammarHint": "Signalwort: sometimes · Plural (men)",
+              "hints": [
+                "'sometimes' = Gewohnheit/Tradition (Simple Present).",
+                "'men' ist Plural → Grundform wear."
+              ],
+              "solutions": [
+                "wear"
+              ],
+              "explanation": "Traditionen mit 'sometimes' stehen im Simple Present. Da 'men' Plural ist: 'wear'.",
+              "acceptedAnswers": [
+                "wear"
+              ],
+              "answer": "wear"
+            },
+            {
+              "id": "g4",
+              "gap": "play",
+              "prompt": "play",
+              "grammarHint": "Signalwort: Look / right now · 3. Pers. Sg.",
+              "hints": [
+                "'Look' & 'right now' = passiert in diesem Augenblick.",
+                "That man (he) + is playing."
+              ],
+              "solutions": [
+                "is playing",
+                "'s playing"
+              ],
+              "explanation": "'Right now' verlangt das Present Progressive: 'is playing'.",
+              "acceptedAnswers": [
+                "is playing",
+                "'s playing"
+              ],
+              "answer": "is playing"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "text": "Legend says that Nessie {{gap}} in Loch Ness, so we {{gap}} for her with binoculars at the moment!",
+          "gaps": [
+            {
+              "id": "g5",
+              "gap": "live",
+              "prompt": "live",
+              "grammarHint": "Dauerhafter Zustand · 3. Pers. Sg. (Nessie)",
+              "hints": [
+                "Ein dauerhafter Wohnort steht im Simple Present.",
+                "Nessie (she/it) → lives."
+              ],
+              "solutions": [
+                "lives"
+              ],
+              "explanation": "Dauerhafte Zustände stehen im Simple Present: 'Nessie lives in Loch Ness'.",
+              "acceptedAnswers": [
+                "lives"
+              ],
+              "answer": "lives"
+            },
+            {
+              "id": "g6",
+              "gap": "look",
+              "prompt": "look",
+              "grammarHint": "Signalwort: at the moment · 1. Pers. Pl.",
+              "hints": [
+                "'at the moment' = genau jetzt (Present Progressive).",
+                "we + are looking."
+              ],
+              "solutions": [
+                "are looking",
+                "'re looking"
+              ],
+              "explanation": "Die Suche findet 'at the moment' statt → Present Progressive ('are looking').",
+              "acceptedAnswers": [
+                "are looking",
+                "'re looking"
+              ],
+              "answer": "are looking"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3629 @@
+{
+  "id": "klasse9-10-mixed",
+  "title": "Mixed Grammar Mastery (Beginner • Intermediate • Expert)",
+  "grade": "9-10",
+  "icon": "🏆",
+  "description": "15 umfassende Mixed-Grammar-Einheiten (150 Sätze): Gerund vs. Infinitive, Participles, Passive, Conditionals I–III & Inversion.",
+  "legacyStorageKey": "grammar_g9_10_state",
+  "legacyMasteredKey": "grammar_g9_10_mastered",
+  "rules": {
+    "title": "Oberstufen- & Prüfungs-Grammatik im Mix",
+    "summary": "In Klasse 9/10 greifen alle Strukturen ineinander: Achte besonders auf Verben mit Gerund (-ing) vs. to-Infinitive, Partizipialkonstruktionen (Having + Past Participle), unpersönliches Passiv (is said to be / to have been) und Mixed Conditionals.",
+    "examples": [
+      "Gerund: avoid, enjoy, mind, suggest, look forward to, succeed in + -ing",
+      "Infinitive: decide, refuse, manage, expect, promise + to + Infinitive",
+      "Participles: Having finished the report, she went home.",
+      "Reporting Passive: The fortress is reported to have been built in 1240."
+    ]
+  },
+  "exercises": [
+    {
+      "id": "beg1",
+      "title": "1. [Beginner] Mixed Grammar 1",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Beginner): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Every morning, my neighbor Sarah {{0}} her dog in the park.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "walk - often",
+              "grammarHint": "[Beginner] Routine (Simple Present). Sarah = 3. Person Singular.",
+              "hints": [
+                "Routine (Simple Present). Sarah = 3. Person Singular.",
+                "Lösung beginnt mit „of…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "often walks"
+              ],
+              "explanation": "Routine (Simple Present). Sarah = 3. Person Singular. → Lösung: often walks",
+              "acceptedAnswers": [
+                "often walks"
+              ],
+              "answer": "often walks"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Yesterday evening, the children {{0}} outside because it was raining heavily.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - play",
+              "grammarHint": "[Beginner] Signalwort 'Yesterday' verlangt Simple Past.",
+              "hints": [
+                "Signalwort 'Yesterday' verlangt Simple Past.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did not play",
+                "didn't play"
+              ],
+              "explanation": "Signalwort 'Yesterday' verlangt Simple Past. → Lösung: did not play, didn't play",
+              "acceptedAnswers": [
+                "did not play",
+                "didn't play"
+              ],
+              "answer": "did not play"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "She is interested {{0}} reading fantasy books.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Feste Präposition: 'interested in'.",
+              "hints": [
+                "Feste Präposition: 'interested in'."
+              ],
+              "solutions": [
+                "in"
+              ],
+              "explanation": "Feste Präposition: 'interested in'. → Lösung: in",
+              "acceptedAnswers": [
+                "in"
+              ],
+              "answer": "in"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "My brother enjoys {{0}} hiking on weekends.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "go",
+              "grammarHint": "[Beginner] Nach 'enjoy' folgt das Gerundium (-ing).",
+              "hints": [
+                "Nach 'enjoy' folgt das Gerundium (-ing).",
+                "Lösung beginnt mit „go…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "going"
+              ],
+              "explanation": "Nach 'enjoy' folgt das Gerundium (-ing). → Lösung: going",
+              "acceptedAnswers": [
+                "going"
+              ],
+              "answer": "going"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The old man had to {{0}} for us to understand him.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "speak - slow",
+              "grammarHint": "[Beginner] Adverb benötigt, um 'speak' zu beschreiben.",
+              "hints": [
+                "Adverb benötigt, um 'speak' zu beschreiben.",
+                "Lösung beginnt mit „sp…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "speak slowly"
+              ],
+              "explanation": "Adverb benötigt, um 'speak' zu beschreiben. → Lösung: speak slowly",
+              "acceptedAnswers": [
+                "speak slowly"
+              ],
+              "answer": "speak slowly"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "The apples {{0}} picked by the farmer last Tuesday.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "[Beginner] Simple Past Passive (Plural).",
+              "hints": [
+                "Simple Past Passive (Plural).",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were"
+              ],
+              "explanation": "Simple Past Passive (Plural). → Lösung: were",
+              "acceptedAnswers": [
+                "were"
+              ],
+              "answer": "were"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The blue car is bigger {{0}} the red one.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Vergleich mit 'than'.",
+              "hints": [
+                "Vergleich mit 'than'.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich mit 'than'. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "We decided {{0}} the new movie.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "to - see",
+              "grammarHint": "[Beginner] Nach 'decide' folgt der To-Infinitive.",
+              "hints": [
+                "Nach 'decide' folgt der To-Infinitive.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to see"
+              ],
+              "explanation": "Nach 'decide' folgt der To-Infinitive. → Lösung: to see",
+              "acceptedAnswers": [
+                "to see"
+              ],
+              "answer": "to see"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "Please stop {{0}} and start doing your homework now.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "wait",
+              "grammarHint": "[Beginner] Stop + Gerund = Tätigkeit beenden.",
+              "hints": [
+                "Stop + Gerund = Tätigkeit beenden.",
+                "Lösung beginnt mit „wa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "waiting"
+              ],
+              "explanation": "Stop + Gerund = Tätigkeit beenden. → Lösung: waiting",
+              "acceptedAnswers": [
+                "waiting"
+              ],
+              "answer": "waiting"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "The floor looks terrible. It {{0}} today, so we need to do it.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "clean - not",
+              "grammarHint": "[Beginner] Present Perfect Passive (yet).",
+              "hints": [
+                "Present Perfect Passive (yet).",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has not been cleaned",
+                "hasn't been cleaned"
+              ],
+              "explanation": "Present Perfect Passive (yet). → Lösung: has not been cleaned, hasn't been cleaned",
+              "acceptedAnswers": [
+                "has not been cleaned",
+                "hasn't been cleaned"
+              ],
+              "answer": "has not been cleaned"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beg2",
+      "title": "2. [Beginner] Mixed Grammar 2",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Beginner): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Last year, my family and I {{0}} to Italy for a holiday.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "travel",
+              "grammarHint": "[Beginner] Simple Past (Last year).",
+              "hints": [
+                "Simple Past (Last year).",
+                "Lösung beginnt mit „tr…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "traveled",
+                "travelled"
+              ],
+              "explanation": "Simple Past (Last year). → Lösung: traveled, travelled",
+              "acceptedAnswers": [
+                "traveled",
+                "travelled"
+              ],
+              "answer": "traveled"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "We {{0}} to Rome, but we saw Florence.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - go",
+              "grammarHint": "[Beginner] Verneinung im Simple Past.",
+              "hints": [
+                "Verneinung im Simple Past.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did not go",
+                "didn't go"
+              ],
+              "explanation": "Verneinung im Simple Past. → Lösung: did not go, didn't go",
+              "acceptedAnswers": [
+                "did not go",
+                "didn't go"
+              ],
+              "answer": "did not go"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We started {{0}} some Italian phrases before the trip.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "learn",
+              "grammarHint": "[Beginner] Start + Gerund oder To-Infinitive.",
+              "hints": [
+                "Start + Gerund oder To-Infinitive.",
+                "Lösung beginnt mit „le…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "learning",
+                "to learn"
+              ],
+              "explanation": "Start + Gerund oder To-Infinitive. → Lösung: learning, to learn",
+              "acceptedAnswers": [
+                "learning",
+                "to learn"
+              ],
+              "answer": "learning"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "My brother, however, still finds the language quite {{0}} to understand.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "difficult",
+              "grammarHint": "[Beginner] Adjektiv benötigt.",
+              "hints": [
+                "Adjektiv benötigt.",
+                "Lösung beginnt mit „di…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "difficult"
+              ],
+              "explanation": "Adjektiv benötigt. → Lösung: difficult",
+              "acceptedAnswers": [
+                "difficult"
+              ],
+              "answer": "difficult"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "We spent most afternoons {{0}} the beach.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Präposition für Ort.",
+              "hints": [
+                "Präposition für Ort."
+              ],
+              "solutions": [
+                "at",
+                "on"
+              ],
+              "explanation": "Präposition für Ort. → Lösung: at, on",
+              "acceptedAnswers": [
+                "at",
+                "on"
+              ],
+              "answer": "at"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "My mother {{0}} this region of Italy before.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "already - visit",
+              "grammarHint": "[Beginner] Vorzeitigkeit: Past Perfect.",
+              "hints": [
+                "Vorzeitigkeit: Past Perfect.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had already visited",
+                "already visited"
+              ],
+              "explanation": "Vorzeitigkeit: Past Perfect. → Lösung: had already visited, already visited",
+              "acceptedAnswers": [
+                "had already visited",
+                "already visited"
+              ],
+              "answer": "had already visited"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The local pasta dishes {{0}} by a famous chef every morning.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "prepare",
+              "grammarHint": "[Beginner] Passiv in der Vergangenheit.",
+              "hints": [
+                "Passiv in der Vergangenheit.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were prepared"
+              ],
+              "explanation": "Passiv in der Vergangenheit. → Lösung: were prepared",
+              "acceptedAnswers": [
+                "were prepared"
+              ],
+              "answer": "were prepared"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "I am really proud {{0}} how much Italian I picked up.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Feste Präposition: 'proud of'.",
+              "hints": [
+                "Feste Präposition: 'proud of'."
+              ],
+              "solutions": [
+                "of"
+              ],
+              "explanation": "Feste Präposition: 'proud of'. → Lösung: of",
+              "acceptedAnswers": [
+                "of"
+              ],
+              "answer": "of"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "We hope {{0}} next year.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "return",
+              "grammarHint": "[Beginner] Hope + To-Infinitive.",
+              "hints": [
+                "Hope + To-Infinitive.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to return"
+              ],
+              "explanation": "Hope + To-Infinitive. → Lösung: to return",
+              "acceptedAnswers": [
+                "to return"
+              ],
+              "answer": "to return"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "The food there was much {{0}} the food back home.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "good",
+              "grammarHint": "[Beginner] Komparativ von good + than.",
+              "hints": [
+                "Komparativ von good + than.",
+                "Lösung beginnt mit „be…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "better than"
+              ],
+              "explanation": "Komparativ von good + than. → Lösung: better than",
+              "acceptedAnswers": [
+                "better than"
+              ],
+              "answer": "better than"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beg3",
+      "title": "3. [Beginner] Mixed Grammar 3",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Beginner): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Right now, my older sister Emily {{0}} an essay.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "write",
+              "grammarHint": "[Beginner] Momentan (Present Progressive).",
+              "hints": [
+                "Momentan (Present Progressive).",
+                "Lösung beginnt mit „is…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "is writing"
+              ],
+              "explanation": "Momentan (Present Progressive). → Lösung: is writing",
+              "acceptedAnswers": [
+                "is writing"
+              ],
+              "answer": "is writing"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "She {{0}} at her desk when I came into the room.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sit",
+              "grammarHint": "[Beginner] Handlung im Gange (Past Progressive).",
+              "hints": [
+                "Handlung im Gange (Past Progressive).",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was sitting"
+              ],
+              "explanation": "Handlung im Gange (Past Progressive). → Lösung: was sitting",
+              "acceptedAnswers": [
+                "was sitting"
+              ],
+              "answer": "was sitting"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If you call her now, she {{0}} because she is focused.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - answer",
+              "grammarHint": "[Beginner] If-Satz Typ 1.",
+              "hints": [
+                "If-Satz Typ 1.",
+                "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will not answer",
+                "won't answer"
+              ],
+              "explanation": "If-Satz Typ 1. → Lösung: will not answer, won't answer",
+              "acceptedAnswers": [
+                "will not answer",
+                "won't answer"
+              ],
+              "answer": "will not answer"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Emily is a very dedicated person; she always {{0}} on her projects.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "work - careful",
+              "grammarHint": "[Beginner] Routine + Adverb.",
+              "hints": [
+                "Routine + Adverb.",
+                "Lösung beginnt mit „wo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "works carefully"
+              ],
+              "explanation": "Routine + Adverb. → Lösung: works carefully",
+              "acceptedAnswers": [
+                "works carefully"
+              ],
+              "answer": "works carefully"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "When I arrived home from school, she {{0}} a heavy novel.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "read",
+              "grammarHint": "[Beginner] Past Progressive.",
+              "hints": [
+                "Past Progressive.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was reading"
+              ],
+              "explanation": "Past Progressive. → Lösung: was reading",
+              "acceptedAnswers": [
+                "was reading"
+              ],
+              "answer": "was reading"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "I asked her {{0}} me with my math homework.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "help",
+              "grammarHint": "[Beginner] Ask + To-Infinitive.",
+              "hints": [
+                "Ask + To-Infinitive.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to help"
+              ],
+              "explanation": "Ask + To-Infinitive. → Lösung: to help",
+              "acceptedAnswers": [
+                "to help"
+              ],
+              "answer": "to help"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "She is very good {{0}} explaining difficult concepts.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Präposition: Good at + -ing.",
+              "hints": [
+                "Präposition: Good at + -ing."
+              ],
+              "solutions": [
+                "at"
+              ],
+              "explanation": "Präposition: Good at + -ing. → Lösung: at",
+              "acceptedAnswers": [
+                "at"
+              ],
+              "answer": "at"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "The expensive vase {{0}} by the cat yesterday afternoon.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "break",
+              "grammarHint": "[Beginner] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was broken"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: was broken",
+              "acceptedAnswers": [
+                "was broken"
+              ],
+              "answer": "was broken"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The winner of the competition {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "know - just",
+              "grammarHint": "[Beginner] Present Perfect Passive.",
+              "hints": [
+                "Present Perfect Passive.",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has just been known"
+              ],
+              "explanation": "Present Perfect Passive. → Lösung: has just been known",
+              "acceptedAnswers": [
+                "has just been known"
+              ],
+              "answer": "has just been known"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "He promised {{0}} smoking next month.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "stop",
+              "grammarHint": "[Beginner] Promise + To-Infinitive.",
+              "hints": [
+                "Promise + To-Infinitive.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to stop"
+              ],
+              "explanation": "Promise + To-Infinitive. → Lösung: to stop",
+              "acceptedAnswers": [
+                "to stop"
+              ],
+              "answer": "to stop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beg4",
+      "title": "4. [Beginner] Mixed Grammar 4",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Beginner): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Yesterday morning, I {{0}} to the market.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "walk",
+              "grammarHint": "[Beginner] Simple Past (Yesterday).",
+              "hints": [
+                "Simple Past (Yesterday).",
+                "Lösung beginnt mit „wa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "walked"
+              ],
+              "explanation": "Simple Past (Yesterday). → Lösung: walked",
+              "acceptedAnswers": [
+                "walked"
+              ],
+              "answer": "walked"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "When I arrived, I saw that my sister {{0}} all the good oranges.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "already - buy",
+              "grammarHint": "[Beginner] Past Perfect.",
+              "hints": [
+                "Past Perfect.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had already bought"
+              ],
+              "explanation": "Past Perfect. → Lösung: had already bought",
+              "acceptedAnswers": [
+                "had already bought"
+              ],
+              "answer": "had already bought"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "I decided {{0}} any more time.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - waste",
+              "grammarHint": "[Beginner] Verneinter To-Infinitive.",
+              "hints": [
+                "Verneinter To-Infinitive.",
+                "Lösung beginnt mit „no…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "not to waste"
+              ],
+              "explanation": "Verneinter To-Infinitive. → Lösung: not to waste",
+              "acceptedAnswers": [
+                "not to waste"
+              ],
+              "answer": "not to waste"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "While I {{0}} a small stall, my phone rang.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "discover",
+              "grammarHint": "[Beginner] Past Progressive.",
+              "hints": [
+                "Past Progressive.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was discovering"
+              ],
+              "explanation": "Past Progressive. → Lösung: was discovering",
+              "acceptedAnswers": [
+                "was discovering"
+              ],
+              "answer": "was discovering"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The phone {{0}} and surprised everyone nearby.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "ring - loud",
+              "grammarHint": "[Beginner] Simple Past + Adverb.",
+              "hints": [
+                "Simple Past + Adverb.",
+                "Lösung beginnt mit „ra…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "rang loudly"
+              ],
+              "explanation": "Simple Past + Adverb. → Lösung: rang loudly",
+              "acceptedAnswers": [
+                "rang loudly"
+              ],
+              "answer": "rang loudly"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "The pineapples looked much better {{0}} the mangoes.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Vergleich mit 'than'.",
+              "hints": [
+                "Vergleich mit 'than'.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich mit 'than'. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The best vegetables {{0}} by the small farmer.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sell",
+              "grammarHint": "[Beginner] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were sold"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: were sold",
+              "acceptedAnswers": [
+                "were sold"
+              ],
+              "answer": "were sold"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "After {{0}} tennis, we always feel hungry.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "play",
+              "grammarHint": "[Beginner] Präposition + Gerundium.",
+              "hints": [
+                "Präposition + Gerundium.",
+                "Lösung beginnt mit „pl…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "playing"
+              ],
+              "explanation": "Präposition + Gerundium. → Lösung: playing",
+              "acceptedAnswers": [
+                "playing"
+              ],
+              "answer": "playing"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "If he works hard, he {{0}} the exam.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - fail",
+              "grammarHint": "[Beginner] If-Satz Typ 1.",
+              "hints": [
+                "If-Satz Typ 1.",
+                "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will not fail",
+                "won't fail"
+              ],
+              "explanation": "If-Satz Typ 1. → Lösung: will not fail, won't fail",
+              "acceptedAnswers": [
+                "will not fail",
+                "won't fail"
+              ],
+              "answer": "will not fail"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "The students are looking forward {{0}} their holidays.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Look forward to.",
+              "hints": [
+                "Look forward to."
+              ],
+              "solutions": [
+                "to"
+              ],
+              "explanation": "Look forward to. → Lösung: to",
+              "acceptedAnswers": [
+                "to"
+              ],
+              "answer": "to"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beg5",
+      "title": "5. [Beginner] Mixed Grammar 5",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Beginner): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "My cousin Jim {{0}} a long historical novel.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "currently - read",
+              "grammarHint": "[Beginner] Present Progressive (currently).",
+              "hints": [
+                "Present Progressive (currently).",
+                "Lösung beginnt mit „is…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "is currently reading"
+              ],
+              "explanation": "Present Progressive (currently). → Lösung: is currently reading",
+              "acceptedAnswers": [
+                "is currently reading"
+              ],
+              "answer": "is currently reading"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "He {{0}} at the library two hours ago.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "arrive",
+              "grammarHint": "[Beginner] Simple Past (ago).",
+              "hints": [
+                "Simple Past (ago).",
+                "Lösung beginnt mit „ar…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "arrived"
+              ],
+              "explanation": "Simple Past (ago). → Lösung: arrived",
+              "acceptedAnswers": [
+                "arrived"
+              ],
+              "answer": "arrived"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "The book {{0}} by many critics before its release.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - see",
+              "grammarHint": "[Beginner] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „wa…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was not seen",
+                "wasn't seen"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: was not seen, wasn't seen",
+              "acceptedAnswers": [
+                "was not seen",
+                "wasn't seen"
+              ],
+              "answer": "was not seen"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "He loves reading and can usually {{0}} studying for hours.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "keep",
+              "grammarHint": "[Beginner] Modalverb + Infinitiv.",
+              "hints": [
+                "Modalverb + Infinitiv.",
+                "Lösung beginnt mit „ke…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "keep"
+              ],
+              "explanation": "Modalverb + Infinitiv. → Lösung: keep",
+              "acceptedAnswers": [
+                "keep"
+              ],
+              "answer": "keep"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Before he started the novel, he {{0}} a short story collection.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "finish",
+              "grammarHint": "[Beginner] Vorzeitigkeit (Past Perfect).",
+              "hints": [
+                "Vorzeitigkeit (Past Perfect).",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had finished"
+              ],
+              "explanation": "Vorzeitigkeit (Past Perfect). → Lösung: had finished",
+              "acceptedAnswers": [
+                "had finished"
+              ],
+              "answer": "had finished"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "If he needs help with his research, he {{0}} his professor.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "call",
+              "grammarHint": "[Beginner] If-Satz Typ 1.",
+              "hints": [
+                "If-Satz Typ 1.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will call"
+              ],
+              "explanation": "If-Satz Typ 1. → Lösung: will call",
+              "acceptedAnswers": [
+                "will call"
+              ],
+              "answer": "will call"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "Many people believe {{0}} luck.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Feste Wendung: believe in.",
+              "hints": [
+                "Feste Wendung: believe in."
+              ],
+              "solutions": [
+                "in"
+              ],
+              "explanation": "Feste Wendung: believe in. → Lösung: in",
+              "acceptedAnswers": [
+                "in"
+              ],
+              "answer": "in"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "The old clock on the wall was {{0}} and almost silent.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "move - slow",
+              "grammarHint": "[Beginner] Past Progressive + Adverb.",
+              "hints": [
+                "Past Progressive + Adverb.",
+                "Lösung beginnt mit „mo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "moving slowly"
+              ],
+              "explanation": "Past Progressive + Adverb. → Lösung: moving slowly",
+              "acceptedAnswers": [
+                "moving slowly"
+              ],
+              "answer": "moving slowly"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The librarian offered {{0}} him home.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "drive",
+              "grammarHint": "[Beginner] Offer + To-Infinitive.",
+              "hints": [
+                "Offer + To-Infinitive.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to drive"
+              ],
+              "explanation": "Offer + To-Infinitive. → Lösung: to drive",
+              "acceptedAnswers": [
+                "to drive"
+              ],
+              "answer": "to drive"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "The library is much quieter {{0}} the café downstairs.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Beginner] Vergleich mit 'than'.",
+              "hints": [
+                "Vergleich mit 'than'.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich mit 'than'. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "int1",
+      "title": "6. [Intermediate] Tense Review & Gerunds",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Intermediate): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "We live in an incredibly advanced time. While most of our technology {{0}} since the Industrial Revolution, many products we use today have a much longer history.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "develop",
+              "grammarHint": "[Intermediate] Present Perfect.",
+              "hints": [
+                "Present Perfect.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has developed",
+                "has been developed"
+              ],
+              "explanation": "Present Perfect. → Lösung: has developed, has been developed",
+              "acceptedAnswers": [
+                "has developed",
+                "has been developed"
+              ],
+              "answer": "has developed"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Before the famous perfume named Chanel No. 5 was invented, there {{0}} perfume production in Cyprus some 4,000 years ago.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "[Intermediate] Past Perfect.",
+              "hints": [
+                "Past Perfect.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had been"
+              ],
+              "explanation": "Past Perfect. → Lösung: had been",
+              "acceptedAnswers": [
+                "had been"
+              ],
+              "answer": "had been"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Among the most {{0}} used instruments is the odometer, which can measure the distance travelled by a vehicle.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "wide",
+              "grammarHint": "[Intermediate] Adverb.",
+              "hints": [
+                "Adverb.",
+                "Lösung beginnt mit „wi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "widely"
+              ],
+              "explanation": "Adverb. → Lösung: widely",
+              "acceptedAnswers": [
+                "widely"
+              ],
+              "answer": "widely"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "If you look for the inventor who created this tool, you {{0}} across Vitruvius, who is often credited with inventing it in 15 BC.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "come",
+              "grammarHint": "[Intermediate] If-Satz Typ 1.",
+              "hints": [
+                "If-Satz Typ 1.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will come"
+              ],
+              "explanation": "If-Satz Typ 1. → Lösung: will come",
+              "acceptedAnswers": [
+                "will come"
+              ],
+              "answer": "will come"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Today, nearly every smartphone {{0}} an integrated compass.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "have",
+              "grammarHint": "[Intermediate] Simple Present.",
+              "hints": [
+                "Simple Present.",
+                "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has"
+              ],
+              "explanation": "Simple Present. → Lösung: has",
+              "acceptedAnswers": [
+                "has"
+              ],
+              "answer": "has"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Historians think that the first people {{0}} construct a sophisticated compass were China’s Han Dynasty, around 200 BC.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Intermediate] To-Infinitive nach Ordnungszahlen.",
+              "hints": [
+                "To-Infinitive nach Ordnungszahlen."
+              ],
+              "solutions": [
+                "to"
+              ],
+              "explanation": "To-Infinitive nach Ordnungszahlen. → Lösung: to",
+              "acceptedAnswers": [
+                "to"
+              ],
+              "answer": "to"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The needle of the Chinese compass was actually an iron spoon that {{0}} with ore, making it point north or south.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "magnetize",
+              "grammarHint": "[Intermediate] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was magnetized"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: was magnetized",
+              "acceptedAnswers": [
+                "was magnetized"
+              ],
+              "answer": "was magnetized"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "The {{0}} maps of geographical places were created in Babylonia on clay tablets around 2300 BC.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "early",
+              "grammarHint": "[Intermediate] Superlativ.",
+              "hints": [
+                "Superlativ.",
+                "Lösung beginnt mit „ea…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "earliest"
+              ],
+              "explanation": "Superlativ. → Lösung: earliest",
+              "acceptedAnswers": [
+                "earliest"
+              ],
+              "answer": "earliest"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The oldest {{0}} map of the world is considered to be the Babylonian World Map.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "know",
+              "grammarHint": "[Intermediate] Partizip als Adjektiv.",
+              "hints": [
+                "Partizip als Adjektiv.",
+                "Lösung beginnt mit „kn…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "known"
+              ],
+              "explanation": "Partizip als Adjektiv. → Lösung: known",
+              "acceptedAnswers": [
+                "known"
+              ],
+              "answer": "known"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "To end on a sweet note, chocolate has been around for more {{0}} 3,000 years and we have to thank the civilizations of ancient Mesoamerica for this sweetness in our lives.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Intermediate] More than.",
+              "hints": [
+                "More than.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "More than. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "int2",
+      "title": "7. [Intermediate] Outback Adventure",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Intermediate): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Before we saw Uluru, we {{0}} for hours without seeing another car.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "drive",
+              "grammarHint": "[Intermediate] Past Perfect.",
+              "hints": [
+                "Past Perfect.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had been driving",
+                "had driven"
+              ],
+              "explanation": "Past Perfect. → Lösung: had been driving, had driven",
+              "acceptedAnswers": [
+                "had been driving",
+                "had driven"
+              ],
+              "answer": "had been driving"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The history of this remote area {{0}} by many tourists until recently.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - discover",
+              "grammarHint": "[Intermediate] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „wa…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was not discovered",
+                "wasn't discovered"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: was not discovered, wasn't discovered",
+              "acceptedAnswers": [
+                "was not discovered",
+                "wasn't discovered"
+              ],
+              "answer": "was not discovered"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We were keen on {{0}} pictures of the unique fauna.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "take",
+              "grammarHint": "[Intermediate] Keen on + Gerundium.",
+              "hints": [
+                "Keen on + Gerundium.",
+                "Lösung beginnt mit „ta…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "taking"
+              ],
+              "explanation": "Keen on + Gerundium. → Lösung: taking",
+              "acceptedAnswers": [
+                "taking"
+              ],
+              "answer": "taking"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "If we {{0}} a satellite phone, we would have contacted help.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "bring",
+              "grammarHint": "[Intermediate] If-Satz Typ 3.",
+              "hints": [
+                "If-Satz Typ 3.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not brought",
+                "hadn't brought"
+              ],
+              "explanation": "If-Satz Typ 3. → Lösung: had not brought, hadn't brought",
+              "acceptedAnswers": [
+                "had not brought",
+                "hadn't brought"
+              ],
+              "answer": "had not brought"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The sun shone {{0}} on the red sand.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "bright",
+              "grammarHint": "[Intermediate] Adverb.",
+              "hints": [
+                "Adverb.",
+                "Lösung beginnt mit „br…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "brightly"
+              ],
+              "explanation": "Adverb. → Lösung: brightly",
+              "acceptedAnswers": [
+                "brightly"
+              ],
+              "answer": "brightly"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "While the snake {{0}} the road, we stopped the car.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "cross",
+              "grammarHint": "[Intermediate] Past Progressive.",
+              "hints": [
+                "Past Progressive.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was crossing"
+              ],
+              "explanation": "Past Progressive. → Lösung: was crossing",
+              "acceptedAnswers": [
+                "was crossing"
+              ],
+              "answer": "was crossing"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "Australia is famous {{0}} its unique marsupials.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Intermediate] Famous for.",
+              "hints": [
+                "Famous for.",
+                "Lösung beginnt mit „fo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "for"
+              ],
+              "explanation": "Famous for. → Lösung: for",
+              "acceptedAnswers": [
+                "for"
+              ],
+              "answer": "for"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "The old truck {{0}} by the mechanic, so we hope it's fine.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "repair - just",
+              "grammarHint": "[Intermediate] Present Perfect Passive.",
+              "hints": [
+                "Present Perfect Passive.",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has just been repaired"
+              ],
+              "explanation": "Present Perfect Passive. → Lösung: has just been repaired",
+              "acceptedAnswers": [
+                "has just been repaired"
+              ],
+              "answer": "has just been repaired"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The spiders were much larger {{0}} the ones back home.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Intermediate] Vergleich.",
+              "hints": [
+                "Vergleich.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "We decided {{0}} plenty of water.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "[Intermediate] Decide + To-Infinitive.",
+              "hints": [
+                "Decide + To-Infinitive.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to buy"
+              ],
+              "explanation": "Decide + To-Infinitive. → Lösung: to buy",
+              "acceptedAnswers": [
+                "to buy"
+              ],
+              "answer": "to buy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "int3",
+      "title": "8. [Intermediate] NZ Hiking",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Intermediate): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "By the time we reached the summit, we {{0}} for over seven hours.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "climb",
+              "grammarHint": "[Intermediate] Past Perfect Progressive.",
+              "hints": [
+                "Past Perfect Progressive.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had been climbing"
+              ],
+              "explanation": "Past Perfect Progressive. → Lösung: had been climbing",
+              "acceptedAnswers": [
+                "had been climbing"
+              ],
+              "answer": "had been climbing"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "I {{0}} a landscape so dramatic before.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "never - see",
+              "grammarHint": "[Intermediate] Present Perfect (Erfahrung).",
+              "hints": [
+                "Present Perfect (Erfahrung).",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have never seen"
+              ],
+              "explanation": "Present Perfect (Erfahrung). → Lösung: have never seen",
+              "acceptedAnswers": [
+                "have never seen"
+              ],
+              "answer": "have never seen"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Many parts of the hiking tracks {{0}} by recent heavy rain.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "damage",
+              "grammarHint": "[Intermediate] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were damaged"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: were damaged",
+              "acceptedAnswers": [
+                "were damaged"
+              ],
+              "answer": "were damaged"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We had to stop {{0}} the map regularly.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "check",
+              "grammarHint": "[Intermediate] Stop + To (um zu).",
+              "hints": [
+                "Stop + To (um zu).",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to check"
+              ],
+              "explanation": "Stop + To (um zu). → Lösung: to check",
+              "acceptedAnswers": [
+                "to check"
+              ],
+              "answer": "to check"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The view was absolutely {{0}} and left us speechless.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "awe",
+              "grammarHint": "[Intermediate] Adjektiv.",
+              "hints": [
+                "Adjektiv.",
+                "Lösung beginnt mit „aw…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "awe-inspiring",
+                "breathtaking"
+              ],
+              "explanation": "Adjektiv. → Lösung: awe-inspiring, breathtaking",
+              "acceptedAnswers": [
+                "awe-inspiring",
+                "breathtaking"
+              ],
+              "answer": "awe-inspiring"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "After two days, we finally finished {{0}} the famous Routeburn Track.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "hike",
+              "grammarHint": "[Intermediate] Finish + Gerundium.",
+              "hints": [
+                "Finish + Gerundium.",
+                "Lösung beginnt mit „hi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "hiking"
+              ],
+              "explanation": "Finish + Gerundium. → Lösung: hiking",
+              "acceptedAnswers": [
+                "hiking"
+              ],
+              "answer": "hiking"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "If we {{0}} waterproof gear, we would have been soaked.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - bring",
+              "grammarHint": "[Intermediate] If Typ 3.",
+              "hints": [
+                "If Typ 3.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not brought",
+                "hadn't brought"
+              ],
+              "explanation": "If Typ 3. → Lösung: had not brought, hadn't brought",
+              "acceptedAnswers": [
+                "had not brought",
+                "hadn't brought"
+              ],
+              "answer": "had not brought"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "The peak is far {{0}} any other in the range.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "high",
+              "grammarHint": "[Intermediate] Vergleich.",
+              "hints": [
+                "Vergleich.",
+                "Lösung beginnt mit „hi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "higher than"
+              ],
+              "explanation": "Vergleich. → Lösung: higher than",
+              "acceptedAnswers": [
+                "higher than"
+              ],
+              "answer": "higher than"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The rangers are responsible {{0}} protecting the environment.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Intermediate] Responsible for.",
+              "hints": [
+                "Responsible for.",
+                "Lösung beginnt mit „fo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "for"
+              ],
+              "explanation": "Responsible for. → Lösung: for",
+              "acceptedAnswers": [
+                "for"
+              ],
+              "answer": "for"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "While the guides {{0}} the campsite, we rested.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "prepare",
+              "grammarHint": "[Intermediate] Past Progressive.",
+              "hints": [
+                "Past Progressive.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were preparing"
+              ],
+              "explanation": "Past Progressive. → Lösung: were preparing",
+              "acceptedAnswers": [
+                "were preparing"
+              ],
+              "answer": "were preparing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "int4",
+      "title": "9. [Intermediate] Conservation",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Intermediate): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "New Zealand's Department of Conservation {{0}} to achieve its 2050 goal.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "try",
+              "grammarHint": "[Intermediate] Present Progressive.",
+              "hints": [
+                "Present Progressive.",
+                "Lösung beginnt mit „is…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "is trying"
+              ],
+              "explanation": "Present Progressive. → Lösung: is trying",
+              "acceptedAnswers": [
+                "is trying"
+              ],
+              "answer": "is trying"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Many native birds {{0}} to be fully protected soon.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "expect",
+              "grammarHint": "[Intermediate] Simple Present Passive.",
+              "hints": [
+                "Simple Present Passive.",
+                "Lösung beginnt mit „ar…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are expected"
+              ],
+              "explanation": "Simple Present Passive. → Lösung: are expected",
+              "acceptedAnswers": [
+                "are expected"
+              ],
+              "answer": "are expected"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Conservationists strictly {{0}} discussing controversial methods.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "avoid",
+              "grammarHint": "[Intermediate] Simple Present.",
+              "hints": [
+                "Simple Present.",
+                "Lösung beginnt mit „av…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "avoid"
+              ],
+              "explanation": "Simple Present. → Lösung: avoid",
+              "acceptedAnswers": [
+                "avoid"
+              ],
+              "answer": "avoid"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Locals are accustomed {{0}} rare species in their gardens.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "used - see",
+              "grammarHint": "[Intermediate] Accustomed to + -ing.",
+              "hints": [
+                "Accustomed to + -ing.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to seeing"
+              ],
+              "explanation": "Accustomed to + -ing. → Lösung: to seeing",
+              "acceptedAnswers": [
+                "to seeing"
+              ],
+              "answer": "to seeing"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "They have already {{0}} in reintroducing species.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "succeed",
+              "grammarHint": "[Intermediate] Present Perfect.",
+              "hints": [
+                "Present Perfect.",
+                "Lösung beginnt mit „su…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "succeeded"
+              ],
+              "explanation": "Present Perfect. → Lösung: succeeded",
+              "acceptedAnswers": [
+                "succeeded"
+              ],
+              "answer": "succeeded"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Yesterday, a new protected area {{0}} in the South Island.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "report",
+              "grammarHint": "[Intermediate] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was reported"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: was reported",
+              "acceptedAnswers": [
+                "was reported"
+              ],
+              "answer": "was reported"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "If these measures {{0}} the Kiwi would have become extinct.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - implement",
+              "grammarHint": "[Intermediate] If Typ 3 Passive.",
+              "hints": [
+                "If Typ 3 Passive.",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not been implemented"
+              ],
+              "explanation": "If Typ 3 Passive. → Lösung: had not been implemented",
+              "acceptedAnswers": [
+                "had not been implemented"
+              ],
+              "answer": "had not been implemented"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "We act {{0}} towards the environment.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "responsible",
+              "grammarHint": "[Intermediate] Adverb.",
+              "hints": [
+                "Adverb.",
+                "Lösung beginnt mit „re…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "responsibly"
+              ],
+              "explanation": "Adverb. → Lösung: responsibly",
+              "acceptedAnswers": [
+                "responsibly"
+              ],
+              "answer": "responsibly"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The challenge is harder {{0}} ever before.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Intermediate] Vergleich.",
+              "hints": [
+                "Vergleich.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "The reserve rules {{0}} pets inside.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - allow",
+              "grammarHint": "[Intermediate] Regel.",
+              "hints": [
+                "Regel.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "do not allow",
+                "don't allow"
+              ],
+              "explanation": "Regel. → Lösung: do not allow, don't allow",
+              "acceptedAnswers": [
+                "do not allow",
+                "don't allow"
+              ],
+              "answer": "do not allow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "int5",
+      "title": "10. [Intermediate] Great Barrier Reef",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Intermediate): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "For years, marine biologists {{0}} the health of the reef.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "monitor",
+              "grammarHint": "[Intermediate] Present Perfect. Present Perfect Progressive also possible",
+              "hints": [
+                "Present Perfect. Present Perfect Progressive also possible",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have monitored"
+              ],
+              "explanation": "Present Perfect. Present Perfect Progressive also possible → Lösung: have monitored",
+              "acceptedAnswers": [
+                "have monitored"
+              ],
+              "answer": "have monitored"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "When the team arrived, coral {{0}} due to rising temperatures.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "bleach",
+              "grammarHint": "[Intermediate] Past Progressive Passive.",
+              "hints": [
+                "Past Progressive Passive.",
+                "Lösung beginnt mit „wa…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was being bleached"
+              ],
+              "explanation": "Past Progressive Passive. → Lösung: was being bleached",
+              "acceptedAnswers": [
+                "was being bleached"
+              ],
+              "answer": "was being bleached"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "The government attempted {{0}} sediment running into the water.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "stop",
+              "grammarHint": "[Intermediate] Attempt + To.",
+              "hints": [
+                "Attempt + To.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to stop"
+              ],
+              "explanation": "Attempt + To. → Lösung: to stop",
+              "acceptedAnswers": [
+                "to stop"
+              ],
+              "answer": "to stop"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Bleaching is one of the most serious threats {{0}} the ecosystem.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Intermediate] Threat to.",
+              "hints": [
+                "Threat to."
+              ],
+              "solutions": [
+                "to"
+              ],
+              "explanation": "Threat to. → Lösung: to",
+              "acceptedAnswers": [
+                "to"
+              ],
+              "answer": "to"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The reef will recover slowly {{0}} , but it will take decades.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "if - current weather conditions - continue",
+              "grammarHint": "[Intermediate] If Typ 1.",
+              "hints": [
+                "If Typ 1.",
+                "Lösung beginnt mit „if…“ (5 Wort/Wörter)."
+              ],
+              "solutions": [
+                "if current weather conditions continue",
+                "if the current weather conditions continue"
+              ],
+              "explanation": "If Typ 1. → Lösung: if current weather conditions continue, if the current weather conditions continue",
+              "acceptedAnswers": [
+                "if current weather conditions continue",
+                "if the current weather conditions continue"
+              ],
+              "answer": "if current weather conditions continue"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Unfortunately, clean-up efforts {{0}} to prevent the destruction.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - manage",
+              "grammarHint": "[Intermediate] Past Perfect.",
+              "hints": [
+                "Past Perfect.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not managed"
+              ],
+              "explanation": "Past Perfect. → Lösung: had not managed",
+              "acceptedAnswers": [
+                "had not managed"
+              ],
+              "answer": "had not managed"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The more we ignore it, the worse the damage {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "[Intermediate] Double Comparison.",
+              "hints": [
+                "Double Comparison.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will be"
+              ],
+              "explanation": "Double Comparison. → Lösung: will be",
+              "acceptedAnswers": [
+                "will be"
+              ],
+              "answer": "will be"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "Diving in healthy areas is worth {{0}} at least once.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "see",
+              "grammarHint": "[Intermediate] Worth + Gerundium.",
+              "hints": [
+                "Worth + Gerundium.",
+                "Lösung beginnt mit „se…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "seeing"
+              ],
+              "explanation": "Worth + Gerundium. → Lösung: seeing",
+              "acceptedAnswers": [
+                "seeing"
+              ],
+              "answer": "seeing"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "Divers must navigate {{0}} through fragile gardens.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "careful",
+              "grammarHint": "[Intermediate] Adverb.",
+              "hints": [
+                "Adverb.",
+                "Lösung beginnt mit „ca…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "carefully"
+              ],
+              "explanation": "Adverb. → Lösung: carefully",
+              "acceptedAnswers": [
+                "carefully"
+              ],
+              "answer": "carefully"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "If global warming {{0}} the damage would have been irreversible.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - stop",
+              "grammarHint": "[Intermediate] If Typ 3.",
+              "hints": [
+                "If Typ 3.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not stopped"
+              ],
+              "explanation": "If Typ 3. → Lösung: had not stopped",
+              "acceptedAnswers": [
+                "had not stopped"
+              ],
+              "answer": "had not stopped"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exp1",
+      "title": "11. [Expert] Advanced Voice & Tenses 1",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Expert): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "It {{0}} that the new enzyme was only active below freezing.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "reveal",
+              "grammarHint": "[Expert] Reporting Passive.",
+              "hints": [
+                "Reporting Passive.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was revealed"
+              ],
+              "explanation": "Reporting Passive. → Lösung: was revealed",
+              "acceptedAnswers": [
+                "was revealed"
+              ],
+              "answer": "was revealed"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The lead researcher regretted {{0}} ahead before safety protocols were checked.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "go",
+              "grammarHint": "[Expert] Regret + Gerund.",
+              "hints": [
+                "Regret + Gerund.",
+                "Lösung beginnt mit „go…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "going"
+              ],
+              "explanation": "Regret + Gerund. → Lösung: going",
+              "acceptedAnswers": [
+                "going"
+              ],
+              "answer": "going"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If the initial simulation {{0}} the project would have been delayed.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "fail",
+              "grammarHint": "[Expert] If Typ 3.",
+              "hints": [
+                "If Typ 3.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had failed"
+              ],
+              "explanation": "If Typ 3. → Lösung: had failed",
+              "acceptedAnswers": [
+                "had failed"
+              ],
+              "answer": "had failed"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The new technology is believed {{0}} a revolutionary breakthrough.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "[Expert] Passive + To.",
+              "hints": [
+                "Passive + To.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to be"
+              ],
+              "explanation": "Passive + To. → Lösung: to be",
+              "acceptedAnswers": [
+                "to be"
+              ],
+              "answer": "to be"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The samples {{0}} since yesterday, but results are not clear.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "analyse",
+              "grammarHint": "[Expert] Present Perfect Passive.",
+              "hints": [
+                "Present Perfect Passive.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been analysed",
+                "have been analyzed"
+              ],
+              "explanation": "Present Perfect Passive. → Lösung: have been analysed, have been analyzed",
+              "acceptedAnswers": [
+                "have been analysed",
+                "have been analyzed"
+              ],
+              "answer": "have been analysed"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "The discovery was far more significant {{0}} forecasts predicted.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Expert] Vergleich.",
+              "hints": [
+                "Vergleich.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The student was keen on {{0}} her findings.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "publish",
+              "grammarHint": "[Expert] Keen on + Gerund.",
+              "hints": [
+                "Keen on + Gerund.",
+                "Lösung beginnt mit „pu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "publishing"
+              ],
+              "explanation": "Keen on + Gerund. → Lösung: publishing",
+              "acceptedAnswers": [
+                "publishing"
+              ],
+              "answer": "publishing"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "The mineral {{0}} before the fire broke out.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "examine",
+              "grammarHint": "[Expert] Past Perfect Passive.",
+              "hints": [
+                "Past Perfect Passive.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had been examined"
+              ],
+              "explanation": "Past Perfect Passive. → Lösung: had been examined",
+              "acceptedAnswers": [
+                "had been examined"
+              ],
+              "answer": "had been examined"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The final experiment was considered highly {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "risk",
+              "grammarHint": "[Expert] Adjektiv.",
+              "hints": [
+                "Adjektiv.",
+                "Lösung beginnt mit „ri…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "risky"
+              ],
+              "explanation": "Adjektiv. → Lösung: risky",
+              "acceptedAnswers": [
+                "risky"
+              ],
+              "answer": "risky"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "If the temperature {{0}} controlled, the reaction would have failed.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - be",
+              "grammarHint": "[Expert] If Typ 3 Passive.",
+              "hints": [
+                "If Typ 3 Passive.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not been"
+              ],
+              "explanation": "If Typ 3 Passive. → Lösung: had not been",
+              "acceptedAnswers": [
+                "had not been"
+              ],
+              "answer": "had not been"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exp2",
+      "title": "12. [Expert] Advanced Voice & Tenses 2",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Expert): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Many businesses must cease {{0}} operations when facing competitors.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "acquire",
+              "grammarHint": "[Expert] Cease + Gerundium.",
+              "hints": [
+                "Cease + Gerundium.",
+                "Lösung beginnt mit „ac…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "acquiring"
+              ],
+              "explanation": "Cease + Gerundium. → Lösung: acquiring",
+              "acceptedAnswers": [
+                "acquiring"
+              ],
+              "answer": "acquiring"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The rise of international brands {{0}} by local artisans for decades.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "question",
+              "grammarHint": "[Expert] Present Perfect Passive.",
+              "hints": [
+                "Present Perfect Passive.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has been questioned"
+              ],
+              "explanation": "Present Perfect Passive. → Lösung: has been questioned",
+              "acceptedAnswers": [
+                "has been questioned"
+              ],
+              "answer": "has been questioned"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Never {{0}} so many foreign films been shown.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Expert] Inversion.",
+              "hints": [
+                "Inversion.",
+                "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have"
+              ],
+              "explanation": "Inversion. → Lösung: have",
+              "acceptedAnswers": [
+                "have"
+              ],
+              "answer": "have"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "If people {{0}} culturally threatened, they would not be resistant.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "feel",
+              "grammarHint": "[Expert] If Typ 2.",
+              "hints": [
+                "If Typ 2.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did not feel",
+                "didn't feel"
+              ],
+              "explanation": "If Typ 2. → Lösung: did not feel, didn't feel",
+              "acceptedAnswers": [
+                "did not feel",
+                "didn't feel"
+              ],
+              "answer": "did not feel"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Having {{0}} their petition, the group submitted it.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "write",
+              "grammarHint": "[Expert] Perfect Participle.",
+              "hints": [
+                "Perfect Participle.",
+                "Lösung beginnt mit „wr…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "written"
+              ],
+              "explanation": "Perfect Participle. → Lösung: written",
+              "acceptedAnswers": [
+                "written"
+              ],
+              "answer": "written"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "It is widely {{0}} that digital media has the biggest impact.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "assume",
+              "grammarHint": "[Expert] Passiv.",
+              "hints": [
+                "Passiv.",
+                "Lösung beginnt mit „as…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "assumed"
+              ],
+              "explanation": "Passiv. → Lösung: assumed",
+              "acceptedAnswers": [
+                "assumed"
+              ],
+              "answer": "assumed"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The global market is much more complex {{0}} it was ten years ago.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Expert] Vergleich.",
+              "hints": [
+                "Vergleich.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "Should you {{0}} any difficulty, please consult the guide.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "find",
+              "grammarHint": "[Expert] Should = If.",
+              "hints": [
+                "Should = If.",
+                "Lösung beginnt mit „fi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "find"
+              ],
+              "explanation": "Should = If. → Lösung: find",
+              "acceptedAnswers": [
+                "find"
+              ],
+              "answer": "find"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The historian insisted {{0}} the nuances.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "explain",
+              "grammarHint": "[Expert] Insist on + Gerund.",
+              "hints": [
+                "Insist on + Gerund.",
+                "Lösung beginnt mit „on…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "on explaining"
+              ],
+              "explanation": "Insist on + Gerund. → Lösung: on explaining",
+              "acceptedAnswers": [
+                "on explaining"
+              ],
+              "answer": "on explaining"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "The effects of this shift {{0}} felt in smaller communities for decades.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "[Expert] Future Passive.",
+              "hints": [
+                "Future Passive.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will be"
+              ],
+              "explanation": "Future Passive. → Lösung: will be",
+              "acceptedAnswers": [
+                "will be"
+              ],
+              "answer": "will be"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exp3",
+      "title": "13. [Expert] Advanced Voice & Tenses 3",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Expert): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "The new policy is said {{0}} the economy significantly.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "impact",
+              "grammarHint": "[Expert] Reporting Passive.",
+              "hints": [
+                "Reporting Passive.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to impact",
+                "to have impacted"
+              ],
+              "explanation": "Reporting Passive. → Lösung: to impact, to have impacted",
+              "acceptedAnswers": [
+                "to impact",
+                "to have impacted"
+              ],
+              "answer": "to impact"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "New recycling programs {{0}} since the beginning of the year.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "implement - already",
+              "grammarHint": "[Expert] Present Perfect Passive.",
+              "hints": [
+                "Present Perfect Passive.",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have already been implemented"
+              ],
+              "explanation": "Present Perfect Passive. → Lösung: have already been implemented",
+              "acceptedAnswers": [
+                "have already been implemented"
+              ],
+              "answer": "have already been implemented"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Citizens generally object {{0}} longer hours.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "work",
+              "grammarHint": "[Expert] Object to + Gerund.",
+              "hints": [
+                "Object to + Gerund.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to working"
+              ],
+              "explanation": "Object to + Gerund. → Lösung: to working",
+              "acceptedAnswers": [
+                "to working"
+              ],
+              "answer": "to working"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The more ambitious the goals, the {{0}} the investment.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "high",
+              "grammarHint": "[Expert] Double Comparison.",
+              "hints": [
+                "Double Comparison.",
+                "Lösung beginnt mit „hi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "higher"
+              ],
+              "explanation": "Double Comparison. → Lösung: higher",
+              "acceptedAnswers": [
+                "higher"
+              ],
+              "answer": "higher"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The sheer volume of regulations can be {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "overwhelm",
+              "grammarHint": "[Expert] Adjektiv.",
+              "hints": [
+                "Adjektiv.",
+                "Lösung beginnt mit „ov…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "overwhelming"
+              ],
+              "explanation": "Adjektiv. → Lösung: overwhelming",
+              "acceptedAnswers": [
+                "overwhelming"
+              ],
+              "answer": "overwhelming"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "The commission started {{0}} the scale of the problem.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "realize",
+              "grammarHint": "[Expert] Start + Inf/Ger.",
+              "hints": [
+                "Start + Inf/Ger.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to realize",
+                "realizing"
+              ],
+              "explanation": "Start + Inf/Ger. → Lösung: to realize, realizing",
+              "acceptedAnswers": [
+                "to realize",
+                "realizing"
+              ],
+              "answer": "to realize"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "It {{0}} that the opposition will veto the bill.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "expect",
+              "grammarHint": "[Expert] Passiv.",
+              "hints": [
+                "Passiv.",
+                "Lösung beginnt mit „is…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "is expected"
+              ],
+              "explanation": "Passiv. → Lösung: is expected",
+              "acceptedAnswers": [
+                "is expected"
+              ],
+              "answer": "is expected"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "The government has committed {{0}} hundreds of workers.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "retrain",
+              "grammarHint": "[Expert] Commit to + Gerund.",
+              "hints": [
+                "Commit to + Gerund.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to retraining"
+              ],
+              "explanation": "Commit to + Gerund. → Lösung: to retraining",
+              "acceptedAnswers": [
+                "to retraining"
+              ],
+              "answer": "to retraining"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The new proposal is considerably tougher {{0}} the old one.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Expert] Vergleich.",
+              "hints": [
+                "Vergleich.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "If the state {{0}} heavily, the shift would not be happening.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - invest",
+              "grammarHint": "[Expert] Mixed Conditional.",
+              "hints": [
+                "Mixed Conditional.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not invested"
+              ],
+              "explanation": "Mixed Conditional. → Lösung: had not invested",
+              "acceptedAnswers": [
+                "had not invested"
+              ],
+              "answer": "had not invested"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exp4",
+      "title": "14. [Expert] Advanced Voice & Tenses 4",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Expert): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "The fortress is currently {{0}} to have been stone masons' work.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "report",
+              "grammarHint": "[Expert] Reporting Passive.",
+              "hints": [
+                "Reporting Passive.",
+                "Lösung beginnt mit „re…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "reported"
+              ],
+              "explanation": "Reporting Passive. → Lösung: reported",
+              "acceptedAnswers": [
+                "reported"
+              ],
+              "answer": "reported"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "More artifacts {{0}} after the rubble had been cleared.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "find",
+              "grammarHint": "[Expert] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were found"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: were found",
+              "acceptedAnswers": [
+                "were found"
+              ],
+              "answer": "were found"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Only if the excavations {{0}} will the full truth be known.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - complete",
+              "grammarHint": "[Expert] If Typ 1 Passive.",
+              "hints": [
+                "If Typ 1 Passive.",
+                "Lösung beginnt mit „ar…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are completed"
+              ],
+              "explanation": "If Typ 1 Passive. → Lösung: are completed",
+              "acceptedAnswers": [
+                "are completed"
+              ],
+              "answer": "are completed"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The city leaders are believed {{0}} the site centuries ago.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "believe",
+              "grammarHint": "[Expert] Perfect Infinitive.",
+              "hints": [
+                "Perfect Infinitive.",
+                "Lösung beginnt mit „to…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to have abandoned"
+              ],
+              "explanation": "Perfect Infinitive. → Lösung: to have abandoned",
+              "acceptedAnswers": [
+                "to have abandoned"
+              ],
+              "answer": "to have abandoned"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The jewellery was far more valuable {{0}} the golden coins.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Expert] Vergleich.",
+              "hints": [
+                "Vergleich.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "than"
+              ],
+              "explanation": "Vergleich. → Lösung: than",
+              "acceptedAnswers": [
+                "than"
+              ],
+              "answer": "than"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "The team agreed {{0}} to disclose the location.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "refuse",
+              "grammarHint": "[Expert] Agree + To.",
+              "hints": [
+                "Agree + To.",
+                "Lösung beginnt mit „to…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to refuse"
+              ],
+              "explanation": "Agree + To. → Lösung: to refuse",
+              "acceptedAnswers": [
+                "to refuse"
+              ],
+              "answer": "to refuse"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The director {{0}} the possibility of a cover-up.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - admit",
+              "grammarHint": "[Expert] Simple Past.",
+              "hints": [
+                "Simple Past.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did not admit",
+                "didn't admit"
+              ],
+              "explanation": "Simple Past. → Lösung: did not admit, didn't admit",
+              "acceptedAnswers": [
+                "did not admit",
+                "didn't admit"
+              ],
+              "answer": "did not admit"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "They had to have the artifacts {{0}} under lock and key.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "keep",
+              "grammarHint": "[Expert] Causative (have sth done).",
+              "hints": [
+                "Causative (have sth done).",
+                "Lösung beginnt mit „ke…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "kept"
+              ],
+              "explanation": "Causative (have sth done). → Lösung: kept",
+              "acceptedAnswers": [
+                "kept"
+              ],
+              "answer": "kept"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "If it {{0}} for the volunteers, the work would have stopped.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - be",
+              "grammarHint": "[Expert] Conditionals.",
+              "hints": [
+                "Conditionals.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not been"
+              ],
+              "explanation": "Conditionals. → Lösung: had not been",
+              "acceptedAnswers": [
+                "had not been"
+              ],
+              "answer": "had not been"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "Several local groups succeeded {{0}} the construction.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "protest",
+              "grammarHint": "[Expert] Succeed in + Gerund.",
+              "hints": [
+                "Succeed in + Gerund.",
+                "Lösung beginnt mit „in…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "in protesting"
+              ],
+              "explanation": "Succeed in + Gerund. → Lösung: in protesting",
+              "acceptedAnswers": [
+                "in protesting"
+              ],
+              "answer": "in protesting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exp5",
+      "title": "15. [Expert] Advanced Voice & Tenses 5",
+      "type": "single_sentence",
+      "instruction": "Mixed Grammar (Expert): Setze die passende Form, Präposition oder Struktur ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "The health organization is understood {{0}} the public weeks ago.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "warn",
+              "grammarHint": "[Expert] Perfect Infinitive.",
+              "hints": [
+                "Perfect Infinitive.",
+                "Lösung beginnt mit „to…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "to have warned"
+              ],
+              "explanation": "Perfect Infinitive. → Lösung: to have warned",
+              "acceptedAnswers": [
+                "to have warned"
+              ],
+              "answer": "to have warned"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "At that time, little {{0}} about the transmission.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "know - little",
+              "grammarHint": "[Expert] Simple Past Passive.",
+              "hints": [
+                "Simple Past Passive.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was known"
+              ],
+              "explanation": "Simple Past Passive. → Lösung: was known",
+              "acceptedAnswers": [
+                "was known"
+              ],
+              "answer": "was known"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Having {{0}} the initial data, source could be traced.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "publish",
+              "grammarHint": "[Expert] Perfect Participle.",
+              "hints": [
+                "Perfect Participle.",
+                "Lösung beginnt mit „pu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "published"
+              ],
+              "explanation": "Perfect Participle. → Lösung: published",
+              "acceptedAnswers": [
+                "published"
+              ],
+              "answer": "published"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The quicker the response, the fewer lives {{0}} lost.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "???",
+              "grammarHint": "[Expert] Future Passive.",
+              "hints": [
+                "Future Passive.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will be"
+              ],
+              "explanation": "Future Passive. → Lösung: will be",
+              "acceptedAnswers": [
+                "will be"
+              ],
+              "answer": "will be"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The board was intent {{0}} a public panic.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "prevent",
+              "grammarHint": "[Expert] Intent on + Gerund.",
+              "hints": [
+                "Intent on + Gerund.",
+                "Lösung beginnt mit „on…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "on preventing"
+              ],
+              "explanation": "Intent on + Gerund. → Lösung: on preventing",
+              "acceptedAnswers": [
+                "on preventing"
+              ],
+              "answer": "on preventing"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Crucial containment protocols {{0}} by the main hospitals right now.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "implement - now",
+              "grammarHint": "[Expert] Present Progressive Passive.",
+              "hints": [
+                "Present Progressive Passive.",
+                "Lösung beginnt mit „ar…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are now being implemented"
+              ],
+              "explanation": "Present Progressive Passive. → Lösung: are now being implemented",
+              "acceptedAnswers": [
+                "are now being implemented"
+              ],
+              "answer": "are now being implemented"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "We strongly advise against {{0}} shortcuts.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "find",
+              "grammarHint": "[Expert] Advise against + Gerund.",
+              "hints": [
+                "Advise against + Gerund.",
+                "Lösung beginnt mit „fi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "finding"
+              ],
+              "explanation": "Advise against + Gerund. → Lösung: finding",
+              "acceptedAnswers": [
+                "finding"
+              ],
+              "answer": "finding"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "The new measures {{0}} both complex and sensitive.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "[Expert] Simple Past.",
+              "hints": [
+                "Simple Past.",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were"
+              ],
+              "explanation": "Simple Past. → Lösung: were",
+              "acceptedAnswers": [
+                "were"
+              ],
+              "answer": "were"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The situation would not be so dire if the risks {{0}} better understood.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "if - know",
+              "grammarHint": "[Expert] If Typ 3 Passive.",
+              "hints": [
+                "If Typ 3 Passive.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had been"
+              ],
+              "explanation": "If Typ 3 Passive. → Lösung: had been",
+              "acceptedAnswers": [
+                "had been"
+              ],
+              "answer": "had been"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "The government would not {{0}} the borders to remain open.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not - allow",
+              "grammarHint": "[Expert] Past Modal.",
+              "hints": [
+                "Past Modal.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have allowed"
+              ],
+              "explanation": "Past Modal. → Lösung: have allowed",
+              "acceptedAnswers": [
+                "have allowed"
+              ],
+              "answer": "have allowed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

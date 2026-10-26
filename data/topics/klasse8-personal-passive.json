@@ -1,0 +1,669 @@
+{
+  "id": "klasse8-personal-passive",
+  "title": "Personal Passive",
+  "grade": "8",
+  "icon": "👤",
+  "description": "Persönliches Passiv bei Verben mit zwei Objekten (give, send, show, offer, promise).",
+  "legacyStorageKey": "grammar_g8_personal_passive_state",
+  "legacyMasteredKey": "grammar_g8_personal_passive_mastered",
+  "rules": {
+    "title": "Personal Passive – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Personal Passive.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Pronoun Switch",
+      "type": "single_sentence",
+      "instruction": "Pronoun Switch: Welches Pronomen wird das neue Subjekt im Personal Passive?",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Active: Someone gave me a book. Passive: {{0}} was given a book.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Me / I / My",
+              "grammarHint": "Auswahl: Me / I / My",
+              "hints": [
+                "Wähle eine der Optionen: Me / I / My"
+              ],
+              "solutions": [
+                "I"
+              ],
+              "explanation": "„I“ ist hier die richtige Wahl aus (Me / I / My).",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "answer": "I"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Active: They told him a secret. Passive: {{0}} was told a secret.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "He / Him / His",
+              "grammarHint": "Auswahl: He / Him / His",
+              "hints": [
+                "Wähle eine der Optionen: He / Him / His"
+              ],
+              "solutions": [
+                "He"
+              ],
+              "explanation": "„He“ ist hier die richtige Wahl aus (He / Him / His).",
+              "acceptedAnswers": [
+                "He"
+              ],
+              "answer": "He"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Active: The teacher asked us a question. Passive: {{0}} were asked a question.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Our / Us / We",
+              "grammarHint": "Auswahl: Our / Us / We",
+              "hints": [
+                "Wähle eine der Optionen: Our / Us / We"
+              ],
+              "solutions": [
+                "We"
+              ],
+              "explanation": "„We“ ist hier die richtige Wahl aus (Our / Us / We).",
+              "acceptedAnswers": [
+                "We"
+              ],
+              "answer": "We"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Active: The boss offered them more money. Passive: {{0}} were offered more money.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "They / Them / Their",
+              "grammarHint": "Auswahl: They / Them / Their",
+              "hints": [
+                "Wähle eine der Optionen: They / Them / Their"
+              ],
+              "solutions": [
+                "They"
+              ],
+              "explanation": "„They“ ist hier die richtige Wahl aus (They / Them / Their).",
+              "acceptedAnswers": [
+                "They"
+              ],
+              "answer": "They"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Active: I sent her flowers. Passive: {{0}} was sent flowers.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "She / Her / Hers",
+              "grammarHint": "Auswahl: She / Her / Hers",
+              "hints": [
+                "Wähle eine der Optionen: She / Her / Hers"
+              ],
+              "solutions": [
+                "She"
+              ],
+              "explanation": "„She“ ist hier die richtige Wahl aus (She / Her / Hers).",
+              "acceptedAnswers": [
+                "She"
+              ],
+              "answer": "She"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Sentence Transformer",
+      "type": "single_sentence",
+      "instruction": "Sentence Transformer: Bilde aus dem Aktiv-Satz das Personal Passive.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Ausgangssatz: „Active: They gave John a new laptop.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "John / was / given / a / new / laptop.",
+              "grammarHint": "Bausteine: John / was / given / a / new / laptop.",
+              "hints": [
+                "Nutze alle Wörter: John / was / given / a / new / laptop.",
+                "Satzanfang: „John was…“"
+              ],
+              "solutions": [
+                "John was given a new laptop.",
+                "John was given a new laptop"
+              ],
+              "explanation": "Vollständiger Satz: „John was given a new laptop.“.",
+              "acceptedAnswers": [
+                "John was given a new laptop.",
+                "John was given a new laptop"
+              ],
+              "answer": "John was given a new laptop."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Ausgangssatz: „Active: Someone showed her the secret room.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "She / was / shown / the / secret / room.",
+              "grammarHint": "Bausteine: She / was / shown / the / secret / room.",
+              "hints": [
+                "Nutze alle Wörter: She / was / shown / the / secret / room.",
+                "Satzanfang: „She was…“"
+              ],
+              "solutions": [
+                "She was shown the secret room.",
+                "She was shown the secret room"
+              ],
+              "explanation": "Vollständiger Satz: „She was shown the secret room.“.",
+              "acceptedAnswers": [
+                "She was shown the secret room.",
+                "She was shown the secret room"
+              ],
+              "answer": "She was shown the secret room."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Ausgangssatz: „Active: They will offer me a job.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "I / will / be / offered / a / job.",
+              "grammarHint": "Bausteine: I / will / be / offered / a / job.",
+              "hints": [
+                "Nutze alle Wörter: I / will / be / offered / a / job.",
+                "Satzanfang: „I will…“"
+              ],
+              "solutions": [
+                "I will be offered a job.",
+                "I will be offered a job"
+              ],
+              "explanation": "Vollständiger Satz: „I will be offered a job.“.",
+              "acceptedAnswers": [
+                "I will be offered a job.",
+                "I will be offered a job"
+              ],
+              "answer": "I will be offered a job."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Ausgangssatz: „Active: The police have asked us many questions.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "We / have / been / asked / many / questions.",
+              "grammarHint": "Bausteine: We / have / been / asked / many / questions.",
+              "hints": [
+                "Nutze alle Wörter: We / have / been / asked / many / questions.",
+                "Satzanfang: „We have…“"
+              ],
+              "solutions": [
+                "We have been asked many questions.",
+                "We have been asked many questions"
+              ],
+              "explanation": "Vollständiger Satz: „We have been asked many questions.“.",
+              "acceptedAnswers": [
+                "We have been asked many questions.",
+                "We have been asked many questions"
+              ],
+              "answer": "We have been asked many questions."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Ausgangssatz: „Active: They told the students the good news.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "The / students / were / told / the / good / news.",
+              "grammarHint": "Bausteine: The / students / were / told / the / good / news.",
+              "hints": [
+                "Nutze alle Wörter: The / students / were / told / the / good / news.",
+                "Satzanfang: „The students…“"
+              ],
+              "solutions": [
+                "The students were told the good news.",
+                "The students were told the good news"
+              ],
+              "explanation": "Vollständiger Satz: „The students were told the good news.“.",
+              "acceptedAnswers": [
+                "The students were told the good news.",
+                "The students were told the good news"
+              ],
+              "answer": "The students were told the good news."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: The Gossip Column",
+      "type": "single_sentence",
+      "instruction": "The Gossip Column: Tratsch und Klatsch in der Schule. Fülle die Lücken mit dem Personal Passive im Simple Past (was/were + 3. Form).",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Did you hear about Tom? He {{0}} the big secret yesterday.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "tell",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was told"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was told"
+              ],
+              "answer": "was told"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Jenny is so happy. She {{0}} a beautiful ring by her boyfriend.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "give",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was given"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was given"
+              ],
+              "answer": "was given"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "At the party, we {{0}} the embarrassing photos of the teacher.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "show",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were shown"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were shown"
+              ],
+              "answer": "were shown"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The boys {{0}} free pizza, but they got nothing.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "promise",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were promised"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were promised"
+              ],
+              "answer": "were promised"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "I {{0}} a mysterious text message last night.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "send",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was sent"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was sent"
+              ],
+              "answer": "was sent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: The Awards Ceremony",
+      "type": "cloze_text",
+      "instruction": "The Awards Ceremony: Achte auf die Signalwörter, um die richtige Zeitform im Personal Passive zu finden!",
+      "text": "Welcome to the school awards! Every year, our best students {{0}} special prizes. Last year, my best friend {{1}} a scholarship for college. Before the show started today, all the winners {{2}} where to sit. Look! The best athlete is on stage. He {{3}} the golden trophy. I am sure that next year, the students {{4}} even more exciting skills.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "give / Simple Present",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ar…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "are given"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "are given"
+          ],
+          "answer": "are given"
+        },
+        {
+          "index": 1,
+          "prompt": "offer / Simple Past",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "was offered"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "was offered"
+          ],
+          "answer": "was offered"
+        },
+        {
+          "index": 2,
+          "prompt": "tell / Past Perfect",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had been told"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had been told"
+          ],
+          "answer": "had been told"
+        },
+        {
+          "index": 3,
+          "prompt": "just / hand / Present Perfect",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+          ],
+          "solutions": [
+            "has just been handed",
+            "'s just been handed"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "has just been handed",
+            "'s just been handed"
+          ],
+          "answer": "has just been handed"
+        },
+        {
+          "index": 4,
+          "prompt": "teach / Will-Future",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "will be taught"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "will be taught"
+          ],
+          "answer": "will be taught"
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: The Spy's Report",
+      "type": "cloze_text",
+      "instruction": "The Spy's Report: Finde selbst heraus, welche Passiv-Zeitform (Present, Past, Perfect, Future) in den Text passt.",
+      "text": "When I arrived at the secret headquarters, I {{0}} a new mission by the director. My partner and I {{1}} to travel to Paris immediately. Before the flight departed, we {{2}} a picture of the dangerous suspect. Usually, secret agents {{3}} a lot of money for such dangerous jobs. So far, I {{4}} to do anything illegal. But yesterday, my partner {{5}} an anonymous threatening letter. He {{6}} a safe return if he quit the mission right away. We didn't quit. I am sure we {{7}} a medal by the President when this is over. Right now, we are hiding in a hotel. We {{8}} the latest coordinates. If we survive this, we {{9}} the newest spy techniques next month.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "give",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "was given"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "was given"
+          ],
+          "answer": "was given"
+        },
+        {
+          "index": 1,
+          "prompt": "tell",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "were told"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "were told"
+          ],
+          "answer": "were told"
+        },
+        {
+          "index": 2,
+          "prompt": "show",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had been shown"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had been shown"
+          ],
+          "answer": "had been shown"
+        },
+        {
+          "index": 3,
+          "prompt": "pay",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ar…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "are paid"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "are paid"
+          ],
+          "answer": "are paid"
+        },
+        {
+          "index": 4,
+          "prompt": "not / ask",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+          ],
+          "solutions": [
+            "have not been asked",
+            "haven't been asked"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "have not been asked",
+            "haven't been asked"
+          ],
+          "answer": "have not been asked"
+        },
+        {
+          "index": 5,
+          "prompt": "send",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "was sent"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "was sent"
+          ],
+          "answer": "was sent"
+        },
+        {
+          "index": 6,
+          "prompt": "promise",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "was promised"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "was promised"
+          ],
+          "answer": "was promised"
+        },
+        {
+          "index": 7,
+          "prompt": "offer",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "will be offered"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "will be offered"
+          ],
+          "answer": "will be offered"
+        },
+        {
+          "index": 8,
+          "prompt": "just / send",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+          ],
+          "solutions": [
+            "have just been sent",
+            "'ve just been sent"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "have just been sent",
+            "'ve just been sent"
+          ],
+          "answer": "have just been sent"
+        },
+        {
+          "index": 9,
+          "prompt": "teach",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "will be taught"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "will be taught"
+          ],
+          "answer": "will be taught"
+        }
+      ]
+    }
+  ]
+}

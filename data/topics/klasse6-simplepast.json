@@ -1,0 +1,1504 @@
+{
+  "id": "klasse6-simplepast",
+  "title": "Simple Past",
+  "grade": "6",
+  "icon": "⏳",
+  "description": "Abgeschlossene Handlungen in der Vergangenheit: Regelmäßige (-ed) & unregelmäßige Verben, Fragen mit did und Verneinung mit didn't.",
+  "legacyStorageKey": "grammar_g6_simplepast_state",
+  "legacyMasteredKey": "grammar_g6_simplepast_mastered",
+  "rules": {
+    "title": "Simple Past – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Simple Past.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Irregular Verbs Factory",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "🇩🇪 „sein“ → to be – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be (Simple Past)",
+              "grammarHint": "2. Stammform von „to be“ (sein)",
+              "hints": [
+                "Beginnt mit „wa…“"
+              ],
+              "solutions": [
+                "was/were",
+                "was / were",
+                "was",
+                "were"
+              ],
+              "explanation": "Simple Past von „to be“: was/were.",
+              "acceptedAnswers": [
+                "was/were",
+                "was / were",
+                "was",
+                "were"
+              ],
+              "answer": "was/were"
+            },
+            {
+              "index": 1,
+              "prompt": "be (Past Participle)",
+              "grammarHint": "3. Stammform von „to be“ (sein)",
+              "hints": [
+                "Beginnt mit „be…“"
+              ],
+              "solutions": [
+                "been"
+              ],
+              "explanation": "Stammformen: be – was/were – been (sein).",
+              "acceptedAnswers": [
+                "been"
+              ],
+              "answer": "been"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "🇩🇪 „kaufen“ → to buy – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy (Simple Past)",
+              "grammarHint": "2. Stammform von „to buy“ (kaufen)",
+              "hints": [
+                "Beginnt mit „bo…“"
+              ],
+              "solutions": [
+                "bought"
+              ],
+              "explanation": "Simple Past von „to buy“: bought.",
+              "acceptedAnswers": [
+                "bought"
+              ],
+              "answer": "bought"
+            },
+            {
+              "index": 1,
+              "prompt": "buy (Past Participle)",
+              "grammarHint": "3. Stammform von „to buy“ (kaufen)",
+              "hints": [
+                "Beginnt mit „bo…“"
+              ],
+              "solutions": [
+                "bought"
+              ],
+              "explanation": "Stammformen: buy – bought – bought (kaufen).",
+              "acceptedAnswers": [
+                "bought"
+              ],
+              "answer": "bought"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "🇩🇪 „gehen“ → to go – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "go (Simple Past)",
+              "grammarHint": "2. Stammform von „to go“ (gehen)",
+              "hints": [
+                "Beginnt mit „we…“"
+              ],
+              "solutions": [
+                "went"
+              ],
+              "explanation": "Simple Past von „to go“: went.",
+              "acceptedAnswers": [
+                "went"
+              ],
+              "answer": "went"
+            },
+            {
+              "index": 1,
+              "prompt": "go (Past Participle)",
+              "grammarHint": "3. Stammform von „to go“ (gehen)",
+              "hints": [
+                "Beginnt mit „go…“"
+              ],
+              "solutions": [
+                "gone"
+              ],
+              "explanation": "Stammformen: go – went – gone (gehen).",
+              "acceptedAnswers": [
+                "gone"
+              ],
+              "answer": "gone"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "🇩🇪 „essen“ → to eat – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "eat (Simple Past)",
+              "grammarHint": "2. Stammform von „to eat“ (essen)",
+              "hints": [
+                "Beginnt mit „at…“"
+              ],
+              "solutions": [
+                "ate"
+              ],
+              "explanation": "Simple Past von „to eat“: ate.",
+              "acceptedAnswers": [
+                "ate"
+              ],
+              "answer": "ate"
+            },
+            {
+              "index": 1,
+              "prompt": "eat (Past Participle)",
+              "grammarHint": "3. Stammform von „to eat“ (essen)",
+              "hints": [
+                "Beginnt mit „ea…“"
+              ],
+              "solutions": [
+                "eaten"
+              ],
+              "explanation": "Stammformen: eat – ate – eaten (essen).",
+              "acceptedAnswers": [
+                "eaten"
+              ],
+              "answer": "eaten"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "🇩🇪 „finden“ → to find – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "find (Simple Past)",
+              "grammarHint": "2. Stammform von „to find“ (finden)",
+              "hints": [
+                "Beginnt mit „fo…“"
+              ],
+              "solutions": [
+                "found"
+              ],
+              "explanation": "Simple Past von „to find“: found.",
+              "acceptedAnswers": [
+                "found"
+              ],
+              "answer": "found"
+            },
+            {
+              "index": 1,
+              "prompt": "find (Past Participle)",
+              "grammarHint": "3. Stammform von „to find“ (finden)",
+              "hints": [
+                "Beginnt mit „fo…“"
+              ],
+              "solutions": [
+                "found"
+              ],
+              "explanation": "Stammformen: find – found – found (finden).",
+              "acceptedAnswers": [
+                "found"
+              ],
+              "answer": "found"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "🇩🇪 „sehen“ → to see – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "see (Simple Past)",
+              "grammarHint": "2. Stammform von „to see“ (sehen)",
+              "hints": [
+                "Beginnt mit „sa…“"
+              ],
+              "solutions": [
+                "saw"
+              ],
+              "explanation": "Simple Past von „to see“: saw.",
+              "acceptedAnswers": [
+                "saw"
+              ],
+              "answer": "saw"
+            },
+            {
+              "index": 1,
+              "prompt": "see (Past Participle)",
+              "grammarHint": "3. Stammform von „to see“ (sehen)",
+              "hints": [
+                "Beginnt mit „se…“"
+              ],
+              "solutions": [
+                "seen"
+              ],
+              "explanation": "Stammformen: see – saw – seen (sehen).",
+              "acceptedAnswers": [
+                "seen"
+              ],
+              "answer": "seen"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "🇩🇪 „sprechen“ → to speak – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "speak (Simple Past)",
+              "grammarHint": "2. Stammform von „to speak“ (sprechen)",
+              "hints": [
+                "Beginnt mit „sp…“"
+              ],
+              "solutions": [
+                "spoke"
+              ],
+              "explanation": "Simple Past von „to speak“: spoke.",
+              "acceptedAnswers": [
+                "spoke"
+              ],
+              "answer": "spoke"
+            },
+            {
+              "index": 1,
+              "prompt": "speak (Past Participle)",
+              "grammarHint": "3. Stammform von „to speak“ (sprechen)",
+              "hints": [
+                "Beginnt mit „sp…“"
+              ],
+              "solutions": [
+                "spoken"
+              ],
+              "explanation": "Stammformen: speak – spoke – spoken (sprechen).",
+              "acceptedAnswers": [
+                "spoken"
+              ],
+              "answer": "spoken"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "🇩🇪 „schreiben“ → to write – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "write (Simple Past)",
+              "grammarHint": "2. Stammform von „to write“ (schreiben)",
+              "hints": [
+                "Beginnt mit „wr…“"
+              ],
+              "solutions": [
+                "wrote"
+              ],
+              "explanation": "Simple Past von „to write“: wrote.",
+              "acceptedAnswers": [
+                "wrote"
+              ],
+              "answer": "wrote"
+            },
+            {
+              "index": 1,
+              "prompt": "write (Past Participle)",
+              "grammarHint": "3. Stammform von „to write“ (schreiben)",
+              "hints": [
+                "Beginnt mit „wr…“"
+              ],
+              "solutions": [
+                "written"
+              ],
+              "explanation": "Stammformen: write – wrote – written (schreiben).",
+              "acceptedAnswers": [
+                "written"
+              ],
+              "answer": "written"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "🇩🇪 „trinken“ → to drink – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "drink (Simple Past)",
+              "grammarHint": "2. Stammform von „to drink“ (trinken)",
+              "hints": [
+                "Beginnt mit „dr…“"
+              ],
+              "solutions": [
+                "drank"
+              ],
+              "explanation": "Simple Past von „to drink“: drank.",
+              "acceptedAnswers": [
+                "drank"
+              ],
+              "answer": "drank"
+            },
+            {
+              "index": 1,
+              "prompt": "drink (Past Participle)",
+              "grammarHint": "3. Stammform von „to drink“ (trinken)",
+              "hints": [
+                "Beginnt mit „dr…“"
+              ],
+              "solutions": [
+                "drunk"
+              ],
+              "explanation": "Stammformen: drink – drank – drunk (trinken).",
+              "acceptedAnswers": [
+                "drunk"
+              ],
+              "answer": "drunk"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "🇩🇪 „kommen“ → to come – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "come (Simple Past)",
+              "grammarHint": "2. Stammform von „to come“ (kommen)",
+              "hints": [
+                "Beginnt mit „ca…“"
+              ],
+              "solutions": [
+                "came"
+              ],
+              "explanation": "Simple Past von „to come“: came.",
+              "acceptedAnswers": [
+                "came"
+              ],
+              "answer": "came"
+            },
+            {
+              "index": 1,
+              "prompt": "come (Past Participle)",
+              "grammarHint": "3. Stammform von „to come“ (kommen)",
+              "hints": [
+                "Beginnt mit „co…“"
+              ],
+              "solutions": [
+                "come"
+              ],
+              "explanation": "Stammformen: come – came – come (kommen).",
+              "acceptedAnswers": [
+                "come"
+              ],
+              "answer": "come"
+            }
+          ]
+        },
+        {
+          "id": "s11",
+          "sentence": "🇩🇪 „machen“ → to make – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "make (Simple Past)",
+              "grammarHint": "2. Stammform von „to make“ (machen)",
+              "hints": [
+                "Beginnt mit „ma…“"
+              ],
+              "solutions": [
+                "made"
+              ],
+              "explanation": "Simple Past von „to make“: made.",
+              "acceptedAnswers": [
+                "made"
+              ],
+              "answer": "made"
+            },
+            {
+              "index": 1,
+              "prompt": "make (Past Participle)",
+              "grammarHint": "3. Stammform von „to make“ (machen)",
+              "hints": [
+                "Beginnt mit „ma…“"
+              ],
+              "solutions": [
+                "made"
+              ],
+              "explanation": "Stammformen: make – made – made (machen).",
+              "acceptedAnswers": [
+                "made"
+              ],
+              "answer": "made"
+            }
+          ]
+        },
+        {
+          "id": "s12",
+          "sentence": "🇩🇪 „geben“ → to give – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "give (Simple Past)",
+              "grammarHint": "2. Stammform von „to give“ (geben)",
+              "hints": [
+                "Beginnt mit „ga…“"
+              ],
+              "solutions": [
+                "gave"
+              ],
+              "explanation": "Simple Past von „to give“: gave.",
+              "acceptedAnswers": [
+                "gave"
+              ],
+              "answer": "gave"
+            },
+            {
+              "index": 1,
+              "prompt": "give (Past Participle)",
+              "grammarHint": "3. Stammform von „to give“ (geben)",
+              "hints": [
+                "Beginnt mit „gi…“"
+              ],
+              "solutions": [
+                "given"
+              ],
+              "explanation": "Stammformen: give – gave – given (geben).",
+              "acceptedAnswers": [
+                "given"
+              ],
+              "answer": "given"
+            }
+          ]
+        },
+        {
+          "id": "s13",
+          "sentence": "🇩🇪 „nehmen“ → to take – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "take (Simple Past)",
+              "grammarHint": "2. Stammform von „to take“ (nehmen)",
+              "hints": [
+                "Beginnt mit „to…“"
+              ],
+              "solutions": [
+                "took"
+              ],
+              "explanation": "Simple Past von „to take“: took.",
+              "acceptedAnswers": [
+                "took"
+              ],
+              "answer": "took"
+            },
+            {
+              "index": 1,
+              "prompt": "take (Past Participle)",
+              "grammarHint": "3. Stammform von „to take“ (nehmen)",
+              "hints": [
+                "Beginnt mit „ta…“"
+              ],
+              "solutions": [
+                "taken"
+              ],
+              "explanation": "Stammformen: take – took – taken (nehmen).",
+              "acceptedAnswers": [
+                "taken"
+              ],
+              "answer": "taken"
+            }
+          ]
+        },
+        {
+          "id": "s14",
+          "sentence": "🇩🇪 „lesen“ → to read – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "read (Simple Past)",
+              "grammarHint": "2. Stammform von „to read“ (lesen)",
+              "hints": [
+                "Beginnt mit „re…“"
+              ],
+              "solutions": [
+                "read"
+              ],
+              "explanation": "Simple Past von „to read“: read.",
+              "acceptedAnswers": [
+                "read"
+              ],
+              "answer": "read"
+            },
+            {
+              "index": 1,
+              "prompt": "read (Past Participle)",
+              "grammarHint": "3. Stammform von „to read“ (lesen)",
+              "hints": [
+                "Beginnt mit „re…“"
+              ],
+              "solutions": [
+                "read"
+              ],
+              "explanation": "Stammformen: read – read – read (lesen).",
+              "acceptedAnswers": [
+                "read"
+              ],
+              "answer": "read"
+            }
+          ]
+        },
+        {
+          "id": "s15",
+          "sentence": "🇩🇪 „denken“ → to think – Simple Past: {{0}} – Past Participle: {{1}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "think (Simple Past)",
+              "grammarHint": "2. Stammform von „to think“ (denken)",
+              "hints": [
+                "Beginnt mit „th…“"
+              ],
+              "solutions": [
+                "thought"
+              ],
+              "explanation": "Simple Past von „to think“: thought.",
+              "acceptedAnswers": [
+                "thought"
+              ],
+              "answer": "thought"
+            },
+            {
+              "index": 1,
+              "prompt": "think (Past Participle)",
+              "grammarHint": "3. Stammform von „to think“ (denken)",
+              "hints": [
+                "Beginnt mit „th…“"
+              ],
+              "solutions": [
+                "thought"
+              ],
+              "explanation": "Stammformen: think – thought – thought (denken).",
+              "acceptedAnswers": [
+                "thought"
+              ],
+              "answer": "thought"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Signal Word Sorter",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben. (Tippe: Simple Past / Other Tenses)",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "„yesterday“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Other Tenses",
+              "grammarHint": "Ordne zu: Simple Past / Other Tenses",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Other Tenses"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„yesterday“ wird der Kategorie „Simple Past“ zugeordnet.",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "„tomorrow“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Other Tenses",
+              "grammarHint": "Ordne zu: Simple Past / Other Tenses",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Other Tenses"
+              ],
+              "solutions": [
+                "Other Tenses"
+              ],
+              "explanation": "„tomorrow“ wird der Kategorie „Other Tenses“ zugeordnet.",
+              "acceptedAnswers": [
+                "Other Tenses"
+              ],
+              "answer": "Other Tenses"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "„ago“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Other Tenses",
+              "grammarHint": "Ordne zu: Simple Past / Other Tenses",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Other Tenses"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„ago“ wird der Kategorie „Simple Past“ zugeordnet.",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "„already“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Other Tenses",
+              "grammarHint": "Ordne zu: Simple Past / Other Tenses",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Other Tenses"
+              ],
+              "solutions": [
+                "Other Tenses"
+              ],
+              "explanation": "„already“ wird der Kategorie „Other Tenses“ zugeordnet.",
+              "acceptedAnswers": [
+                "Other Tenses"
+              ],
+              "answer": "Other Tenses"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "„last week“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Other Tenses",
+              "grammarHint": "Ordne zu: Simple Past / Other Tenses",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Other Tenses"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„last week“ wird der Kategorie „Simple Past“ zugeordnet.",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "„now“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Other Tenses",
+              "grammarHint": "Ordne zu: Simple Past / Other Tenses",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Other Tenses"
+              ],
+              "solutions": [
+                "Other Tenses"
+              ],
+              "explanation": "„now“ wird der Kategorie „Other Tenses“ zugeordnet.",
+              "acceptedAnswers": [
+                "Other Tenses"
+              ],
+              "answer": "Other Tenses"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "„in 1990“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Other Tenses",
+              "grammarHint": "Ordne zu: Simple Past / Other Tenses",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Other Tenses"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„in 1990“ wird der Kategorie „Simple Past“ zugeordnet.",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "„soon“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Other Tenses",
+              "grammarHint": "Ordne zu: Simple Past / Other Tenses",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Other Tenses"
+              ],
+              "solutions": [
+                "Other Tenses"
+              ],
+              "explanation": "„soon“ wird der Kategorie „Other Tenses“ zugeordnet.",
+              "acceptedAnswers": [
+                "Other Tenses"
+              ],
+              "answer": "Other Tenses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: The Weekend",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Last weekend {{0}} wonderful.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was"
+              ],
+              "answer": "was"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "I {{0}} to the park.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "go",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "went"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "went"
+              ],
+              "answer": "went"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We {{0}} any ghosts.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did not see",
+                "didn't see"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "did not see",
+                "didn't see"
+              ],
+              "answer": "did not see"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "I {{0}} a burger.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „bo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "bought"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "bought"
+              ],
+              "answer": "bought"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "It {{0}} good.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "taste",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ta…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "tasted"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "tasted"
+              ],
+              "answer": "tasted"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "We {{0}} tired later.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "feel",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „fe…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "felt"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "felt"
+              ],
+              "answer": "felt"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "{{0}} fun?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / have",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Did you have"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Did you have"
+              ],
+              "answer": "Did you have"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "I {{0}} up late.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "stay",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „st…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "stayed"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "stayed"
+              ],
+              "answer": "stayed"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "I {{0}} a book.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "read",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „re…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "read"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "read"
+              ],
+              "answer": "read"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "Then I {{0}} well.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sleep",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „sl…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "slept"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "slept"
+              ],
+              "answer": "slept"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: A Strange Day",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I {{0}} a strange day.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "have",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had"
+              ],
+              "answer": "had"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "I {{0}} at school.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "arrive",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "arrived"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "arrived"
+              ],
+              "answer": "arrived"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}} my bag?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "I / forget",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Did I forget"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Did I forget"
+              ],
+              "answer": "Did I forget"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "I {{0}} for it.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "look",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „lo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "looked"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "looked"
+              ],
+              "answer": "looked"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "I {{0}} it anywhere.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / find",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did not find",
+                "didn't find"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "did not find",
+                "didn't find"
+              ],
+              "answer": "did not find"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "I {{0}} the bus back.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "take",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „to…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "took"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "took"
+              ],
+              "answer": "took"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "I {{0}} Sarah.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "meet",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „me…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "met"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "met"
+              ],
+              "answer": "met"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "She {{0}} me the truth.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "tell",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „to…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "told"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "told"
+              ],
+              "answer": "told"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "We {{0}} together.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "laugh",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „la…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "laughed"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "laughed"
+              ],
+              "answer": "laughed"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "I {{0}} it at home later.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "find",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „fo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "found"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "found"
+              ],
+              "answer": "found"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Trip to London",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Three years ago we {{0}} London.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "visit",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „vi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "visited"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "visited"
+              ],
+              "answer": "visited"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "We {{0}} the Big Ben.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „sa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "saw"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "saw"
+              ],
+              "answer": "saw"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "The guide {{0}} very fast.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "speak",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „sp…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "spoke"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "spoke"
+              ],
+              "answer": "spoke"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We {{0}} a good café.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / find",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did not find",
+                "didn't find"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "did not find",
+                "didn't find"
+              ],
+              "answer": "did not find"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Where {{0}} ?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / stay",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did you stay"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "did you stay"
+              ],
+              "answer": "did you stay"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "We {{0}} in a hostel.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "stay",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „st…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "stayed"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "stayed"
+              ],
+              "answer": "stayed"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "I {{0}} many photos.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "take",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „to…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "took"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "took"
+              ],
+              "answer": "took"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "My friend {{0}} his hat.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "lose",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „lo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "lost"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "lost"
+              ],
+              "answer": "lost"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "The weather {{0}} fine.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was"
+              ],
+              "answer": "was"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "I {{0}} a kilt.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „bo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "bought"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "bought"
+              ],
+              "answer": "bought"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

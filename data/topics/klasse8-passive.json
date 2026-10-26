@@ -1,0 +1,675 @@
+{
+  "id": "klasse8-passive",
+  "title": "The Passive Voice",
+  "grade": "8",
+  "icon": "🏛️",
+  "description": "Aktiv in Passiv umwandeln, korrekte Formen von 'to be' + Past Participle in allen Zeitformen und by-Agent.",
+  "legacyStorageKey": "grammar_g8_passive_state",
+  "legacyMasteredKey": "grammar_g8_passive_mastered",
+  "rules": {
+    "title": "The Passive Voice – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema The Passive Voice.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Tense Scanner",
+      "type": "single_sentence",
+      "instruction": "Tense Scanner: In welcher Zeitform stehen diese Passivsätze? Achte auf das Hilfsverb!",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "The new bridge will be built next year. → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Present / Simple Past / Will-Future",
+              "grammarHint": "Auswahl: Simple Present / Simple Past / Will-Future",
+              "hints": [
+                "Wähle eine der Optionen: Simple Present / Simple Past / Will-Future"
+              ],
+              "solutions": [
+                "Will-Future"
+              ],
+              "explanation": "„Will-Future“ ist hier die richtige Wahl aus (Simple Present / Simple Past / Will-Future).",
+              "acceptedAnswers": [
+                "Will-Future"
+              ],
+              "answer": "Will-Future"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The window has been broken. → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Present Perfect / Past Perfect / Simple Past",
+              "grammarHint": "Auswahl: Present Perfect / Past Perfect / Simple Past",
+              "hints": [
+                "Wähle eine der Optionen: Present Perfect / Past Perfect / Simple Past"
+              ],
+              "solutions": [
+                "Present Perfect"
+              ],
+              "explanation": "„Present Perfect“ ist hier die richtige Wahl aus (Present Perfect / Past Perfect / Simple Past).",
+              "acceptedAnswers": [
+                "Present Perfect"
+              ],
+              "answer": "Present Perfect"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "English is spoken all over the world. → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Present / Simple Past / Present Perfect",
+              "grammarHint": "Auswahl: Simple Present / Simple Past / Present Perfect",
+              "hints": [
+                "Wähle eine der Optionen: Simple Present / Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Simple Present"
+              ],
+              "explanation": "„Simple Present“ ist hier die richtige Wahl aus (Simple Present / Simple Past / Present Perfect).",
+              "acceptedAnswers": [
+                "Simple Present"
+              ],
+              "answer": "Simple Present"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The cake was eaten by the dog. → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Present Perfect / Simple Past / Past Perfect",
+              "grammarHint": "Auswahl: Present Perfect / Simple Past / Past Perfect",
+              "hints": [
+                "Wähle eine der Optionen: Present Perfect / Simple Past / Past Perfect"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„Simple Past“ ist hier die richtige Wahl aus (Present Perfect / Simple Past / Past Perfect).",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The car had been repaired before the trip started. → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Present Perfect / Simple Past / Past Perfect",
+              "grammarHint": "Auswahl: Present Perfect / Simple Past / Past Perfect",
+              "hints": [
+                "Wähle eine der Optionen: Present Perfect / Simple Past / Past Perfect"
+              ],
+              "solutions": [
+                "Past Perfect"
+              ],
+              "explanation": "„Past Perfect“ ist hier die richtige Wahl aus (Present Perfect / Simple Past / Past Perfect).",
+              "acceptedAnswers": [
+                "Past Perfect"
+              ],
+              "answer": "Past Perfect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: The \"to be\" Machine",
+      "type": "single_sentence",
+      "instruction": "The 'to be' Machine: Setze nur die richtige Form von 'to be' in die Lücke ein. Das Partizip (3. Form) steht schon da!",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Every day, thousands of emails {{0}} sent.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Present",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "are"
+              ],
+              "answer": "are"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Yesterday, a new shopping mall {{0}} opened in our town.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was"
+              ],
+              "answer": "was"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Look! The thief {{0}} already caught by the police.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Present Perfect",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has been",
+                "'s been"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has been",
+                "'s been"
+              ],
+              "answer": "has been"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Tomorrow, the winner of the contest {{0}} announced.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Will-Future",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will be",
+                "'ll be"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will be",
+                "'ll be"
+              ],
+              "answer": "will be"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The match finally started after the pitch {{0}} cleaned.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Past Perfect",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had been",
+                "'d been"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had been",
+                "'d been"
+              ],
+              "answer": "had been"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Sentence Transformer",
+      "type": "single_sentence",
+      "instruction": "Sentence Transformer: Bilde aus dem Aktiv-Satz den passenden Passiv-Satz (inklusive by-agent, falls nötig).",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Ausgangssatz: „Active: Shakespeare wrote the play.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "The / play / was / written / by / Shakespeare.",
+              "grammarHint": "Bausteine: The / play / was / written / by / Shakespeare.",
+              "hints": [
+                "Nutze alle Wörter: The / play / was / written / by / Shakespeare.",
+                "Satzanfang: „The play…“"
+              ],
+              "solutions": [
+                "The play was written by Shakespeare.",
+                "The play was written by Shakespeare"
+              ],
+              "explanation": "Vollständiger Satz: „The play was written by Shakespeare.“.",
+              "acceptedAnswers": [
+                "The play was written by Shakespeare.",
+                "The play was written by Shakespeare"
+              ],
+              "answer": "The play was written by Shakespeare."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Ausgangssatz: „Active: They will build a new bridge.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "A / new / bridge / will / be / built.",
+              "grammarHint": "Bausteine: A / new / bridge / will / be / built.",
+              "hints": [
+                "Nutze alle Wörter: A / new / bridge / will / be / built.",
+                "Satzanfang: „A new…“"
+              ],
+              "solutions": [
+                "A new bridge will be built.",
+                "A new bridge will be built"
+              ],
+              "explanation": "Vollständiger Satz: „A new bridge will be built.“.",
+              "acceptedAnswers": [
+                "A new bridge will be built.",
+                "A new bridge will be built"
+              ],
+              "answer": "A new bridge will be built."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Ausgangssatz: „Active: Somebody has stolen my bike.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "My / bike / has / been / stolen.",
+              "grammarHint": "Bausteine: My / bike / has / been / stolen.",
+              "hints": [
+                "Nutze alle Wörter: My / bike / has / been / stolen.",
+                "Satzanfang: „My bike…“"
+              ],
+              "solutions": [
+                "My bike has been stolen.",
+                "My bike has been stolen"
+              ],
+              "explanation": "Vollständiger Satz: „My bike has been stolen.“.",
+              "acceptedAnswers": [
+                "My bike has been stolen.",
+                "My bike has been stolen"
+              ],
+              "answer": "My bike has been stolen."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Ausgangssatz: „Active: They clean the rooms every day.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "The / rooms / are / cleaned / every / day.",
+              "grammarHint": "Bausteine: The / rooms / are / cleaned / every / day.",
+              "hints": [
+                "Nutze alle Wörter: The / rooms / are / cleaned / every / day.",
+                "Satzanfang: „The rooms…“"
+              ],
+              "solutions": [
+                "The rooms are cleaned every day.",
+                "The rooms are cleaned every day"
+              ],
+              "explanation": "Vollständiger Satz: „The rooms are cleaned every day.“.",
+              "acceptedAnswers": [
+                "The rooms are cleaned every day.",
+                "The rooms are cleaned every day"
+              ],
+              "answer": "The rooms are cleaned every day."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Ausgangssatz: „Active: She had baked the cake before the party.“ → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "The / cake / had / been / baked / before / the / party.",
+              "grammarHint": "Bausteine: The / cake / had / been / baked / before / the / party.",
+              "hints": [
+                "Nutze alle Wörter: The / cake / had / been / baked / before / the / party.",
+                "Satzanfang: „The cake…“"
+              ],
+              "solutions": [
+                "The cake had been baked before the party.",
+                "The cake had been baked before the party"
+              ],
+              "explanation": "Vollständiger Satz: „The cake had been baked before the party.“.",
+              "acceptedAnswers": [
+                "The cake had been baked before the party.",
+                "The cake had been baked before the party"
+              ],
+              "answer": "The cake had been baked before the party."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: The Art Heist",
+      "type": "cloze_text",
+      "instruction": "The Art Heist: Fülle die Lücken mit der kompletten Passivform (to be + 3. Form). Achte auf die Signalwörter für die richtige Zeitform!",
+      "text": "Last night, the famous Mona Lisa {{0}} from the museum. The alarm system {{1}} before the thieves even entered the room. Right now, the museum is closed. It {{2}} until next week. So far, no fingerprints {{3}} by the detectives. Usually, the museum {{4}} very well, but yesterday the guard was asleep.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "steal / Simple Past",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "was stolen"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "was stolen"
+          ],
+          "answer": "was stolen"
+        },
+        {
+          "index": 1,
+          "prompt": "destroy / Past Perfect",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had been destroyed"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had been destroyed"
+          ],
+          "answer": "had been destroyed"
+        },
+        {
+          "index": 2,
+          "prompt": "not open / Will-Future",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wi…“ (4 Wort/Wörter)."
+          ],
+          "solutions": [
+            "will not be opened",
+            "won't be opened"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "will not be opened",
+            "won't be opened"
+          ],
+          "answer": "will not be opened"
+        },
+        {
+          "index": 3,
+          "prompt": "find / Present Perfect",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "have been found"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "have been found"
+          ],
+          "answer": "have been found"
+        },
+        {
+          "index": 4,
+          "prompt": "guard / Simple Present",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „is…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "is guarded"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "is guarded"
+          ],
+          "answer": "is guarded"
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Movie Magic",
+      "type": "cloze_text",
+      "instruction": "Movie Magic: Jetzt wird's knifflig! Finde selbst heraus, welche Passiv-Zeitform (Present, Past, Perfect, Future) in den Text passt.",
+      "text": "Have you ever wondered how an action movie is made? First, the script {{0}} by an author. Then, the best actors {{1}} for the main roles. In the new Bond movie, an expensive sports car {{2}} yesterday. Before that scene could happen, the road {{3}} by the police. During the stunt, a very expensive camera {{4}} by a flying rock. Right now, the special effects are missing. They {{5}} next week in the studio. Also, the movie's soundtrack {{6}} yet. The movie is almost finished. It {{7}} in cinemas next month. Because it is so popular, thousands of tickets {{8}} online. Every year, millions of dollars {{9}} on these exciting movies!",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "write",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „is…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "is written"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "is written"
+          ],
+          "answer": "is written"
+        },
+        {
+          "index": 1,
+          "prompt": "choose",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ar…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "are chosen"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "are chosen"
+          ],
+          "answer": "are chosen"
+        },
+        {
+          "index": 2,
+          "prompt": "destroy",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "was destroyed"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "was destroyed"
+          ],
+          "answer": "was destroyed"
+        },
+        {
+          "index": 3,
+          "prompt": "close",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had been closed"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had been closed"
+          ],
+          "answer": "had been closed"
+        },
+        {
+          "index": 4,
+          "prompt": "break",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "was broken"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "was broken"
+          ],
+          "answer": "was broken"
+        },
+        {
+          "index": 5,
+          "prompt": "add",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "will be added"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "will be added"
+          ],
+          "answer": "will be added"
+        },
+        {
+          "index": 6,
+          "prompt": "not / record",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+          ],
+          "solutions": [
+            "has not been recorded",
+            "hasn't been recorded"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "has not been recorded",
+            "hasn't been recorded"
+          ],
+          "answer": "has not been recorded"
+        },
+        {
+          "index": 7,
+          "prompt": "show",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "will be shown"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "will be shown"
+          ],
+          "answer": "will be shown"
+        },
+        {
+          "index": 8,
+          "prompt": "already / sell",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+          ],
+          "solutions": [
+            "have already been sold",
+            "'ve already been sold"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "have already been sold",
+            "'ve already been sold"
+          ],
+          "answer": "have already been sold"
+        },
+        {
+          "index": 9,
+          "prompt": "spend",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ar…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "are spent"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "are spent"
+          ],
+          "answer": "are spent"
+        }
+      ]
+    }
+  ]
+}

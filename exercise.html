@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Grammar Mastery · Trainer</title>
+  <link rel="stylesheet" href="shared-gamification.css">
+  <script src="data/topics-bundle.js" defer></script>
+  <script type="module" src="modules/engine.js"></script>
+  <script src="modules/standalone-runtime.js" defer></script>
+</head>
+<body class="gm-trainer-body" data-accent="blue">
+
+  <div id="gm-exercise-app" class="gm-app-shell">
+
+    <!-- 1. UNIFIED FLEX TOPBAR IN NORMAL DOCUMENT FLOW -->
+    <header class="app-header gm-topbar">
+      <div class="header-left gm-topbar-left">
+        <a href="index.html" class="gm-brand-link" title="Zurück zur Themen-Übersicht">
+          <span aria-hidden="true">←</span>
+          <span>Hub</span>
+        </a>
+        <div class="gm-topbar-topic-info">
+          <span class="gm-grade-pill" id="gm-header-grade-pill">Klasse 5</span>
+          <span class="gm-topbar-title" id="gm-header-topic-title">Grammar Mastery</span>
+        </div>
+      </div>
+
+      <div class="header-right gm-topbar-right">
+        <div class="gm-pill-stat is-streak" title="Tägliche Lernserie">
+          <span aria-hidden="true">🔥</span>
+          <span id="gm-stat-streak">0</span>
+        </div>
+        <div class="gm-pill-stat is-xp" title="Gesammelte Erfahrungspunkte">
+          <span aria-hidden="true">⭐</span>
+          <span id="gm-stat-xp">0</span>
+          <span>XP</span>
+        </div>
+        <div class="gm-pill-stat is-level" title="Aktuelles Level">
+          <span aria-hidden="true">🏆</span>
+          <span id="gm-stat-level">Lvl 1</span>
+        </div>
+        <button type="button" class="gm-icon-btn" id="gm-header-rules-btn" title="Grammatik-Regeln einblenden">
+          <span aria-hidden="true">📖</span>
+          <span>Regeln</span>
+        </button>
+        <button type="button" class="gm-icon-btn" id="gm-header-mute-btn" title="Ton umschalten" aria-label="Ton umschalten">
+          🔊
+        </button>
+      </div>
+    </header>
+
+    <!-- LOADING INDICATOR -->
+    <div id="gm-loading-state" class="gm-start-screen">
+      <div class="gm-start-card" style="text-align: center;">
+        <div class="gm-start-icon">⚡</div>
+        <h2 class="gm-start-title" style="font-size: 1.4rem;">Lade Übungsthema …</h2>
+        <p class="gm-start-desc">Datensatz wird initialisiert.</p>
+      </div>
+    </div>
+
+    <!-- 2. CENTERED TOPIC STARTSCREEN -->
+    <main id="gm-start-screen" class="gm-start-screen" hidden></main>
+
+    <!-- 3. 100dvh ACTIVE TRAINER STAGE -->
+    <main id="gm-trainer-stage" class="gm-trainer-stage" hidden>
+      <div class="gm-stage-subheader">
+        <div class="gm-stage-subheader-top">
+          <div class="gm-stage-title-group">
+            <button type="button" class="gm-icon-btn" id="gm-stage-back-btn" title="Zur Themen-Übersicht">
+              ← Übersicht
+            </button>
+            <h1 class="gm-stage-ex-title" id="gm-stage-ex-title">Übung</h1>
+          </div>
+          <span class="gm-stage-mode-badge" id="gm-stage-mode-badge">🎯 Einzelsätze</span>
+        </div>
+
+        <div class="gm-stage-progress-row">
+          <div class="gm-stage-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="gm-stage-progress-fill" id="gm-stage-progress-fill"></div>
+          </div>
+          <span class="gm-stage-progress-text" id="gm-stage-progress-text">0/0 (0%)</span>
+        </div>
+
+        <p class="gm-stage-instruction" id="gm-stage-instruction"></p>
+      </div>
+
+      <!-- Scroll-contained Workspace (verhindert Body-Scroll im 100dvh-Modus) -->
+      <section class="gm-stage-scroll" id="gm-stage-workspace" aria-live="polite"></section>
+    </main>
+
+    <!-- 4. FEEDBACK DRAWER & MOBILE-FIRST BOTTOM INPUT DOCK -->
+    <div class="gm-bottom-stack">
+      <!-- Didaktischer Feedback-Drawer -->
+      <aside id="gm-feedback-drawer" class="gm-feedback-drawer" aria-live="polite"></aside>
+
+      <!-- Fixierte Eingabezeile am unteren Bildschirmrand -->
+      <footer id="gm-input-dock" class="gm-input-dock" hidden>
+        <div class="gm-input-dock-inner">
+          <!-- Feste, niemals überlappende Hinweis-Zeile oberhalb des Eingabefelds -->
+          <div class="gm-dock-cue-bar" id="gm-dock-cue-bar">
+            <div class="gm-dock-cue-left">
+              <span class="gm-dock-prompt-badge" id="gm-dock-prompt">
+                Vorgabe: <strong>(verb)</strong>
+              </span>
+              <span class="gm-dock-grammar-badge" id="gm-dock-grammar-hint">
+                Grammatik-Hinweis
+              </span>
+            </div>
+            <span class="gm-dock-step-counter" id="gm-dock-step">Lücke 1 / 1</span>
+          </div>
+
+          <!-- Eingabefeld (font-size: 16px, autocorrect="off", autocapitalize="off") + Buttons -->
+          <div class="gm-dock-controls">
+            <input
+              type="text"
+              id="gm-dock-input"
+              class="gm-dock-input"
+              placeholder="Antwort eingeben …"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="off"
+              spellcheck="false"
+              enterkeyhint="done"
+              aria-label="Lückentext-Antwort"
+            >
+            <button
+              type="button"
+              id="gm-dock-hint-btn"
+              class="gm-dock-hint-btn"
+              title="Anfangsbuchstaben & Grammatik-Tipp anzeigen (-5 XP)"
+            >
+              <span aria-hidden="true">💡</span>
+              <span>Tipp <small>-5 XP</small></span>
+            </button>
+            <button
+              type="button"
+              id="gm-dock-submit-btn"
+              class="gm-dock-submit-btn"
+              title="Eingabe prüfen (Enter)"
+            >
+              <span>Prüfen</span>
+              <kbd aria-hidden="true">↵</kbd>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+</body>
+</html>

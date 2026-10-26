@@ -1,0 +1,738 @@
+{
+  "id": "klasse7-pastperf",
+  "title": "Past Perfect",
+  "grade": "7",
+  "icon": "⏪",
+  "description": "Die Vorvergangenheit mit had + Past Participle im Zusammenspiel mit dem Simple Past (after, before, when).",
+  "legacyStorageKey": "grammar_g7_pastperf_state",
+  "legacyMasteredKey": "grammar_g7_pastperf_mastered",
+  "rules": {
+    "title": "Past Perfect – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Past Perfect.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Timeline Sorter (First or Second Action?)",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben. (Tippe: First Action (Past Perfect) / Second Action (Simple Past))",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "„had left“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "First Action / Second Action",
+              "grammarHint": "Auswahl: First Action (Past Perfect) / Second Action (Simple Past)",
+              "hints": [
+                "Entscheide zwischen: First Action (Past Perfect) / Second Action (Simple Past)"
+              ],
+              "solutions": [
+                "First Action",
+                "First Action (Past Perfect)"
+              ],
+              "explanation": "„had left“ wird der Kategorie „First Action (Past Perfect)“ zugeordnet.",
+              "acceptedAnswers": [
+                "First Action",
+                "First Action (Past Perfect)"
+              ],
+              "answer": "First Action"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "„had forgotten“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "First Action / Second Action",
+              "grammarHint": "Auswahl: First Action (Past Perfect) / Second Action (Simple Past)",
+              "hints": [
+                "Entscheide zwischen: First Action (Past Perfect) / Second Action (Simple Past)"
+              ],
+              "solutions": [
+                "First Action",
+                "First Action (Past Perfect)"
+              ],
+              "explanation": "„had forgotten“ wird der Kategorie „First Action (Past Perfect)“ zugeordnet.",
+              "acceptedAnswers": [
+                "First Action",
+                "First Action (Past Perfect)"
+              ],
+              "answer": "First Action"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "„had already started“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "First Action / Second Action",
+              "grammarHint": "Auswahl: First Action (Past Perfect) / Second Action (Simple Past)",
+              "hints": [
+                "Entscheide zwischen: First Action (Past Perfect) / Second Action (Simple Past)"
+              ],
+              "solutions": [
+                "First Action",
+                "First Action (Past Perfect)"
+              ],
+              "explanation": "„had already started“ wird der Kategorie „First Action (Past Perfect)“ zugeordnet.",
+              "acceptedAnswers": [
+                "First Action",
+                "First Action (Past Perfect)"
+              ],
+              "answer": "First Action"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "„had eaten“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "First Action / Second Action",
+              "grammarHint": "Auswahl: First Action (Past Perfect) / Second Action (Simple Past)",
+              "hints": [
+                "Entscheide zwischen: First Action (Past Perfect) / Second Action (Simple Past)"
+              ],
+              "solutions": [
+                "First Action",
+                "First Action (Past Perfect)"
+              ],
+              "explanation": "„had eaten“ wird der Kategorie „First Action (Past Perfect)“ zugeordnet.",
+              "acceptedAnswers": [
+                "First Action",
+                "First Action (Past Perfect)"
+              ],
+              "answer": "First Action"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "„arrived“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "First Action / Second Action",
+              "grammarHint": "Auswahl: First Action (Past Perfect) / Second Action (Simple Past)",
+              "hints": [
+                "Entscheide zwischen: First Action (Past Perfect) / Second Action (Simple Past)"
+              ],
+              "solutions": [
+                "Second Action",
+                "Second Action (Simple Past)"
+              ],
+              "explanation": "„arrived“ wird der Kategorie „Second Action (Simple Past)“ zugeordnet.",
+              "acceptedAnswers": [
+                "Second Action",
+                "Second Action (Simple Past)"
+              ],
+              "answer": "Second Action"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "„noticed“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "First Action / Second Action",
+              "grammarHint": "Auswahl: First Action (Past Perfect) / Second Action (Simple Past)",
+              "hints": [
+                "Entscheide zwischen: First Action (Past Perfect) / Second Action (Simple Past)"
+              ],
+              "solutions": [
+                "Second Action",
+                "Second Action (Simple Past)"
+              ],
+              "explanation": "„noticed“ wird der Kategorie „Second Action (Simple Past)“ zugeordnet.",
+              "acceptedAnswers": [
+                "Second Action",
+                "Second Action (Simple Past)"
+              ],
+              "answer": "Second Action"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "„went to bed“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "First Action / Second Action",
+              "grammarHint": "Auswahl: First Action (Past Perfect) / Second Action (Simple Past)",
+              "hints": [
+                "Entscheide zwischen: First Action (Past Perfect) / Second Action (Simple Past)"
+              ],
+              "solutions": [
+                "Second Action",
+                "Second Action (Simple Past)"
+              ],
+              "explanation": "„went to bed“ wird der Kategorie „Second Action (Simple Past)“ zugeordnet.",
+              "acceptedAnswers": [
+                "Second Action",
+                "Second Action (Simple Past)"
+              ],
+              "answer": "Second Action"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "„saw“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "First Action / Second Action",
+              "grammarHint": "Auswahl: First Action (Past Perfect) / Second Action (Simple Past)",
+              "hints": [
+                "Entscheide zwischen: First Action (Past Perfect) / Second Action (Simple Past)"
+              ],
+              "solutions": [
+                "Second Action",
+                "Second Action (Simple Past)"
+              ],
+              "explanation": "„saw“ wird der Kategorie „Second Action (Simple Past)“ zugeordnet.",
+              "acceptedAnswers": [
+                "Second Action",
+                "Second Action (Simple Past)"
+              ],
+              "answer": "Second Action"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Sentence Scramble",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "before / had / started / The / arrived. / we / film",
+              "grammarHint": "Bausteine: before / had / started / The / arrived. / we / film",
+              "hints": [
+                "Nutze alle Wörter: before / had / started / The / arrived. / we / film",
+                "Satzanfang: „The film…“"
+              ],
+              "solutions": [
+                "The film had started before we arrived.",
+                "The film had started before we arrived"
+              ],
+              "explanation": "Vollständiger Satz: „The film had started before we arrived.“.",
+              "acceptedAnswers": [
+                "The film had started before we arrived.",
+                "The film had started before we arrived"
+              ],
+              "answer": "The film had started before we arrived."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "I / tired / not / slept. / because / had / was / I",
+              "grammarHint": "Bausteine: I / tired / not / slept. / because / had / was / I",
+              "hints": [
+                "Nutze alle Wörter: I / tired / not / slept. / because / had / was / I",
+                "Satzanfang: „I was…“"
+              ],
+              "solutions": [
+                "I was tired because I had not slept.",
+                "I was tired because I had not slept"
+              ],
+              "explanation": "Vollständiger Satz: „I was tired because I had not slept.“.",
+              "acceptedAnswers": [
+                "I was tired because I had not slept.",
+                "I was tired because I had not slept"
+              ],
+              "answer": "I was tired because I had not slept."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "visited / ever / Scotland / you / before? / Had",
+              "grammarHint": "Bausteine: visited / ever / Scotland / you / before? / Had",
+              "hints": [
+                "Nutze alle Wörter: visited / ever / Scotland / you / before? / Had",
+                "Satzanfang: „Had you…“"
+              ],
+              "solutions": [
+                "Had you ever visited Scotland before?"
+              ],
+              "explanation": "Vollständiger Satz: „Had you ever visited Scotland before?“.",
+              "acceptedAnswers": [
+                "Had you ever visited Scotland before?"
+              ],
+              "answer": "Had you ever visited Scotland before?"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "started / left / when / raining. / house / had / the / They / it",
+              "grammarHint": "Bausteine: started / left / when / raining. / house / had / the / They / it",
+              "hints": [
+                "Nutze alle Wörter: started / left / when / raining. / house / had / the / They / it",
+                "Satzanfang: „They had…“"
+              ],
+              "solutions": [
+                "They had left the house when it started raining.",
+                "They had left the house when it started raining"
+              ],
+              "explanation": "Vollständiger Satz: „They had left the house when it started raining.“.",
+              "acceptedAnswers": [
+                "They had left the house when it started raining.",
+                "They had left the house when it started raining"
+              ],
+              "answer": "They had left the house when it started raining."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "she / me / new / had / bought / She / car. / told / a",
+              "grammarHint": "Bausteine: she / me / new / had / bought / She / car. / told / a",
+              "hints": [
+                "Nutze alle Wörter: she / me / new / had / bought / She / car. / told / a",
+                "Satzanfang: „She told…“"
+              ],
+              "solutions": [
+                "She told me she had bought a new car.",
+                "She told me she had bought a new car"
+              ],
+              "explanation": "Vollständiger Satz: „She told me she had bought a new car.“.",
+              "acceptedAnswers": [
+                "She told me she had bought a new car.",
+                "She told me she had bought a new car"
+              ],
+              "answer": "She told me she had bought a new car."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: The Scottish Highlands",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "When we {{0}} in the Highlands, it was completely dark.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "arrive",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "arrived"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "arrived"
+              ],
+              "answer": "arrived"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The sun {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "already / set",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had already set",
+                "'d already set"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had already set",
+                "'d already set"
+              ],
+              "answer": "had already set"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We were very hungry because we {{0}} anything all day.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / eat",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had not eaten",
+                "hadn't eaten"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had not eaten",
+                "hadn't eaten"
+              ],
+              "answer": "had not eaten"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The hotel manager {{0}} us our room keys.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "give",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ga…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "gave"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "gave"
+              ],
+              "answer": "gave"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "He said that he {{0}} for us for two hours.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "wait",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had waited",
+                "had been waiting",
+                "'d waited"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had waited",
+                "had been waiting",
+                "'d waited"
+              ],
+              "answer": "had waited"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Stirling Castle",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "We {{0}} Stirling Castle the next morning.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "visit",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „vi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "visited"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "visited"
+              ],
+              "answer": "visited"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "I {{0}} a lot about it before our trip.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "read",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had read",
+                "'d read"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had read",
+                "'d read"
+              ],
+              "answer": "had read"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "My brother didn't want to go because he {{0}} there.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "already / be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had already been",
+                "'d already been"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had already been",
+                "'d already been"
+              ],
+              "answer": "had already been"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We {{0}} the great hall and the beautiful gardens.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „sa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "saw"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "saw"
+              ],
+              "answer": "saw"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "I couldn't take any photos because I {{0}} my camera at the hotel.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "forget",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had forgotten",
+                "'d forgotten"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had forgotten",
+                "'d forgotten"
+              ],
+              "answer": "had forgotten"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Loch Ness Mystery",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Then we drove to Loch Ness. We {{0}} such a big loch before.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "never / see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had never seen",
+                "'d never seen"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had never seen",
+                "'d never seen"
+              ],
+              "answer": "had never seen"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "A man at the water told us that he {{0}} the famous monster.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "just / spot",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had just spotted",
+                "'d just spotted"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had just spotted",
+                "'d just spotted"
+              ],
+              "answer": "had just spotted"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We ran to the water, but the monster {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "disappear",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had disappeared",
+                "'d disappeared"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had disappeared",
+                "'d disappeared"
+              ],
+              "answer": "had disappeared"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We {{0}} for a long time, but saw nothing else.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "wait",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "waited"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "waited"
+              ],
+              "answer": "waited"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "I was a bit sad because I {{0}} to take a picture of Nessie.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "hope",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had hoped",
+                "'d hoped"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had hoped",
+                "'d hoped"
+              ],
+              "answer": "had hoped"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

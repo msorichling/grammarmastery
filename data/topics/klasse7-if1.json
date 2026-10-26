@@ -1,0 +1,880 @@
+{
+  "id": "klasse7-if1",
+  "title": "If-Clauses Typ 1",
+  "grade": "7",
+  "icon": "🌦️",
+  "description": "Reale Bedingungen: Simple Present im If-Satz + will/can/must + Infinitiv im Hauptsatz.",
+  "legacyStorageKey": "grammar_g7_if1_state",
+  "legacyMasteredKey": "grammar_g7_if1_mastered",
+  "rules": {
+    "title": "If-Clauses Typ 1 – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema If-Clauses Typ 1.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Type 0 (Facts)",
+      "type": "single_sentence",
+      "instruction": "Type 0: Hier geht es um Dinge, die immer wahr sind (Fakten). Beide Satzteile stehen im Simple Present.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If you heat ice, it {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "melt",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „me…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "melts"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "melts"
+              ],
+              "answer": "melts"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Plants die if they {{0}} water.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / get",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "don't get",
+                "do not get"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "don't get",
+                "do not get"
+              ],
+              "answer": "don't get"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If you {{0}} blue and yellow, you get green.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "mix",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „mi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "mix"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "mix"
+              ],
+              "answer": "mix"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "If it is 12 o'clock in London, it {{0}} 1 pm in Berlin.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form."
+              ],
+              "solutions": [
+                "is"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "is"
+              ],
+              "answer": "is"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Snakes bite if they {{0}} scared.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "are"
+              ],
+              "answer": "are"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "If you {{0}} , you get hungry.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / eat",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "don't eat",
+                "do not eat"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "don't eat",
+                "do not eat"
+              ],
+              "answer": "don't eat"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "Ice turns to water if you {{0}} it in the sun.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "leave",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „le…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "leave"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "leave"
+              ],
+              "answer": "leave"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "If you press the button, the light {{0}} on.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "come",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „co…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "comes"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "comes"
+              ],
+              "answer": "comes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Type 1 (Plans)",
+      "type": "single_sentence",
+      "instruction": "Type 1: Reale Bedingungen. Der if-Satz steht im Simple Present, der Hauptsatz im will-future.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If I have enough money, I {{0}} that new game.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will buy",
+                "'ll buy"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will buy",
+                "'ll buy"
+              ],
+              "answer": "will buy"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "We will go out if it {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / rain",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "doesn't rain",
+                "does not rain"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "doesn't rain",
+                "does not rain"
+              ],
+              "answer": "doesn't rain"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If you {{0}} me, I will finish faster.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "help",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „he…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "help"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "help"
+              ],
+              "answer": "help"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "She will be angry if you {{0}} late.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "are"
+              ],
+              "answer": "are"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "If he {{0}} , he will pass.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "study",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „st…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "studies"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "studies"
+              ],
+              "answer": "studies"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "I {{0}} you if I find it.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "call",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will call",
+                "'ll call"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will call",
+                "'ll call"
+              ],
+              "answer": "will call"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "If we {{0}} , we will catch it.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "hurry",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „hu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "hurry"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "hurry"
+              ],
+              "answer": "hurry"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "They will stay if they {{0}} ill.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "feel",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „fe…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "feel"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "feel"
+              ],
+              "answer": "feel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Type Mix (0 & 1)",
+      "type": "single_sentence",
+      "instruction": "Mix of Type 0 and 1: Entscheide selbst, ob es ein Fakt (Typ 0) oder eine Zukunftsbedingung (Typ 1) ist. Und Vorsicht vor dem Grammatik-Kill!",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If I see him, I {{0}} him.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "tell",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will tell",
+                "'ll tell"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will tell",
+                "'ll tell"
+              ],
+              "answer": "will tell"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Ice melts if you {{0}} it.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "heat",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „he…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "heat"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "heat"
+              ],
+              "answer": "heat"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If we {{0}} , we will be late.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / hurry",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "do not hurry",
+                "don't hurry"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "do not hurry",
+                "don't hurry"
+              ],
+              "answer": "do not hurry"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "You get green if you {{0}} blue and yellow.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "mix",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „mi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "mix"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "mix"
+              ],
+              "answer": "mix"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "If she {{0}} , I will be happy.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "come",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „co…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "comes"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "comes"
+              ],
+              "answer": "comes"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Plants die if they {{0}} water.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / get",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "do not get",
+                "don't get"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "do not get",
+                "don't get"
+              ],
+              "answer": "do not get"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "I {{0}} you if I have time.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "help",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will help",
+                "'ll help"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will help",
+                "'ll help"
+              ],
+              "answer": "will help"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "If the sun {{0}} , we go out.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "shine",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „sh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "shines"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "shines"
+              ],
+              "answer": "shines"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Match the Halves",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If you don't wear a jacket, {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... you will catch a cold. / ... you catch a cold. / ... you would catch a cold.",
+              "grammarHint": "Auswahl: ... you will catch a cold. / ... you catch a cold. / ... you would catch a cold.",
+              "hints": [
+                "Wähle eine der Optionen: ... you will catch a cold. / ... you catch a cold. / ... you would catch a cold."
+              ],
+              "solutions": [
+                "you will catch a cold.",
+                "you will catch a cold",
+                "... you will catch a cold."
+              ],
+              "explanation": "„... you will catch a cold.“ ist hier die richtige Wahl aus (... you will catch a cold. / ... you catch a cold. / ... you would catch a cold.).",
+              "acceptedAnswers": [
+                "you will catch a cold.",
+                "you will catch a cold",
+                "... you will catch a cold."
+              ],
+              "answer": "you will catch a cold."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Ice melts {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... if you heat it. / ... if you will heat it. / ... if you heated it.",
+              "grammarHint": "Auswahl: ... if you heat it. / ... if you will heat it. / ... if you heated it.",
+              "hints": [
+                "Wähle eine der Optionen: ... if you heat it. / ... if you will heat it. / ... if you heated it."
+              ],
+              "solutions": [
+                "if you heat it.",
+                "if you heat it",
+                "... if you heat it."
+              ],
+              "explanation": "„... if you heat it.“ ist hier die richtige Wahl aus (... if you heat it. / ... if you will heat it. / ... if you heated it.).",
+              "acceptedAnswers": [
+                "if you heat it.",
+                "if you heat it",
+                "... if you heat it."
+              ],
+              "answer": "if you heat it."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We will stay at home {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... if it rains tomorrow. / ... if it will rain tomorrow. / ... if it raining.",
+              "grammarHint": "Auswahl: ... if it rains tomorrow. / ... if it will rain tomorrow. / ... if it raining.",
+              "hints": [
+                "Wähle eine der Optionen: ... if it rains tomorrow. / ... if it will rain tomorrow. / ... if it raining."
+              ],
+              "solutions": [
+                "if it rains tomorrow.",
+                "if it rains tomorrow",
+                "... if it rains tomorrow."
+              ],
+              "explanation": "„... if it rains tomorrow.“ ist hier die richtige Wahl aus (... if it rains tomorrow. / ... if it will rain tomorrow. / ... if it raining.).",
+              "acceptedAnswers": [
+                "if it rains tomorrow.",
+                "if it rains tomorrow",
+                "... if it rains tomorrow."
+              ],
+              "answer": "if it rains tomorrow."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "If I find your keys, {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... I will call you. / ... I call you. / ... I would call you.",
+              "grammarHint": "Auswahl: ... I will call you. / ... I call you. / ... I would call you.",
+              "hints": [
+                "Wähle eine der Optionen: ... I will call you. / ... I call you. / ... I would call you."
+              ],
+              "solutions": [
+                "I will call you.",
+                "I will call you",
+                "... I will call you."
+              ],
+              "explanation": "„... I will call you.“ ist hier die richtige Wahl aus (... I will call you. / ... I call you. / ... I would call you.).",
+              "acceptedAnswers": [
+                "I will call you.",
+                "I will call you",
+                "... I will call you."
+              ],
+              "answer": "I will call you."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "You get green {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... if you mix blue and yellow. / ... if you will mix blue and yellow. / ... if you are mixing blue and yellow.",
+              "grammarHint": "Auswahl: ... if you mix blue and yellow. / ... if you will mix blue and yellow. / ... if you are mixing blue and yellow.",
+              "hints": [
+                "Wähle eine der Optionen: ... if you mix blue and yellow. / ... if you will mix blue and yellow. / ... if you are mixing blue and yellow."
+              ],
+              "solutions": [
+                "if you mix blue and yellow.",
+                "if you mix blue and yellow",
+                "... if you mix blue and yellow."
+              ],
+              "explanation": "„... if you mix blue and yellow.“ ist hier die richtige Wahl aus (... if you mix blue and yellow. / ... if you will mix blue and yellow. / ... if you are mixing blue and yellow.).",
+              "acceptedAnswers": [
+                "if you mix blue and yellow.",
+                "if you mix blue and yellow",
+                "... if you mix blue and yellow."
+              ],
+              "answer": "if you mix blue and yellow."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Sentence Scramble",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "If / it / rains, / we / will / stay / at / home.",
+              "grammarHint": "Bausteine: If / it / rains, / we / will / stay / at / home.",
+              "hints": [
+                "Nutze alle Wörter: If / it / rains, / we / will / stay / at / home.",
+                "Satzanfang: „If it…“"
+              ],
+              "solutions": [
+                "If it rains, we will stay at home.",
+                "If it rains, we will stay at home"
+              ],
+              "explanation": "Vollständiger Satz: „If it rains, we will stay at home.“.",
+              "acceptedAnswers": [
+                "If it rains, we will stay at home.",
+                "If it rains, we will stay at home"
+              ],
+              "answer": "If it rains, we will stay at home."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "We / will / stay / at / home / if / it / rains.",
+              "grammarHint": "Bausteine: We / will / stay / at / home / if / it / rains.",
+              "hints": [
+                "Nutze alle Wörter: We / will / stay / at / home / if / it / rains.",
+                "Satzanfang: „We will…“"
+              ],
+              "solutions": [
+                "We will stay at home if it rains.",
+                "We will stay at home if it rains"
+              ],
+              "explanation": "Vollständiger Satz: „We will stay at home if it rains.“.",
+              "acceptedAnswers": [
+                "We will stay at home if it rains.",
+                "We will stay at home if it rains"
+              ],
+              "answer": "We will stay at home if it rains."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "If / she / comes, / I / will / be / happy.",
+              "grammarHint": "Bausteine: If / she / comes, / I / will / be / happy.",
+              "hints": [
+                "Nutze alle Wörter: If / she / comes, / I / will / be / happy.",
+                "Satzanfang: „If she…“"
+              ],
+              "solutions": [
+                "If she comes, I will be happy.",
+                "If she comes, I will be happy"
+              ],
+              "explanation": "Vollständiger Satz: „If she comes, I will be happy.“.",
+              "acceptedAnswers": [
+                "If she comes, I will be happy.",
+                "If she comes, I will be happy"
+              ],
+              "answer": "If she comes, I will be happy."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "I / will / call / you / if / I / find / it.",
+              "grammarHint": "Bausteine: I / will / call / you / if / I / find / it.",
+              "hints": [
+                "Nutze alle Wörter: I / will / call / you / if / I / find / it.",
+                "Satzanfang: „I will…“"
+              ],
+              "solutions": [
+                "I will call you if I find it.",
+                "I will call you if I find it"
+              ],
+              "explanation": "Vollständiger Satz: „I will call you if I find it.“.",
+              "acceptedAnswers": [
+                "I will call you if I find it.",
+                "I will call you if I find it"
+              ],
+              "answer": "I will call you if I find it."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Ice / turns / to / water / if / you / heat / it.",
+              "grammarHint": "Bausteine: Ice / turns / to / water / if / you / heat / it.",
+              "hints": [
+                "Nutze alle Wörter: Ice / turns / to / water / if / you / heat / it.",
+                "Satzanfang: „Ice turns…“"
+              ],
+              "solutions": [
+                "Ice turns to water if you heat it.",
+                "Ice turns to water if you heat it"
+              ],
+              "explanation": "Vollständiger Satz: „Ice turns to water if you heat it.“.",
+              "acceptedAnswers": [
+                "Ice turns to water if you heat it.",
+                "Ice turns to water if you heat it"
+              ],
+              "answer": "Ice turns to water if you heat it."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

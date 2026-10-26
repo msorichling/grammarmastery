@@ -1,0 +1,783 @@
+{
+  "id": "klasse6-future",
+  "title": "Future Mix (Will vs. Going-to)",
+  "grade": "6",
+  "icon": "🚀",
+  "description": "Pläne und Beweise (going to) vs. spontane Entscheidungen, Versprechen und Vorhersagen (will/won't).",
+  "legacyStorageKey": "grammar_g6_future_state",
+  "legacyMasteredKey": "grammar_g6_future_mastered",
+  "rules": {
+    "title": "Future Mix (Will vs. Going-to) – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Future Mix (Will vs. Going-to).",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Rule Sorter",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben. (Tippe: WILL Future / GOING TO Future)",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "„Spontane Entscheidung“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WILL Future / GOING TO Future",
+              "grammarHint": "Ordne zu: WILL Future / GOING TO Future",
+              "hints": [
+                "Entscheide zwischen: WILL Future / GOING TO Future"
+              ],
+              "solutions": [
+                "WILL Future"
+              ],
+              "explanation": "„Spontane Entscheidung“ wird der Kategorie „WILL Future“ zugeordnet.",
+              "acceptedAnswers": [
+                "WILL Future"
+              ],
+              "answer": "WILL Future"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "„I think / maybe“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WILL Future / GOING TO Future",
+              "grammarHint": "Ordne zu: WILL Future / GOING TO Future",
+              "hints": [
+                "Entscheide zwischen: WILL Future / GOING TO Future"
+              ],
+              "solutions": [
+                "WILL Future"
+              ],
+              "explanation": "„I think / maybe“ wird der Kategorie „WILL Future“ zugeordnet.",
+              "acceptedAnswers": [
+                "WILL Future"
+              ],
+              "answer": "WILL Future"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "„Vorhersage / Vermutung“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WILL Future / GOING TO Future",
+              "grammarHint": "Ordne zu: WILL Future / GOING TO Future",
+              "hints": [
+                "Entscheide zwischen: WILL Future / GOING TO Future"
+              ],
+              "solutions": [
+                "WILL Future"
+              ],
+              "explanation": "„Vorhersage / Vermutung“ wird der Kategorie „WILL Future“ zugeordnet.",
+              "acceptedAnswers": [
+                "WILL Future"
+              ],
+              "answer": "WILL Future"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "„Versprechen“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WILL Future / GOING TO Future",
+              "grammarHint": "Ordne zu: WILL Future / GOING TO Future",
+              "hints": [
+                "Entscheide zwischen: WILL Future / GOING TO Future"
+              ],
+              "solutions": [
+                "WILL Future"
+              ],
+              "explanation": "„Versprechen“ wird der Kategorie „WILL Future“ zugeordnet.",
+              "acceptedAnswers": [
+                "WILL Future"
+              ],
+              "answer": "WILL Future"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "„Fester Plan“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WILL Future / GOING TO Future",
+              "grammarHint": "Ordne zu: WILL Future / GOING TO Future",
+              "hints": [
+                "Entscheide zwischen: WILL Future / GOING TO Future"
+              ],
+              "solutions": [
+                "GOING TO Future"
+              ],
+              "explanation": "„Fester Plan“ wird der Kategorie „GOING TO Future“ zugeordnet.",
+              "acceptedAnswers": [
+                "GOING TO Future"
+              ],
+              "answer": "GOING TO Future"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "„Absicht / Vorhaben“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WILL Future / GOING TO Future",
+              "grammarHint": "Ordne zu: WILL Future / GOING TO Future",
+              "hints": [
+                "Entscheide zwischen: WILL Future / GOING TO Future"
+              ],
+              "solutions": [
+                "GOING TO Future"
+              ],
+              "explanation": "„Absicht / Vorhaben“ wird der Kategorie „GOING TO Future“ zugeordnet.",
+              "acceptedAnswers": [
+                "GOING TO Future"
+              ],
+              "answer": "GOING TO Future"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "„Beweis in der Gegenwart“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WILL Future / GOING TO Future",
+              "grammarHint": "Ordne zu: WILL Future / GOING TO Future",
+              "hints": [
+                "Entscheide zwischen: WILL Future / GOING TO Future"
+              ],
+              "solutions": [
+                "GOING TO Future"
+              ],
+              "explanation": "„Beweis in der Gegenwart“ wird der Kategorie „GOING TO Future“ zugeordnet.",
+              "acceptedAnswers": [
+                "GOING TO Future"
+              ],
+              "answer": "GOING TO Future"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "„Look at those dark clouds!“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WILL Future / GOING TO Future",
+              "grammarHint": "Ordne zu: WILL Future / GOING TO Future",
+              "hints": [
+                "Entscheide zwischen: WILL Future / GOING TO Future"
+              ],
+              "solutions": [
+                "GOING TO Future"
+              ],
+              "explanation": "„Look at those dark clouds!“ wird der Kategorie „GOING TO Future“ zugeordnet.",
+              "acceptedAnswers": [
+                "GOING TO Future"
+              ],
+              "answer": "GOING TO Future"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Going to (Plans)",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I have bought the tickets. We {{0}} to London.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "fly",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are going to fly"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "are going to fly"
+              ],
+              "answer": "are going to fly"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "She {{0}} her grandma on Sunday.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "visit",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „is…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "is going to visit"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "is going to visit"
+              ],
+              "answer": "is going to visit"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "They {{0}} football tomorrow afternoon.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "play",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are going to play"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "are going to play"
+              ],
+              "answer": "are going to play"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "He {{0}} TV tonight. He has a test.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / watch",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „is…“ (5 Wort/Wörter)."
+              ],
+              "solutions": [
+                "is not going to watch",
+                "isn't going to watch"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "is not going to watch",
+                "isn't going to watch"
+              ],
+              "answer": "is not going to watch"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}} a new bike?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ar…“ (5 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Are you going to buy"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Are you going to buy"
+              ],
+              "answer": "Are you going to buy"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "I {{0}} harder next year.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "study",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „am…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "am going to study",
+                "'m going to study"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "am going to study",
+                "'m going to study"
+              ],
+              "answer": "am going to study"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Will (Spontaneous)",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I think our team {{0}} the match.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "win",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will win"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will win"
+              ],
+              "answer": "will win"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The phone is ringing. I {{0}} it!",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "answer",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will answer",
+                "'ll answer"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will answer",
+                "'ll answer"
+              ],
+              "answer": "will answer"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Maybe it {{0}} tomorrow.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "rain",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will rain"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will rain"
+              ],
+              "answer": "will rain"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "I promise I {{0}} you.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "help",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will help",
+                "'ll help"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will help",
+                "'ll help"
+              ],
+              "answer": "will help"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "I'm sure you {{0}} the test.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "pass",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will pass",
+                "'ll pass"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will pass",
+                "'ll pass"
+              ],
+              "answer": "will pass"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "I {{0}} anyone your secret.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / tell",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will not tell",
+                "won't tell"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will not tell",
+                "won't tell"
+              ],
+              "answer": "will not tell"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Mixed Dialogues",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "A: It's cold! B: I {{0}} the window.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "close",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will close",
+                "'ll close"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will close",
+                "'ll close"
+              ],
+              "answer": "will close"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Look at those dark clouds! It {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "rain",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „is…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "is going to rain"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "is going to rain"
+              ],
+              "answer": "is going to rain"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Next year, we {{0}} to Spain. It's planned.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "travel",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are going to travel"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "are going to travel"
+              ],
+              "answer": "are going to travel"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "A: We don't have any milk. B: Really? I {{0}} some.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "get",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will get",
+                "'ll get"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will get",
+                "'ll get"
+              ],
+              "answer": "will get"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Watch out! You {{0}} the glasses!",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "drop",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ar…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "are going to drop"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "are going to drop"
+              ],
+              "answer": "are going to drop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: The Big Mix",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I hope the teacher {{0}} us homework.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / give",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will not give",
+                "won't give"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will not give",
+                "won't give"
+              ],
+              "answer": "will not give"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "He {{0}} maths at university next year.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "study",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „is…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "is going to study"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "is going to study"
+              ],
+              "answer": "is going to study"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Perhaps they {{0}} late.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "arrive",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will arrive"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will arrive"
+              ],
+              "answer": "will arrive"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}} Tom to her party?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "she / invite",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Is…“ (5 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Is she going to invite"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Is she going to invite"
+              ],
+              "answer": "Is she going to invite"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "A: I'm really hungry. B: I {{0}} you a sandwich.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "make",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will make",
+                "'ll make"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will make",
+                "'ll make"
+              ],
+              "answer": "will make"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "I {{0}} at home tonight. I've already rented a movie.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "stay",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „am…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "am going to stay",
+                "'m going to stay"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "am going to stay",
+                "'m going to stay"
+              ],
+              "answer": "am going to stay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

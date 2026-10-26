@@ -1,0 +1,1066 @@
+{
+  "id": "klasse6-pastprog",
+  "title": "Past Progressive",
+  "grade": "6",
+  "icon": "🎬",
+  "description": "Handlungen im Verlauf in der Vergangenheit mit was/were + Verb-ing sowie Hintergrundhandlungen.",
+  "legacyStorageKey": "grammar_g6_pastprog_state",
+  "legacyMasteredKey": "grammar_g6_pastprog_mastered",
+  "rules": {
+    "title": "Past Progressive – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Past Progressive.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Was or Were?",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben. (Tippe: WAS / WERE)",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "„The kids“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WERE"
+              ],
+              "explanation": "„The kids“ wird der Kategorie „WERE“ zugeordnet.",
+              "acceptedAnswers": [
+                "WERE"
+              ],
+              "answer": "WERE"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "„My dog“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WAS"
+              ],
+              "explanation": "„My dog“ wird der Kategorie „WAS“ zugeordnet.",
+              "acceptedAnswers": [
+                "WAS"
+              ],
+              "answer": "WAS"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "„You“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WERE"
+              ],
+              "explanation": "„You“ wird der Kategorie „WERE“ zugeordnet.",
+              "acceptedAnswers": [
+                "WERE"
+              ],
+              "answer": "WERE"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "„Sarah and I“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WERE"
+              ],
+              "explanation": "„Sarah and I“ wird der Kategorie „WERE“ zugeordnet.",
+              "acceptedAnswers": [
+                "WERE"
+              ],
+              "answer": "WERE"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "„It“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WAS"
+              ],
+              "explanation": "„It“ wird der Kategorie „WAS“ zugeordnet.",
+              "acceptedAnswers": [
+                "WAS"
+              ],
+              "answer": "WAS"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "„The bus“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WAS"
+              ],
+              "explanation": "„The bus“ wird der Kategorie „WAS“ zugeordnet.",
+              "acceptedAnswers": [
+                "WAS"
+              ],
+              "answer": "WAS"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "„We“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WERE"
+              ],
+              "explanation": "„We“ wird der Kategorie „WERE“ zugeordnet.",
+              "acceptedAnswers": [
+                "WERE"
+              ],
+              "answer": "WERE"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "„He“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WAS"
+              ],
+              "explanation": "„He“ wird der Kategorie „WAS“ zugeordnet.",
+              "acceptedAnswers": [
+                "WAS"
+              ],
+              "answer": "WAS"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "„They“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WERE"
+              ],
+              "explanation": "„They“ wird der Kategorie „WERE“ zugeordnet.",
+              "acceptedAnswers": [
+                "WERE"
+              ],
+              "answer": "WERE"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "„The man“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WAS / WERE",
+              "grammarHint": "Ordne zu: WAS / WERE",
+              "hints": [
+                "Entscheide zwischen: WAS / WERE"
+              ],
+              "solutions": [
+                "WAS"
+              ],
+              "explanation": "„The man“ wird der Kategorie „WAS“ zugeordnet.",
+              "acceptedAnswers": [
+                "WAS"
+              ],
+              "answer": "WAS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: The -ing Forge",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "make → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "make",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „ma…“"
+              ],
+              "solutions": [
+                "making"
+              ],
+              "explanation": "make → making (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "making"
+              ],
+              "answer": "making"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "run → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "run",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „ru…“"
+              ],
+              "solutions": [
+                "running"
+              ],
+              "explanation": "run → running (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "running"
+              ],
+              "answer": "running"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "play → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "play",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „pl…“"
+              ],
+              "solutions": [
+                "playing"
+              ],
+              "explanation": "play → playing (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "playing"
+              ],
+              "answer": "playing"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "sit → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sit",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „si…“"
+              ],
+              "solutions": [
+                "sitting"
+              ],
+              "explanation": "sit → sitting (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "sitting"
+              ],
+              "answer": "sitting"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "lie → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "lie",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „ly…“"
+              ],
+              "solutions": [
+                "lying"
+              ],
+              "explanation": "lie → lying (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "lying"
+              ],
+              "answer": "lying"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "write → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "write",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „wr…“"
+              ],
+              "solutions": [
+                "writing"
+              ],
+              "explanation": "write → writing (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "writing"
+              ],
+              "answer": "writing"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "swim → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "swim",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „sw…“"
+              ],
+              "solutions": [
+                "swimming"
+              ],
+              "explanation": "swim → swimming (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "swimming"
+              ],
+              "answer": "swimming"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "travel → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "travel",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „tr…“"
+              ],
+              "solutions": [
+                "travelling"
+              ],
+              "explanation": "travel → travelling (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "travelling"
+              ],
+              "answer": "travelling"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "dance → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "dance",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „da…“"
+              ],
+              "solutions": [
+                "dancing"
+              ],
+              "explanation": "dance → dancing (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "dancing"
+              ],
+              "answer": "dancing"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "study → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "study",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „st…“"
+              ],
+              "solutions": [
+                "studying"
+              ],
+              "explanation": "study → studying (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "studying"
+              ],
+              "answer": "studying"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: A Strange Day",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Yesterday at 3pm, the sun {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "shine",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was shining"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was shining"
+              ],
+              "answer": "was shining"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The birds {{0}} in the trees.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sing",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were singing"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were singing"
+              ],
+              "answer": "were singing"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "I {{0}} on a bench.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sit",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was sitting"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was sitting"
+              ],
+              "answer": "was sitting"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Two dogs {{0}} with a ball.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "play",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were playing"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were playing"
+              ],
+              "answer": "were playing"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "A man {{0}} a newspaper.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "read",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was reading"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was reading"
+              ],
+              "answer": "was reading"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "He {{0}} at the ducks.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / look",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was not looking",
+                "wasn't looking"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was not looking",
+                "wasn't looking"
+              ],
+              "answer": "was not looking"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "Some kids {{0}} around.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "run",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were running"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were running"
+              ],
+              "answer": "were running"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "We {{0}} the afternoon.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "enjoy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were enjoying"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were enjoying"
+              ],
+              "answer": "were enjoying"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Family Chaos",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Last night, we {{0}} dinner.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "have",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were having"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were having"
+              ],
+              "answer": "were having"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "My dad {{0}} pasta.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "cook",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was cooking"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was cooking"
+              ],
+              "answer": "was cooking"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "My sister {{0}} him.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "help",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was helping"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was helping"
+              ],
+              "answer": "was helping"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "I {{0}} anything.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / do",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was not doing",
+                "wasn't doing"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was not doing",
+                "wasn't doing"
+              ],
+              "answer": "was not doing"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "You {{0}} TV.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "watch",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were watching"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were watching"
+              ],
+              "answer": "were watching"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "The cat {{0}} on the sofa.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sleep",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was sleeping"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was sleeping"
+              ],
+              "answer": "was sleeping"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "It {{0}} outside.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / rain",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was not raining",
+                "wasn't raining"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was not raining",
+                "wasn't raining"
+              ],
+              "answer": "was not raining"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "We {{0}} for mum.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "wait",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were waiting"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were waiting"
+              ],
+              "answer": "were waiting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: The Accident",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I {{0}} home when I saw the accident.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "walk",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was walking"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was walking"
+              ],
+              "answer": "was walking"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The driver {{0}} fast when he hit the tree.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / drive",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was not driving",
+                "wasn't driving"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was not driving",
+                "wasn't driving"
+              ],
+              "answer": "was not driving"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "People {{0}} on the street.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "stand",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were standing"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were standing"
+              ],
+              "answer": "were standing"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "A policeman {{0}} to a woman.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "talk",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was talking"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was talking"
+              ],
+              "answer": "was talking"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "While I {{0}} , my phone rang.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "watch",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wa…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "was watching"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "was watching"
+              ],
+              "answer": "was watching"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "It was my mum. She {{0}} me.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "call",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ca…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "called"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "called"
+              ],
+              "answer": "called"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "I {{0}} her what was happening.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "tell",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „to…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "told"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "told"
+              ],
+              "answer": "told"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "We {{0}} home together later.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "go",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "went"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "went"
+              ],
+              "answer": "went"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

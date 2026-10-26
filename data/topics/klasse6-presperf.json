@@ -1,0 +1,1008 @@
+{
+  "id": "klasse6-presperf",
+  "title": "Present Perfect Simple",
+  "grade": "6",
+  "icon": "🌉",
+  "description": "Die Brücke zwischen Vergangenheit und Gegenwart: have/has + Past Participle (3. Form) mit just, already, yet, ever, never.",
+  "legacyStorageKey": "grammar_g6_presperf_state",
+  "legacyMasteredKey": "grammar_g6_presperf_mastered",
+  "rules": {
+    "title": "Present Perfect Simple – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Present Perfect Simple.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Since vs. For",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben. (Tippe: SINCE (Zeitpunkt) / FOR (Zeitraum))",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "„2 o'clock“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum)"
+              ],
+              "solutions": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "explanation": "„2 o'clock“ wird der Kategorie „SINCE (Zeitpunkt)“ zugeordnet.",
+              "acceptedAnswers": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "answer": "SINCE"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "„Christmas“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum)"
+              ],
+              "solutions": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "explanation": "„Christmas“ wird der Kategorie „SINCE (Zeitpunkt)“ zugeordnet.",
+              "acceptedAnswers": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "answer": "SINCE"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "„yesterday“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum)"
+              ],
+              "solutions": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "explanation": "„yesterday“ wird der Kategorie „SINCE (Zeitpunkt)“ zugeordnet.",
+              "acceptedAnswers": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "answer": "SINCE"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "„2010“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum)"
+              ],
+              "solutions": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "explanation": "„2010“ wird der Kategorie „SINCE (Zeitpunkt)“ zugeordnet.",
+              "acceptedAnswers": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "answer": "SINCE"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "„three years“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum)"
+              ],
+              "solutions": [
+                "FOR",
+                "FOR (Zeitraum)"
+              ],
+              "explanation": "„three years“ wird der Kategorie „FOR (Zeitraum)“ zugeordnet.",
+              "acceptedAnswers": [
+                "FOR",
+                "FOR (Zeitraum)"
+              ],
+              "answer": "FOR"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "„a long time“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum)"
+              ],
+              "solutions": [
+                "FOR",
+                "FOR (Zeitraum)"
+              ],
+              "explanation": "„a long time“ wird der Kategorie „FOR (Zeitraum)“ zugeordnet.",
+              "acceptedAnswers": [
+                "FOR",
+                "FOR (Zeitraum)"
+              ],
+              "answer": "FOR"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "„five minutes“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum)"
+              ],
+              "solutions": [
+                "FOR",
+                "FOR (Zeitraum)"
+              ],
+              "explanation": "„five minutes“ wird der Kategorie „FOR (Zeitraum)“ zugeordnet.",
+              "acceptedAnswers": [
+                "FOR",
+                "FOR (Zeitraum)"
+              ],
+              "answer": "FOR"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "„ages“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum)"
+              ],
+              "solutions": [
+                "FOR",
+                "FOR (Zeitraum)"
+              ],
+              "explanation": "„ages“ wird der Kategorie „FOR (Zeitraum)“ zugeordnet.",
+              "acceptedAnswers": [
+                "FOR",
+                "FOR (Zeitraum)"
+              ],
+              "answer": "FOR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Tom the Traveler",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Tom is a traveler. He {{0}} to Paris.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has been"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has been"
+              ],
+              "answer": "has been"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "He {{0}} the Eiffel Tower.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has seen"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has seen"
+              ],
+              "answer": "has seen"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "He {{0}} snails.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "eat",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has eaten"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has eaten"
+              ],
+              "answer": "has eaten"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "He {{0}} in a plane.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "fly",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has flown"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has flown"
+              ],
+              "answer": "has flown"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "He {{0}} many people.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "meet",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has met"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has met"
+              ],
+              "answer": "has met"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "He {{0}} a blog.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "write",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has written"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has written"
+              ],
+              "answer": "has written"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "He {{0}} photos.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "take",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has taken"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has taken"
+              ],
+              "answer": "has taken"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "He {{0}} souvenirs.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has bought"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has bought"
+              ],
+              "answer": "has bought"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Statements & Negations",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I {{0}} my homework.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "finish",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have finished",
+                "'ve finished"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have finished",
+                "'ve finished"
+              ],
+              "answer": "have finished"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "She {{0}} yet.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / arrive",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has not arrived",
+                "hasn't arrived"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has not arrived",
+                "hasn't arrived"
+              ],
+              "answer": "has not arrived"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We {{0}} here for years.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "live",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have lived",
+                "'ve lived"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have lived",
+                "'ve lived"
+              ],
+              "answer": "have lived"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "He {{0}} his keys.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "lose",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has lost",
+                "'s lost"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has lost",
+                "'s lost"
+              ],
+              "answer": "has lost"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "They {{0}} the film.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have not seen",
+                "haven't seen"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have not seen",
+                "haven't seen"
+              ],
+              "answer": "have not seen"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "You {{0}} a lot.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "change",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have changed",
+                "'ve changed"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have changed",
+                "'ve changed"
+              ],
+              "answer": "have changed"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "It {{0}} raining.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "stop",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has stopped",
+                "'s stopped"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has stopped",
+                "'s stopped"
+              ],
+              "answer": "has stopped"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "I {{0}} to Spain.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "never / be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have never been",
+                "'ve never been"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have never been",
+                "'ve never been"
+              ],
+              "answer": "have never been"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Asking Questions",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}} my bag?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Have you seen"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Have you seen"
+              ],
+              "answer": "Have you seen"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}} you?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "she / call",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Has she called"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Has she called"
+              ],
+              "answer": "Has she called"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}} yet?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "they / leave",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Have they left"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Have they left"
+              ],
+              "answer": "Have they left"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}} breakfast?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "he / eat",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Has he eaten"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Has he eaten"
+              ],
+              "answer": "Has he eaten"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}} to London?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Have you been"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Have you been"
+              ],
+              "answer": "Have you been"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "{{0}} ?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "it / start",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Has it started"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Has it started"
+              ],
+              "answer": "Has it started"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "{{0}} before?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "we / meet",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Have we met"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Have we met"
+              ],
+              "answer": "Have we met"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "{{0}} ?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "they / win",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Have they won"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Have they won"
+              ],
+              "answer": "Have they won"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: The Big Mix",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I {{0}} from him.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / hear",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have not heard",
+                "haven't heard"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have not heard",
+                "haven't heard"
+              ],
+              "answer": "have not heard"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}} ?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / finish",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Have you finished"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Have you finished"
+              ],
+              "answer": "Have you finished"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "She {{0}} a new phone.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has bought"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has bought"
+              ],
+              "answer": "has bought"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We {{0}} the museum.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / visit",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have not visited",
+                "haven't visited"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have not visited",
+                "haven't visited"
+              ],
+              "answer": "have not visited"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "He {{0}} before.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "never / fly",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has never flown"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has never flown"
+              ],
+              "answer": "has never flown"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "{{0}} back?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "they / come",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Have they come"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Have they come"
+              ],
+              "answer": "Have they come"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "It {{0}} a long day.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has been",
+                "'s been"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has been",
+                "'s been"
+              ],
+              "answer": "has been"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "I {{0}} him.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "just / see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have just seen",
+                "'ve just seen"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have just seen",
+                "'ve just seen"
+              ],
+              "answer": "have just seen"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

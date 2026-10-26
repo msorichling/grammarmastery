@@ -1,0 +1,1080 @@
+{
+  "id": "klasse7-adverbs",
+  "title": "Adjectives vs. Adverbs of Manner",
+  "grade": "7",
+  "icon": "🏃",
+  "description": "Bildung auf -ly, unregelmäßige Adverbien (good → well, fast, hard) und Einsatz nach Verben der Wahrnehmung.",
+  "legacyStorageKey": "grammar_g7_adverbs_state",
+  "legacyMasteredKey": "grammar_g7_adverbs_mastered",
+  "rules": {
+    "title": "Adjectives vs. Adverbs of Manner – Regeln",
+    "summary": "Regelübersicht zu Adjectives vs. Adverbs of Manner.",
+    "examples": [
+      "Regelübersicht zu Adjectives vs. Adverbs of Manner."
+    ]
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: The L-Factory",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "quick → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "quick",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „qu…“"
+              ],
+              "solutions": [
+                "quickly"
+              ],
+              "explanation": "quick → quickly (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "quickly"
+              ],
+              "answer": "quickly"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "easy → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "easy",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „ea…“"
+              ],
+              "solutions": [
+                "easily"
+              ],
+              "explanation": "easy → easily (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "easily"
+              ],
+              "answer": "easily"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "good → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "good",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „we…“"
+              ],
+              "solutions": [
+                "well"
+              ],
+              "explanation": "good → well (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "well"
+              ],
+              "answer": "well"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "bad → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "bad",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „ba…“"
+              ],
+              "solutions": [
+                "badly"
+              ],
+              "explanation": "bad → badly (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "badly"
+              ],
+              "answer": "badly"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "happy → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "happy",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „ha…“"
+              ],
+              "solutions": [
+                "happily"
+              ],
+              "explanation": "happy → happily (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "happily"
+              ],
+              "answer": "happily"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "fast → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "fast",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „fa…“"
+              ],
+              "solutions": [
+                "fast"
+              ],
+              "explanation": "fast → fast (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "fast"
+              ],
+              "answer": "fast"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "hard → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "hard",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „ha…“"
+              ],
+              "solutions": [
+                "hard"
+              ],
+              "explanation": "hard → hard (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "hard"
+              ],
+              "answer": "hard"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "loud → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "loud",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „lo…“"
+              ],
+              "solutions": [
+                "loudly"
+              ],
+              "explanation": "loud → loudly (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "loudly"
+              ],
+              "answer": "loudly"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "careful → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "careful",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „ca…“"
+              ],
+              "solutions": [
+                "carefully"
+              ],
+              "explanation": "careful → carefully (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "carefully"
+              ],
+              "answer": "carefully"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "terrible → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "terrible",
+              "grammarHint": "Beachte die Rechtschreibregel (-ing / -ly).",
+              "hints": [
+                "Beachte die Rechtschreibregel (-ing / -ly).",
+                "Beginnt mit „te…“"
+              ],
+              "solutions": [
+                "terribly"
+              ],
+              "explanation": "terrible → terribly (Beachte die Rechtschreibregel (-ing / -ly).)",
+              "acceptedAnswers": [
+                "terribly"
+              ],
+              "answer": "terribly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: The Speed Race",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Run {{0}}!",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "quick / quickly",
+              "grammarHint": "Auswahl: quick / quickly",
+              "hints": [
+                "Wähle eine der Optionen: quick / quickly"
+              ],
+              "solutions": [
+                "quickly"
+              ],
+              "explanation": "„quickly“ ist hier die richtige Wahl aus (quick / quickly).",
+              "acceptedAnswers": [
+                "quickly"
+              ],
+              "answer": "quickly"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Sing {{0}}!",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "good / well",
+              "grammarHint": "Auswahl: good / well",
+              "hints": [
+                "Wähle eine der Optionen: good / well"
+              ],
+              "solutions": [
+                "well"
+              ],
+              "explanation": "„well“ ist hier die richtige Wahl aus (good / well).",
+              "acceptedAnswers": [
+                "well"
+              ],
+              "answer": "well"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "It rains {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "heavy / heavily",
+              "grammarHint": "Auswahl: heavy / heavily",
+              "hints": [
+                "Wähle eine der Optionen: heavy / heavily"
+              ],
+              "solutions": [
+                "heavily"
+              ],
+              "explanation": "„heavily“ ist hier die richtige Wahl aus (heavy / heavily).",
+              "acceptedAnswers": [
+                "heavily"
+              ],
+              "answer": "heavily"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Drive {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "careful / carefully",
+              "grammarHint": "Auswahl: careful / carefully",
+              "hints": [
+                "Wähle eine der Optionen: careful / carefully"
+              ],
+              "solutions": [
+                "carefully"
+              ],
+              "explanation": "„carefully“ ist hier die richtige Wahl aus (careful / carefully).",
+              "acceptedAnswers": [
+                "carefully"
+              ],
+              "answer": "carefully"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "He is {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "slow / slowly",
+              "grammarHint": "Auswahl: slow / slowly",
+              "hints": [
+                "Wähle eine der Optionen: slow / slowly"
+              ],
+              "solutions": [
+                "slow"
+              ],
+              "explanation": "„slow“ ist hier die richtige Wahl aus (slow / slowly).",
+              "acceptedAnswers": [
+                "slow"
+              ],
+              "answer": "slow"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Listen {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "quiet / quietly",
+              "grammarHint": "Auswahl: quiet / quietly",
+              "hints": [
+                "Wähle eine der Optionen: quiet / quietly"
+              ],
+              "solutions": [
+                "quietly"
+              ],
+              "explanation": "„quietly“ ist hier die richtige Wahl aus (quiet / quietly).",
+              "acceptedAnswers": [
+                "quietly"
+              ],
+              "answer": "quietly"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "Work {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "hard / hardly",
+              "grammarHint": "Auswahl: hard / hardly",
+              "hints": [
+                "Wähle eine der Optionen: hard / hardly"
+              ],
+              "solutions": [
+                "hard"
+              ],
+              "explanation": "„hard“ ist hier die richtige Wahl aus (hard / hardly).",
+              "acceptedAnswers": [
+                "hard"
+              ],
+              "answer": "hard"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "Wait {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "patient / patiently",
+              "grammarHint": "Auswahl: patient / patiently",
+              "hints": [
+                "Wähle eine der Optionen: patient / patiently"
+              ],
+              "solutions": [
+                "patiently"
+              ],
+              "explanation": "„patiently“ ist hier die richtige Wahl aus (patient / patiently).",
+              "acceptedAnswers": [
+                "patiently"
+              ],
+              "answer": "patiently"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "Speak {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "clear / clearly",
+              "grammarHint": "Auswahl: clear / clearly",
+              "hints": [
+                "Wähle eine der Optionen: clear / clearly"
+              ],
+              "solutions": [
+                "clearly"
+              ],
+              "explanation": "„clearly“ ist hier die richtige Wahl aus (clear / clearly).",
+              "acceptedAnswers": [
+                "clearly"
+              ],
+              "answer": "clearly"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "Dance {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "bad / badly",
+              "grammarHint": "Auswahl: bad / badly",
+              "hints": [
+                "Wähle eine der Optionen: bad / badly"
+              ],
+              "solutions": [
+                "badly"
+              ],
+              "explanation": "„badly“ ist hier die richtige Wahl aus (bad / badly).",
+              "acceptedAnswers": [
+                "badly"
+              ],
+              "answer": "badly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: The Sports Festival",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "He ran {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "quick",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „qu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "quickly"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "quickly"
+              ],
+              "answer": "quickly"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "She shouted {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "loud",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „lo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "loudly"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "loudly"
+              ],
+              "answer": "loudly"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We played {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "good",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "well"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "well"
+              ],
+              "answer": "well"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "He smiled {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "happy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "happily"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "happily"
+              ],
+              "answer": "happily"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "They fought {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "brave",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „br…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "bravely"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "bravely"
+              ],
+              "answer": "bravely"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "I waited {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "patient",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „pa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "patiently"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "patiently"
+              ],
+              "answer": "patiently"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "He ate {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "hungry",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „hu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "hungrily"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "hungrily"
+              ],
+              "answer": "hungrily"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "She sings {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "beautiful",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „be…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "beautifully"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "beautifully"
+              ],
+              "answer": "beautifully"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "Run {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "fast",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „fa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "fast"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "fast"
+              ],
+              "answer": "fast"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "Work {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "hard",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "hard"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "hard"
+              ],
+              "answer": "hard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: The Secret Mission",
+      "type": "cloze_text",
+      "instruction": "The Secret Mission: Lies die Geheimagenten-Geschichte und bilde die richtigen Adverbien aus den Adjektiven in den Klammern.",
+      "text": "Last night, Agent 007 had a very important mission. When he entered the enemy's base, he had to walk very {{0}} so that nobody would notice him. He knew that the guards reacted very fast, so he had to watch them {{1}} from his hiding place. He saw a man who was driving a forklift extremely {{2}} through the narrow warehouse. The agent looked {{3}} at the man's face and realized it was the villain! To get past the locked security door, he had to enter the secret code {{4}} , otherwise the alarm would ring. Because he had practiced this thousands of times before, he hacked the computer system {{5}} . Inside the boss's dark office, he had to search {{6}} for the hidden documents. When the boss suddenly entered the room, the agent smiled {{7}} and pretended to be a cleaner. He started to speak very {{8}} to win some time and calm the boss down. Fortunately, the boss treated his employees very {{9}} and just told him to leave the room to finish his work outside.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "quiet",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „qu…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "quietly"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "quietly"
+          ],
+          "answer": "quietly"
+        },
+        {
+          "index": 1,
+          "prompt": "careful",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ca…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "carefully"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "carefully"
+          ],
+          "answer": "carefully"
+        },
+        {
+          "index": 2,
+          "prompt": "dangerous",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „da…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "dangerously"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "dangerously"
+          ],
+          "answer": "dangerously"
+        },
+        {
+          "index": 3,
+          "prompt": "close",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „cl…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "closely"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "closely"
+          ],
+          "answer": "closely"
+        },
+        {
+          "index": 4,
+          "prompt": "correct",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „co…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "correctly"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "correctly"
+          ],
+          "answer": "correctly"
+        },
+        {
+          "index": 5,
+          "prompt": "easy",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ea…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "easily"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "easily"
+          ],
+          "answer": "easily"
+        },
+        {
+          "index": 6,
+          "prompt": "hard",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "hard"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "hard"
+          ],
+          "answer": "hard"
+        },
+        {
+          "index": 7,
+          "prompt": "nice",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ni…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "nicely"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "nicely"
+          ],
+          "answer": "nicely"
+        },
+        {
+          "index": 8,
+          "prompt": "slow",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „sl…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "slowly"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "slowly"
+          ],
+          "answer": "slowly"
+        },
+        {
+          "index": 9,
+          "prompt": "fair",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „fa…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "fairly"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "fairly"
+          ],
+          "answer": "fairly"
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Visiting Edinburgh",
+      "type": "cloze_text",
+      "instruction": "Visiting Edinburgh: Vervollständige den Reisebericht. Bilde die richtigen Adverbien aus den Adjektiven in den Klammern.",
+      "text": "Last week, we travelled to Edinburgh by train and arrived {{0}} at the station. When we walked out, the rain was falling {{1}} from the dark sky. We had to step very {{2}} on the wet and slippery cobblestones. Later, our tour guide spoke very {{3}} about the history of Edinburgh Castle. I could understand him {{4}} , even though he had a Scottish accent. Up on the hill, the wind blew {{5}} and almost blew my hat away. A woman on the street smiled {{6}} and caught the hat for me. We finished our sightseeing tour {{7}} with a hot cup of tea in a small café. I hope we will return {{8}} because the city is amazing. In the evening, we walked back to the hotel, chatting {{9}} about our adventures.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "safe",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „sa…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "safely"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "safely"
+          ],
+          "answer": "safely"
+        },
+        {
+          "index": 1,
+          "prompt": "heavy",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „he…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "heavily"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "heavily"
+          ],
+          "answer": "heavily"
+        },
+        {
+          "index": 2,
+          "prompt": "careful",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ca…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "carefully"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "carefully"
+          ],
+          "answer": "carefully"
+        },
+        {
+          "index": 3,
+          "prompt": "clear",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „cl…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "clearly"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "clearly"
+          ],
+          "answer": "clearly"
+        },
+        {
+          "index": 4,
+          "prompt": "perfect",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „pe…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "perfectly"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "perfectly"
+          ],
+          "answer": "perfectly"
+        },
+        {
+          "index": 5,
+          "prompt": "strong",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „st…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "strongly"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "strongly"
+          ],
+          "answer": "strongly"
+        },
+        {
+          "index": 6,
+          "prompt": "kind",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ki…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "kindly"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "kindly"
+          ],
+          "answer": "kindly"
+        },
+        {
+          "index": 7,
+          "prompt": "wonderful",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wo…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "wonderfully"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "wonderfully"
+          ],
+          "answer": "wonderfully"
+        },
+        {
+          "index": 8,
+          "prompt": "soon",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „so…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "soon"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "soon"
+          ],
+          "answer": "soon"
+        },
+        {
+          "index": 9,
+          "prompt": "happy",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "happily"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "happily"
+          ],
+          "answer": "happily"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,627 @@
+{
+  "id": "klasse8-if3",
+  "title": "If-Clauses Typ 3",
+  "grade": "8",
+  "icon": "⏮️",
+  "description": "Irreale Bedingungen der Vergangenheit: had + Past Participle im If-Satz und would/could have + Past Participle.",
+  "legacyStorageKey": "grammar_g8_if3_state",
+  "legacyMasteredKey": "grammar_g8_if3_mastered",
+  "rules": {
+    "title": "If-Clauses Typ 3 – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema If-Clauses Typ 3.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Form Identifier",
+      "type": "single_sentence",
+      "instruction": "Wähle die richtige Verbform, um den If-Satz (Typ 3) korrekt zu vervollständigen!",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If he had run faster, he {{0}} the bus.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "would catch / would have caught / caught",
+              "grammarHint": "Auswahl: would catch / would have caught / caught",
+              "hints": [
+                "Wähle eine der Optionen: would catch / would have caught / caught"
+              ],
+              "solutions": [
+                "would have caught"
+              ],
+              "explanation": "„would have caught“ ist hier die richtige Wahl aus (would catch / would have caught / caught).",
+              "acceptedAnswers": [
+                "would have caught"
+              ],
+              "answer": "would have caught"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "I would have called you if I {{0}} your number.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "had had / would have had / have had",
+              "grammarHint": "Auswahl: had had / would have had / have had",
+              "hints": [
+                "Wähle eine der Optionen: had had / would have had / have had"
+              ],
+              "solutions": [
+                "had had"
+              ],
+              "explanation": "„had had“ ist hier die richtige Wahl aus (had had / would have had / have had).",
+              "acceptedAnswers": [
+                "had had"
+              ],
+              "answer": "had had"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If we {{0}} the map, we wouldn't have gotten lost.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "had taken / would have taken / took",
+              "grammarHint": "Auswahl: had taken / would have taken / took",
+              "hints": [
+                "Wähle eine der Optionen: had taken / would have taken / took"
+              ],
+              "solutions": [
+                "had taken"
+              ],
+              "explanation": "„had taken“ ist hier die richtige Wahl aus (had taken / would have taken / took).",
+              "acceptedAnswers": [
+                "had taken"
+              ],
+              "answer": "had taken"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "She {{0}} to the party if she had been invited.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "would come / had come / would have come",
+              "grammarHint": "Auswahl: would come / had come / would have come",
+              "hints": [
+                "Wähle eine der Optionen: would come / had come / would have come"
+              ],
+              "solutions": [
+                "would have come"
+              ],
+              "explanation": "„would have come“ ist hier die richtige Wahl aus (would come / had come / would have come).",
+              "acceptedAnswers": [
+                "would have come"
+              ],
+              "answer": "would have come"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "If it had rained, we {{0}} at home.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "would stay / had stayed / would have stayed",
+              "grammarHint": "Auswahl: would stay / had stayed / would have stayed",
+              "hints": [
+                "Wähle eine der Optionen: would stay / had stayed / would have stayed"
+              ],
+              "solutions": [
+                "would have stayed"
+              ],
+              "explanation": "„would have stayed“ ist hier die richtige Wahl aus (would stay / had stayed / would have stayed).",
+              "acceptedAnswers": [
+                "would have stayed"
+              ],
+              "answer": "would have stayed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Match the Halves",
+      "type": "single_sentence",
+      "instruction": "Match the Halves: Welches Satzende passt logisch und grammatikalisch zum Anfang?",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If I had seen the ice on the road, {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... I wouldn't have crashed the car. / ... I wouldn't crash the car. / ... I hadn't crashed the car.",
+              "grammarHint": "Auswahl: ... I wouldn't have crashed the car. / ... I wouldn't crash the car. / ... I hadn't crashed the car.",
+              "hints": [
+                "Wähle eine der Optionen: ... I wouldn't have crashed the car. / ... I wouldn't crash the car. / ... I hadn't crashed the car."
+              ],
+              "solutions": [
+                "I wouldn't have crashed the car.",
+                "I wouldn't have crashed the car",
+                "... I wouldn't have crashed the car."
+              ],
+              "explanation": "„... I wouldn't have crashed the car.“ ist hier die richtige Wahl aus (... I wouldn't have crashed the car. / ... I wouldn't crash the car. / ... I hadn't crashed the car.).",
+              "acceptedAnswers": [
+                "I wouldn't have crashed the car.",
+                "I wouldn't have crashed the car",
+                "... I wouldn't have crashed the car."
+              ],
+              "answer": "I wouldn't have crashed the car."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "We would have won the match {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... if we would have trained harder. / ... if we had trained harder. / ... if we trained harder.",
+              "grammarHint": "Auswahl: ... if we would have trained harder. / ... if we had trained harder. / ... if we trained harder.",
+              "hints": [
+                "Wähle eine der Optionen: ... if we would have trained harder. / ... if we had trained harder. / ... if we trained harder."
+              ],
+              "solutions": [
+                "if we had trained harder.",
+                "if we had trained harder",
+                "... if we had trained harder."
+              ],
+              "explanation": "„... if we had trained harder.“ ist hier die richtige Wahl aus (... if we would have trained harder. / ... if we had trained harder. / ... if we trained harder.).",
+              "acceptedAnswers": [
+                "if we had trained harder.",
+                "if we had trained harder",
+                "... if we had trained harder."
+              ],
+              "answer": "if we had trained harder."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If she hadn't forgotten her passport, {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... she would have flown to London. / ... she had flown to London. / ... she would fly to London.",
+              "grammarHint": "Auswahl: ... she would have flown to London. / ... she had flown to London. / ... she would fly to London.",
+              "hints": [
+                "Wähle eine der Optionen: ... she would have flown to London. / ... she had flown to London. / ... she would fly to London."
+              ],
+              "solutions": [
+                "she would have flown to London.",
+                "she would have flown to London",
+                "... she would have flown to London."
+              ],
+              "explanation": "„... she would have flown to London.“ ist hier die richtige Wahl aus (... she would have flown to London. / ... she had flown to London. / ... she would fly to London.).",
+              "acceptedAnswers": [
+                "she would have flown to London.",
+                "she would have flown to London",
+                "... she would have flown to London."
+              ],
+              "answer": "she would have flown to London."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "I would have bought the shoes {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... if I had had enough money. / ... if I would have enough money. / ... if I had enough money.",
+              "grammarHint": "Auswahl: ... if I had had enough money. / ... if I would have enough money. / ... if I had enough money.",
+              "hints": [
+                "Wähle eine der Optionen: ... if I had had enough money. / ... if I would have enough money. / ... if I had enough money."
+              ],
+              "solutions": [
+                "if I had had enough money.",
+                "if I had had enough money",
+                "... if I had had enough money."
+              ],
+              "explanation": "„... if I had had enough money.“ ist hier die richtige Wahl aus (... if I had had enough money. / ... if I would have enough money. / ... if I had enough money.).",
+              "acceptedAnswers": [
+                "if I had had enough money.",
+                "if I had had enough money",
+                "... if I had had enough money."
+              ],
+              "answer": "if I had had enough money."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: The Blame Game (Scramble)",
+      "type": "single_sentence",
+      "instruction": "The Blame Game: Setze die Wörter in die richtige Reihenfolge. Achte auf das Komma!",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "If / you / had / listened, / we / wouldn't / have / gotten / lost.",
+              "grammarHint": "Bausteine: If / you / had / listened, / we / wouldn't / have / gotten / lost.",
+              "hints": [
+                "Nutze alle Wörter: If / you / had / listened, / we / wouldn't / have / gotten / lost.",
+                "Satzanfang: „If you…“"
+              ],
+              "solutions": [
+                "If you had listened, we wouldn't have gotten lost.",
+                "If you had listened, we wouldn't have gotten lost"
+              ],
+              "explanation": "Vollständiger Satz: „If you had listened, we wouldn't have gotten lost.“.",
+              "acceptedAnswers": [
+                "If you had listened, we wouldn't have gotten lost.",
+                "If you had listened, we wouldn't have gotten lost"
+              ],
+              "answer": "If you had listened, we wouldn't have gotten lost."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "I / would / have / helped / you / if / you / had / asked.",
+              "grammarHint": "Bausteine: I / would / have / helped / you / if / you / had / asked.",
+              "hints": [
+                "Nutze alle Wörter: I / would / have / helped / you / if / you / had / asked.",
+                "Satzanfang: „I would…“"
+              ],
+              "solutions": [
+                "I would have helped you if you had asked.",
+                "I would have helped you if you had asked"
+              ],
+              "explanation": "Vollständiger Satz: „I would have helped you if you had asked.“.",
+              "acceptedAnswers": [
+                "I would have helped you if you had asked.",
+                "I would have helped you if you had asked"
+              ],
+              "answer": "I would have helped you if you had asked."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "If / she / had / left / earlier, / she / would / have / arrived / on / time.",
+              "grammarHint": "Bausteine: If / she / had / left / earlier, / she / would / have / arrived / on / time.",
+              "hints": [
+                "Nutze alle Wörter: If / she / had / left / earlier, / she / would / have / arrived / on / time.",
+                "Satzanfang: „If she…“"
+              ],
+              "solutions": [
+                "If she had left earlier, she would have arrived on time.",
+                "If she had left earlier, she would have arrived on time"
+              ],
+              "explanation": "Vollständiger Satz: „If she had left earlier, she would have arrived on time.“.",
+              "acceptedAnswers": [
+                "If she had left earlier, she would have arrived on time.",
+                "If she had left earlier, she would have arrived on time"
+              ],
+              "answer": "If she had left earlier, she would have arrived on time."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "We / would / have / ordered / pizza / if / we / had / known.",
+              "grammarHint": "Bausteine: We / would / have / ordered / pizza / if / we / had / known.",
+              "hints": [
+                "Nutze alle Wörter: We / would / have / ordered / pizza / if / we / had / known.",
+                "Satzanfang: „We would…“"
+              ],
+              "solutions": [
+                "We would have ordered pizza if we had known.",
+                "We would have ordered pizza if we had known"
+              ],
+              "explanation": "Vollständiger Satz: „We would have ordered pizza if we had known.“.",
+              "acceptedAnswers": [
+                "We would have ordered pizza if we had known.",
+                "We would have ordered pizza if we had known"
+              ],
+              "answer": "We would have ordered pizza if we had known."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "If / it / had / snowed, / we / would / have / built / a / snowman.",
+              "grammarHint": "Bausteine: If / it / had / snowed, / we / would / have / built / a / snowman.",
+              "hints": [
+                "Nutze alle Wörter: If / it / had / snowed, / we / would / have / built / a / snowman.",
+                "Satzanfang: „If it…“"
+              ],
+              "solutions": [
+                "If it had snowed, we would have built a snowman.",
+                "If it had snowed, we would have built a snowman"
+              ],
+              "explanation": "Vollständiger Satz: „If it had snowed, we would have built a snowman.“.",
+              "acceptedAnswers": [
+                "If it had snowed, we would have built a snowman.",
+                "If it had snowed, we would have built a snowman"
+              ],
+              "answer": "If it had snowed, we would have built a snowman."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: The Unlucky Morning",
+      "type": "cloze_text",
+      "instruction": "The Unlucky Morning: Gestern war eine Katastrophe! Fülle die Lücken aus und entscheide, ob du das Past Perfect (had + 3. Form) für den if-Teil oder would have + 3. Form für den Hauptsatz brauchst.",
+      "text": "Yesterday was terrible. If my alarm clock {{0}} at 7 am, I {{1}} late. If I had woken up on time, I {{2}} the school bus. I wouldn't have walked in the rain if my mum {{3}} me. If I {{4}} an umbrella, my clothes would not have been wet. When I arrived at school, the teacher was very angry. He {{5}} me extra homework if I had been punctual.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "ring",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had rung"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had rung"
+          ],
+          "answer": "had rung"
+        },
+        {
+          "index": 1,
+          "prompt": "not / wake up",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wo…“ (5 Wort/Wörter)."
+          ],
+          "solutions": [
+            "would not have woken up",
+            "wouldn't have woken up",
+            "would not have waked up",
+            "wouldn't have waked up"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "would not have woken up",
+            "wouldn't have woken up",
+            "would not have waked up",
+            "wouldn't have waked up"
+          ],
+          "answer": "would not have woken up"
+        },
+        {
+          "index": 2,
+          "prompt": "catch",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wo…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "would have caught",
+            "'d have caught"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "would have caught",
+            "'d have caught"
+          ],
+          "answer": "would have caught"
+        },
+        {
+          "index": 3,
+          "prompt": "drive",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had driven",
+            "'d driven"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had driven",
+            "'d driven"
+          ],
+          "answer": "had driven"
+        },
+        {
+          "index": 4,
+          "prompt": "take",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had taken",
+            "'d taken"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had taken",
+            "'d taken"
+          ],
+          "answer": "had taken"
+        },
+        {
+          "index": 5,
+          "prompt": "not / give",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wo…“ (4 Wort/Wörter)."
+          ],
+          "solutions": [
+            "would not have given",
+            "wouldn't have given"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "would not have given",
+            "wouldn't have given"
+          ],
+          "answer": "would not have given"
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: The Titanic History",
+      "type": "cloze_text",
+      "instruction": "The Titanic History: Was wäre gewesen, wenn? Fülle die Lücken mit der richtigen Form (Type 3).",
+      "text": "Let's look at history. If the Titanic {{0}} the iceberg, it would have arrived in New York safely. If the captain {{1}} the ice earlier, he {{2}} the ship around in time. Many more people {{3}} the terrible night if there {{4}} more lifeboats on the ship. If the nearby ship 'Californian' {{5}} the emergency signals, they would have rescued everyone.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "not / hit",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had not hit",
+            "hadn't hit"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had not hit",
+            "hadn't hit"
+          ],
+          "answer": "had not hit"
+        },
+        {
+          "index": 1,
+          "prompt": "see",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had seen",
+            "'d seen"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had seen",
+            "'d seen"
+          ],
+          "answer": "had seen"
+        },
+        {
+          "index": 2,
+          "prompt": "turn",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wo…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "would have turned",
+            "'d have turned"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "would have turned",
+            "'d have turned"
+          ],
+          "answer": "would have turned"
+        },
+        {
+          "index": 3,
+          "prompt": "survive",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „wo…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "would have survived",
+            "'d have survived"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "would have survived",
+            "'d have survived"
+          ],
+          "answer": "would have survived"
+        },
+        {
+          "index": 4,
+          "prompt": "be",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had been",
+            "'d been"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had been",
+            "'d been"
+          ],
+          "answer": "had been"
+        },
+        {
+          "index": 5,
+          "prompt": "hear",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "had heard",
+            "'d heard"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "had heard",
+            "'d heard"
+          ],
+          "answer": "had heard"
+        }
+      ]
+    }
+  ]
+}

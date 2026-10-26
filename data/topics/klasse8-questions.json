@@ -1,0 +1,666 @@
+{
+  "id": "klasse8-questions",
+  "title": "Subject vs. Object Questions",
+  "grade": "8",
+  "icon": "❓",
+  "description": "Fragen mit who und what: Wann braucht man das Hilfsverb 'do/did' (Objektfrage) und wann nicht (Subjektfrage)?",
+  "legacyStorageKey": "grammar_g8_questions_state",
+  "legacyMasteredKey": "grammar_g8_questions_mastered",
+  "rules": {
+    "title": "Subject vs. Object Questions – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Subject vs. Object Questions.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Subject or Object?",
+      "type": "single_sentence",
+      "instruction": "Subject or Object Question? Entscheide, wonach in diesen Sätzen gefragt wird (Achte auf do/does/did).",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Who broke the window? → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Subject / Object",
+              "grammarHint": "Auswahl: Subject (Wer?) / Object (Wen/Was?)",
+              "hints": [
+                "Wähle eine der Optionen: Subject (Wer?) / Object (Wen/Was?)"
+              ],
+              "solutions": [
+                "Subject",
+                "Subject (Wer?)"
+              ],
+              "explanation": "„Subject (Wer?)“ ist hier die richtige Wahl aus (Subject (Wer?) / Object (Wen/Was?)).",
+              "acceptedAnswers": [
+                "Subject",
+                "Subject (Wer?)"
+              ],
+              "answer": "Subject"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "What did you buy at the supermarket? → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Subject / Object",
+              "grammarHint": "Auswahl: Subject (Wer?) / Object (Wen/Was?)",
+              "hints": [
+                "Wähle eine der Optionen: Subject (Wer?) / Object (Wen/Was?)"
+              ],
+              "solutions": [
+                "Object",
+                "Object (Wen/Was?)"
+              ],
+              "explanation": "„Object (Wen/Was?)“ ist hier die richtige Wahl aus (Subject (Wer?) / Object (Wen/Was?)).",
+              "acceptedAnswers": [
+                "Object",
+                "Object (Wen/Was?)"
+              ],
+              "answer": "Object"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Who did you invite to the party? → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Subject / Object",
+              "grammarHint": "Auswahl: Subject (Wer?) / Object (Wen/Was?)",
+              "hints": [
+                "Wähle eine der Optionen: Subject (Wer?) / Object (Wen/Was?)"
+              ],
+              "solutions": [
+                "Object",
+                "Object (Wen/Was?)"
+              ],
+              "explanation": "„Object (Wen/Was?)“ ist hier die richtige Wahl aus (Subject (Wer?) / Object (Wen/Was?)).",
+              "acceptedAnswers": [
+                "Object",
+                "Object (Wen/Was?)"
+              ],
+              "answer": "Object"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "What happened yesterday? → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Subject / Object",
+              "grammarHint": "Auswahl: Subject (Wer?) / Object (Wen/Was?)",
+              "hints": [
+                "Wähle eine der Optionen: Subject (Wer?) / Object (Wen/Was?)"
+              ],
+              "solutions": [
+                "Subject",
+                "Subject (Wer?)"
+              ],
+              "explanation": "„Subject (Wer?)“ ist hier die richtige Wahl aus (Subject (Wer?) / Object (Wen/Was?)).",
+              "acceptedAnswers": [
+                "Subject",
+                "Subject (Wer?)"
+              ],
+              "answer": "Subject"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Which teacher gave you that book? → {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Subject / Object",
+              "grammarHint": "Auswahl: Subject (Wer?) / Object (Wen/Was?)",
+              "hints": [
+                "Wähle eine der Optionen: Subject (Wer?) / Object (Wen/Was?)"
+              ],
+              "solutions": [
+                "Subject",
+                "Subject (Wer?)"
+              ],
+              "explanation": "„Subject (Wer?)“ ist hier die richtige Wahl aus (Subject (Wer?) / Object (Wen/Was?)).",
+              "acceptedAnswers": [
+                "Subject",
+                "Subject (Wer?)"
+              ],
+              "answer": "Subject"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Object Questions",
+      "type": "single_sentence",
+      "instruction": "Object Questions: Hier brauchst du ein Hilfsverb! Setze do, does oder did zusammen mit dem Hauptverb ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Where {{0}} ?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / live",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "do you live"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "do you live"
+              ],
+              "answer": "do you live"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "When {{0}} yesterday?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "he / arrive",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did he arrive"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "did he arrive"
+              ],
+              "answer": "did he arrive"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "What {{0}} for her birthday next week?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "she / want",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "does she want"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "does she want"
+              ],
+              "answer": "does she want"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Who {{0}} last night?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "they / call",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did they call"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "did they call"
+              ],
+              "answer": "did they call"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Why {{0}} after the movie yesterday?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / cry",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did you cry"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "did you cry"
+              ],
+              "answer": "did you cry"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Subject Questions",
+      "type": "single_sentence",
+      "instruction": "Subject Questions: Hier fragst du nach dem Täter (Wer?). Verwende KEIN do/does/did! Setze das Verb einfach in die richtige Zeitform.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Who {{0}} in that old spooky house? (Gegenwart)",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "live",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „li…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "lives"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "lives"
+              ],
+              "answer": "lives"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "What {{0}} at the party yesterday?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "happen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "happened"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "happened"
+              ],
+              "answer": "happened"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Who {{0}} you with your homework last week?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "help",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „he…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "helped"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "helped"
+              ],
+              "answer": "helped"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Which dog {{0}} the postman this morning?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "bite",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „bi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "bit"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "bit"
+              ],
+              "answer": "bit"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Who {{0}} the answer to this difficult question?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "know",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „kn…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "knows"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "knows"
+              ],
+              "answer": "knows"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Negative Questions",
+      "type": "single_sentence",
+      "instruction": "Negative Questions: Setze die verneinten Fragen in die richtige Reihenfolge.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Didn't / you / see / the / stop / sign?",
+              "grammarHint": "Bausteine: Didn't / you / see / the / stop / sign?",
+              "hints": [
+                "Nutze alle Wörter: Didn't / you / see / the / stop / sign?",
+                "Satzanfang: „Didn't you…“"
+              ],
+              "solutions": [
+                "Didn't you see the stop sign?"
+              ],
+              "explanation": "Vollständiger Satz: „Didn't you see the stop sign?“.",
+              "acceptedAnswers": [
+                "Didn't you see the stop sign?"
+              ],
+              "answer": "Didn't you see the stop sign?"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Why / don't / you / listen / to / me?",
+              "grammarHint": "Bausteine: Why / don't / you / listen / to / me?",
+              "hints": [
+                "Nutze alle Wörter: Why / don't / you / listen / to / me?",
+                "Satzanfang: „Why don't…“"
+              ],
+              "solutions": [
+                "Why don't you listen to me?"
+              ],
+              "explanation": "Vollständiger Satz: „Why don't you listen to me?“.",
+              "acceptedAnswers": [
+                "Why don't you listen to me?"
+              ],
+              "answer": "Why don't you listen to me?"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Aren't / you / cold / in / that / t-shirt?",
+              "grammarHint": "Bausteine: Aren't / you / cold / in / that / t-shirt?",
+              "hints": [
+                "Nutze alle Wörter: Aren't / you / cold / in / that / t-shirt?",
+                "Satzanfang: „Aren't you…“"
+              ],
+              "solutions": [
+                "Aren't you cold in that t-shirt?"
+              ],
+              "explanation": "Vollständiger Satz: „Aren't you cold in that t-shirt?“.",
+              "acceptedAnswers": [
+                "Aren't you cold in that t-shirt?"
+              ],
+              "answer": "Aren't you cold in that t-shirt?"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Haven't / we / met / somewhere / before?",
+              "grammarHint": "Bausteine: Haven't / we / met / somewhere / before?",
+              "hints": [
+                "Nutze alle Wörter: Haven't / we / met / somewhere / before?",
+                "Satzanfang: „Haven't we…“"
+              ],
+              "solutions": [
+                "Haven't we met somewhere before?"
+              ],
+              "explanation": "Vollständiger Satz: „Haven't we met somewhere before?“.",
+              "acceptedAnswers": [
+                "Haven't we met somewhere before?"
+              ],
+              "answer": "Haven't we met somewhere before?"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Doesn't / she / like / dark / chocolate?",
+              "grammarHint": "Bausteine: Doesn't / she / like / dark / chocolate?",
+              "hints": [
+                "Nutze alle Wörter: Doesn't / she / like / dark / chocolate?",
+                "Satzanfang: „Doesn't she…“"
+              ],
+              "solutions": [
+                "Doesn't she like dark chocolate?"
+              ],
+              "explanation": "Vollständiger Satz: „Doesn't she like dark chocolate?“.",
+              "acceptedAnswers": [
+                "Doesn't she like dark chocolate?"
+              ],
+              "answer": "Doesn't she like dark chocolate?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: The Interrogation",
+      "type": "cloze_text",
+      "instruction": "The Interrogation: Ein Detektiv verhört einen Verdächtigen. Bilde die passenden Fragen (Subject, Object oder Negative).",
+      "text": "Detective: Tell me the truth! Who {{0}} you last night? (Tipp: Wer?) Suspect: Nobody! Why {{1}} me this? (Tipp: Gegenwart) Detective: Because we found your phone. What {{2}} at 10 PM yesterday? Suspect: I was sleeping in my bed! {{3}} me? Detective: No. Who {{4}} the safe at the bank? (Tipp: Wer?) Suspect: I have no idea! Who {{5}} ? (Tipp: Wen?) Detective: You! {{6}} the master key yesterday? Suspect: No! I lost it. What {{7}} you think I am the thief? (Tipp: Was?)",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "call",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ca…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "called"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "called"
+          ],
+          "answer": "called"
+        },
+        {
+          "index": 1,
+          "prompt": "you / ask",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "do you ask",
+            "are you asking"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "do you ask",
+            "are you asking"
+          ],
+          "answer": "do you ask"
+        },
+        {
+          "index": 2,
+          "prompt": "you / do",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "did you do",
+            "were you doing"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "did you do",
+            "were you doing"
+          ],
+          "answer": "did you do"
+        },
+        {
+          "index": 3,
+          "prompt": "you / not / believe",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „Do…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "Don't you believe",
+            "Do you not believe"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "Don't you believe",
+            "Do you not believe"
+          ],
+          "answer": "Don't you believe"
+        },
+        {
+          "index": 4,
+          "prompt": "open",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „op…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "opened"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "opened"
+          ],
+          "answer": "opened"
+        },
+        {
+          "index": 5,
+          "prompt": "you / suspect",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "do you suspect"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "do you suspect"
+          ],
+          "answer": "do you suspect"
+        },
+        {
+          "index": 6,
+          "prompt": "you / not / have",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „Di…“ (3 Wort/Wörter)."
+          ],
+          "solutions": [
+            "Didn't you have",
+            "Did you not have"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "Didn't you have",
+            "Did you not have"
+          ],
+          "answer": "Didn't you have"
+        },
+        {
+          "index": 7,
+          "prompt": "make",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ma…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "makes"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "makes"
+          ],
+          "answer": "makes"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,727 @@
+{
+  "id": "klasse8-pronouns",
+  "title": "Reflexive Pronouns vs. each other",
+  "grade": "8",
+  "icon": "🪞",
+  "description": "Unterscheidung zwischen rückbezüglichen Pronomen (myself, themselves) und wechselseitigem 'each other'.",
+  "legacyStorageKey": "grammar_g8_pronouns_state",
+  "legacyMasteredKey": "grammar_g8_pronouns_mastered",
+  "rules": {
+    "title": "Reflexive Pronouns vs. each other – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Reflexive Pronouns vs. each other.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: The Mirror Room",
+      "type": "single_sentence",
+      "instruction": "The Mirror Room: Setze das richtige Reflexivpronomen (myself, yourself, himself...) ein. Achte auf Pluralformen!",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I looked at {{0}} in the mirror.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "ich",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „my…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "myself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "myself"
+              ],
+              "answer": "myself"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "He burned {{0}} on the hot stove.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "er",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „hi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "himself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "himself"
+              ],
+              "answer": "himself"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "She taught {{0}} to play the piano.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sie",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „he…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "herself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "herself"
+              ],
+              "answer": "herself"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The cat washed {{0}} after eating.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "es",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „it…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "itself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "itself"
+              ],
+              "answer": "itself"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "We really enjoyed {{0}} at the party.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "wir",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ou…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "ourselves"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "ourselves"
+              ],
+              "answer": "ourselves"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "They bought {{0}} new clothes.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sie/Plural",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "themselves"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "themselves"
+              ],
+              "answer": "themselves"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "Did you hurt {{0}} , Tom?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "du",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „yo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "yourself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "yourself"
+              ],
+              "answer": "yourself"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "Please help {{0}} to some sandwiches, kids!",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "ihr",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „yo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "yourselves"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "yourselves"
+              ],
+              "answer": "yourselves"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Themselves vs. Each other",
+      "type": "single_sentence",
+      "instruction": "Themselves vs. Each other: Meinen sie sich selbst oder sich gegenseitig?",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Romeo and Juliet loved {{0}} very much.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "themselves / each other",
+              "grammarHint": "Auswahl: themselves / each other",
+              "hints": [
+                "Wähle eine der Optionen: themselves / each other"
+              ],
+              "solutions": [
+                "each other"
+              ],
+              "explanation": "„each other“ ist hier die richtige Wahl aus (themselves / each other).",
+              "acceptedAnswers": [
+                "each other"
+              ],
+              "answer": "each other"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The two monkeys looked in the mirror and saw {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "themselves / each other",
+              "grammarHint": "Auswahl: themselves / each other",
+              "hints": [
+                "Wähle eine der Optionen: themselves / each other"
+              ],
+              "solutions": [
+                "themselves"
+              ],
+              "explanation": "„themselves“ ist hier die richtige Wahl aus (themselves / each other).",
+              "acceptedAnswers": [
+                "themselves"
+              ],
+              "answer": "themselves"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "After the argument, Tom and Peter didn't speak to {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "themselves / each other",
+              "grammarHint": "Auswahl: themselves / each other",
+              "hints": [
+                "Wähle eine der Optionen: themselves / each other"
+              ],
+              "solutions": [
+                "each other"
+              ],
+              "explanation": "„each other“ ist hier die richtige Wahl aus (themselves / each other).",
+              "acceptedAnswers": [
+                "each other"
+              ],
+              "answer": "each other"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "The players blamed {{0}} for losing the match.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "themselves / each other",
+              "grammarHint": "Auswahl: themselves / each other",
+              "hints": [
+                "Wähle eine der Optionen: themselves / each other"
+              ],
+              "solutions": [
+                "themselves"
+              ],
+              "explanation": "„themselves“ ist hier die richtige Wahl aus (themselves / each other).",
+              "acceptedAnswers": [
+                "themselves"
+              ],
+              "answer": "themselves"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "My brother and I help {{0}} with the homework.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "ourselves / each other",
+              "grammarHint": "Auswahl: ourselves / each other",
+              "hints": [
+                "Wähle eine der Optionen: ourselves / each other"
+              ],
+              "solutions": [
+                "each other"
+              ],
+              "explanation": "„each other“ ist hier die richtige Wahl aus (ourselves / each other).",
+              "acceptedAnswers": [
+                "each other"
+              ],
+              "answer": "each other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: The Emphatic Use",
+      "type": "single_sentence",
+      "instruction": "The Emphatic Use: Wer hat es ganz ohne Hilfe getan? Setze das richtige Pronomen ein.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Did you write this fantastic poem all by {{0}} ?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "du",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „yo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "yourself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "yourself"
+              ],
+              "answer": "yourself"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Wow! I built this computer all by {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "ich",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „my…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "myself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "myself"
+              ],
+              "answer": "myself"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "The Queen {{0}} opened the new hospital.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "sie",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „he…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "herself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "herself"
+              ],
+              "answer": "herself"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We cleaned the whole house {{0}} , no one helped us.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "wir",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ou…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "ourselves"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "ourselves"
+              ],
+              "answer": "ourselves"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The boss {{0}} called me to say sorry.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "er",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „hi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "himself"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "himself"
+              ],
+              "answer": "himself"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Sentence Scramble",
+      "type": "single_sentence",
+      "instruction": "Sentence Scramble: Bringe die Wörter in die richtige Reihenfolge.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "They / looked / at / each / other / and / smiled.",
+              "grammarHint": "Bausteine: They / looked / at / each / other / and / smiled.",
+              "hints": [
+                "Nutze alle Wörter: They / looked / at / each / other / and / smiled.",
+                "Satzanfang: „They looked…“"
+              ],
+              "solutions": [
+                "They looked at each other and smiled.",
+                "They looked at each other and smiled"
+              ],
+              "explanation": "Vollständiger Satz: „They looked at each other and smiled.“.",
+              "acceptedAnswers": [
+                "They looked at each other and smiled.",
+                "They looked at each other and smiled"
+              ],
+              "answer": "They looked at each other and smiled."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "I / fixed / the / broken / bike / all / by / myself.",
+              "grammarHint": "Bausteine: I / fixed / the / broken / bike / all / by / myself.",
+              "hints": [
+                "Nutze alle Wörter: I / fixed / the / broken / bike / all / by / myself.",
+                "Satzanfang: „I fixed…“"
+              ],
+              "solutions": [
+                "I fixed the broken bike all by myself.",
+                "I fixed the broken bike all by myself"
+              ],
+              "explanation": "Vollständiger Satz: „I fixed the broken bike all by myself.“.",
+              "acceptedAnswers": [
+                "I fixed the broken bike all by myself.",
+                "I fixed the broken bike all by myself"
+              ],
+              "answer": "I fixed the broken bike all by myself."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Please / make / yourselves / at / home.",
+              "grammarHint": "Bausteine: Please / make / yourselves / at / home.",
+              "hints": [
+                "Nutze alle Wörter: Please / make / yourselves / at / home.",
+                "Satzanfang: „Please make…“"
+              ],
+              "solutions": [
+                "Please make yourselves at home.",
+                "Please make yourselves at home"
+              ],
+              "explanation": "Vollständiger Satz: „Please make yourselves at home.“.",
+              "acceptedAnswers": [
+                "Please make yourselves at home.",
+                "Please make yourselves at home"
+              ],
+              "answer": "Please make yourselves at home."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "She / cut / herself / with / a / sharp / knife.",
+              "grammarHint": "Bausteine: She / cut / herself / with / a / sharp / knife.",
+              "hints": [
+                "Nutze alle Wörter: She / cut / herself / with / a / sharp / knife.",
+                "Satzanfang: „She cut…“"
+              ],
+              "solutions": [
+                "She cut herself with a sharp knife.",
+                "She cut herself with a sharp knife"
+              ],
+              "explanation": "Vollständiger Satz: „She cut herself with a sharp knife.“.",
+              "acceptedAnswers": [
+                "She cut herself with a sharp knife.",
+                "She cut herself with a sharp knife"
+              ],
+              "answer": "She cut herself with a sharp knife."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "We / often / help / each / other / with / our / homework.",
+              "grammarHint": "Bausteine: We / often / help / each / other / with / our / homework.",
+              "hints": [
+                "Nutze alle Wörter: We / often / help / each / other / with / our / homework.",
+                "Satzanfang: „We often…“"
+              ],
+              "solutions": [
+                "We often help each other with our homework.",
+                "We often help each other with our homework"
+              ],
+              "explanation": "Vollständiger Satz: „We often help each other with our homework.“.",
+              "acceptedAnswers": [
+                "We often help each other with our homework.",
+                "We often help each other with our homework"
+              ],
+              "answer": "We often help each other with our homework."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: The DIY Disaster",
+      "type": "cloze_text",
+      "instruction": "The DIY Disaster: Fülle die Lücken mit Reflexivpronomen oder 'each other'.",
+      "text": "Last weekend, my brother and I decided to build a treehouse by {{0}} . We told {{1}} that it would be an easy job. First, my brother hit {{2}} with the heavy hammer. Then, I accidentally cut {{3}} with the sharp saw. Our dad came out and asked, 'Did you do this all by {{4}} ? It looks terrible!' My sister laughed at us. She was building a small birdhouse by {{5}} and it looked perfect. Now, the birds wash {{6}} happily in the birdbath next to it. In the end, my brother and I just looked at {{7}} and decided to buy a finished treehouse.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "wir",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ou…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "ourselves"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "ourselves"
+          ],
+          "answer": "ourselves"
+        },
+        {
+          "index": 1,
+          "prompt": "einander",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ea…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "each other"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "each other"
+          ],
+          "answer": "each other"
+        },
+        {
+          "index": 2,
+          "prompt": "er",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „hi…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "himself"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "himself"
+          ],
+          "answer": "himself"
+        },
+        {
+          "index": 3,
+          "prompt": "ich",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „my…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "myself"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "myself"
+          ],
+          "answer": "myself"
+        },
+        {
+          "index": 4,
+          "prompt": "ihr",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „yo…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "yourselves"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "yourselves"
+          ],
+          "answer": "yourselves"
+        },
+        {
+          "index": 5,
+          "prompt": "sie",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „he…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "herself"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "herself"
+          ],
+          "answer": "herself"
+        },
+        {
+          "index": 6,
+          "prompt": "sie/Plural",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „th…“ (1 Wort/Wörter)."
+          ],
+          "solutions": [
+            "themselves"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "themselves"
+          ],
+          "answer": "themselves"
+        },
+        {
+          "index": 7,
+          "prompt": "einander",
+          "grammarHint": "Richtige Form im Kontext.",
+          "hints": [
+            "Richtige Form im Kontext.",
+            "Lösung beginnt mit „ea…“ (2 Wort/Wörter)."
+          ],
+          "solutions": [
+            "each other"
+          ],
+          "explanation": "Richtige Form im Kontext.",
+          "acceptedAnswers": [
+            "each other"
+          ],
+          "answer": "each other"
+        }
+      ]
+    }
+  ]
+}

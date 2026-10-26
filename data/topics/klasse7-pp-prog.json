@@ -1,0 +1,746 @@
+{
+  "id": "klasse7-pp-prog",
+  "title": "Present Perfect Progressive",
+  "grade": "7",
+  "icon": "🔄",
+  "description": "Wie lange dauert etwas schon an? Bildung mit have/has + been + Verb-ing samt since/for-Training.",
+  "legacyStorageKey": "grammar_g7_ppprog_state",
+  "legacyMasteredKey": "grammar_g7_ppprog_mastered",
+  "rules": {
+    "title": "Present Perfect Progressive – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Present Perfect Progressive.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Since vs For Review",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben. (Tippe: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer))",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "„2018“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)"
+              ],
+              "solutions": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "explanation": "„2018“ wird der Kategorie „SINCE (Zeitpunkt)“ zugeordnet.",
+              "acceptedAnswers": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "answer": "SINCE"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "„last week“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)"
+              ],
+              "solutions": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "explanation": "„last week“ wird der Kategorie „SINCE (Zeitpunkt)“ zugeordnet.",
+              "acceptedAnswers": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "answer": "SINCE"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "„9 o'clock“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)"
+              ],
+              "solutions": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "explanation": "„9 o'clock“ wird der Kategorie „SINCE (Zeitpunkt)“ zugeordnet.",
+              "acceptedAnswers": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "answer": "SINCE"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "„I was a child“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)"
+              ],
+              "solutions": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "explanation": "„I was a child“ wird der Kategorie „SINCE (Zeitpunkt)“ zugeordnet.",
+              "acceptedAnswers": [
+                "SINCE",
+                "SINCE (Zeitpunkt)"
+              ],
+              "answer": "SINCE"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "„two hours“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)"
+              ],
+              "solutions": [
+                "FOR",
+                "FOR (Zeitraum / Dauer)"
+              ],
+              "explanation": "„two hours“ wird der Kategorie „FOR (Zeitraum / Dauer)“ zugeordnet.",
+              "acceptedAnswers": [
+                "FOR",
+                "FOR (Zeitraum / Dauer)"
+              ],
+              "answer": "FOR"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "„five days“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)"
+              ],
+              "solutions": [
+                "FOR",
+                "FOR (Zeitraum / Dauer)"
+              ],
+              "explanation": "„five days“ wird der Kategorie „FOR (Zeitraum / Dauer)“ zugeordnet.",
+              "acceptedAnswers": [
+                "FOR",
+                "FOR (Zeitraum / Dauer)"
+              ],
+              "answer": "FOR"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "„a long time“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)"
+              ],
+              "solutions": [
+                "FOR",
+                "FOR (Zeitraum / Dauer)"
+              ],
+              "explanation": "„a long time“ wird der Kategorie „FOR (Zeitraum / Dauer)“ zugeordnet.",
+              "acceptedAnswers": [
+                "FOR",
+                "FOR (Zeitraum / Dauer)"
+              ],
+              "answer": "FOR"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "„ten minutes“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SINCE / FOR",
+              "grammarHint": "Auswahl: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)",
+              "hints": [
+                "Entscheide zwischen: SINCE (Zeitpunkt) / FOR (Zeitraum / Dauer)"
+              ],
+              "solutions": [
+                "FOR",
+                "FOR (Zeitraum / Dauer)"
+              ],
+              "explanation": "„ten minutes“ wird der Kategorie „FOR (Zeitraum / Dauer)“ zugeordnet.",
+              "acceptedAnswers": [
+                "FOR",
+                "FOR (Zeitraum / Dauer)"
+              ],
+              "answer": "FOR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Sentence Scramble",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "waiting / have / hours. / been / for / two / I",
+              "grammarHint": "Bausteine: waiting / have / hours. / been / for / two / I",
+              "hints": [
+                "Nutze alle Wörter: waiting / have / hours. / been / for / two / I",
+                "Satzanfang: „I have…“"
+              ],
+              "solutions": [
+                "I have been waiting for two hours.",
+                "I have been waiting for two hours"
+              ],
+              "explanation": "Vollständiger Satz: „I have been waiting for two hours.“.",
+              "acceptedAnswers": [
+                "I have been waiting for two hours.",
+                "I have been waiting for two hours"
+              ],
+              "answer": "I have been waiting for two hours."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "learning / long / English? / have / been / you / How",
+              "grammarHint": "Bausteine: learning / long / English? / have / been / you / How",
+              "hints": [
+                "Nutze alle Wörter: learning / long / English? / have / been / you / How",
+                "Satzanfang: „How long…“"
+              ],
+              "solutions": [
+                "How long have you been learning English?"
+              ],
+              "explanation": "Vollständiger Satz: „How long have you been learning English?“.",
+              "acceptedAnswers": [
+                "How long have you been learning English?"
+              ],
+              "answer": "How long have you been learning English?"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "has / sleeping / morning. / She / been / all",
+              "grammarHint": "Bausteine: has / sleeping / morning. / She / been / all",
+              "hints": [
+                "Nutze alle Wörter: has / sleeping / morning. / She / been / all",
+                "Satzanfang: „She has…“"
+              ],
+              "solutions": [
+                "She has been sleeping all morning.",
+                "She has been sleeping all morning"
+              ],
+              "explanation": "Vollständiger Satz: „She has been sleeping all morning.“.",
+              "acceptedAnswers": [
+                "She has been sleeping all morning.",
+                "She has been sleeping all morning"
+              ],
+              "answer": "She has been sleeping all morning."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "playing / have / tennis / They / been / pm. / since / 3",
+              "grammarHint": "Bausteine: playing / have / tennis / They / been / pm. / since / 3",
+              "hints": [
+                "Nutze alle Wörter: playing / have / tennis / They / been / pm. / since / 3",
+                "Satzanfang: „They have…“"
+              ],
+              "solutions": [
+                "They have been playing tennis since 3 pm.",
+                "They have been playing tennis since 3 pm"
+              ],
+              "explanation": "Vollständiger Satz: „They have been playing tennis since 3 pm.“.",
+              "acceptedAnswers": [
+                "They have been playing tennis since 3 pm.",
+                "They have been playing tennis since 3 pm"
+              ],
+              "answer": "They have been playing tennis since 3 pm."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "raining / has / day. / It / been / all",
+              "grammarHint": "Bausteine: raining / has / day. / It / been / all",
+              "hints": [
+                "Nutze alle Wörter: raining / has / day. / It / been / all",
+                "Satzanfang: „It has…“"
+              ],
+              "solutions": [
+                "It has been raining all day.",
+                "It has been raining all day"
+              ],
+              "explanation": "Vollständiger Satz: „It has been raining all day.“.",
+              "acceptedAnswers": [
+                "It has been raining all day.",
+                "It has been raining all day"
+              ],
+              "answer": "It has been raining all day."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Exam Stress",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "I am so tired. I {{0}} all day.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "study",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been studying",
+                "'ve been studying"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have been studying",
+                "'ve been studying"
+              ],
+              "answer": "have been studying"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "My friend {{0}} me since 10 am.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "help",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has been helping",
+                "'s been helping"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has been helping",
+                "'s been helping"
+              ],
+              "answer": "has been helping"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "We {{0}} for the maths test.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "prepare",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been preparing",
+                "'ve been preparing"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have been preparing",
+                "'ve been preparing"
+              ],
+              "answer": "have been preparing"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "How long {{0}} that book?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / read",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have you been reading"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have you been reading"
+              ],
+              "answer": "have you been reading"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "I {{0}} well lately because of the stress.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / sleep",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have not been sleeping",
+                "haven't been sleeping"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have not been sleeping",
+                "haven't been sleeping"
+              ],
+              "answer": "have not been sleeping"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Trip to Edinburgh",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "We are in Edinburgh. We {{0}} around the city for hours.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "walk",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been walking",
+                "'ve been walking"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have been walking",
+                "'ve been walking"
+              ],
+              "answer": "have been walking"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "My feet hurt. I {{0}} this heavy backpack all day.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "carry",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been carrying",
+                "'ve been carrying"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have been carrying",
+                "'ve been carrying"
+              ],
+              "answer": "have been carrying"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "My parents {{0}} at old buildings since breakfast.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "look",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been looking",
+                "'ve been looking"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have been looking",
+                "'ve been looking"
+              ],
+              "answer": "have been looking"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "It {{0}} since we arrived.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "rain",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has been raining",
+                "'s been raining"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has been raining",
+                "'s been raining"
+              ],
+              "answer": "has been raining"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "We {{0}} for the bus for 20 minutes now.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "wait",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been waiting",
+                "'ve been waiting"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have been waiting",
+                "'ve been waiting"
+              ],
+              "answer": "have been waiting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Glasgow Tour",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "We are in Glasgow now. We {{0}} around Scotland for a week.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "travel",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been travelling",
+                "have been traveling",
+                "'ve been travelling",
+                "'ve been traveling"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have been travelling",
+                "have been traveling",
+                "'ve been travelling",
+                "'ve been traveling"
+              ],
+              "answer": "have been travelling"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "My brother {{0}} about the weather all morning.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "complain",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has been complaining",
+                "'s been complaining"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has been complaining",
+                "'s been complaining"
+              ],
+              "answer": "has been complaining"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "I {{0}} photos of everything.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "take",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have been taking",
+                "'ve been taking"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have been taking",
+                "'ve been taking"
+              ],
+              "answer": "have been taking"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "How long {{0}} this new museum?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "they / build",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have they been building"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have they been building"
+              ],
+              "answer": "have they been building"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "We {{0}} in hotels; we are camping.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / stay",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have not been staying",
+                "haven't been staying"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have not been staying",
+                "haven't been staying"
+              ],
+              "answer": "have not been staying"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -200,7 +200,7 @@
 
     // --- GLOBAL STICKY STATS HEADER ---
     function injectGlobalHeader() {
-        if (document.querySelector('.gm-header-container')) return; // Already injected
+        if (document.querySelector('.app-header, .gm-topbar, .gm-header-container')) return; // Already has header
 
         const container = document.createElement('div');
         container.className = 'gm-header-container';
@@ -438,6 +438,8 @@
         // Add class to input
         inputEl.classList.add('gap-input');
         inputEl.setAttribute('autocomplete', 'off');
+        inputEl.setAttribute('autocorrect', 'off');
+        inputEl.setAttribute('autocapitalize', 'off');
         inputEl.setAttribute('spellcheck', 'false');
 
         // Create interactive lightbulb hint button inside the wrapper
@@ -449,12 +451,6 @@
             hintBtn.setAttribute('data-tooltip', 'Tipp nutzen (-5 XP)');
             hintBtn.title = "Ersten Buchstaben anzeigen (-5 XP)";
             wrapper.appendChild(hintBtn);
-
-            // Add the floating cost badge directly inside the wrapper next to the bulb
-            const costBadge = document.createElement('span');
-            costBadge.className = 'gm-hint-cost-badge';
-            costBadge.innerText = '-5 XP';
-            wrapper.appendChild(costBadge);
 
             // Handle Hint Click
             hintBtn.onclick = function(e) {
@@ -476,8 +472,16 @@
                     window.gmDeductXp(5);
                     playSynthSound('hint');
                     
-                    // Hide the cost badge since the hint is now used!
-                    costBadge.style.display = 'none';
+                    // Spawn non-blocking upward floating -5 XP badge
+                    const rect = hintBtn.getBoundingClientRect();
+                    const floatBadge = document.createElement('div');
+                    floatBadge.className = 'gm-floating-xp is-deduct';
+                    floatBadge.textContent = '-5 XP';
+                    floatBadge.style.left = `${Math.round(rect.left + rect.width / 2)}px`;
+                    floatBadge.style.top = `${Math.max(20, Math.round(rect.top - 6))}px`;
+                    document.body.appendChild(floatBadge);
+                    setTimeout(() => floatBadge.remove(), 950);
+
                     hintBtn.classList.add('used');
                     
                     // Render temporary tooltip text "Tipp genutzt!"

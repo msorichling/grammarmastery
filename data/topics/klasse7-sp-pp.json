@@ -1,0 +1,880 @@
+{
+  "id": "klasse7-sp-pp",
+  "title": "Simple Past vs. Present Perfect",
+  "grade": "7",
+  "icon": "🕰️",
+  "description": "Abgeschlossener Zeitpunkt (yesterday, ago, in 2020) vs. Auswirkungen im Jetzt (since, for, just, yet).",
+  "legacyStorageKey": "grammar_g7_sppp_state",
+  "legacyMasteredKey": "grammar_g7_sppp_mastered",
+  "rules": {
+    "title": "Simple Past vs. Present Perfect – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Simple Past vs. Present Perfect.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Signal Words",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben. (Tippe: Simple Past / Present Perfect)",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "„yesterday“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„yesterday“ wird der Kategorie „Simple Past“ zugeordnet.",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "„last week“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„last week“ wird der Kategorie „Simple Past“ zugeordnet.",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "„two days ago“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„two days ago“ wird der Kategorie „Simple Past“ zugeordnet.",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "„in 2018“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Simple Past"
+              ],
+              "explanation": "„in 2018“ wird der Kategorie „Simple Past“ zugeordnet.",
+              "acceptedAnswers": [
+                "Simple Past"
+              ],
+              "answer": "Simple Past"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "„just“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Present Perfect"
+              ],
+              "explanation": "„just“ wird der Kategorie „Present Perfect“ zugeordnet.",
+              "acceptedAnswers": [
+                "Present Perfect"
+              ],
+              "answer": "Present Perfect"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "„already“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Present Perfect"
+              ],
+              "explanation": "„already“ wird der Kategorie „Present Perfect“ zugeordnet.",
+              "acceptedAnswers": [
+                "Present Perfect"
+              ],
+              "answer": "Present Perfect"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "„yet“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Present Perfect"
+              ],
+              "explanation": "„yet“ wird der Kategorie „Present Perfect“ zugeordnet.",
+              "acceptedAnswers": [
+                "Present Perfect"
+              ],
+              "answer": "Present Perfect"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "„since Monday“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Present Perfect"
+              ],
+              "explanation": "„since Monday“ wird der Kategorie „Present Perfect“ zugeordnet.",
+              "acceptedAnswers": [
+                "Present Perfect"
+              ],
+              "answer": "Present Perfect"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "„never“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "Simple Past / Present Perfect",
+              "grammarHint": "Ordne zu: Simple Past / Present Perfect",
+              "hints": [
+                "Entscheide zwischen: Simple Past / Present Perfect"
+              ],
+              "solutions": [
+                "Present Perfect"
+              ],
+              "explanation": "„never“ wird der Kategorie „Present Perfect“ zugeordnet.",
+              "acceptedAnswers": [
+                "Present Perfect"
+              ],
+              "answer": "Present Perfect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Sentence Scramble",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "ever / Have / London? / to / been / you",
+              "grammarHint": "Bausteine: ever / Have / London? / to / been / you",
+              "hints": [
+                "Nutze alle Wörter: ever / Have / London? / to / been / you",
+                "Satzanfang: „Have you…“"
+              ],
+              "solutions": [
+                "Have you ever been to London?"
+              ],
+              "explanation": "Vollständiger Satz: „Have you ever been to London?“.",
+              "acceptedAnswers": [
+                "Have you ever been to London?"
+              ],
+              "answer": "Have you ever been to London?"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "went / year. / I / to / Paris / last",
+              "grammarHint": "Bausteine: went / year. / I / to / Paris / last",
+              "hints": [
+                "Nutze alle Wörter: went / year. / I / to / Paris / last",
+                "Satzanfang: „I went…“"
+              ],
+              "solutions": [
+                "I went to Paris last year.",
+                "I went to Paris last year"
+              ],
+              "explanation": "Vollständiger Satz: „I went to Paris last year.“.",
+              "acceptedAnswers": [
+                "I went to Paris last year.",
+                "I went to Paris last year"
+              ],
+              "answer": "I went to Paris last year."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "has / homework. / just / She / her / finished",
+              "grammarHint": "Bausteine: has / homework. / just / She / her / finished",
+              "hints": [
+                "Nutze alle Wörter: has / homework. / just / She / her / finished",
+                "Satzanfang: „She has…“"
+              ],
+              "solutions": [
+                "She has just finished her homework.",
+                "She has just finished her homework"
+              ],
+              "explanation": "Vollständiger Satz: „She has just finished her homework.“.",
+              "acceptedAnswers": [
+                "She has just finished her homework.",
+                "She has just finished her homework"
+              ],
+              "answer": "She has just finished her homework."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "yesterday? / Did / see / film / the / you",
+              "grammarHint": "Bausteine: yesterday? / Did / see / film / the / you",
+              "hints": [
+                "Nutze alle Wörter: yesterday? / Did / see / film / the / you",
+                "Satzanfang: „Did you…“"
+              ],
+              "solutions": [
+                "Did you see the film yesterday?"
+              ],
+              "explanation": "Vollständiger Satz: „Did you see the film yesterday?“.",
+              "acceptedAnswers": [
+                "Did you see the film yesterday?"
+              ],
+              "answer": "Did you see the film yesterday?"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "met / yet. / We / haven't / him",
+              "grammarHint": "Bausteine: met / yet. / We / haven't / him",
+              "hints": [
+                "Nutze alle Wörter: met / yet. / We / haven't / him",
+                "Satzanfang: „We haven't…“"
+              ],
+              "solutions": [
+                "We haven't met him yet.",
+                "We haven't met him yet"
+              ],
+              "explanation": "Vollständiger Satz: „We haven't met him yet.“.",
+              "acceptedAnswers": [
+                "We haven't met him yet.",
+                "We haven't met him yet"
+              ],
+              "answer": "We haven't met him yet."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Exploring London",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "We {{0}} to London last week.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "go",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "went"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "went"
+              ],
+              "answer": "went"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "I {{0}} such a big city before.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "never / see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have never seen",
+                "'ve never seen"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have never seen",
+                "'ve never seen"
+              ],
+              "answer": "have never seen"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Yesterday, we {{0}} the Tower of London.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "visit",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „vi…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "visited"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "visited"
+              ],
+              "answer": "visited"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}} there?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / ever / be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Ha…“ (4 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Have you ever been"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Have you ever been"
+              ],
+              "answer": "Have you ever been"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "We {{0}} hundreds of photos.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "already / take",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have already taken",
+                "'ve already taken"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have already taken",
+                "'ve already taken"
+              ],
+              "answer": "have already taken"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "But I {{0}} any souvenirs yet.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have not bought",
+                "haven't bought"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have not bought",
+                "haven't bought"
+              ],
+              "answer": "have not bought"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "My dad {{0}} a mug two days ago.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „bo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "bought"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "bought"
+              ],
+              "answer": "bought"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: The New Town",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "My family {{0}} to this town in 2020.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "move",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „mo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "moved"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "moved"
+              ],
+              "answer": "moved"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "So we {{0}} here for a few years now.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "live",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have lived",
+                "'ve lived"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have lived",
+                "'ve lived"
+              ],
+              "answer": "have lived"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "I {{0}} many new friends since then.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "make",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have made",
+                "'ve made"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have made",
+                "'ve made"
+              ],
+              "answer": "have made"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Last weekend, I {{0}} them to my party.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "invite",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „in…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "invited"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "invited"
+              ],
+              "answer": "invited"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "But Tom {{0}} yet.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / arrive",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has not arrived",
+                "hasn't arrived"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has not arrived",
+                "hasn't arrived"
+              ],
+              "answer": "has not arrived"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "He {{0}} me an hour ago.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "call",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ca…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "called"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "called"
+              ],
+              "answer": "called"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "He {{0}} the bus.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "just / miss",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has just missed",
+                "'s just missed"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has just missed",
+                "'s just missed"
+              ],
+              "answer": "has just missed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Trip to Liverpool",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}} Liverpool last summer?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / visit",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „Di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "Did you visit"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "Did you visit"
+              ],
+              "answer": "Did you visit"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "No, I {{0}} the time.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / have",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "did not have",
+                "didn't have"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "did not have",
+                "didn't have"
+              ],
+              "answer": "did not have"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "But I {{0}} a ticket for next month.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "just / book",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have just booked",
+                "'ve just booked"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have just booked",
+                "'ve just booked"
+              ],
+              "answer": "have just booked"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "I {{0}} to see the Beatles museum.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "always / want",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have always wanted",
+                "'ve always wanted"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have always wanted",
+                "'ve always wanted"
+              ],
+              "answer": "have always wanted"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "My dad {{0}} there ten years ago.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "go",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "went"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "went"
+              ],
+              "answer": "went"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "He {{0}} it.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "love",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „lo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "loved"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "loved"
+              ],
+              "answer": "loved"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "I {{0}} my bag yet, but I will soon.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / pack",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have not packed",
+                "haven't packed"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have not packed",
+                "haven't packed"
+              ],
+              "answer": "have not packed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

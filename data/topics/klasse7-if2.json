@@ -1,0 +1,891 @@
+{
+  "id": "klasse7-if2",
+  "title": "If-Clauses Typ 2",
+  "grade": "7",
+  "icon": "💭",
+  "description": "Irreale Bedingungen und Träume: Simple Past im If-Satz (If I were you) + would/could + Infinitiv.",
+  "legacyStorageKey": "grammar_g7_if2_state",
+  "legacyMasteredKey": "grammar_g7_if2_mastered",
+  "rules": {
+    "title": "If-Clauses Typ 2 – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema If-Clauses Typ 2.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Daydreams",
+      "type": "single_sentence",
+      "instruction": "If + Simple Past, would + infinitive.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If I won the lottery, I {{0}} a castle.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "would buy",
+                "'d buy"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "would buy",
+                "'d buy"
+              ],
+              "answer": "would buy"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "He {{0}} the world if he had enough money.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "travel",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "would travel",
+                "'d travel"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "would travel",
+                "'d travel"
+              ],
+              "answer": "would travel"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If she {{0}} the answer, she'd tell us.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "know",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „kn…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "knew"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "knew"
+              ],
+              "answer": "knew"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We {{0}} very happy if we won the match.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "would be",
+                "'d be"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "would be",
+                "'d be"
+              ],
+              "answer": "would be"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "If they {{0}} closer, they would visit us often.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "live",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „li…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "lived"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "lived"
+              ],
+              "answer": "lived"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "I {{0}} you if I had more time.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "help",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "would help",
+                "'d help"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "would help",
+                "'d help"
+              ],
+              "answer": "would help"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "If it {{0}} in July, I would be shocked.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "snow",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „sn…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "snowed"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "snowed"
+              ],
+              "answer": "snowed"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "If we {{0}} homework, we would play outside.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / have",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „di…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "didn't have",
+                "did not have"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "didn't have",
+                "did not have"
+              ],
+              "answer": "didn't have"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Giving Advice (If I were you...)",
+      "type": "single_sentence",
+      "instruction": "Tipp: Verwende 'were' anstelle von 'was' für Ratschläge (If I were you...).",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If I {{0}} you, I would go to the doctor.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were",
+                "was"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were",
+                "was"
+              ],
+              "answer": "were"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "If animals {{0}} talk, it would be cool.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "can",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „co…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "could"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "could"
+              ],
+              "answer": "could"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "I {{0}} away if I were a bird.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "fly",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "would fly",
+                "'d fly"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "would fly",
+                "'d fly"
+              ],
+              "answer": "would fly"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "If he {{0}} so tired, he would come with us.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "not / be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were not",
+                "was not",
+                "weren't",
+                "wasn't"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were not",
+                "was not",
+                "weren't",
+                "wasn't"
+              ],
+              "answer": "were not"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "What {{0}} if you saw a ghost?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "you / do",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "would you do"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "would you do"
+              ],
+              "answer": "would you do"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "If I {{0}} his number, I would call him.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "have",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "had"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "had"
+              ],
+              "answer": "had"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "She {{0}} that dress if she had the money.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "buy",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "would buy",
+                "'d buy"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "would buy",
+                "'d buy"
+              ],
+              "answer": "would buy"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "If I {{0}} a UFO, I would take a picture.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "see",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „sa…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "saw"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "saw"
+              ],
+              "answer": "saw"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Match the Halves",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "If I had a million dollars, {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... I would travel the world. / ... I will travel the world. / ... I travelled the world.",
+              "grammarHint": "Auswahl: ... I would travel the world. / ... I will travel the world. / ... I travelled the world.",
+              "hints": [
+                "Wähle eine der Optionen: ... I would travel the world. / ... I will travel the world. / ... I travelled the world."
+              ],
+              "solutions": [
+                "I would travel the world.",
+                "I would travel the world",
+                "... I would travel the world."
+              ],
+              "explanation": "„... I would travel the world.“ ist hier die richtige Wahl aus (... I would travel the world. / ... I will travel the world. / ... I travelled the world.).",
+              "acceptedAnswers": [
+                "I would travel the world.",
+                "I would travel the world",
+                "... I would travel the world."
+              ],
+              "answer": "I would travel the world."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "I would buy a big house {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... if I won the lottery. / ... if I would win the lottery. / ... if I win the lottery.",
+              "grammarHint": "Auswahl: ... if I won the lottery. / ... if I would win the lottery. / ... if I win the lottery.",
+              "hints": [
+                "Wähle eine der Optionen: ... if I won the lottery. / ... if I would win the lottery. / ... if I win the lottery."
+              ],
+              "solutions": [
+                "if I won the lottery.",
+                "if I won the lottery",
+                "... if I won the lottery."
+              ],
+              "explanation": "„... if I won the lottery.“ ist hier die richtige Wahl aus (... if I won the lottery. / ... if I would win the lottery. / ... if I win the lottery.).",
+              "acceptedAnswers": [
+                "if I won the lottery.",
+                "if I won the lottery",
+                "... if I won the lottery."
+              ],
+              "answer": "if I won the lottery."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "If she knew the answer, {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... she would tell us. / ... she will tell us. / ... she tells us.",
+              "grammarHint": "Auswahl: ... she would tell us. / ... she will tell us. / ... she tells us.",
+              "hints": [
+                "Wähle eine der Optionen: ... she would tell us. / ... she will tell us. / ... she tells us."
+              ],
+              "solutions": [
+                "she would tell us.",
+                "she would tell us",
+                "... she would tell us."
+              ],
+              "explanation": "„... she would tell us.“ ist hier die richtige Wahl aus (... she would tell us. / ... she will tell us. / ... she tells us.).",
+              "acceptedAnswers": [
+                "she would tell us.",
+                "she would tell us",
+                "... she would tell us."
+              ],
+              "answer": "she would tell us."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We would play outside {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... if it wasn't raining. / ... if it wouldn't rain. / ... if it won't rain.",
+              "grammarHint": "Auswahl: ... if it wasn't raining. / ... if it wouldn't rain. / ... if it won't rain.",
+              "hints": [
+                "Wähle eine der Optionen: ... if it wasn't raining. / ... if it wouldn't rain. / ... if it won't rain."
+              ],
+              "solutions": [
+                "if it wasn't raining.",
+                "if it wasn't raining",
+                "... if it wasn't raining."
+              ],
+              "explanation": "„... if it wasn't raining.“ ist hier die richtige Wahl aus (... if it wasn't raining. / ... if it wouldn't rain. / ... if it won't rain.).",
+              "acceptedAnswers": [
+                "if it wasn't raining.",
+                "if it wasn't raining",
+                "... if it wasn't raining."
+              ],
+              "answer": "if it wasn't raining."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "If I were you, {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "... I would study for the test. / ... I will study for the test. / ... I studied for the test.",
+              "grammarHint": "Auswahl: ... I would study for the test. / ... I will study for the test. / ... I studied for the test.",
+              "hints": [
+                "Wähle eine der Optionen: ... I would study for the test. / ... I will study for the test. / ... I studied for the test."
+              ],
+              "solutions": [
+                "I would study for the test.",
+                "I would study for the test",
+                "... I would study for the test."
+              ],
+              "explanation": "„... I would study for the test.“ ist hier die richtige Wahl aus (... I would study for the test. / ... I will study for the test. / ... I studied for the test.).",
+              "acceptedAnswers": [
+                "I would study for the test.",
+                "I would study for the test",
+                "... I would study for the test."
+              ],
+              "answer": "I would study for the test."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Sentence Scramble",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "If / I / had / time, / I / would / read / a / book.",
+              "grammarHint": "Bausteine: If / I / had / time, / I / would / read / a / book.",
+              "hints": [
+                "Nutze alle Wörter: If / I / had / time, / I / would / read / a / book.",
+                "Satzanfang: „If I…“"
+              ],
+              "solutions": [
+                "If I had time, I would read a book.",
+                "If I had time, I would read a book"
+              ],
+              "explanation": "Vollständiger Satz: „If I had time, I would read a book.“.",
+              "acceptedAnswers": [
+                "If I had time, I would read a book.",
+                "If I had time, I would read a book"
+              ],
+              "answer": "If I had time, I would read a book."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "I / would / travel / the / world / if / I / were / rich.",
+              "grammarHint": "Bausteine: I / would / travel / the / world / if / I / were / rich.",
+              "hints": [
+                "Nutze alle Wörter: I / would / travel / the / world / if / I / were / rich.",
+                "Satzanfang: „I would…“"
+              ],
+              "solutions": [
+                "I would travel the world if I were rich.",
+                "I would travel the world if I were rich"
+              ],
+              "explanation": "Vollständiger Satz: „I would travel the world if I were rich.“.",
+              "acceptedAnswers": [
+                "I would travel the world if I were rich.",
+                "I would travel the world if I were rich"
+              ],
+              "answer": "I would travel the world if I were rich."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "If / he / knew / her / number, / he / would / call / her.",
+              "grammarHint": "Bausteine: If / he / knew / her / number, / he / would / call / her.",
+              "hints": [
+                "Nutze alle Wörter: If / he / knew / her / number, / he / would / call / her.",
+                "Satzanfang: „If he…“"
+              ],
+              "solutions": [
+                "If he knew her number, he would call her.",
+                "If he knew her number, he would call her"
+              ],
+              "explanation": "Vollständiger Satz: „If he knew her number, he would call her.“.",
+              "acceptedAnswers": [
+                "If he knew her number, he would call her.",
+                "If he knew her number, he would call her"
+              ],
+              "answer": "If he knew her number, he would call her."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "We / would / buy / the / house / if / it / were / cheaper.",
+              "grammarHint": "Bausteine: We / would / buy / the / house / if / it / were / cheaper.",
+              "hints": [
+                "Nutze alle Wörter: We / would / buy / the / house / if / it / were / cheaper.",
+                "Satzanfang: „We would…“"
+              ],
+              "solutions": [
+                "We would buy the house if it were cheaper.",
+                "We would buy the house if it were cheaper"
+              ],
+              "explanation": "Vollständiger Satz: „We would buy the house if it were cheaper.“.",
+              "acceptedAnswers": [
+                "We would buy the house if it were cheaper.",
+                "We would buy the house if it were cheaper"
+              ],
+              "answer": "We would buy the house if it were cheaper."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "If / I / were / you, / I / would / not / do / that.",
+              "grammarHint": "Bausteine: If / I / were / you, / I / would / not / do / that.",
+              "hints": [
+                "Nutze alle Wörter: If / I / were / you, / I / would / not / do / that.",
+                "Satzanfang: „If I…“"
+              ],
+              "solutions": [
+                "If I were you, I would not do that.",
+                "If I were you, I would not do that"
+              ],
+              "explanation": "Vollständiger Satz: „If I were you, I would not do that.“.",
+              "acceptedAnswers": [
+                "If I were you, I would not do that.",
+                "If I were you, I would not do that"
+              ],
+              "answer": "If I were you, I would not do that."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: The Big Mix (Types 0, 1, 2)",
+      "type": "single_sentence",
+      "instruction": "The Big Mix: Types 0, 1 und 2! Achte genau auf die Signalwörter und den Sinn des Satzes.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "(Type 2) If I {{0}} you, I would stay here.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "be",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „we…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "were",
+                "was"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "were",
+                "was"
+              ],
+              "answer": "were"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "(Type 1) If it rains tomorrow, we {{0}} at home.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "stay",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wi…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "will stay",
+                "'ll stay"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "will stay",
+                "'ll stay"
+              ],
+              "answer": "will stay"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "(Type 0) Water boils if you {{0}} it to 100 degrees.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "heat",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „he…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "heat"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "heat"
+              ],
+              "answer": "heat"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "(Type 2) If I had a car, I {{0}} to Italy right now.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "drive",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "would drive",
+                "'d drive"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "would drive",
+                "'d drive"
+              ],
+              "answer": "would drive"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "(Type 1) If he {{0}} hard, he will pass the test next week.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "study",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „st…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "studies"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "studies"
+              ],
+              "answer": "studies"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "(Type 2) If I {{0}} the lottery, I would buy an island.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "win",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wo…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "won"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "won"
+              ],
+              "answer": "won"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "(Type 0) If you press this button, the machine {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "start",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „st…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "starts"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "starts"
+              ],
+              "answer": "starts"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "(Type 2) She would help you if she {{0}} .",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "can",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „co…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "could"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "could"
+              ],
+              "answer": "could"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

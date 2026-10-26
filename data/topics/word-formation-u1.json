@@ -1,0 +1,563 @@
+{
+  "id": "word-formation-u1",
+  "title": "Word Formation: Unit 1 Challenge",
+  "grade": "9-10",
+  "icon": "🧩",
+  "description": "Verwandle Wortstämme sicher in Nomen, Adjektive, Adverbien und Verben – inkl. negativer Präfixe (un-, in-, im-, il-, ir-, dis-) und Suffix-Training im Kontext.",
+  "legacyStorageKey": "grammar_wf_u1_state",
+  "legacyMasteredKey": "grammar_wf_u1_mastered",
+  "rules": {
+    "title": "Word Formation – Strategien für Wortfamilien",
+    "summary": "Achte auf die Satzposition vor und nach der Lücke: Artikel/Adjektive verlangen ein Nomen (-tion, -ment, -ness, -ity), Verben verlangen oft ein Adverb (-ly), und Nomen verlangen ein Adjektiv (-ful, -less, -ous, -ive, -able). Prüfe außerdem immer den Sinnzusammenhang auf Verneinungen (un-, in-, dis-).",
+    "examples": [
+      "Verb → Noun: decide → decision | perform → performance | achieve → achievement",
+      "Noun/Verb → Adjective: success → successful | create → creative | rely → reliable",
+      "Adjective → Negative: happy → unhappy | possible → impossible | legal → illegal",
+      "Adjective → Adverb:1 dramatic → dramatically | enthusiastic → enthusiastically"
+    ]
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "1. Nouns & Suffixes (-tion, -ment, -ance, -ness)",
+      "type": "single_sentence",
+      "instruction": "Bilde aus dem Wortstamm in Großbuchstaben das passende Nomen für die Lücke.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Her {{0}} in the school musical was absolutely unforgettable.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "PERFORM",
+              "grammarHint": "Possessivpronomen 'Her' verlangt ein Nomen (-ance)",
+              "hints": [
+                "Gesucht ist ein Nomen mit der Endung -ance.",
+                "Das Wort beginnt mit 'perfor...'."
+              ],
+              "solutions": [
+                "performance"
+              ],
+              "explanation": "Aus dem Verb 'perform' wird mit dem Suffix '-ance' das Nomen 'performance' (Auftritt/Leistung).",
+              "acceptedAnswers": [
+                "performance"
+              ],
+              "answer": "performance"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "After a long discussion, the committee finally reached an {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "AGREE",
+              "grammarHint": "Artikel 'an' verlangt ein Nomen im Singular (-ment)",
+              "hints": [
+                "Hänge das Nomen-Suffix '-ment' an das Verb an."
+              ],
+              "solutions": [
+                "agreement"
+              ],
+              "explanation": "agree + -ment → agreement (Einigung / Vereinbarung).",
+              "acceptedAnswers": [
+                "agreement"
+              ],
+              "answer": "agreement"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Moving to another country requires a lot of {{0}} and open-mindedness.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "FLEXIBLE",
+              "grammarHint": "'a lot of' verlangt hier ein abstraktes Nomen (-ity)",
+              "hints": [
+                "Adjektive auf '-ble' bilden das Nomen meist auf '-bility'."
+              ],
+              "solutions": [
+                "flexibility"
+              ],
+              "explanation": "flexible → flexibility (Flexibilität). Das '-le' wandelt sich zu '-ility'.",
+              "acceptedAnswers": [
+                "flexibility"
+              ],
+              "answer": "flexibility"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "We need your {{0}} at the bottom of this official document.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SIGN",
+              "grammarHint": "Possessivpronomen 'your' + Nomen (Unterschrift)",
+              "hints": [
+                "Achtung: Nicht 'signing', sondern das konkrete Nomen für 'Unterschrift' (-ature)."
+              ],
+              "solutions": [
+                "signature"
+              ],
+              "explanation": "sign → signature (Unterschrift).",
+              "acceptedAnswers": [
+                "signature"
+              ],
+              "answer": "signature"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "To our great {{0}}, the flight was cancelled ten minutes before boarding.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "DISAPPOINT",
+              "grammarHint": "Adjektiv 'great' verlangt ein Nomen (-ment)",
+              "hints": [
+                "Hänge '-ment' an das Verb an."
+              ],
+              "solutions": [
+                "disappointment"
+              ],
+              "explanation": "disappoint + -ment → disappointment (Enttäuschung).",
+              "acceptedAnswers": [
+                "disappointment"
+              ],
+              "answer": "disappointment"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "There is a strong {{0}} that the festival will be postponed due to the storm.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "POSSIBLE",
+              "grammarHint": "Adjektiv 'strong' verlangt ein Nomen (-ity)",
+              "hints": [
+                "Aus '-ble' wird beim Nomen '-bility'."
+              ],
+              "solutions": [
+                "possibility"
+              ],
+              "explanation": "possible → possibility (Möglichkeit / Wahrscheinlichkeit).",
+              "acceptedAnswers": [
+                "possibility"
+              ],
+              "answer": "possibility"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "2. Adjectives & Adverbs in Context",
+      "type": "single_sentence",
+      "instruction": "Bilde das passende Adjektiv oder Adverb aus dem gegebenen Wortstamm.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "The young artist is known for her {{0}} approach to modern photography.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "CREATE",
+              "grammarHint": "Vor dem Nomen 'approach' steht ein Adjektiv (-ive)",
+              "hints": [
+                "Streets/Kunst: Aus 'create' wird ein Adjektiv auf '-ive'."
+              ],
+              "solutions": [
+                "creative"
+              ],
+              "explanation": "create → creative (kreativ) beschreibt das Nomen 'approach'.",
+              "acceptedAnswers": [
+                "creative"
+              ],
+              "answer": "creative"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Sales of electric bicycles have risen {{0}} over the past five years.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "DRAMATIC",
+              "grammarHint": "Wie sind die Verkäufe gestiegen? → Adverb (-ally)",
+              "hints": [
+                "Adjektive auf '-ic' bilden das Adverb auf '-ically'."
+              ],
+              "solutions": [
+                "dramatically"
+              ],
+              "explanation": "dramatic → dramatically (dramatisch / drastisch). Bei '-ic' wird '-ally' angehängt.",
+              "acceptedAnswers": [
+                "dramatically"
+              ],
+              "answer": "dramatically"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Make sure your password is not easily {{0}} by strangers.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "PREDICT",
+              "grammarHint": "Nach 'is not easily' folgt ein Adjektiv (-able)",
+              "hints": [
+                "Hänge das Suffix '-able' (vorhersehbar) an."
+              ],
+              "solutions": [
+                "predictable"
+              ],
+              "explanation": "predict + -able → predictable (vorhersehbar).",
+              "acceptedAnswers": [
+                "predictable"
+              ],
+              "answer": "predictable"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Visiting the ancient ruins at sunrise was a truly {{0}} experience.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MEMORY",
+              "grammarHint": "Vor 'experience' steht ein Adjektiv (unvergesslich / denkwürdig)",
+              "hints": [
+                "Stamm 'memor-' + '-able'."
+              ],
+              "solutions": [
+                "memorable"
+              ],
+              "explanation": "memory → memorable (denkwürdig / unvergesslich).",
+              "acceptedAnswers": [
+                "memorable"
+              ],
+              "answer": "memorable"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The rescue team acted {{0}} and saved everyone on board.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "COURAGE",
+              "grammarHint": "Wie handelte das Team? → Erst Adjektiv (-ous), dann Adverb (-ly)",
+              "hints": [
+                "courage → courageous → + -ly."
+              ],
+              "solutions": [
+                "courageously"
+              ],
+              "explanation": "courage → courageous (mutig) → courageously (auf mutige Weise).",
+              "acceptedAnswers": [
+                "courageously"
+              ],
+              "answer": "courageously"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Drinking dirty water can be extremely {{0}} to your health.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "HARM",
+              "grammarHint": "Nach 'be extremely' folgt ein Adjektiv (schädlich = -ful)",
+              "hints": [
+                "Schädlich = harm + -ful."
+              ],
+              "solutions": [
+                "harmful"
+              ],
+              "explanation": "harm → harmful (schädlich). Das Gegenteil wäre 'harmless' (harmlos).",
+              "acceptedAnswers": [
+                "harmful"
+              ],
+              "answer": "harmful"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "3. Negative Prefixes (un-, in-, im-, il-, ir-, dis-)",
+      "type": "single_sentence",
+      "instruction": "Achte auf den Kontext! Bilde das verneinte Wort (manchmal muss auch die Endung angepasst werden).",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "It is completely {{0}} to drive a car without a valid licence.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "LEGAL",
+              "grammarHint": "Verneinung eines Adjektivs mit 'l-' → Präfix 'il-'",
+              "hints": [
+                "Vor 'l' wird das Präfix 'in-' zu 'il-'."
+              ],
+              "solutions": [
+                "illegal"
+              ],
+              "explanation": "legal → illegal (widerrechtlich / illegal).",
+              "acceptedAnswers": [
+                "illegal"
+              ],
+              "answer": "illegal"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}, we missed the last train home and had to take a taxi.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "FORTUNE",
+              "grammarHint": "Satzanfang mit Komma + negativer Ausgang → negatives Satzadverb",
+              "hints": [
+                "fortune → fortunate → unfortunate → + -ly."
+              ],
+              "solutions": [
+                "Unfortunately"
+              ],
+              "explanation": "fortune → fortunate → unfortunate → Unfortunately (Unglücklicherweise / Leider).",
+              "acceptedAnswers": [
+                "Unfortunately"
+              ],
+              "answer": "Unfortunately"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "His explanation was so {{0}} that nobody believed a word he said.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "CONVINCE",
+              "grammarHint": "Niemand glaubte ihm → negatives Adjektiv (un- + -ing)",
+              "hints": [
+                "Präfix 'un-' + Partizip '-ing' (nicht überzeugend)."
+              ],
+              "solutions": [
+                "unconvincing"
+              ],
+              "explanation": "convince → convincing → unconvincing (nicht überzeugend).",
+              "acceptedAnswers": [
+                "unconvincing"
+              ],
+              "answer": "unconvincing"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Waiting in line for three hours made the passengers grow increasingly {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "PATIENT",
+              "grammarHint": "Verneinung vor 'p-' → Präfix 'im-'",
+              "hints": [
+                "Vor 'p' oder 'm' nutzt man das Präfix 'im-'."
+              ],
+              "solutions": [
+                "impatient"
+              ],
+              "explanation": "patient (geduldig) → impatient (ungeduldig).",
+              "acceptedAnswers": [
+                "impatient"
+              ],
+              "answer": "impatient"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Leaving a campfire unattended in summer is highly {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "RESPONSIBLE",
+              "grammarHint": "Verneinung vor 'r-' → Präfix 'ir-'",
+              "hints": [
+                "Vor 'r' wird das Präfix zu 'ir-'."
+              ],
+              "solutions": [
+                "irresponsible"
+              ],
+              "explanation": "responsible → irresponsible (verantwortungslos).",
+              "acceptedAnswers": [
+                "irresponsible"
+              ],
+              "answer": "irresponsible"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Many local residents expressed their {{0}} with the new parking fees.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "SATISFY",
+              "grammarHint": "Possessivpronomen 'their' + negatives Nomen (Unzufriedenheit)",
+              "hints": [
+                "Präfix 'dis-' + Nomen von 'satisfy' (-action)."
+              ],
+              "solutions": [
+                "dissatisfaction"
+              ],
+              "explanation": "satisfy → satisfaction → dissatisfaction (Unzufriedenheit).",
+              "acceptedAnswers": [
+                "dissatisfaction"
+              ],
+              "answer": "dissatisfaction"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "4. Exam Cloze: The Power of Curiosity",
+      "type": "cloze_text",
+      "instruction": "Vervollständige den Prüfungs-Lückentext. Bilde aus den Wortstämmen das grammatikalisch und inhaltlich passende Wort.",
+      "text": "Throughout history, human {{0}} has been the driving force behind every major {{1}} discovery. Whether exploring the depths of the ocean or designing {{2}} technologies, researchers need both patience and {{3}}. Of course, experiments do not always work out {{4}} on the first attempt. In fact, many famous inventors experienced countless {{5}} before they finally achieved {{6}}.",
+      "gaps": [
+        {
+          "index": 0,
+          "prompt": "CURIOUS",
+          "grammarHint": "Nach 'human' steht ein Nomen (-ity)",
+          "hints": [
+            "Achtung bei der Schreibweise: Aus '-ous' wird '-osity'."
+          ],
+          "solutions": [
+            "curiosity"
+          ],
+          "explanation": "curious → curiosity (Neugier). Das 'u' in '-ous' fällt vor '-ity' weg.",
+          "acceptedAnswers": [
+            "curiosity"
+          ],
+          "answer": "curiosity"
+        },
+        {
+          "index": 1,
+          "prompt": "SCIENCE",
+          "grammarHint": "Vor dem Nomen 'discovery' steht ein Adjektiv (-tific)",
+          "hints": [
+            "Das Adjektiv zu 'science' endet auf '-tific'."
+          ],
+          "solutions": [
+            "scientific"
+          ],
+          "explanation": "science → scientific (wissenschaftlich).",
+          "acceptedAnswers": [
+            "scientific"
+          ],
+          "answer": "scientific"
+        },
+        {
+          "index": 2,
+          "prompt": "INNOVATE",
+          "grammarHint": "Vor 'technologies' steht ein Adjektiv (-ive)",
+          "hints": [
+            "Ersetze das '-e' durch '-ive'."
+          ],
+          "solutions": [
+            "innovative"
+          ],
+          "explanation": "innovate → innovative (innovativ).",
+          "acceptedAnswers": [
+            "innovative"
+          ],
+          "answer": "innovative"
+        },
+        {
+          "index": 3,
+          "prompt": "DETERMINE",
+          "grammarHint": "'patience and ...' verlangt ein zweites Nomen (-ation)",
+          "hints": [
+            "Entschlossenheit = determin + -ation."
+          ],
+          "solutions": [
+            "determination"
+          ],
+          "explanation": "determine → determination (Entschlossenheit / Zielstrebigkeit).",
+          "acceptedAnswers": [
+            "determination"
+          ],
+          "answer": "determination"
+        },
+        {
+          "index": 4,
+          "prompt": "PERFECT",
+          "grammarHint": "Wie funktionieren Experimente? → Adverb (-ly)",
+          "hints": [
+            "Hänge '-ly' an das Adjektiv an."
+          ],
+          "solutions": [
+            "perfectly"
+          ],
+          "explanation": "perfect + -ly → perfectly (perfekt / reibungslos).",
+          "acceptedAnswers": [
+            "perfectly"
+          ],
+          "answer": "perfectly"
+        },
+        {
+          "index": 5,
+          "prompt": "FAIL",
+          "grammarHint": "'countless' (unzählige) verlangt ein Nomen im Plural (-ures)",
+          "hints": [
+            "Nomen von 'fail' ist 'failure' – denk an das Plural-s nach 'countless'!"
+          ],
+          "solutions": [
+            "failures"
+          ],
+          "explanation": "fail → failure → failures (Misserfolge / Fehlschläge im Plural wegen 'countless').",
+          "acceptedAnswers": [
+            "failures"
+          ],
+          "answer": "failures"
+        },
+        {
+          "index": 6,
+          "prompt": "SUCCEED",
+          "grammarHint": "Nach dem Verb 'achieved' folgt ein Nomen (Erfolg)",
+          "hints": [
+            "Das Nomen zu 'succeed' hat Doppel-c und Doppel-s."
+          ],
+          "solutions": [
+            "success"
+          ],
+          "explanation": "succeed (Verb) → success (Nomen: Erfolg).",
+          "acceptedAnswers": [
+            "success"
+          ],
+          "answer": "success"
+        }
+      ]
+    }
+  ]
+}

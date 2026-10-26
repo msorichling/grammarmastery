@@ -1,0 +1,1154 @@
+{
+  "id": "klasse7-relative",
+  "title": "Relative Clauses & Contact Clauses",
+  "grade": "7",
+  "icon": "🔗",
+  "description": "Relativsätze mit who, which, that, whose sowie Contact Clauses (Weglassen des Relativpronomens).",
+  "legacyStorageKey": "grammar_g7_relative_state",
+  "legacyMasteredKey": "grammar_g7_relative_mastered",
+  "rules": {
+    "title": "Relative Clauses & Contact Clauses – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Relative Clauses & Contact Clauses.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Logic Puzzle",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Bezugswort „teacher“ verlangt Relativpronomen: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WHO / WHICH / WHERE / WHOSE",
+              "grammarHint": "Wähle aus: WHO / WHICH / WHERE / WHOSE",
+              "hints": [
+                "Person (who), Sache (which), Ort (where) oder Besitz (whose)?"
+              ],
+              "solutions": [
+                "WHO",
+                "who"
+              ],
+              "explanation": "Zu „teacher“ passt das Relativpronomen „who“.",
+              "acceptedAnswers": [
+                "WHO",
+                "who"
+              ],
+              "answer": "WHO"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "Bezugswort „book“ verlangt Relativpronomen: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WHO / WHICH / WHERE / WHOSE",
+              "grammarHint": "Wähle aus: WHO / WHICH / WHERE / WHOSE",
+              "hints": [
+                "Person (who), Sache (which), Ort (where) oder Besitz (whose)?"
+              ],
+              "solutions": [
+                "WHICH",
+                "which"
+              ],
+              "explanation": "Zu „book“ passt das Relativpronomen „which“.",
+              "acceptedAnswers": [
+                "WHICH",
+                "which"
+              ],
+              "answer": "WHICH"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "Bezugswort „park“ verlangt Relativpronomen: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WHO / WHICH / WHERE / WHOSE",
+              "grammarHint": "Wähle aus: WHO / WHICH / WHERE / WHOSE",
+              "hints": [
+                "Person (who), Sache (which), Ort (where) oder Besitz (whose)?"
+              ],
+              "solutions": [
+                "WHERE",
+                "where"
+              ],
+              "explanation": "Zu „park“ passt das Relativpronomen „where“.",
+              "acceptedAnswers": [
+                "WHERE",
+                "where"
+              ],
+              "answer": "WHERE"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Bezugswort „boy's bag“ verlangt Relativpronomen: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WHO / WHICH / WHERE / WHOSE",
+              "grammarHint": "Wähle aus: WHO / WHICH / WHERE / WHOSE",
+              "hints": [
+                "Person (who), Sache (which), Ort (where) oder Besitz (whose)?"
+              ],
+              "solutions": [
+                "WHOSE",
+                "whose"
+              ],
+              "explanation": "Zu „boy's bag“ passt das Relativpronomen „whose“.",
+              "acceptedAnswers": [
+                "WHOSE",
+                "whose"
+              ],
+              "answer": "WHOSE"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Bezugswort „doctor“ verlangt Relativpronomen: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WHO / WHICH / WHERE / WHOSE",
+              "grammarHint": "Wähle aus: WHO / WHICH / WHERE / WHOSE",
+              "hints": [
+                "Person (who), Sache (which), Ort (where) oder Besitz (whose)?"
+              ],
+              "solutions": [
+                "WHO",
+                "who"
+              ],
+              "explanation": "Zu „doctor“ passt das Relativpronomen „who“.",
+              "acceptedAnswers": [
+                "WHO",
+                "who"
+              ],
+              "answer": "WHO"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "Bezugswort „car“ verlangt Relativpronomen: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WHO / WHICH / WHERE / WHOSE",
+              "grammarHint": "Wähle aus: WHO / WHICH / WHERE / WHOSE",
+              "hints": [
+                "Person (who), Sache (which), Ort (where) oder Besitz (whose)?"
+              ],
+              "solutions": [
+                "WHICH",
+                "which"
+              ],
+              "explanation": "Zu „car“ passt das Relativpronomen „which“.",
+              "acceptedAnswers": [
+                "WHICH",
+                "which"
+              ],
+              "answer": "WHICH"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "Bezugswort „school“ verlangt Relativpronomen: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WHO / WHICH / WHERE / WHOSE",
+              "grammarHint": "Wähle aus: WHO / WHICH / WHERE / WHOSE",
+              "hints": [
+                "Person (who), Sache (which), Ort (where) oder Besitz (whose)?"
+              ],
+              "solutions": [
+                "WHERE",
+                "where"
+              ],
+              "explanation": "Zu „school“ passt das Relativpronomen „where“.",
+              "acceptedAnswers": [
+                "WHERE",
+                "where"
+              ],
+              "answer": "WHERE"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "Bezugswort „girl's cat“ verlangt Relativpronomen: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "WHO / WHICH / WHERE / WHOSE",
+              "grammarHint": "Wähle aus: WHO / WHICH / WHERE / WHOSE",
+              "hints": [
+                "Person (who), Sache (which), Ort (where) oder Besitz (whose)?"
+              ],
+              "solutions": [
+                "WHOSE",
+                "whose"
+              ],
+              "explanation": "Zu „girl's cat“ passt das Relativpronomen „whose“.",
+              "acceptedAnswers": [
+                "WHOSE",
+                "whose"
+              ],
+              "answer": "WHOSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: Truth Detector",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "A ghost is someone {{0}} walks through walls.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "which / who / where",
+              "grammarHint": "Auswahl: which / who / where",
+              "hints": [
+                "Wähle eine der Optionen: which / who / where"
+              ],
+              "solutions": [
+                "who"
+              ],
+              "explanation": "„who“ ist hier die richtige Wahl aus (which / who / where).",
+              "acceptedAnswers": [
+                "who"
+              ],
+              "answer": "who"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "This is the book {{0}} I read.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "who / which / whose",
+              "grammarHint": "Auswahl: who / which / whose",
+              "hints": [
+                "Wähle eine der Optionen: who / which / whose"
+              ],
+              "solutions": [
+                "which"
+              ],
+              "explanation": "„which“ ist hier die richtige Wahl aus (who / which / whose).",
+              "acceptedAnswers": [
+                "which"
+              ],
+              "answer": "which"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "A school is a place {{0}} we learn.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "who / which / where",
+              "grammarHint": "Auswahl: who / which / where",
+              "hints": [
+                "Wähle eine der Optionen: who / which / where"
+              ],
+              "solutions": [
+                "where"
+              ],
+              "explanation": "„where“ ist hier die richtige Wahl aus (who / which / where).",
+              "acceptedAnswers": [
+                "where"
+              ],
+              "answer": "where"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "I know a man {{0}} car is red.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "who / which / whose",
+              "grammarHint": "Auswahl: who / which / whose",
+              "hints": [
+                "Wähle eine der Optionen: who / which / whose"
+              ],
+              "solutions": [
+                "whose"
+              ],
+              "explanation": "„whose“ ist hier die richtige Wahl aus (who / which / whose).",
+              "acceptedAnswers": [
+                "whose"
+              ],
+              "answer": "whose"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "The dog {{0}} barked is loud.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "who / which / where",
+              "grammarHint": "Auswahl: who / which / where",
+              "hints": [
+                "Wähle eine der Optionen: who / which / where"
+              ],
+              "solutions": [
+                "which"
+              ],
+              "explanation": "„which“ ist hier die richtige Wahl aus (who / which / where).",
+              "acceptedAnswers": [
+                "which"
+              ],
+              "answer": "which"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Sentence Joiner",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "(This is the hotel. + We stayed there.) → This is the hotel {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „where we…“"
+              ],
+              "solutions": [
+                "where we stayed"
+              ],
+              "explanation": "Verbundener Relativsatz: „This is the hotel where we stayed“",
+              "acceptedAnswers": [
+                "where we stayed"
+              ],
+              "answer": "where we stayed"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "(I know a girl. + Her brother is a singer.) → I know a girl {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „whose brother…“"
+              ],
+              "solutions": [
+                "whose brother is a singer"
+              ],
+              "explanation": "Verbundener Relativsatz: „I know a girl whose brother is a singer“",
+              "acceptedAnswers": [
+                "whose brother is a singer"
+              ],
+              "answer": "whose brother is a singer"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "(That's the museum. + We visited it yesterday.) → That's the museum {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „which we…“"
+              ],
+              "solutions": [
+                "which we visited yesterday"
+              ],
+              "explanation": "Verbundener Relativsatz: „That's the museum which we visited yesterday“",
+              "acceptedAnswers": [
+                "which we visited yesterday"
+              ],
+              "answer": "which we visited yesterday"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "(Here is the boy. + He lives in Glasgow.) → Here is the boy {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „who lives…“"
+              ],
+              "solutions": [
+                "who lives in Glasgow"
+              ],
+              "explanation": "Verbundener Relativsatz: „Here is the boy who lives in Glasgow“",
+              "acceptedAnswers": [
+                "who lives in Glasgow"
+              ],
+              "answer": "who lives in Glasgow"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "(Look at the dog. + Its tail is very short.) → Look at the dog {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „whose tail…“"
+              ],
+              "solutions": [
+                "whose tail is very short"
+              ],
+              "explanation": "Verbundener Relativsatz: „Look at the dog whose tail is very short“",
+              "acceptedAnswers": [
+                "whose tail is very short"
+              ],
+              "answer": "whose tail is very short"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "(I like the park. + We usually meet there.) → I like the park {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „where we…“"
+              ],
+              "solutions": [
+                "where we usually meet"
+              ],
+              "explanation": "Verbundener Relativsatz: „I like the park where we usually meet“",
+              "acceptedAnswers": [
+                "where we usually meet"
+              ],
+              "answer": "where we usually meet"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "(This is the book. + I read it last week.) → This is the book {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „which I…“"
+              ],
+              "solutions": [
+                "which I read last week"
+              ],
+              "explanation": "Verbundener Relativsatz: „This is the book which I read last week“",
+              "acceptedAnswers": [
+                "which I read last week"
+              ],
+              "answer": "which I read last week"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "(She has a friend. + He plays the bagpipes.) → She has a friend {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „who plays…“"
+              ],
+              "solutions": [
+                "who plays the bagpipes"
+              ],
+              "explanation": "Verbundener Relativsatz: „She has a friend who plays the bagpipes“",
+              "acceptedAnswers": [
+                "who plays the bagpipes"
+              ],
+              "answer": "who plays the bagpipes"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "(That is the shop. + I bought my kilt there.) → That is the shop {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „where I…“"
+              ],
+              "solutions": [
+                "where I bought my kilt"
+              ],
+              "explanation": "Verbundener Relativsatz: „That is the shop where I bought my kilt“",
+              "acceptedAnswers": [
+                "where I bought my kilt"
+              ],
+              "answer": "where I bought my kilt"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "(I met a woman. + Her daughter is my teacher.) → I met a woman {{0}}.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "relative clause",
+              "grammarHint": "Relativsatz mit who / which / where / whose ergänzen",
+              "hints": [
+                "Beginnt mit „whose daughter…“"
+              ],
+              "solutions": [
+                "whose daughter is my teacher"
+              ],
+              "explanation": "Verbundener Relativsatz: „I met a woman whose daughter is my teacher“",
+              "acceptedAnswers": [
+                "whose daughter is my teacher"
+              ],
+              "answer": "whose daughter is my teacher"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Highland Legends",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Scotland is a country {{0}} has mountains.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "which",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "which",
+                "that"
+              ],
+              "answer": "which"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "The Highlands are a place {{0}} people hike.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "where"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "where"
+              ],
+              "answer": "where"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "I know a guide {{0}} knows the secrets.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "who",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "who",
+                "that"
+              ],
+              "answer": "who"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "This is the hiker {{0}} dog got lost.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "whose"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "whose"
+              ],
+              "answer": "whose"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "Loch Ness is the lake {{0}} Nessie lives.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "where"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "where"
+              ],
+              "answer": "where"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "A kilt is a skirt {{0}} men wear.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "which",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "which",
+                "that"
+              ],
+              "answer": "which"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "Burns was a poet {{0}} wrote songs.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "who",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "who",
+                "that"
+              ],
+              "answer": "who"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "I live in a town {{0}} everyone knows you.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "where"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "where"
+              ],
+              "answer": "where"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "She is the girl {{0}} bagpipes sound good.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "whose"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "whose"
+              ],
+              "answer": "whose"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "He found a path {{0}} led to a waterfall.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "which",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "which",
+                "that"
+              ],
+              "answer": "which"
+            }
+          ]
+        },
+        {
+          "id": "s11",
+          "sentence": "The tourists {{0}} visit the castle are happy.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "who",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "who",
+                "that"
+              ],
+              "answer": "who"
+            }
+          ]
+        },
+        {
+          "id": "s12",
+          "sentence": "Edinburgh is a city {{0}} history is exciting.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "whose"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "whose"
+              ],
+              "answer": "whose"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Scottish Life",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "A hostel is a place {{0}} you stay cheaply.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "where"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "where"
+              ],
+              "answer": "where"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "My friend {{0}} parents live in Glasgow.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "whose"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "whose"
+              ],
+              "answer": "whose"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "I bought a souvenir {{0}} looks like Nessie.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "which",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "which",
+                "that"
+              ],
+              "answer": "which"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Is there a person {{0}} can help?",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "who",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "who",
+                "that"
+              ],
+              "answer": "who"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "This is the hotel {{0}} we slept.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "where"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "where"
+              ],
+              "answer": "where"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "The girl {{0}} sits here is nice.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "who",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "who",
+                "that"
+              ],
+              "answer": "who"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "The movie {{0}} we watched was good.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "which",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "which",
+                "that"
+              ],
+              "answer": "which"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "He is the teacher {{0}} car is red.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "whose"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "whose"
+              ],
+              "answer": "whose"
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "sentence": "That is the park {{0}} we play.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "where"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "where"
+              ],
+              "answer": "where"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "sentence": "Students {{0}} study hard pass.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "who",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "who",
+                "that"
+              ],
+              "answer": "who"
+            }
+          ]
+        },
+        {
+          "id": "s11",
+          "sentence": "I lost keys {{0}} open the door.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "which",
+                "that"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "which",
+                "that"
+              ],
+              "answer": "which"
+            }
+          ]
+        },
+        {
+          "id": "s12",
+          "sentence": "The artist {{0}} paintings are sold.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "form",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „wh…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "whose"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "whose"
+              ],
+              "answer": "whose"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

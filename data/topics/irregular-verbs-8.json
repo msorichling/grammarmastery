@@ -1,0 +1,4980 @@
+{
+  "id": "irregular-verbs-8",
+  "title": "Irregular Verbs Mastery (Klasse 8)",
+  "grade": "8",
+  "icon": "⚡",
+  "description": "Alle 91 unregelmäßigen Verben der Klasse 8 mit 3-Stammformen-Training (Infinitive, Simple Past, Past Participle).",
+  "legacyStorageKey": "grammar_irreg_8_state",
+  "legacyMasteredKey": "grammar_irreg_8_mastered",
+  "rules": {
+    "title": "Drei Stammformen sicher beherrschen",
+    "summary": "Unregelmäßige Verben folgen oft festen Lautmustern (z. B. sing–sang–sung, bring–brought–brought oder put–put–put). Präge dir immer alle drei Formen gemeinsam ein.",
+    "examples": [
+      "AAA-Gruppe (alle gleich): cost – cost – cost | hit – hit – hit | put – put – put",
+      "ABB-Gruppe (2. & 3. gleich): buy – bought – bought | catch – caught – caught | build – built – built",
+      "ABC-Gruppe (Vokalwechsel): sing – sang – sung | drive – drove – driven | speak – spoke – spoken"
+    ]
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Teil 1: be – draw (20 Verben)",
+      "type": "single_sentence",
+      "instruction": "Gib alle drei Stammformen (Infinitive, Simple Past, Past Participle) zum deutschen Verb ein.",
+      "items": [
+        {
+          "id": "v1",
+          "sentence": "🇩🇪 „sein“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „sein“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „be…“ (2 Buchstaben)."
+              ],
+              "solutions": [
+                "be"
+              ],
+              "explanation": "Infinitive von „sein“: to be (be – was/were – been).",
+              "acceptedAnswers": [
+                "be"
+              ],
+              "answer": "be"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to be“ (sein)",
+              "hints": [
+                "2. Stammform beginnt mit „wa…“."
+              ],
+              "solutions": [
+                "was/were",
+                "was / were",
+                "was",
+                "were"
+              ],
+              "explanation": "Simple Past von „to be“: was/were (be – was/were – been).",
+              "acceptedAnswers": [
+                "was/were",
+                "was / were",
+                "was",
+                "were"
+              ],
+              "answer": "was/were"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to be“",
+              "hints": [
+                "3. Stammform beginnt mit „be…“."
+              ],
+              "solutions": [
+                "been"
+              ],
+              "explanation": "Past Participle von „to be“: been (be – was/were – been).",
+              "acceptedAnswers": [
+                "been"
+              ],
+              "answer": "been"
+            }
+          ]
+        },
+        {
+          "id": "v2",
+          "sentence": "🇩🇪 „schlagen, besiegen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „schlagen, besiegen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „be…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "beat"
+              ],
+              "explanation": "Infinitive von „schlagen, besiegen“: to beat (beat – beat – beaten).",
+              "acceptedAnswers": [
+                "beat"
+              ],
+              "answer": "beat"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to beat“ (schlagen, besiegen)",
+              "hints": [
+                "2. Stammform beginnt mit „be…“."
+              ],
+              "solutions": [
+                "beat"
+              ],
+              "explanation": "Simple Past von „to beat“: beat (beat – beat – beaten).",
+              "acceptedAnswers": [
+                "beat"
+              ],
+              "answer": "beat"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to beat“",
+              "hints": [
+                "3. Stammform beginnt mit „be…“."
+              ],
+              "solutions": [
+                "beaten"
+              ],
+              "explanation": "Past Participle von „to beat“: beaten (beat – beat – beaten).",
+              "acceptedAnswers": [
+                "beaten"
+              ],
+              "answer": "beaten"
+            }
+          ]
+        },
+        {
+          "id": "v3",
+          "sentence": "🇩🇪 „werden“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „werden“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „be…“ (6 Buchstaben)."
+              ],
+              "solutions": [
+                "become"
+              ],
+              "explanation": "Infinitive von „werden“: to become (become – became – become).",
+              "acceptedAnswers": [
+                "become"
+              ],
+              "answer": "become"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to become“ (werden)",
+              "hints": [
+                "2. Stammform beginnt mit „be…“."
+              ],
+              "solutions": [
+                "became"
+              ],
+              "explanation": "Simple Past von „to become“: became (become – became – become).",
+              "acceptedAnswers": [
+                "became"
+              ],
+              "answer": "became"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to become“",
+              "hints": [
+                "3. Stammform beginnt mit „be…“."
+              ],
+              "solutions": [
+                "become"
+              ],
+              "explanation": "Past Participle von „to become“: become (become – became – become).",
+              "acceptedAnswers": [
+                "become"
+              ],
+              "answer": "become"
+            }
+          ]
+        },
+        {
+          "id": "v4",
+          "sentence": "🇩🇪 „anfangen, beginnen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „anfangen, beginnen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „be…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "begin"
+              ],
+              "explanation": "Infinitive von „anfangen, beginnen“: to begin (begin – began – begun).",
+              "acceptedAnswers": [
+                "begin"
+              ],
+              "answer": "begin"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to begin“ (anfangen, beginnen)",
+              "hints": [
+                "2. Stammform beginnt mit „be…“."
+              ],
+              "solutions": [
+                "began"
+              ],
+              "explanation": "Simple Past von „to begin“: began (begin – began – begun).",
+              "acceptedAnswers": [
+                "began"
+              ],
+              "answer": "began"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to begin“",
+              "hints": [
+                "3. Stammform beginnt mit „be…“."
+              ],
+              "solutions": [
+                "begun"
+              ],
+              "explanation": "Past Participle von „to begin“: begun (begin – began – begun).",
+              "acceptedAnswers": [
+                "begun"
+              ],
+              "answer": "begun"
+            }
+          ]
+        },
+        {
+          "id": "v5",
+          "sentence": "🇩🇪 „beißen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „beißen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „bi…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "bite"
+              ],
+              "explanation": "Infinitive von „beißen“: to bite (bite – bit – bitten).",
+              "acceptedAnswers": [
+                "bite"
+              ],
+              "answer": "bite"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to bite“ (beißen)",
+              "hints": [
+                "2. Stammform beginnt mit „bi…“."
+              ],
+              "solutions": [
+                "bit"
+              ],
+              "explanation": "Simple Past von „to bite“: bit (bite – bit – bitten).",
+              "acceptedAnswers": [
+                "bit"
+              ],
+              "answer": "bit"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to bite“",
+              "hints": [
+                "3. Stammform beginnt mit „bi…“."
+              ],
+              "solutions": [
+                "bitten"
+              ],
+              "explanation": "Past Participle von „to bite“: bitten (bite – bit – bitten).",
+              "acceptedAnswers": [
+                "bitten"
+              ],
+              "answer": "bitten"
+            }
+          ]
+        },
+        {
+          "id": "v6",
+          "sentence": "🇩🇪 „bluten“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „bluten“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „bl…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "bleed"
+              ],
+              "explanation": "Infinitive von „bluten“: to bleed (bleed – bled – bled).",
+              "acceptedAnswers": [
+                "bleed"
+              ],
+              "answer": "bleed"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to bleed“ (bluten)",
+              "hints": [
+                "2. Stammform beginnt mit „bl…“."
+              ],
+              "solutions": [
+                "bled"
+              ],
+              "explanation": "Simple Past von „to bleed“: bled (bleed – bled – bled).",
+              "acceptedAnswers": [
+                "bled"
+              ],
+              "answer": "bled"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to bleed“",
+              "hints": [
+                "3. Stammform beginnt mit „bl…“."
+              ],
+              "solutions": [
+                "bled"
+              ],
+              "explanation": "Past Participle von „to bleed“: bled (bleed – bled – bled).",
+              "acceptedAnswers": [
+                "bled"
+              ],
+              "answer": "bled"
+            }
+          ]
+        },
+        {
+          "id": "v7",
+          "sentence": "🇩🇪 „pusten, blasen; wehen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „pusten, blasen; wehen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „bl…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "blow"
+              ],
+              "explanation": "Infinitive von „pusten, blasen; wehen“: to blow (blow – blew – blown).",
+              "acceptedAnswers": [
+                "blow"
+              ],
+              "answer": "blow"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to blow“ (pusten, blasen; wehen)",
+              "hints": [
+                "2. Stammform beginnt mit „bl…“."
+              ],
+              "solutions": [
+                "blew"
+              ],
+              "explanation": "Simple Past von „to blow“: blew (blow – blew – blown).",
+              "acceptedAnswers": [
+                "blew"
+              ],
+              "answer": "blew"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to blow“",
+              "hints": [
+                "3. Stammform beginnt mit „bl…“."
+              ],
+              "solutions": [
+                "blown"
+              ],
+              "explanation": "Past Participle von „to blow“: blown (blow – blew – blown).",
+              "acceptedAnswers": [
+                "blown"
+              ],
+              "answer": "blown"
+            }
+          ]
+        },
+        {
+          "id": "v8",
+          "sentence": "🇩🇪 „brechen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „brechen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „br…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "break"
+              ],
+              "explanation": "Infinitive von „brechen“: to break (break – broke – broken).",
+              "acceptedAnswers": [
+                "break"
+              ],
+              "answer": "break"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to break“ (brechen)",
+              "hints": [
+                "2. Stammform beginnt mit „br…“."
+              ],
+              "solutions": [
+                "broke"
+              ],
+              "explanation": "Simple Past von „to break“: broke (break – broke – broken).",
+              "acceptedAnswers": [
+                "broke"
+              ],
+              "answer": "broke"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to break“",
+              "hints": [
+                "3. Stammform beginnt mit „br…“."
+              ],
+              "solutions": [
+                "broken"
+              ],
+              "explanation": "Past Participle von „to break“: broken (break – broke – broken).",
+              "acceptedAnswers": [
+                "broken"
+              ],
+              "answer": "broken"
+            }
+          ]
+        },
+        {
+          "id": "v9",
+          "sentence": "🇩🇪 „bringen, mitbringen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „bringen, mitbringen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „br…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "bring"
+              ],
+              "explanation": "Infinitive von „bringen, mitbringen“: to bring (bring – brought – brought).",
+              "acceptedAnswers": [
+                "bring"
+              ],
+              "answer": "bring"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to bring“ (bringen, mitbringen)",
+              "hints": [
+                "2. Stammform beginnt mit „br…“."
+              ],
+              "solutions": [
+                "brought"
+              ],
+              "explanation": "Simple Past von „to bring“: brought (bring – brought – brought).",
+              "acceptedAnswers": [
+                "brought"
+              ],
+              "answer": "brought"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to bring“",
+              "hints": [
+                "3. Stammform beginnt mit „br…“."
+              ],
+              "solutions": [
+                "brought"
+              ],
+              "explanation": "Past Participle von „to bring“: brought (bring – brought – brought).",
+              "acceptedAnswers": [
+                "brought"
+              ],
+              "answer": "brought"
+            }
+          ]
+        },
+        {
+          "id": "v10",
+          "sentence": "🇩🇪 „bauen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „bauen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „bu…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "build"
+              ],
+              "explanation": "Infinitive von „bauen“: to build (build – built – built).",
+              "acceptedAnswers": [
+                "build"
+              ],
+              "answer": "build"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to build“ (bauen)",
+              "hints": [
+                "2. Stammform beginnt mit „bu…“."
+              ],
+              "solutions": [
+                "built"
+              ],
+              "explanation": "Simple Past von „to build“: built (build – built – built).",
+              "acceptedAnswers": [
+                "built"
+              ],
+              "answer": "built"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to build“",
+              "hints": [
+                "3. Stammform beginnt mit „bu…“."
+              ],
+              "solutions": [
+                "built"
+              ],
+              "explanation": "Past Participle von „to build“: built (build – built – built).",
+              "acceptedAnswers": [
+                "built"
+              ],
+              "answer": "built"
+            }
+          ]
+        },
+        {
+          "id": "v11",
+          "sentence": "🇩🇪 „brennen, verbrennen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „brennen, verbrennen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „bu…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "burn"
+              ],
+              "explanation": "Infinitive von „brennen, verbrennen“: to burn (burn – burnt – burnt).",
+              "acceptedAnswers": [
+                "burn"
+              ],
+              "answer": "burn"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to burn“ (brennen, verbrennen)",
+              "hints": [
+                "2. Stammform beginnt mit „bu…“."
+              ],
+              "solutions": [
+                "burnt"
+              ],
+              "explanation": "Simple Past von „to burn“: burnt (burn – burnt – burnt).",
+              "acceptedAnswers": [
+                "burnt"
+              ],
+              "answer": "burnt"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to burn“",
+              "hints": [
+                "3. Stammform beginnt mit „bu…“."
+              ],
+              "solutions": [
+                "burnt"
+              ],
+              "explanation": "Past Participle von „to burn“: burnt (burn – burnt – burnt).",
+              "acceptedAnswers": [
+                "burnt"
+              ],
+              "answer": "burnt"
+            }
+          ]
+        },
+        {
+          "id": "v12",
+          "sentence": "🇩🇪 „kaufen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „kaufen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „bu…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "buy"
+              ],
+              "explanation": "Infinitive von „kaufen“: to buy (buy – bought – bought).",
+              "acceptedAnswers": [
+                "buy"
+              ],
+              "answer": "buy"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to buy“ (kaufen)",
+              "hints": [
+                "2. Stammform beginnt mit „bo…“."
+              ],
+              "solutions": [
+                "bought"
+              ],
+              "explanation": "Simple Past von „to buy“: bought (buy – bought – bought).",
+              "acceptedAnswers": [
+                "bought"
+              ],
+              "answer": "bought"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to buy“",
+              "hints": [
+                "3. Stammform beginnt mit „bo…“."
+              ],
+              "solutions": [
+                "bought"
+              ],
+              "explanation": "Past Participle von „to buy“: bought (buy – bought – bought).",
+              "acceptedAnswers": [
+                "bought"
+              ],
+              "answer": "bought"
+            }
+          ]
+        },
+        {
+          "id": "v13",
+          "sentence": "🇩🇪 „fangen; erwischen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „fangen; erwischen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ca…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "catch"
+              ],
+              "explanation": "Infinitive von „fangen; erwischen“: to catch (catch – caught – caught).",
+              "acceptedAnswers": [
+                "catch"
+              ],
+              "answer": "catch"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to catch“ (fangen; erwischen)",
+              "hints": [
+                "2. Stammform beginnt mit „ca…“."
+              ],
+              "solutions": [
+                "caught"
+              ],
+              "explanation": "Simple Past von „to catch“: caught (catch – caught – caught).",
+              "acceptedAnswers": [
+                "caught"
+              ],
+              "answer": "caught"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to catch“",
+              "hints": [
+                "3. Stammform beginnt mit „ca…“."
+              ],
+              "solutions": [
+                "caught"
+              ],
+              "explanation": "Past Participle von „to catch“: caught (catch – caught – caught).",
+              "acceptedAnswers": [
+                "caught"
+              ],
+              "answer": "caught"
+            }
+          ]
+        },
+        {
+          "id": "v14",
+          "sentence": "🇩🇪 „wählen, auswählen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „wählen, auswählen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ch…“ (6 Buchstaben)."
+              ],
+              "solutions": [
+                "choose"
+              ],
+              "explanation": "Infinitive von „wählen, auswählen“: to choose (choose – chose – chosen).",
+              "acceptedAnswers": [
+                "choose"
+              ],
+              "answer": "choose"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to choose“ (wählen, auswählen)",
+              "hints": [
+                "2. Stammform beginnt mit „ch…“."
+              ],
+              "solutions": [
+                "chose"
+              ],
+              "explanation": "Simple Past von „to choose“: chose (choose – chose – chosen).",
+              "acceptedAnswers": [
+                "chose"
+              ],
+              "answer": "chose"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to choose“",
+              "hints": [
+                "3. Stammform beginnt mit „ch…“."
+              ],
+              "solutions": [
+                "chosen"
+              ],
+              "explanation": "Past Participle von „to choose“: chosen (choose – chose – chosen).",
+              "acceptedAnswers": [
+                "chosen"
+              ],
+              "answer": "chosen"
+            }
+          ]
+        },
+        {
+          "id": "v15",
+          "sentence": "🇩🇪 „kommen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „kommen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „co…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "come"
+              ],
+              "explanation": "Infinitive von „kommen“: to come (come – came – come).",
+              "acceptedAnswers": [
+                "come"
+              ],
+              "answer": "come"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to come“ (kommen)",
+              "hints": [
+                "2. Stammform beginnt mit „ca…“."
+              ],
+              "solutions": [
+                "came"
+              ],
+              "explanation": "Simple Past von „to come“: came (come – came – come).",
+              "acceptedAnswers": [
+                "came"
+              ],
+              "answer": "came"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to come“",
+              "hints": [
+                "3. Stammform beginnt mit „co…“."
+              ],
+              "solutions": [
+                "come"
+              ],
+              "explanation": "Past Participle von „to come“: come (come – came – come).",
+              "acceptedAnswers": [
+                "come"
+              ],
+              "answer": "come"
+            }
+          ]
+        },
+        {
+          "id": "v16",
+          "sentence": "🇩🇪 „kosten“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „kosten“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „co…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "cost"
+              ],
+              "explanation": "Infinitive von „kosten“: to cost (cost – cost – cost).",
+              "acceptedAnswers": [
+                "cost"
+              ],
+              "answer": "cost"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to cost“ (kosten)",
+              "hints": [
+                "2. Stammform beginnt mit „co…“."
+              ],
+              "solutions": [
+                "cost"
+              ],
+              "explanation": "Simple Past von „to cost“: cost (cost – cost – cost).",
+              "acceptedAnswers": [
+                "cost"
+              ],
+              "answer": "cost"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to cost“",
+              "hints": [
+                "3. Stammform beginnt mit „co…“."
+              ],
+              "solutions": [
+                "cost"
+              ],
+              "explanation": "Past Participle von „to cost“: cost (cost – cost – cost).",
+              "acceptedAnswers": [
+                "cost"
+              ],
+              "answer": "cost"
+            }
+          ]
+        },
+        {
+          "id": "v17",
+          "sentence": "🇩🇪 „schneiden; mähen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „schneiden; mähen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „cu…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "cut"
+              ],
+              "explanation": "Infinitive von „schneiden; mähen“: to cut (cut – cut – cut).",
+              "acceptedAnswers": [
+                "cut"
+              ],
+              "answer": "cut"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to cut“ (schneiden; mähen)",
+              "hints": [
+                "2. Stammform beginnt mit „cu…“."
+              ],
+              "solutions": [
+                "cut"
+              ],
+              "explanation": "Simple Past von „to cut“: cut (cut – cut – cut).",
+              "acceptedAnswers": [
+                "cut"
+              ],
+              "answer": "cut"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to cut“",
+              "hints": [
+                "3. Stammform beginnt mit „cu…“."
+              ],
+              "solutions": [
+                "cut"
+              ],
+              "explanation": "Past Participle von „to cut“: cut (cut – cut – cut).",
+              "acceptedAnswers": [
+                "cut"
+              ],
+              "answer": "cut"
+            }
+          ]
+        },
+        {
+          "id": "v18",
+          "sentence": "🇩🇪 „tun, machen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „tun, machen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „do…“ (2 Buchstaben)."
+              ],
+              "solutions": [
+                "do"
+              ],
+              "explanation": "Infinitive von „tun, machen“: to do (do – did – done).",
+              "acceptedAnswers": [
+                "do"
+              ],
+              "answer": "do"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to do“ (tun, machen)",
+              "hints": [
+                "2. Stammform beginnt mit „di…“."
+              ],
+              "solutions": [
+                "did"
+              ],
+              "explanation": "Simple Past von „to do“: did (do – did – done).",
+              "acceptedAnswers": [
+                "did"
+              ],
+              "answer": "did"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to do“",
+              "hints": [
+                "3. Stammform beginnt mit „do…“."
+              ],
+              "solutions": [
+                "done"
+              ],
+              "explanation": "Past Participle von „to do“: done (do – did – done).",
+              "acceptedAnswers": [
+                "done"
+              ],
+              "answer": "done"
+            }
+          ]
+        },
+        {
+          "id": "v19",
+          "sentence": "🇩🇪 „graben“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „graben“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „di…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "dig"
+              ],
+              "explanation": "Infinitive von „graben“: to dig (dig – dug – dug).",
+              "acceptedAnswers": [
+                "dig"
+              ],
+              "answer": "dig"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to dig“ (graben)",
+              "hints": [
+                "2. Stammform beginnt mit „du…“."
+              ],
+              "solutions": [
+                "dug"
+              ],
+              "explanation": "Simple Past von „to dig“: dug (dig – dug – dug).",
+              "acceptedAnswers": [
+                "dug"
+              ],
+              "answer": "dug"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to dig“",
+              "hints": [
+                "3. Stammform beginnt mit „du…“."
+              ],
+              "solutions": [
+                "dug"
+              ],
+              "explanation": "Past Participle von „to dig“: dug (dig – dug – dug).",
+              "acceptedAnswers": [
+                "dug"
+              ],
+              "answer": "dug"
+            }
+          ]
+        },
+        {
+          "id": "v20",
+          "sentence": "🇩🇪 „zeichnen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „zeichnen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „dr…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "draw"
+              ],
+              "explanation": "Infinitive von „zeichnen“: to draw (draw – drew – drawn).",
+              "acceptedAnswers": [
+                "draw"
+              ],
+              "answer": "draw"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to draw“ (zeichnen)",
+              "hints": [
+                "2. Stammform beginnt mit „dr…“."
+              ],
+              "solutions": [
+                "drew"
+              ],
+              "explanation": "Simple Past von „to draw“: drew (draw – drew – drawn).",
+              "acceptedAnswers": [
+                "drew"
+              ],
+              "answer": "drew"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to draw“",
+              "hints": [
+                "3. Stammform beginnt mit „dr…“."
+              ],
+              "solutions": [
+                "drawn"
+              ],
+              "explanation": "Past Participle von „to draw“: drawn (draw – drew – drawn).",
+              "acceptedAnswers": [
+                "drawn"
+              ],
+              "answer": "drawn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Teil 2: drink – hit (20 Verben)",
+      "type": "single_sentence",
+      "instruction": "Gib alle drei Stammformen (Infinitive, Simple Past, Past Participle) zum deutschen Verb ein.",
+      "items": [
+        {
+          "id": "v21",
+          "sentence": "🇩🇪 „trinken“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „trinken“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „dr…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "drink"
+              ],
+              "explanation": "Infinitive von „trinken“: to drink (drink – drank – drunk).",
+              "acceptedAnswers": [
+                "drink"
+              ],
+              "answer": "drink"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to drink“ (trinken)",
+              "hints": [
+                "2. Stammform beginnt mit „dr…“."
+              ],
+              "solutions": [
+                "drank"
+              ],
+              "explanation": "Simple Past von „to drink“: drank (drink – drank – drunk).",
+              "acceptedAnswers": [
+                "drank"
+              ],
+              "answer": "drank"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to drink“",
+              "hints": [
+                "3. Stammform beginnt mit „dr…“."
+              ],
+              "solutions": [
+                "drunk"
+              ],
+              "explanation": "Past Participle von „to drink“: drunk (drink – drank – drunk).",
+              "acceptedAnswers": [
+                "drunk"
+              ],
+              "answer": "drunk"
+            }
+          ]
+        },
+        {
+          "id": "v22",
+          "sentence": "🇩🇪 „fahren“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „fahren“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „dr…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "drive"
+              ],
+              "explanation": "Infinitive von „fahren“: to drive (drive – drove – driven).",
+              "acceptedAnswers": [
+                "drive"
+              ],
+              "answer": "drive"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to drive“ (fahren)",
+              "hints": [
+                "2. Stammform beginnt mit „dr…“."
+              ],
+              "solutions": [
+                "drove"
+              ],
+              "explanation": "Simple Past von „to drive“: drove (drive – drove – driven).",
+              "acceptedAnswers": [
+                "drove"
+              ],
+              "answer": "drove"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to drive“",
+              "hints": [
+                "3. Stammform beginnt mit „dr…“."
+              ],
+              "solutions": [
+                "driven"
+              ],
+              "explanation": "Past Participle von „to drive“: driven (drive – drove – driven).",
+              "acceptedAnswers": [
+                "driven"
+              ],
+              "answer": "driven"
+            }
+          ]
+        },
+        {
+          "id": "v23",
+          "sentence": "🇩🇪 „essen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „essen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ea…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "eat"
+              ],
+              "explanation": "Infinitive von „essen“: to eat (eat – ate – eaten).",
+              "acceptedAnswers": [
+                "eat"
+              ],
+              "answer": "eat"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to eat“ (essen)",
+              "hints": [
+                "2. Stammform beginnt mit „at…“."
+              ],
+              "solutions": [
+                "ate"
+              ],
+              "explanation": "Simple Past von „to eat“: ate (eat – ate – eaten).",
+              "acceptedAnswers": [
+                "ate"
+              ],
+              "answer": "ate"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to eat“",
+              "hints": [
+                "3. Stammform beginnt mit „ea…“."
+              ],
+              "solutions": [
+                "eaten"
+              ],
+              "explanation": "Past Participle von „to eat“: eaten (eat – ate – eaten).",
+              "acceptedAnswers": [
+                "eaten"
+              ],
+              "answer": "eaten"
+            }
+          ]
+        },
+        {
+          "id": "v24",
+          "sentence": "🇩🇪 „fallen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „fallen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „fa…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "fall"
+              ],
+              "explanation": "Infinitive von „fallen“: to fall (fall – fell – fallen).",
+              "acceptedAnswers": [
+                "fall"
+              ],
+              "answer": "fall"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to fall“ (fallen)",
+              "hints": [
+                "2. Stammform beginnt mit „fe…“."
+              ],
+              "solutions": [
+                "fell"
+              ],
+              "explanation": "Simple Past von „to fall“: fell (fall – fell – fallen).",
+              "acceptedAnswers": [
+                "fell"
+              ],
+              "answer": "fell"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to fall“",
+              "hints": [
+                "3. Stammform beginnt mit „fa…“."
+              ],
+              "solutions": [
+                "fallen"
+              ],
+              "explanation": "Past Participle von „to fall“: fallen (fall – fell – fallen).",
+              "acceptedAnswers": [
+                "fallen"
+              ],
+              "answer": "fallen"
+            }
+          ]
+        },
+        {
+          "id": "v25",
+          "sentence": "🇩🇪 „füttern“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „füttern“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „fe…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "feed"
+              ],
+              "explanation": "Infinitive von „füttern“: to feed (feed – fed – fed).",
+              "acceptedAnswers": [
+                "feed"
+              ],
+              "answer": "feed"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to feed“ (füttern)",
+              "hints": [
+                "2. Stammform beginnt mit „fe…“."
+              ],
+              "solutions": [
+                "fed"
+              ],
+              "explanation": "Simple Past von „to feed“: fed (feed – fed – fed).",
+              "acceptedAnswers": [
+                "fed"
+              ],
+              "answer": "fed"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to feed“",
+              "hints": [
+                "3. Stammform beginnt mit „fe…“."
+              ],
+              "solutions": [
+                "fed"
+              ],
+              "explanation": "Past Participle von „to feed“: fed (feed – fed – fed).",
+              "acceptedAnswers": [
+                "fed"
+              ],
+              "answer": "fed"
+            }
+          ]
+        },
+        {
+          "id": "v26",
+          "sentence": "🇩🇪 „fühlen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „fühlen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „fe…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "feel"
+              ],
+              "explanation": "Infinitive von „fühlen“: to feel (feel – felt – felt).",
+              "acceptedAnswers": [
+                "feel"
+              ],
+              "answer": "feel"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to feel“ (fühlen)",
+              "hints": [
+                "2. Stammform beginnt mit „fe…“."
+              ],
+              "solutions": [
+                "felt"
+              ],
+              "explanation": "Simple Past von „to feel“: felt (feel – felt – felt).",
+              "acceptedAnswers": [
+                "felt"
+              ],
+              "answer": "felt"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to feel“",
+              "hints": [
+                "3. Stammform beginnt mit „fe…“."
+              ],
+              "solutions": [
+                "felt"
+              ],
+              "explanation": "Past Participle von „to feel“: felt (feel – felt – felt).",
+              "acceptedAnswers": [
+                "felt"
+              ],
+              "answer": "felt"
+            }
+          ]
+        },
+        {
+          "id": "v27",
+          "sentence": "🇩🇪 „kämpfen, bekämpfen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „kämpfen, bekämpfen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „fi…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "fight"
+              ],
+              "explanation": "Infinitive von „kämpfen, bekämpfen“: to fight (fight – fought – fought).",
+              "acceptedAnswers": [
+                "fight"
+              ],
+              "answer": "fight"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to fight“ (kämpfen, bekämpfen)",
+              "hints": [
+                "2. Stammform beginnt mit „fo…“."
+              ],
+              "solutions": [
+                "fought"
+              ],
+              "explanation": "Simple Past von „to fight“: fought (fight – fought – fought).",
+              "acceptedAnswers": [
+                "fought"
+              ],
+              "answer": "fought"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to fight“",
+              "hints": [
+                "3. Stammform beginnt mit „fo…“."
+              ],
+              "solutions": [
+                "fought"
+              ],
+              "explanation": "Past Participle von „to fight“: fought (fight – fought – fought).",
+              "acceptedAnswers": [
+                "fought"
+              ],
+              "answer": "fought"
+            }
+          ]
+        },
+        {
+          "id": "v28",
+          "sentence": "🇩🇪 „finden“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „finden“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „fi…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "find"
+              ],
+              "explanation": "Infinitive von „finden“: to find (find – found – found).",
+              "acceptedAnswers": [
+                "find"
+              ],
+              "answer": "find"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to find“ (finden)",
+              "hints": [
+                "2. Stammform beginnt mit „fo…“."
+              ],
+              "solutions": [
+                "found"
+              ],
+              "explanation": "Simple Past von „to find“: found (find – found – found).",
+              "acceptedAnswers": [
+                "found"
+              ],
+              "answer": "found"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to find“",
+              "hints": [
+                "3. Stammform beginnt mit „fo…“."
+              ],
+              "solutions": [
+                "found"
+              ],
+              "explanation": "Past Participle von „to find“: found (find – found – found).",
+              "acceptedAnswers": [
+                "found"
+              ],
+              "answer": "found"
+            }
+          ]
+        },
+        {
+          "id": "v29",
+          "sentence": "🇩🇪 „fliegen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „fliegen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „fl…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "fly"
+              ],
+              "explanation": "Infinitive von „fliegen“: to fly (fly – flew – flown).",
+              "acceptedAnswers": [
+                "fly"
+              ],
+              "answer": "fly"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to fly“ (fliegen)",
+              "hints": [
+                "2. Stammform beginnt mit „fl…“."
+              ],
+              "solutions": [
+                "flew"
+              ],
+              "explanation": "Simple Past von „to fly“: flew (fly – flew – flown).",
+              "acceptedAnswers": [
+                "flew"
+              ],
+              "answer": "flew"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to fly“",
+              "hints": [
+                "3. Stammform beginnt mit „fl…“."
+              ],
+              "solutions": [
+                "flown"
+              ],
+              "explanation": "Past Participle von „to fly“: flown (fly – flew – flown).",
+              "acceptedAnswers": [
+                "flown"
+              ],
+              "answer": "flown"
+            }
+          ]
+        },
+        {
+          "id": "v30",
+          "sentence": "🇩🇪 „vergessen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „vergessen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „fo…“ (6 Buchstaben)."
+              ],
+              "solutions": [
+                "forget"
+              ],
+              "explanation": "Infinitive von „vergessen“: to forget (forget – forgot – forgotten).",
+              "acceptedAnswers": [
+                "forget"
+              ],
+              "answer": "forget"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to forget“ (vergessen)",
+              "hints": [
+                "2. Stammform beginnt mit „fo…“."
+              ],
+              "solutions": [
+                "forgot"
+              ],
+              "explanation": "Simple Past von „to forget“: forgot (forget – forgot – forgotten).",
+              "acceptedAnswers": [
+                "forgot"
+              ],
+              "answer": "forgot"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to forget“",
+              "hints": [
+                "3. Stammform beginnt mit „fo…“."
+              ],
+              "solutions": [
+                "forgotten"
+              ],
+              "explanation": "Past Participle von „to forget“: forgotten (forget – forgot – forgotten).",
+              "acceptedAnswers": [
+                "forgotten"
+              ],
+              "answer": "forgotten"
+            }
+          ]
+        },
+        {
+          "id": "v31",
+          "sentence": "🇩🇪 „gefrieren; erstarren“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „gefrieren; erstarren“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „fr…“ (6 Buchstaben)."
+              ],
+              "solutions": [
+                "freeze"
+              ],
+              "explanation": "Infinitive von „gefrieren; erstarren“: to freeze (freeze – froze – frozen).",
+              "acceptedAnswers": [
+                "freeze"
+              ],
+              "answer": "freeze"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to freeze“ (gefrieren; erstarren)",
+              "hints": [
+                "2. Stammform beginnt mit „fr…“."
+              ],
+              "solutions": [
+                "froze"
+              ],
+              "explanation": "Simple Past von „to freeze“: froze (freeze – froze – frozen).",
+              "acceptedAnswers": [
+                "froze"
+              ],
+              "answer": "froze"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to freeze“",
+              "hints": [
+                "3. Stammform beginnt mit „fr…“."
+              ],
+              "solutions": [
+                "frozen"
+              ],
+              "explanation": "Past Participle von „to freeze“: frozen (freeze – froze – frozen).",
+              "acceptedAnswers": [
+                "frozen"
+              ],
+              "answer": "frozen"
+            }
+          ]
+        },
+        {
+          "id": "v32",
+          "sentence": "🇩🇪 „bekommen; holen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „bekommen; holen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ge…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "get"
+              ],
+              "explanation": "Infinitive von „bekommen; holen“: to get (get – got – got).",
+              "acceptedAnswers": [
+                "get"
+              ],
+              "answer": "get"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to get“ (bekommen; holen)",
+              "hints": [
+                "2. Stammform beginnt mit „go…“."
+              ],
+              "solutions": [
+                "got"
+              ],
+              "explanation": "Simple Past von „to get“: got (get – got – got).",
+              "acceptedAnswers": [
+                "got"
+              ],
+              "answer": "got"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to get“",
+              "hints": [
+                "3. Stammform beginnt mit „go…“."
+              ],
+              "solutions": [
+                "got"
+              ],
+              "explanation": "Past Participle von „to get“: got (get – got – got).",
+              "acceptedAnswers": [
+                "got"
+              ],
+              "answer": "got"
+            }
+          ]
+        },
+        {
+          "id": "v33",
+          "sentence": "🇩🇪 „geben“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „geben“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „gi…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "give"
+              ],
+              "explanation": "Infinitive von „geben“: to give (give – gave – given).",
+              "acceptedAnswers": [
+                "give"
+              ],
+              "answer": "give"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to give“ (geben)",
+              "hints": [
+                "2. Stammform beginnt mit „ga…“."
+              ],
+              "solutions": [
+                "gave"
+              ],
+              "explanation": "Simple Past von „to give“: gave (give – gave – given).",
+              "acceptedAnswers": [
+                "gave"
+              ],
+              "answer": "gave"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to give“",
+              "hints": [
+                "3. Stammform beginnt mit „gi…“."
+              ],
+              "solutions": [
+                "given"
+              ],
+              "explanation": "Past Participle von „to give“: given (give – gave – given).",
+              "acceptedAnswers": [
+                "given"
+              ],
+              "answer": "given"
+            }
+          ]
+        },
+        {
+          "id": "v34",
+          "sentence": "🇩🇪 „gehen, fahren“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „gehen, fahren“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „go…“ (2 Buchstaben)."
+              ],
+              "solutions": [
+                "go"
+              ],
+              "explanation": "Infinitive von „gehen, fahren“: to go (go – went – gone).",
+              "acceptedAnswers": [
+                "go"
+              ],
+              "answer": "go"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to go“ (gehen, fahren)",
+              "hints": [
+                "2. Stammform beginnt mit „we…“."
+              ],
+              "solutions": [
+                "went"
+              ],
+              "explanation": "Simple Past von „to go“: went (go – went – gone).",
+              "acceptedAnswers": [
+                "went"
+              ],
+              "answer": "went"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to go“",
+              "hints": [
+                "3. Stammform beginnt mit „go…“."
+              ],
+              "solutions": [
+                "gone"
+              ],
+              "explanation": "Past Participle von „to go“: gone (go – went – gone).",
+              "acceptedAnswers": [
+                "gone"
+              ],
+              "answer": "gone"
+            }
+          ]
+        },
+        {
+          "id": "v35",
+          "sentence": "🇩🇪 „anbauen; wachsen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „anbauen; wachsen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „gr…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "grow"
+              ],
+              "explanation": "Infinitive von „anbauen; wachsen“: to grow (grow – grew – grown).",
+              "acceptedAnswers": [
+                "grow"
+              ],
+              "answer": "grow"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to grow“ (anbauen; wachsen)",
+              "hints": [
+                "2. Stammform beginnt mit „gr…“."
+              ],
+              "solutions": [
+                "grew"
+              ],
+              "explanation": "Simple Past von „to grow“: grew (grow – grew – grown).",
+              "acceptedAnswers": [
+                "grew"
+              ],
+              "answer": "grew"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to grow“",
+              "hints": [
+                "3. Stammform beginnt mit „gr…“."
+              ],
+              "solutions": [
+                "grown"
+              ],
+              "explanation": "Past Participle von „to grow“: grown (grow – grew – grown).",
+              "acceptedAnswers": [
+                "grown"
+              ],
+              "answer": "grown"
+            }
+          ]
+        },
+        {
+          "id": "v36",
+          "sentence": "🇩🇪 „hängen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „hängen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ha…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "hang"
+              ],
+              "explanation": "Infinitive von „hängen“: to hang (hang – hung – hung).",
+              "acceptedAnswers": [
+                "hang"
+              ],
+              "answer": "hang"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to hang“ (hängen)",
+              "hints": [
+                "2. Stammform beginnt mit „hu…“."
+              ],
+              "solutions": [
+                "hung"
+              ],
+              "explanation": "Simple Past von „to hang“: hung (hang – hung – hung).",
+              "acceptedAnswers": [
+                "hung"
+              ],
+              "answer": "hung"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to hang“",
+              "hints": [
+                "3. Stammform beginnt mit „hu…“."
+              ],
+              "solutions": [
+                "hung"
+              ],
+              "explanation": "Past Participle von „to hang“: hung (hang – hung – hung).",
+              "acceptedAnswers": [
+                "hung"
+              ],
+              "answer": "hung"
+            }
+          ]
+        },
+        {
+          "id": "v37",
+          "sentence": "🇩🇪 „haben“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „haben“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ha…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "have"
+              ],
+              "explanation": "Infinitive von „haben“: to have (have – had – had).",
+              "acceptedAnswers": [
+                "have"
+              ],
+              "answer": "have"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to have“ (haben)",
+              "hints": [
+                "2. Stammform beginnt mit „ha…“."
+              ],
+              "solutions": [
+                "had"
+              ],
+              "explanation": "Simple Past von „to have“: had (have – had – had).",
+              "acceptedAnswers": [
+                "had"
+              ],
+              "answer": "had"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to have“",
+              "hints": [
+                "3. Stammform beginnt mit „ha…“."
+              ],
+              "solutions": [
+                "had"
+              ],
+              "explanation": "Past Participle von „to have“: had (have – had – had).",
+              "acceptedAnswers": [
+                "had"
+              ],
+              "answer": "had"
+            }
+          ]
+        },
+        {
+          "id": "v38",
+          "sentence": "🇩🇪 „hören“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „hören“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „he…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "hear"
+              ],
+              "explanation": "Infinitive von „hören“: to hear (hear – heard – heard).",
+              "acceptedAnswers": [
+                "hear"
+              ],
+              "answer": "hear"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to hear“ (hören)",
+              "hints": [
+                "2. Stammform beginnt mit „he…“."
+              ],
+              "solutions": [
+                "heard"
+              ],
+              "explanation": "Simple Past von „to hear“: heard (hear – heard – heard).",
+              "acceptedAnswers": [
+                "heard"
+              ],
+              "answer": "heard"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to hear“",
+              "hints": [
+                "3. Stammform beginnt mit „he…“."
+              ],
+              "solutions": [
+                "heard"
+              ],
+              "explanation": "Past Participle von „to hear“: heard (hear – heard – heard).",
+              "acceptedAnswers": [
+                "heard"
+              ],
+              "answer": "heard"
+            }
+          ]
+        },
+        {
+          "id": "v39",
+          "sentence": "🇩🇪 „verstecken“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „verstecken“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „hi…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "hide"
+              ],
+              "explanation": "Infinitive von „verstecken“: to hide (hide – hid – hidden).",
+              "acceptedAnswers": [
+                "hide"
+              ],
+              "answer": "hide"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to hide“ (verstecken)",
+              "hints": [
+                "2. Stammform beginnt mit „hi…“."
+              ],
+              "solutions": [
+                "hid"
+              ],
+              "explanation": "Simple Past von „to hide“: hid (hide – hid – hidden).",
+              "acceptedAnswers": [
+                "hid"
+              ],
+              "answer": "hid"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to hide“",
+              "hints": [
+                "3. Stammform beginnt mit „hi…“."
+              ],
+              "solutions": [
+                "hidden"
+              ],
+              "explanation": "Past Participle von „to hide“: hidden (hide – hid – hidden).",
+              "acceptedAnswers": [
+                "hidden"
+              ],
+              "answer": "hidden"
+            }
+          ]
+        },
+        {
+          "id": "v40",
+          "sentence": "🇩🇪 „treffen, schlagen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „treffen, schlagen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „hi…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "hit"
+              ],
+              "explanation": "Infinitive von „treffen, schlagen“: to hit (hit – hit – hit).",
+              "acceptedAnswers": [
+                "hit"
+              ],
+              "answer": "hit"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to hit“ (treffen, schlagen)",
+              "hints": [
+                "2. Stammform beginnt mit „hi…“."
+              ],
+              "solutions": [
+                "hit"
+              ],
+              "explanation": "Simple Past von „to hit“: hit (hit – hit – hit).",
+              "acceptedAnswers": [
+                "hit"
+              ],
+              "answer": "hit"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to hit“",
+              "hints": [
+                "3. Stammform beginnt mit „hi…“."
+              ],
+              "solutions": [
+                "hit"
+              ],
+              "explanation": "Past Participle von „to hit“: hit (hit – hit – hit).",
+              "acceptedAnswers": [
+                "hit"
+              ],
+              "answer": "hit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Teil 3: hold – run (20 Verben)",
+      "type": "single_sentence",
+      "instruction": "Gib alle drei Stammformen (Infinitive, Simple Past, Past Participle) zum deutschen Verb ein.",
+      "items": [
+        {
+          "id": "v41",
+          "sentence": "🇩🇪 „halten“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „halten“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ho…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "hold"
+              ],
+              "explanation": "Infinitive von „halten“: to hold (hold – held – held).",
+              "acceptedAnswers": [
+                "hold"
+              ],
+              "answer": "hold"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to hold“ (halten)",
+              "hints": [
+                "2. Stammform beginnt mit „he…“."
+              ],
+              "solutions": [
+                "held"
+              ],
+              "explanation": "Simple Past von „to hold“: held (hold – held – held).",
+              "acceptedAnswers": [
+                "held"
+              ],
+              "answer": "held"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to hold“",
+              "hints": [
+                "3. Stammform beginnt mit „he…“."
+              ],
+              "solutions": [
+                "held"
+              ],
+              "explanation": "Past Participle von „to hold“: held (hold – held – held).",
+              "acceptedAnswers": [
+                "held"
+              ],
+              "answer": "held"
+            }
+          ]
+        },
+        {
+          "id": "v42",
+          "sentence": "🇩🇪 „verletzen; wehtun“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „verletzen; wehtun“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „hu…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "hurt"
+              ],
+              "explanation": "Infinitive von „verletzen; wehtun“: to hurt (hurt – hurt – hurt).",
+              "acceptedAnswers": [
+                "hurt"
+              ],
+              "answer": "hurt"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to hurt“ (verletzen; wehtun)",
+              "hints": [
+                "2. Stammform beginnt mit „hu…“."
+              ],
+              "solutions": [
+                "hurt"
+              ],
+              "explanation": "Simple Past von „to hurt“: hurt (hurt – hurt – hurt).",
+              "acceptedAnswers": [
+                "hurt"
+              ],
+              "answer": "hurt"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to hurt“",
+              "hints": [
+                "3. Stammform beginnt mit „hu…“."
+              ],
+              "solutions": [
+                "hurt"
+              ],
+              "explanation": "Past Participle von „to hurt“: hurt (hurt – hurt – hurt).",
+              "acceptedAnswers": [
+                "hurt"
+              ],
+              "answer": "hurt"
+            }
+          ]
+        },
+        {
+          "id": "v43",
+          "sentence": "🇩🇪 „behalten“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „behalten“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ke…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "keep"
+              ],
+              "explanation": "Infinitive von „behalten“: to keep (keep – kept – kept).",
+              "acceptedAnswers": [
+                "keep"
+              ],
+              "answer": "keep"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to keep“ (behalten)",
+              "hints": [
+                "2. Stammform beginnt mit „ke…“."
+              ],
+              "solutions": [
+                "kept"
+              ],
+              "explanation": "Simple Past von „to keep“: kept (keep – kept – kept).",
+              "acceptedAnswers": [
+                "kept"
+              ],
+              "answer": "kept"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to keep“",
+              "hints": [
+                "3. Stammform beginnt mit „ke…“."
+              ],
+              "solutions": [
+                "kept"
+              ],
+              "explanation": "Past Participle von „to keep“: kept (keep – kept – kept).",
+              "acceptedAnswers": [
+                "kept"
+              ],
+              "answer": "kept"
+            }
+          ]
+        },
+        {
+          "id": "v44",
+          "sentence": "🇩🇪 „knien“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „knien“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „kn…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "kneel"
+              ],
+              "explanation": "Infinitive von „knien“: to kneel (kneel – knelt – knelt).",
+              "acceptedAnswers": [
+                "kneel"
+              ],
+              "answer": "kneel"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to kneel“ (knien)",
+              "hints": [
+                "2. Stammform beginnt mit „kn…“."
+              ],
+              "solutions": [
+                "knelt"
+              ],
+              "explanation": "Simple Past von „to kneel“: knelt (kneel – knelt – knelt).",
+              "acceptedAnswers": [
+                "knelt"
+              ],
+              "answer": "knelt"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to kneel“",
+              "hints": [
+                "3. Stammform beginnt mit „kn…“."
+              ],
+              "solutions": [
+                "knelt"
+              ],
+              "explanation": "Past Participle von „to kneel“: knelt (kneel – knelt – knelt).",
+              "acceptedAnswers": [
+                "knelt"
+              ],
+              "answer": "knelt"
+            }
+          ]
+        },
+        {
+          "id": "v45",
+          "sentence": "🇩🇪 „wissen; kennen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „wissen; kennen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „kn…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "know"
+              ],
+              "explanation": "Infinitive von „wissen; kennen“: to know (know – knew – known).",
+              "acceptedAnswers": [
+                "know"
+              ],
+              "answer": "know"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to know“ (wissen; kennen)",
+              "hints": [
+                "2. Stammform beginnt mit „kn…“."
+              ],
+              "solutions": [
+                "knew"
+              ],
+              "explanation": "Simple Past von „to know“: knew (know – knew – known).",
+              "acceptedAnswers": [
+                "knew"
+              ],
+              "answer": "knew"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to know“",
+              "hints": [
+                "3. Stammform beginnt mit „kn…“."
+              ],
+              "solutions": [
+                "known"
+              ],
+              "explanation": "Past Participle von „to know“: known (know – knew – known).",
+              "acceptedAnswers": [
+                "known"
+              ],
+              "answer": "known"
+            }
+          ]
+        },
+        {
+          "id": "v46",
+          "sentence": "🇩🇪 „führen, leiten“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „führen, leiten“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „le…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "lead"
+              ],
+              "explanation": "Infinitive von „führen, leiten“: to lead (lead – led – led).",
+              "acceptedAnswers": [
+                "lead"
+              ],
+              "answer": "lead"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to lead“ (führen, leiten)",
+              "hints": [
+                "2. Stammform beginnt mit „le…“."
+              ],
+              "solutions": [
+                "led"
+              ],
+              "explanation": "Simple Past von „to lead“: led (lead – led – led).",
+              "acceptedAnswers": [
+                "led"
+              ],
+              "answer": "led"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to lead“",
+              "hints": [
+                "3. Stammform beginnt mit „le…“."
+              ],
+              "solutions": [
+                "led"
+              ],
+              "explanation": "Past Participle von „to lead“: led (lead – led – led).",
+              "acceptedAnswers": [
+                "led"
+              ],
+              "answer": "led"
+            }
+          ]
+        },
+        {
+          "id": "v47",
+          "sentence": "🇩🇪 „verlassen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „verlassen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „le…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "leave"
+              ],
+              "explanation": "Infinitive von „verlassen“: to leave (leave – left – left).",
+              "acceptedAnswers": [
+                "leave"
+              ],
+              "answer": "leave"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to leave“ (verlassen)",
+              "hints": [
+                "2. Stammform beginnt mit „le…“."
+              ],
+              "solutions": [
+                "left"
+              ],
+              "explanation": "Simple Past von „to leave“: left (leave – left – left).",
+              "acceptedAnswers": [
+                "left"
+              ],
+              "answer": "left"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to leave“",
+              "hints": [
+                "3. Stammform beginnt mit „le…“."
+              ],
+              "solutions": [
+                "left"
+              ],
+              "explanation": "Past Participle von „to leave“: left (leave – left – left).",
+              "acceptedAnswers": [
+                "left"
+              ],
+              "answer": "left"
+            }
+          ]
+        },
+        {
+          "id": "v48",
+          "sentence": "🇩🇪 „leihen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „leihen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „le…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "lend"
+              ],
+              "explanation": "Infinitive von „leihen“: to lend (lend – lent – lent).",
+              "acceptedAnswers": [
+                "lend"
+              ],
+              "answer": "lend"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to lend“ (leihen)",
+              "hints": [
+                "2. Stammform beginnt mit „le…“."
+              ],
+              "solutions": [
+                "lent"
+              ],
+              "explanation": "Simple Past von „to lend“: lent (lend – lent – lent).",
+              "acceptedAnswers": [
+                "lent"
+              ],
+              "answer": "lent"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to lend“",
+              "hints": [
+                "3. Stammform beginnt mit „le…“."
+              ],
+              "solutions": [
+                "lent"
+              ],
+              "explanation": "Past Participle von „to lend“: lent (lend – lent – lent).",
+              "acceptedAnswers": [
+                "lent"
+              ],
+              "answer": "lent"
+            }
+          ]
+        },
+        {
+          "id": "v49",
+          "sentence": "🇩🇪 „lassen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „lassen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „le…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "let"
+              ],
+              "explanation": "Infinitive von „lassen“: to let (let – let – let).",
+              "acceptedAnswers": [
+                "let"
+              ],
+              "answer": "let"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to let“ (lassen)",
+              "hints": [
+                "2. Stammform beginnt mit „le…“."
+              ],
+              "solutions": [
+                "let"
+              ],
+              "explanation": "Simple Past von „to let“: let (let – let – let).",
+              "acceptedAnswers": [
+                "let"
+              ],
+              "answer": "let"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to let“",
+              "hints": [
+                "3. Stammform beginnt mit „le…“."
+              ],
+              "solutions": [
+                "let"
+              ],
+              "explanation": "Past Participle von „to let“: let (let – let – let).",
+              "acceptedAnswers": [
+                "let"
+              ],
+              "answer": "let"
+            }
+          ]
+        },
+        {
+          "id": "v50",
+          "sentence": "🇩🇪 „verlieren“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „verlieren“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „lo…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "lose"
+              ],
+              "explanation": "Infinitive von „verlieren“: to lose (lose – lost – lost).",
+              "acceptedAnswers": [
+                "lose"
+              ],
+              "answer": "lose"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to lose“ (verlieren)",
+              "hints": [
+                "2. Stammform beginnt mit „lo…“."
+              ],
+              "solutions": [
+                "lost"
+              ],
+              "explanation": "Simple Past von „to lose“: lost (lose – lost – lost).",
+              "acceptedAnswers": [
+                "lost"
+              ],
+              "answer": "lost"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to lose“",
+              "hints": [
+                "3. Stammform beginnt mit „lo…“."
+              ],
+              "solutions": [
+                "lost"
+              ],
+              "explanation": "Past Participle von „to lose“: lost (lose – lost – lost).",
+              "acceptedAnswers": [
+                "lost"
+              ],
+              "answer": "lost"
+            }
+          ]
+        },
+        {
+          "id": "v51",
+          "sentence": "🇩🇪 „machen, herstellen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „machen, herstellen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ma…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "make"
+              ],
+              "explanation": "Infinitive von „machen, herstellen“: to make (make – made – made).",
+              "acceptedAnswers": [
+                "make"
+              ],
+              "answer": "make"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to make“ (machen, herstellen)",
+              "hints": [
+                "2. Stammform beginnt mit „ma…“."
+              ],
+              "solutions": [
+                "made"
+              ],
+              "explanation": "Simple Past von „to make“: made (make – made – made).",
+              "acceptedAnswers": [
+                "made"
+              ],
+              "answer": "made"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to make“",
+              "hints": [
+                "3. Stammform beginnt mit „ma…“."
+              ],
+              "solutions": [
+                "made"
+              ],
+              "explanation": "Past Participle von „to make“: made (make – made – made).",
+              "acceptedAnswers": [
+                "made"
+              ],
+              "answer": "made"
+            }
+          ]
+        },
+        {
+          "id": "v52",
+          "sentence": "🇩🇪 „bedeuten“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „bedeuten“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „me…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "mean"
+              ],
+              "explanation": "Infinitive von „bedeuten“: to mean (mean – meant – meant).",
+              "acceptedAnswers": [
+                "mean"
+              ],
+              "answer": "mean"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to mean“ (bedeuten)",
+              "hints": [
+                "2. Stammform beginnt mit „me…“."
+              ],
+              "solutions": [
+                "meant"
+              ],
+              "explanation": "Simple Past von „to mean“: meant (mean – meant – meant).",
+              "acceptedAnswers": [
+                "meant"
+              ],
+              "answer": "meant"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to mean“",
+              "hints": [
+                "3. Stammform beginnt mit „me…“."
+              ],
+              "solutions": [
+                "meant"
+              ],
+              "explanation": "Past Participle von „to mean“: meant (mean – meant – meant).",
+              "acceptedAnswers": [
+                "meant"
+              ],
+              "answer": "meant"
+            }
+          ]
+        },
+        {
+          "id": "v53",
+          "sentence": "🇩🇪 „treffen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „treffen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „me…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "meet"
+              ],
+              "explanation": "Infinitive von „treffen“: to meet (meet – met – met).",
+              "acceptedAnswers": [
+                "meet"
+              ],
+              "answer": "meet"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to meet“ (treffen)",
+              "hints": [
+                "2. Stammform beginnt mit „me…“."
+              ],
+              "solutions": [
+                "met"
+              ],
+              "explanation": "Simple Past von „to meet“: met (meet – met – met).",
+              "acceptedAnswers": [
+                "met"
+              ],
+              "answer": "met"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to meet“",
+              "hints": [
+                "3. Stammform beginnt mit „me…“."
+              ],
+              "solutions": [
+                "met"
+              ],
+              "explanation": "Past Participle von „to meet“: met (meet – met – met).",
+              "acceptedAnswers": [
+                "met"
+              ],
+              "answer": "met"
+            }
+          ]
+        },
+        {
+          "id": "v54",
+          "sentence": "🇩🇪 „bezahlen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „bezahlen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „pa…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "pay"
+              ],
+              "explanation": "Infinitive von „bezahlen“: to pay (pay – paid – paid).",
+              "acceptedAnswers": [
+                "pay"
+              ],
+              "answer": "pay"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to pay“ (bezahlen)",
+              "hints": [
+                "2. Stammform beginnt mit „pa…“."
+              ],
+              "solutions": [
+                "paid"
+              ],
+              "explanation": "Simple Past von „to pay“: paid (pay – paid – paid).",
+              "acceptedAnswers": [
+                "paid"
+              ],
+              "answer": "paid"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to pay“",
+              "hints": [
+                "3. Stammform beginnt mit „pa…“."
+              ],
+              "solutions": [
+                "paid"
+              ],
+              "explanation": "Past Participle von „to pay“: paid (pay – paid – paid).",
+              "acceptedAnswers": [
+                "paid"
+              ],
+              "answer": "paid"
+            }
+          ]
+        },
+        {
+          "id": "v55",
+          "sentence": "🇩🇪 „legen, stellen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „legen, stellen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „pu…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "put"
+              ],
+              "explanation": "Infinitive von „legen, stellen“: to put (put – put – put).",
+              "acceptedAnswers": [
+                "put"
+              ],
+              "answer": "put"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to put“ (legen, stellen)",
+              "hints": [
+                "2. Stammform beginnt mit „pu…“."
+              ],
+              "solutions": [
+                "put"
+              ],
+              "explanation": "Simple Past von „to put“: put (put – put – put).",
+              "acceptedAnswers": [
+                "put"
+              ],
+              "answer": "put"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to put“",
+              "hints": [
+                "3. Stammform beginnt mit „pu…“."
+              ],
+              "solutions": [
+                "put"
+              ],
+              "explanation": "Past Participle von „to put“: put (put – put – put).",
+              "acceptedAnswers": [
+                "put"
+              ],
+              "answer": "put"
+            }
+          ]
+        },
+        {
+          "id": "v56",
+          "sentence": "🇩🇪 „lesen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „lesen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „re…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "read"
+              ],
+              "explanation": "Infinitive von „lesen“: to read (read – read – read).",
+              "acceptedAnswers": [
+                "read"
+              ],
+              "answer": "read"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to read“ (lesen)",
+              "hints": [
+                "2. Stammform beginnt mit „re…“."
+              ],
+              "solutions": [
+                "read"
+              ],
+              "explanation": "Simple Past von „to read“: read (read – read – read).",
+              "acceptedAnswers": [
+                "read"
+              ],
+              "answer": "read"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to read“",
+              "hints": [
+                "3. Stammform beginnt mit „re…“."
+              ],
+              "solutions": [
+                "read"
+              ],
+              "explanation": "Past Participle von „to read“: read (read – read – read).",
+              "acceptedAnswers": [
+                "read"
+              ],
+              "answer": "read"
+            }
+          ]
+        },
+        {
+          "id": "v57",
+          "sentence": "🇩🇪 „reiten; fahren“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „reiten; fahren“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ri…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "ride"
+              ],
+              "explanation": "Infinitive von „reiten; fahren“: to ride (ride – rode – ridden).",
+              "acceptedAnswers": [
+                "ride"
+              ],
+              "answer": "ride"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to ride“ (reiten; fahren)",
+              "hints": [
+                "2. Stammform beginnt mit „ro…“."
+              ],
+              "solutions": [
+                "rode"
+              ],
+              "explanation": "Simple Past von „to ride“: rode (ride – rode – ridden).",
+              "acceptedAnswers": [
+                "rode"
+              ],
+              "answer": "rode"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to ride“",
+              "hints": [
+                "3. Stammform beginnt mit „ri…“."
+              ],
+              "solutions": [
+                "ridden"
+              ],
+              "explanation": "Past Participle von „to ride“: ridden (ride – rode – ridden).",
+              "acceptedAnswers": [
+                "ridden"
+              ],
+              "answer": "ridden"
+            }
+          ]
+        },
+        {
+          "id": "v58",
+          "sentence": "🇩🇪 „läuten, klingeln“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „läuten, klingeln“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ri…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "ring"
+              ],
+              "explanation": "Infinitive von „läuten, klingeln“: to ring (ring – rang – rung).",
+              "acceptedAnswers": [
+                "ring"
+              ],
+              "answer": "ring"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to ring“ (läuten, klingeln)",
+              "hints": [
+                "2. Stammform beginnt mit „ra…“."
+              ],
+              "solutions": [
+                "rang"
+              ],
+              "explanation": "Simple Past von „to ring“: rang (ring – rang – rung).",
+              "acceptedAnswers": [
+                "rang"
+              ],
+              "answer": "rang"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to ring“",
+              "hints": [
+                "3. Stammform beginnt mit „ru…“."
+              ],
+              "solutions": [
+                "rung"
+              ],
+              "explanation": "Past Participle von „to ring“: rung (ring – rang – rung).",
+              "acceptedAnswers": [
+                "rung"
+              ],
+              "answer": "rung"
+            }
+          ]
+        },
+        {
+          "id": "v59",
+          "sentence": "🇩🇪 „ansteigen; erheben“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „ansteigen; erheben“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ri…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "rise"
+              ],
+              "explanation": "Infinitive von „ansteigen; erheben“: to rise (rise – rose – risen).",
+              "acceptedAnswers": [
+                "rise"
+              ],
+              "answer": "rise"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to rise“ (ansteigen; erheben)",
+              "hints": [
+                "2. Stammform beginnt mit „ro…“."
+              ],
+              "solutions": [
+                "rose"
+              ],
+              "explanation": "Simple Past von „to rise“: rose (rise – rose – risen).",
+              "acceptedAnswers": [
+                "rose"
+              ],
+              "answer": "rose"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to rise“",
+              "hints": [
+                "3. Stammform beginnt mit „ri…“."
+              ],
+              "solutions": [
+                "risen"
+              ],
+              "explanation": "Past Participle von „to rise“: risen (rise – rose – risen).",
+              "acceptedAnswers": [
+                "risen"
+              ],
+              "answer": "risen"
+            }
+          ]
+        },
+        {
+          "id": "v60",
+          "sentence": "🇩🇪 „rennen, laufen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „rennen, laufen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ru…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "run"
+              ],
+              "explanation": "Infinitive von „rennen, laufen“: to run (run – ran – run).",
+              "acceptedAnswers": [
+                "run"
+              ],
+              "answer": "run"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to run“ (rennen, laufen)",
+              "hints": [
+                "2. Stammform beginnt mit „ra…“."
+              ],
+              "solutions": [
+                "ran"
+              ],
+              "explanation": "Simple Past von „to run“: ran (run – ran – run).",
+              "acceptedAnswers": [
+                "ran"
+              ],
+              "answer": "ran"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to run“",
+              "hints": [
+                "3. Stammform beginnt mit „ru…“."
+              ],
+              "solutions": [
+                "run"
+              ],
+              "explanation": "Past Participle von „to run“: run (run – ran – run).",
+              "acceptedAnswers": [
+                "run"
+              ],
+              "answer": "run"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Teil 4: say – stick (20 Verben)",
+      "type": "single_sentence",
+      "instruction": "Gib alle drei Stammformen (Infinitive, Simple Past, Past Participle) zum deutschen Verb ein.",
+      "items": [
+        {
+          "id": "v61",
+          "sentence": "🇩🇪 „sagen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „sagen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sa…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "say"
+              ],
+              "explanation": "Infinitive von „sagen“: to say (say – said – said).",
+              "acceptedAnswers": [
+                "say"
+              ],
+              "answer": "say"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to say“ (sagen)",
+              "hints": [
+                "2. Stammform beginnt mit „sa…“."
+              ],
+              "solutions": [
+                "said"
+              ],
+              "explanation": "Simple Past von „to say“: said (say – said – said).",
+              "acceptedAnswers": [
+                "said"
+              ],
+              "answer": "said"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to say“",
+              "hints": [
+                "3. Stammform beginnt mit „sa…“."
+              ],
+              "solutions": [
+                "said"
+              ],
+              "explanation": "Past Participle von „to say“: said (say – said – said).",
+              "acceptedAnswers": [
+                "said"
+              ],
+              "answer": "said"
+            }
+          ]
+        },
+        {
+          "id": "v62",
+          "sentence": "🇩🇪 „sehen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „sehen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „se…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "see"
+              ],
+              "explanation": "Infinitive von „sehen“: to see (see – saw – seen).",
+              "acceptedAnswers": [
+                "see"
+              ],
+              "answer": "see"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to see“ (sehen)",
+              "hints": [
+                "2. Stammform beginnt mit „sa…“."
+              ],
+              "solutions": [
+                "saw"
+              ],
+              "explanation": "Simple Past von „to see“: saw (see – saw – seen).",
+              "acceptedAnswers": [
+                "saw"
+              ],
+              "answer": "saw"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to see“",
+              "hints": [
+                "3. Stammform beginnt mit „se…“."
+              ],
+              "solutions": [
+                "seen"
+              ],
+              "explanation": "Past Participle von „to see“: seen (see – saw – seen).",
+              "acceptedAnswers": [
+                "seen"
+              ],
+              "answer": "seen"
+            }
+          ]
+        },
+        {
+          "id": "v63",
+          "sentence": "🇩🇪 „verkaufen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „verkaufen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „se…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "sell"
+              ],
+              "explanation": "Infinitive von „verkaufen“: to sell (sell – sold – sold).",
+              "acceptedAnswers": [
+                "sell"
+              ],
+              "answer": "sell"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to sell“ (verkaufen)",
+              "hints": [
+                "2. Stammform beginnt mit „so…“."
+              ],
+              "solutions": [
+                "sold"
+              ],
+              "explanation": "Simple Past von „to sell“: sold (sell – sold – sold).",
+              "acceptedAnswers": [
+                "sold"
+              ],
+              "answer": "sold"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to sell“",
+              "hints": [
+                "3. Stammform beginnt mit „so…“."
+              ],
+              "solutions": [
+                "sold"
+              ],
+              "explanation": "Past Participle von „to sell“: sold (sell – sold – sold).",
+              "acceptedAnswers": [
+                "sold"
+              ],
+              "answer": "sold"
+            }
+          ]
+        },
+        {
+          "id": "v64",
+          "sentence": "🇩🇪 „senden, schicken“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „senden, schicken“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „se…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "send"
+              ],
+              "explanation": "Infinitive von „senden, schicken“: to send (send – sent – sent).",
+              "acceptedAnswers": [
+                "send"
+              ],
+              "answer": "send"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to send“ (senden, schicken)",
+              "hints": [
+                "2. Stammform beginnt mit „se…“."
+              ],
+              "solutions": [
+                "sent"
+              ],
+              "explanation": "Simple Past von „to send“: sent (send – sent – sent).",
+              "acceptedAnswers": [
+                "sent"
+              ],
+              "answer": "sent"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to send“",
+              "hints": [
+                "3. Stammform beginnt mit „se…“."
+              ],
+              "solutions": [
+                "sent"
+              ],
+              "explanation": "Past Participle von „to send“: sent (send – sent – sent).",
+              "acceptedAnswers": [
+                "sent"
+              ],
+              "answer": "sent"
+            }
+          ]
+        },
+        {
+          "id": "v65",
+          "sentence": "🇩🇪 „stellen, legen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „stellen, legen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „se…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "set"
+              ],
+              "explanation": "Infinitive von „stellen, legen“: to set (set – set – set).",
+              "acceptedAnswers": [
+                "set"
+              ],
+              "answer": "set"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to set“ (stellen, legen)",
+              "hints": [
+                "2. Stammform beginnt mit „se…“."
+              ],
+              "solutions": [
+                "set"
+              ],
+              "explanation": "Simple Past von „to set“: set (set – set – set).",
+              "acceptedAnswers": [
+                "set"
+              ],
+              "answer": "set"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to set“",
+              "hints": [
+                "3. Stammform beginnt mit „se…“."
+              ],
+              "solutions": [
+                "set"
+              ],
+              "explanation": "Past Participle von „to set“: set (set – set – set).",
+              "acceptedAnswers": [
+                "set"
+              ],
+              "answer": "set"
+            }
+          ]
+        },
+        {
+          "id": "v66",
+          "sentence": "🇩🇪 „nähen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „nähen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „se…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "sew"
+              ],
+              "explanation": "Infinitive von „nähen“: to sew (sew – sewed – sewn).",
+              "acceptedAnswers": [
+                "sew"
+              ],
+              "answer": "sew"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to sew“ (nähen)",
+              "hints": [
+                "2. Stammform beginnt mit „se…“."
+              ],
+              "solutions": [
+                "sewed"
+              ],
+              "explanation": "Simple Past von „to sew“: sewed (sew – sewed – sewn).",
+              "acceptedAnswers": [
+                "sewed"
+              ],
+              "answer": "sewed"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to sew“",
+              "hints": [
+                "3. Stammform beginnt mit „se…“."
+              ],
+              "solutions": [
+                "sewn"
+              ],
+              "explanation": "Past Participle von „to sew“: sewn (sew – sewed – sewn).",
+              "acceptedAnswers": [
+                "sewn"
+              ],
+              "answer": "sewn"
+            }
+          ]
+        },
+        {
+          "id": "v67",
+          "sentence": "🇩🇪 „schütteln“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „schütteln“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sh…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "shake"
+              ],
+              "explanation": "Infinitive von „schütteln“: to shake (shake – shook – shaken).",
+              "acceptedAnswers": [
+                "shake"
+              ],
+              "answer": "shake"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to shake“ (schütteln)",
+              "hints": [
+                "2. Stammform beginnt mit „sh…“."
+              ],
+              "solutions": [
+                "shook"
+              ],
+              "explanation": "Simple Past von „to shake“: shook (shake – shook – shaken).",
+              "acceptedAnswers": [
+                "shook"
+              ],
+              "answer": "shook"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to shake“",
+              "hints": [
+                "3. Stammform beginnt mit „sh…“."
+              ],
+              "solutions": [
+                "shaken"
+              ],
+              "explanation": "Past Participle von „to shake“: shaken (shake – shook – shaken).",
+              "acceptedAnswers": [
+                "shaken"
+              ],
+              "answer": "shaken"
+            }
+          ]
+        },
+        {
+          "id": "v68",
+          "sentence": "🇩🇪 „schießen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „schießen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sh…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "shoot"
+              ],
+              "explanation": "Infinitive von „schießen“: to shoot (shoot – shot – shot).",
+              "acceptedAnswers": [
+                "shoot"
+              ],
+              "answer": "shoot"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to shoot“ (schießen)",
+              "hints": [
+                "2. Stammform beginnt mit „sh…“."
+              ],
+              "solutions": [
+                "shot"
+              ],
+              "explanation": "Simple Past von „to shoot“: shot (shoot – shot – shot).",
+              "acceptedAnswers": [
+                "shot"
+              ],
+              "answer": "shot"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to shoot“",
+              "hints": [
+                "3. Stammform beginnt mit „sh…“."
+              ],
+              "solutions": [
+                "shot"
+              ],
+              "explanation": "Past Participle von „to shoot“: shot (shoot – shot – shot).",
+              "acceptedAnswers": [
+                "shot"
+              ],
+              "answer": "shot"
+            }
+          ]
+        },
+        {
+          "id": "v69",
+          "sentence": "🇩🇪 „zeigen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „zeigen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sh…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "show"
+              ],
+              "explanation": "Infinitive von „zeigen“: to show (show – showed – shown).",
+              "acceptedAnswers": [
+                "show"
+              ],
+              "answer": "show"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to show“ (zeigen)",
+              "hints": [
+                "2. Stammform beginnt mit „sh…“."
+              ],
+              "solutions": [
+                "showed"
+              ],
+              "explanation": "Simple Past von „to show“: showed (show – showed – shown).",
+              "acceptedAnswers": [
+                "showed"
+              ],
+              "answer": "showed"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to show“",
+              "hints": [
+                "3. Stammform beginnt mit „sh…“."
+              ],
+              "solutions": [
+                "shown"
+              ],
+              "explanation": "Past Participle von „to show“: shown (show – showed – shown).",
+              "acceptedAnswers": [
+                "shown"
+              ],
+              "answer": "shown"
+            }
+          ]
+        },
+        {
+          "id": "v70",
+          "sentence": "🇩🇪 „singen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „singen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „si…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "sing"
+              ],
+              "explanation": "Infinitive von „singen“: to sing (sing – sang – sung).",
+              "acceptedAnswers": [
+                "sing"
+              ],
+              "answer": "sing"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to sing“ (singen)",
+              "hints": [
+                "2. Stammform beginnt mit „sa…“."
+              ],
+              "solutions": [
+                "sang"
+              ],
+              "explanation": "Simple Past von „to sing“: sang (sing – sang – sung).",
+              "acceptedAnswers": [
+                "sang"
+              ],
+              "answer": "sang"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to sing“",
+              "hints": [
+                "3. Stammform beginnt mit „su…“."
+              ],
+              "solutions": [
+                "sung"
+              ],
+              "explanation": "Past Participle von „to sing“: sung (sing – sang – sung).",
+              "acceptedAnswers": [
+                "sung"
+              ],
+              "answer": "sung"
+            }
+          ]
+        },
+        {
+          "id": "v71",
+          "sentence": "🇩🇪 „sitzen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „sitzen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „si…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "sit"
+              ],
+              "explanation": "Infinitive von „sitzen“: to sit (sit – sat – sat).",
+              "acceptedAnswers": [
+                "sit"
+              ],
+              "answer": "sit"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to sit“ (sitzen)",
+              "hints": [
+                "2. Stammform beginnt mit „sa…“."
+              ],
+              "solutions": [
+                "sat"
+              ],
+              "explanation": "Simple Past von „to sit“: sat (sit – sat – sat).",
+              "acceptedAnswers": [
+                "sat"
+              ],
+              "answer": "sat"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to sit“",
+              "hints": [
+                "3. Stammform beginnt mit „sa…“."
+              ],
+              "solutions": [
+                "sat"
+              ],
+              "explanation": "Past Participle von „to sit“: sat (sit – sat – sat).",
+              "acceptedAnswers": [
+                "sat"
+              ],
+              "answer": "sat"
+            }
+          ]
+        },
+        {
+          "id": "v72",
+          "sentence": "🇩🇪 „schlafen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „schlafen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sl…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "sleep"
+              ],
+              "explanation": "Infinitive von „schlafen“: to sleep (sleep – slept – slept).",
+              "acceptedAnswers": [
+                "sleep"
+              ],
+              "answer": "sleep"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to sleep“ (schlafen)",
+              "hints": [
+                "2. Stammform beginnt mit „sl…“."
+              ],
+              "solutions": [
+                "slept"
+              ],
+              "explanation": "Simple Past von „to sleep“: slept (sleep – slept – slept).",
+              "acceptedAnswers": [
+                "slept"
+              ],
+              "answer": "slept"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to sleep“",
+              "hints": [
+                "3. Stammform beginnt mit „sl…“."
+              ],
+              "solutions": [
+                "slept"
+              ],
+              "explanation": "Past Participle von „to sleep“: slept (sleep – slept – slept).",
+              "acceptedAnswers": [
+                "slept"
+              ],
+              "answer": "slept"
+            }
+          ]
+        },
+        {
+          "id": "v73",
+          "sentence": "🇩🇪 „sprechen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „sprechen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sp…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "speak"
+              ],
+              "explanation": "Infinitive von „sprechen“: to speak (speak – spoke – spoken).",
+              "acceptedAnswers": [
+                "speak"
+              ],
+              "answer": "speak"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to speak“ (sprechen)",
+              "hints": [
+                "2. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "spoke"
+              ],
+              "explanation": "Simple Past von „to speak“: spoke (speak – spoke – spoken).",
+              "acceptedAnswers": [
+                "spoke"
+              ],
+              "answer": "spoke"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to speak“",
+              "hints": [
+                "3. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "spoken"
+              ],
+              "explanation": "Past Participle von „to speak“: spoken (speak – spoke – spoken).",
+              "acceptedAnswers": [
+                "spoken"
+              ],
+              "answer": "spoken"
+            }
+          ]
+        },
+        {
+          "id": "v74",
+          "sentence": "🇩🇪 „rasen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „rasen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sp…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "speed"
+              ],
+              "explanation": "Infinitive von „rasen“: to speed (speed – sped – sped).",
+              "acceptedAnswers": [
+                "speed"
+              ],
+              "answer": "speed"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to speed“ (rasen)",
+              "hints": [
+                "2. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "sped"
+              ],
+              "explanation": "Simple Past von „to speed“: sped (speed – sped – sped).",
+              "acceptedAnswers": [
+                "sped"
+              ],
+              "answer": "sped"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to speed“",
+              "hints": [
+                "3. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "sped"
+              ],
+              "explanation": "Past Participle von „to speed“: sped (speed – sped – sped).",
+              "acceptedAnswers": [
+                "sped"
+              ],
+              "answer": "sped"
+            }
+          ]
+        },
+        {
+          "id": "v75",
+          "sentence": "🇩🇪 „ausgeben, verbringen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „ausgeben, verbringen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sp…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "spend"
+              ],
+              "explanation": "Infinitive von „ausgeben, verbringen“: to spend (spend – spent – spent).",
+              "acceptedAnswers": [
+                "spend"
+              ],
+              "answer": "spend"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to spend“ (ausgeben, verbringen)",
+              "hints": [
+                "2. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "spent"
+              ],
+              "explanation": "Simple Past von „to spend“: spent (spend – spent – spent).",
+              "acceptedAnswers": [
+                "spent"
+              ],
+              "answer": "spent"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to spend“",
+              "hints": [
+                "3. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "spent"
+              ],
+              "explanation": "Past Participle von „to spend“: spent (spend – spent – spent).",
+              "acceptedAnswers": [
+                "spent"
+              ],
+              "answer": "spent"
+            }
+          ]
+        },
+        {
+          "id": "v76",
+          "sentence": "🇩🇪 „drehen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „drehen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sp…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "spin"
+              ],
+              "explanation": "Infinitive von „drehen“: to spin (spin – spun – spun).",
+              "acceptedAnswers": [
+                "spin"
+              ],
+              "answer": "spin"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to spin“ (drehen)",
+              "hints": [
+                "2. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "spun"
+              ],
+              "explanation": "Simple Past von „to spin“: spun (spin – spun – spun).",
+              "acceptedAnswers": [
+                "spun"
+              ],
+              "answer": "spun"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to spin“",
+              "hints": [
+                "3. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "spun"
+              ],
+              "explanation": "Past Participle von „to spin“: spun (spin – spun – spun).",
+              "acceptedAnswers": [
+                "spun"
+              ],
+              "answer": "spun"
+            }
+          ]
+        },
+        {
+          "id": "v77",
+          "sentence": "🇩🇪 „verbreiten“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „verbreiten“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sp…“ (6 Buchstaben)."
+              ],
+              "solutions": [
+                "spread"
+              ],
+              "explanation": "Infinitive von „verbreiten“: to spread (spread – spread – spread).",
+              "acceptedAnswers": [
+                "spread"
+              ],
+              "answer": "spread"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to spread“ (verbreiten)",
+              "hints": [
+                "2. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "spread"
+              ],
+              "explanation": "Simple Past von „to spread“: spread (spread – spread – spread).",
+              "acceptedAnswers": [
+                "spread"
+              ],
+              "answer": "spread"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to spread“",
+              "hints": [
+                "3. Stammform beginnt mit „sp…“."
+              ],
+              "solutions": [
+                "spread"
+              ],
+              "explanation": "Past Participle von „to spread“: spread (spread – spread – spread).",
+              "acceptedAnswers": [
+                "spread"
+              ],
+              "answer": "spread"
+            }
+          ]
+        },
+        {
+          "id": "v78",
+          "sentence": "🇩🇪 „stehen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „stehen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „st…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "stand"
+              ],
+              "explanation": "Infinitive von „stehen“: to stand (stand – stood – stood).",
+              "acceptedAnswers": [
+                "stand"
+              ],
+              "answer": "stand"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to stand“ (stehen)",
+              "hints": [
+                "2. Stammform beginnt mit „st…“."
+              ],
+              "solutions": [
+                "stood"
+              ],
+              "explanation": "Simple Past von „to stand“: stood (stand – stood – stood).",
+              "acceptedAnswers": [
+                "stood"
+              ],
+              "answer": "stood"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to stand“",
+              "hints": [
+                "3. Stammform beginnt mit „st…“."
+              ],
+              "solutions": [
+                "stood"
+              ],
+              "explanation": "Past Participle von „to stand“: stood (stand – stood – stood).",
+              "acceptedAnswers": [
+                "stood"
+              ],
+              "answer": "stood"
+            }
+          ]
+        },
+        {
+          "id": "v79",
+          "sentence": "🇩🇪 „stehlen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „stehlen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „st…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "steal"
+              ],
+              "explanation": "Infinitive von „stehlen“: to steal (steal – stole – stolen).",
+              "acceptedAnswers": [
+                "steal"
+              ],
+              "answer": "steal"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to steal“ (stehlen)",
+              "hints": [
+                "2. Stammform beginnt mit „st…“."
+              ],
+              "solutions": [
+                "stole"
+              ],
+              "explanation": "Simple Past von „to steal“: stole (steal – stole – stolen).",
+              "acceptedAnswers": [
+                "stole"
+              ],
+              "answer": "stole"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to steal“",
+              "hints": [
+                "3. Stammform beginnt mit „st…“."
+              ],
+              "solutions": [
+                "stolen"
+              ],
+              "explanation": "Past Participle von „to steal“: stolen (steal – stole – stolen).",
+              "acceptedAnswers": [
+                "stolen"
+              ],
+              "answer": "stolen"
+            }
+          ]
+        },
+        {
+          "id": "v80",
+          "sentence": "🇩🇪 „kleben“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „kleben“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „st…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "stick"
+              ],
+              "explanation": "Infinitive von „kleben“: to stick (stick – stuck – stuck).",
+              "acceptedAnswers": [
+                "stick"
+              ],
+              "answer": "stick"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to stick“ (kleben)",
+              "hints": [
+                "2. Stammform beginnt mit „st…“."
+              ],
+              "solutions": [
+                "stuck"
+              ],
+              "explanation": "Simple Past von „to stick“: stuck (stick – stuck – stuck).",
+              "acceptedAnswers": [
+                "stuck"
+              ],
+              "answer": "stuck"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to stick“",
+              "hints": [
+                "3. Stammform beginnt mit „st…“."
+              ],
+              "solutions": [
+                "stuck"
+              ],
+              "explanation": "Past Participle von „to stick“: stuck (stick – stuck – stuck).",
+              "acceptedAnswers": [
+                "stuck"
+              ],
+              "answer": "stuck"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Teil 5: swim – write (11 Verben)",
+      "type": "single_sentence",
+      "instruction": "Gib alle drei Stammformen (Infinitive, Simple Past, Past Participle) zum deutschen Verb ein.",
+      "items": [
+        {
+          "id": "v81",
+          "sentence": "🇩🇪 „schwimmen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „schwimmen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „sw…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "swim"
+              ],
+              "explanation": "Infinitive von „schwimmen“: to swim (swim – swam – swum).",
+              "acceptedAnswers": [
+                "swim"
+              ],
+              "answer": "swim"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to swim“ (schwimmen)",
+              "hints": [
+                "2. Stammform beginnt mit „sw…“."
+              ],
+              "solutions": [
+                "swam"
+              ],
+              "explanation": "Simple Past von „to swim“: swam (swim – swam – swum).",
+              "acceptedAnswers": [
+                "swam"
+              ],
+              "answer": "swam"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to swim“",
+              "hints": [
+                "3. Stammform beginnt mit „sw…“."
+              ],
+              "solutions": [
+                "swum"
+              ],
+              "explanation": "Past Participle von „to swim“: swum (swim – swam – swum).",
+              "acceptedAnswers": [
+                "swum"
+              ],
+              "answer": "swum"
+            }
+          ]
+        },
+        {
+          "id": "v82",
+          "sentence": "🇩🇪 „nehmen; bringen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „nehmen; bringen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „ta…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "take"
+              ],
+              "explanation": "Infinitive von „nehmen; bringen“: to take (take – took – taken).",
+              "acceptedAnswers": [
+                "take"
+              ],
+              "answer": "take"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to take“ (nehmen; bringen)",
+              "hints": [
+                "2. Stammform beginnt mit „to…“."
+              ],
+              "solutions": [
+                "took"
+              ],
+              "explanation": "Simple Past von „to take“: took (take – took – taken).",
+              "acceptedAnswers": [
+                "took"
+              ],
+              "answer": "took"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to take“",
+              "hints": [
+                "3. Stammform beginnt mit „ta…“."
+              ],
+              "solutions": [
+                "taken"
+              ],
+              "explanation": "Past Participle von „to take“: taken (take – took – taken).",
+              "acceptedAnswers": [
+                "taken"
+              ],
+              "answer": "taken"
+            }
+          ]
+        },
+        {
+          "id": "v83",
+          "sentence": "🇩🇪 „lehren, unterrichten“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „lehren, unterrichten“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „te…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "teach"
+              ],
+              "explanation": "Infinitive von „lehren, unterrichten“: to teach (teach – taught – taught).",
+              "acceptedAnswers": [
+                "teach"
+              ],
+              "answer": "teach"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to teach“ (lehren, unterrichten)",
+              "hints": [
+                "2. Stammform beginnt mit „ta…“."
+              ],
+              "solutions": [
+                "taught"
+              ],
+              "explanation": "Simple Past von „to teach“: taught (teach – taught – taught).",
+              "acceptedAnswers": [
+                "taught"
+              ],
+              "answer": "taught"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to teach“",
+              "hints": [
+                "3. Stammform beginnt mit „ta…“."
+              ],
+              "solutions": [
+                "taught"
+              ],
+              "explanation": "Past Participle von „to teach“: taught (teach – taught – taught).",
+              "acceptedAnswers": [
+                "taught"
+              ],
+              "answer": "taught"
+            }
+          ]
+        },
+        {
+          "id": "v84",
+          "sentence": "🇩🇪 „sagen, erzählen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „sagen, erzählen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „te…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "tell"
+              ],
+              "explanation": "Infinitive von „sagen, erzählen“: to tell (tell – told – told).",
+              "acceptedAnswers": [
+                "tell"
+              ],
+              "answer": "tell"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to tell“ (sagen, erzählen)",
+              "hints": [
+                "2. Stammform beginnt mit „to…“."
+              ],
+              "solutions": [
+                "told"
+              ],
+              "explanation": "Simple Past von „to tell“: told (tell – told – told).",
+              "acceptedAnswers": [
+                "told"
+              ],
+              "answer": "told"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to tell“",
+              "hints": [
+                "3. Stammform beginnt mit „to…“."
+              ],
+              "solutions": [
+                "told"
+              ],
+              "explanation": "Past Participle von „to tell“: told (tell – told – told).",
+              "acceptedAnswers": [
+                "told"
+              ],
+              "answer": "told"
+            }
+          ]
+        },
+        {
+          "id": "v85",
+          "sentence": "🇩🇪 „denken, glauben“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „denken, glauben“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „th…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "think"
+              ],
+              "explanation": "Infinitive von „denken, glauben“: to think (think – thought – thought).",
+              "acceptedAnswers": [
+                "think"
+              ],
+              "answer": "think"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to think“ (denken, glauben)",
+              "hints": [
+                "2. Stammform beginnt mit „th…“."
+              ],
+              "solutions": [
+                "thought"
+              ],
+              "explanation": "Simple Past von „to think“: thought (think – thought – thought).",
+              "acceptedAnswers": [
+                "thought"
+              ],
+              "answer": "thought"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to think“",
+              "hints": [
+                "3. Stammform beginnt mit „th…“."
+              ],
+              "solutions": [
+                "thought"
+              ],
+              "explanation": "Past Participle von „to think“: thought (think – thought – thought).",
+              "acceptedAnswers": [
+                "thought"
+              ],
+              "answer": "thought"
+            }
+          ]
+        },
+        {
+          "id": "v86",
+          "sentence": "🇩🇪 „werfen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „werfen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „th…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "throw"
+              ],
+              "explanation": "Infinitive von „werfen“: to throw (throw – threw – thrown).",
+              "acceptedAnswers": [
+                "throw"
+              ],
+              "answer": "throw"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to throw“ (werfen)",
+              "hints": [
+                "2. Stammform beginnt mit „th…“."
+              ],
+              "solutions": [
+                "threw"
+              ],
+              "explanation": "Simple Past von „to throw“: threw (throw – threw – thrown).",
+              "acceptedAnswers": [
+                "threw"
+              ],
+              "answer": "threw"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to throw“",
+              "hints": [
+                "3. Stammform beginnt mit „th…“."
+              ],
+              "solutions": [
+                "thrown"
+              ],
+              "explanation": "Past Participle von „to throw“: thrown (throw – threw – thrown).",
+              "acceptedAnswers": [
+                "thrown"
+              ],
+              "answer": "thrown"
+            }
+          ]
+        },
+        {
+          "id": "v87",
+          "sentence": "🇩🇪 „verstehen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „verstehen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „un…“ (10 Buchstaben)."
+              ],
+              "solutions": [
+                "understand"
+              ],
+              "explanation": "Infinitive von „verstehen“: to understand (understand – understood – understood).",
+              "acceptedAnswers": [
+                "understand"
+              ],
+              "answer": "understand"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to understand“ (verstehen)",
+              "hints": [
+                "2. Stammform beginnt mit „un…“."
+              ],
+              "solutions": [
+                "understood"
+              ],
+              "explanation": "Simple Past von „to understand“: understood (understand – understood – understood).",
+              "acceptedAnswers": [
+                "understood"
+              ],
+              "answer": "understood"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to understand“",
+              "hints": [
+                "3. Stammform beginnt mit „un…“."
+              ],
+              "solutions": [
+                "understood"
+              ],
+              "explanation": "Past Participle von „to understand“: understood (understand – understood – understood).",
+              "acceptedAnswers": [
+                "understood"
+              ],
+              "answer": "understood"
+            }
+          ]
+        },
+        {
+          "id": "v88",
+          "sentence": "🇩🇪 „aufwachen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „aufwachen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „wa…“ (7 Buchstaben)."
+              ],
+              "solutions": [
+                "wake up"
+              ],
+              "explanation": "Infinitive von „aufwachen“: to wake up (wake up – woke up – woken up).",
+              "acceptedAnswers": [
+                "wake up"
+              ],
+              "answer": "wake up"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to wake up“ (aufwachen)",
+              "hints": [
+                "2. Stammform beginnt mit „wo…“."
+              ],
+              "solutions": [
+                "woke up"
+              ],
+              "explanation": "Simple Past von „to wake up“: woke up (wake up – woke up – woken up).",
+              "acceptedAnswers": [
+                "woke up"
+              ],
+              "answer": "woke up"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to wake up“",
+              "hints": [
+                "3. Stammform beginnt mit „wo…“."
+              ],
+              "solutions": [
+                "woken up"
+              ],
+              "explanation": "Past Participle von „to wake up“: woken up (wake up – woke up – woken up).",
+              "acceptedAnswers": [
+                "woken up"
+              ],
+              "answer": "woken up"
+            }
+          ]
+        },
+        {
+          "id": "v89",
+          "sentence": "🇩🇪 „tragen (Kleidung)“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „tragen (Kleidung)“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „we…“ (4 Buchstaben)."
+              ],
+              "solutions": [
+                "wear"
+              ],
+              "explanation": "Infinitive von „tragen (Kleidung)“: to wear (wear – wore – worn).",
+              "acceptedAnswers": [
+                "wear"
+              ],
+              "answer": "wear"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to wear“ (tragen (Kleidung))",
+              "hints": [
+                "2. Stammform beginnt mit „wo…“."
+              ],
+              "solutions": [
+                "wore"
+              ],
+              "explanation": "Simple Past von „to wear“: wore (wear – wore – worn).",
+              "acceptedAnswers": [
+                "wore"
+              ],
+              "answer": "wore"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to wear“",
+              "hints": [
+                "3. Stammform beginnt mit „wo…“."
+              ],
+              "solutions": [
+                "worn"
+              ],
+              "explanation": "Past Participle von „to wear“: worn (wear – wore – worn).",
+              "acceptedAnswers": [
+                "worn"
+              ],
+              "answer": "worn"
+            }
+          ]
+        },
+        {
+          "id": "v90",
+          "sentence": "🇩🇪 „gewinnen“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „gewinnen“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „wi…“ (3 Buchstaben)."
+              ],
+              "solutions": [
+                "win"
+              ],
+              "explanation": "Infinitive von „gewinnen“: to win (win – won – won).",
+              "acceptedAnswers": [
+                "win"
+              ],
+              "answer": "win"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to win“ (gewinnen)",
+              "hints": [
+                "2. Stammform beginnt mit „wo…“."
+              ],
+              "solutions": [
+                "won"
+              ],
+              "explanation": "Simple Past von „to win“: won (win – won – won).",
+              "acceptedAnswers": [
+                "won"
+              ],
+              "answer": "won"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to win“",
+              "hints": [
+                "3. Stammform beginnt mit „wo…“."
+              ],
+              "solutions": [
+                "won"
+              ],
+              "explanation": "Past Participle von „to win“: won (win – won – won).",
+              "acceptedAnswers": [
+                "won"
+              ],
+              "answer": "won"
+            }
+          ]
+        },
+        {
+          "id": "v91",
+          "sentence": "🇩🇪 „schreiben“ → Infinitive: {{0}} | Simple Past: {{1}} | Past Participle: {{2}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "1. Form (Infinitive)",
+              "grammarHint": "Deutsch: „schreiben“ – Grundform (to ...)",
+              "hints": [
+                "Beginnt mit „wr…“ (5 Buchstaben)."
+              ],
+              "solutions": [
+                "write"
+              ],
+              "explanation": "Infinitive von „schreiben“: to write (write – wrote – written).",
+              "acceptedAnswers": [
+                "write"
+              ],
+              "answer": "write"
+            },
+            {
+              "index": 1,
+              "prompt": "2. Form (Simple Past)",
+              "grammarHint": "Simple Past von „to write“ (schreiben)",
+              "hints": [
+                "2. Stammform beginnt mit „wr…“."
+              ],
+              "solutions": [
+                "wrote"
+              ],
+              "explanation": "Simple Past von „to write“: wrote (write – wrote – written).",
+              "acceptedAnswers": [
+                "wrote"
+              ],
+              "answer": "wrote"
+            },
+            {
+              "index": 2,
+              "prompt": "3. Form (Past Participle)",
+              "grammarHint": "Past Participle (3. Form) von „to write“",
+              "hints": [
+                "3. Stammform beginnt mit „wr…“."
+              ],
+              "solutions": [
+                "written"
+              ],
+              "explanation": "Past Participle von „to write“: written (write – wrote – written).",
+              "acceptedAnswers": [
+                "written"
+              ],
+              "answer": "written"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

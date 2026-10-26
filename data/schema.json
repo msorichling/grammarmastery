@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grammarmastery.local/schemas/topic.schema.json",
+  "title": "Grammar Mastery Topic Dataset",
+  "description": "JSON-Schema für modulare Grammatik-Übungsthemen der Grammar Mastery Single-Engine (v2.0 / 2026).",
+  "type": "object",
+  "required": ["id", "title", "grade", "description", "rules", "exercises"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Eindeutige URL-Parameter-ID des Themas (z. B. 'klasse5-present', 'klasse7-if1')."
+    },
+    "legacyStateKey": {
+      "type": "string",
+      "description": "Optionaler localStorage-Key für Abwärtskompatibilität mit v1-Fortschritten."
+    },
+    "legacyMasteryKey": {
+      "type": "string",
+      "description": "Optionaler localStorage-Key für den Master-Badge-Status."
+    },
+    "title": {
+      "type": "string",
+      "description": "Anzeigename des Grammatik-Themas."
+    },
+    "grade": {
+      "type": ["integer", "string"],
+      "description": "Klassenstufe (z. B. 5, 6, 7, 8 oder '9-10')."
+    },
+    "category": {
+      "type": "string",
+      "description": "Thematische Kategorie innerhalb der Klassenstufe."
+    },
+    "icon": {
+      "type": "string",
+      "description": "Emoji- oder Icon-Kennzeichnung für Karten und Header."
+    },
+    "accentColor": {
+      "type": "string",
+      "enum": ["blue", "violet", "emerald", "amber", "rose", "cyan"],
+      "description": "Farbschema des Themas passend zur Klassenstufe."
+    },
+    "description": {
+      "type": "string",
+      "description": "Kurzbeschreibung des Lernziels für Hub-Karten und Startscreen."
+    },
+    "rules": {
+      "type": "object",
+      "required": ["summary", "sections"],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "description": "Prägnante Zusammenfassung der Grammatikregel."
+        },
+        "warning": {
+          "type": "string",
+          "description": "Wichtige Merkregel oder Stolperfalle (z. B. 'If und will ist der Grammatik-Kill!')."
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "formula"],
+            "properties": {
+              "title": { "type": "string" },
+              "formula": { "type": "string" },
+              "signalWords": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "examples": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "exercises": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "type", "sentences"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["single_sentence", "cloze_text"],
+            "description": "Darstellungsmodus: Einzelsatz-Fokus ('single_sentence') oder zusammenhängender Lückentext ('cloze_text')."
+          },
+          "instruction": {
+            "type": "string",
+            "description": "Arbeitsauftrag für die Schülerinnen und Schüler."
+          },
+          "sentences": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["id", "text", "gaps"],
+              "properties": {
+                "id": { "type": "string" },
+                "text": {
+                  "type": "string",
+                  "description": "Satz oder Textabschnitt mit '{{gap}}' (oder '{{0}}', '{{1}}') als Lücken-Platzhalter."
+                },
+                "gaps": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": ["id", "prompt", "solutions", "explanation"],
+                    "properties": {
+                      "id": { "type": "string" },
+                      "prompt": {
+                        "type": "string",
+                        "description": "Infinitiv- oder Wort-Vorgabe (z. B. 'get up', 'not / rain')."
+                      },
+                      "grammarHint": {
+                        "type": "string",
+                        "description": "Kompakter Grammatik-Hinweis oberhalb des Eingabefelds (z. B. 'Simple Present · Gewohnheit')."
+                      },
+                      "hints": {
+                        "type": "array",
+                        "items": { "type": "string" },
+                        "description": "Abgestufte Tipps bei Klick auf den Tipp-Button (-5 XP)."
+                      },
+                      "solutions": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": { "type": "string" },
+                        "description": "Alle akzeptierten Schreibweisen (Kurz- und Langformen)."
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "description": "Didaktische Erklärung für den Feedback-Drawer."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

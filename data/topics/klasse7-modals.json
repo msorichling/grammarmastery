@@ -1,0 +1,748 @@
+{
+  "id": "klasse7-modals",
+  "title": "Modal Verbs & Substitutes",
+  "grade": "7",
+  "icon": "🛠️",
+  "description": "Ersatzformen der Modalverben in allen Zeiten: be able to, have to und be allowed to.",
+  "legacyStorageKey": "grammar_g7_modals_state",
+  "legacyMasteredKey": "grammar_g7_modals_mastered",
+  "rules": {
+    "title": "Modal Verbs & Substitutes – Überblick",
+    "summary": "Wichtige Grammatikregeln und Signalwörter zum Thema Modal Verbs & Substitutes.",
+    "examples": []
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Exercise 1: Meaning Sorter",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben. (Tippe: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang))",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "„It is against the law.“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MUSTN'T / DON'T HAVE TO",
+              "grammarHint": "Auswahl: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)",
+              "hints": [
+                "Entscheide zwischen: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)"
+              ],
+              "solutions": [
+                "MUSTN'T",
+                "MUSTN'T (Verbot)"
+              ],
+              "explanation": "„It is against the law.“ wird der Kategorie „MUSTN'T (Verbot)“ zugeordnet.",
+              "acceptedAnswers": [
+                "MUSTN'T",
+                "MUSTN'T (Verbot)"
+              ],
+              "answer": "MUSTN'T"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "„Du darfst nicht!“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MUSTN'T / DON'T HAVE TO",
+              "grammarHint": "Auswahl: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)",
+              "hints": [
+                "Entscheide zwischen: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)"
+              ],
+              "solutions": [
+                "MUSTN'T",
+                "MUSTN'T (Verbot)"
+              ],
+              "explanation": "„Du darfst nicht!“ wird der Kategorie „MUSTN'T (Verbot)“ zugeordnet.",
+              "acceptedAnswers": [
+                "MUSTN'T",
+                "MUSTN'T (Verbot)"
+              ],
+              "answer": "MUSTN'T"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "„Strict rule!“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MUSTN'T / DON'T HAVE TO",
+              "grammarHint": "Auswahl: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)",
+              "hints": [
+                "Entscheide zwischen: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)"
+              ],
+              "solutions": [
+                "MUSTN'T",
+                "MUSTN'T (Verbot)"
+              ],
+              "explanation": "„Strict rule!“ wird der Kategorie „MUSTN'T (Verbot)“ zugeordnet.",
+              "acceptedAnswers": [
+                "MUSTN'T",
+                "MUSTN'T (Verbot)"
+              ],
+              "answer": "MUSTN'T"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "„Don't do it!“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MUSTN'T / DON'T HAVE TO",
+              "grammarHint": "Auswahl: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)",
+              "hints": [
+                "Entscheide zwischen: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)"
+              ],
+              "solutions": [
+                "MUSTN'T",
+                "MUSTN'T (Verbot)"
+              ],
+              "explanation": "„Don't do it!“ wird der Kategorie „MUSTN'T (Verbot)“ zugeordnet.",
+              "acceptedAnswers": [
+                "MUSTN'T",
+                "MUSTN'T (Verbot)"
+              ],
+              "answer": "MUSTN'T"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "„It is not necessary.“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MUSTN'T / DON'T HAVE TO",
+              "grammarHint": "Auswahl: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)",
+              "hints": [
+                "Entscheide zwischen: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)"
+              ],
+              "solutions": [
+                "DON'T HAVE TO",
+                "DON'T HAVE TO (Kein Zwang)"
+              ],
+              "explanation": "„It is not necessary.“ wird der Kategorie „DON'T HAVE TO (Kein Zwang)“ zugeordnet.",
+              "acceptedAnswers": [
+                "DON'T HAVE TO",
+                "DON'T HAVE TO (Kein Zwang)"
+              ],
+              "answer": "DON'T HAVE TO"
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "sentence": "„Du musst nicht.“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MUSTN'T / DON'T HAVE TO",
+              "grammarHint": "Auswahl: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)",
+              "hints": [
+                "Entscheide zwischen: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)"
+              ],
+              "solutions": [
+                "DON'T HAVE TO",
+                "DON'T HAVE TO (Kein Zwang)"
+              ],
+              "explanation": "„Du musst nicht.“ wird der Kategorie „DON'T HAVE TO (Kein Zwang)“ zugeordnet.",
+              "acceptedAnswers": [
+                "DON'T HAVE TO",
+                "DON'T HAVE TO (Kein Zwang)"
+              ],
+              "answer": "DON'T HAVE TO"
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "sentence": "„It is your choice.“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MUSTN'T / DON'T HAVE TO",
+              "grammarHint": "Auswahl: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)",
+              "hints": [
+                "Entscheide zwischen: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)"
+              ],
+              "solutions": [
+                "DON'T HAVE TO",
+                "DON'T HAVE TO (Kein Zwang)"
+              ],
+              "explanation": "„It is your choice.“ wird der Kategorie „DON'T HAVE TO (Kein Zwang)“ zugeordnet.",
+              "acceptedAnswers": [
+                "DON'T HAVE TO",
+                "DON'T HAVE TO (Kein Zwang)"
+              ],
+              "answer": "DON'T HAVE TO"
+            }
+          ]
+        },
+        {
+          "id": "s8",
+          "sentence": "„No obligation.“ gehört zu: {{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "MUSTN'T / DON'T HAVE TO",
+              "grammarHint": "Auswahl: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)",
+              "hints": [
+                "Entscheide zwischen: MUSTN'T (Verbot) / DON'T HAVE TO (Kein Zwang)"
+              ],
+              "solutions": [
+                "DON'T HAVE TO",
+                "DON'T HAVE TO (Kein Zwang)"
+              ],
+              "explanation": "„No obligation.“ wird der Kategorie „DON'T HAVE TO (Kein Zwang)“ zugeordnet.",
+              "acceptedAnswers": [
+                "DON'T HAVE TO",
+                "DON'T HAVE TO (Kein Zwang)"
+              ],
+              "answer": "DON'T HAVE TO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Exercise 2: School Rules",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "In our school, you {{0}} run in the corridors.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "nicht dürfen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „mu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "mustn't",
+                "must not"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "mustn't",
+                "must not"
+              ],
+              "answer": "mustn't"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "We {{0}} eat in the canteen; we can eat outside.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "nicht müssen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "don't have to",
+                "do not have to"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "don't have to",
+                "do not have to"
+              ],
+              "answer": "don't have to"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "You {{0}} wear a school uniform.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "müssen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have to",
+                "must"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have to",
+                "must"
+              ],
+              "answer": "have to"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "You {{0}} use your mobile phone in class.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "nicht dürfen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „mu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "mustn't",
+                "must not"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "mustn't",
+                "must not"
+              ],
+              "answer": "mustn't"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "But we {{0}} wear a tie. A shirt is okay.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "nicht müssen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "don't have to",
+                "do not have to"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "don't have to",
+                "do not have to"
+              ],
+              "answer": "don't have to"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Exercise 3: Household Chores",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "At home, I {{0}} clean my room every Saturday.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "müssen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have to",
+                "must"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have to",
+                "must"
+              ],
+              "answer": "have to"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "But I {{0}} cook dinner. My dad does it.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "nicht müssen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "don't have to",
+                "do not have to"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "don't have to",
+                "do not have to"
+              ],
+              "answer": "don't have to"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "My little brother {{0}} feed the dog.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "muss",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has to",
+                "must"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has to",
+                "must"
+              ],
+              "answer": "has to"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "He {{0}} wash the car.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "muss nicht",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "doesn't have to",
+                "does not have to"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "doesn't have to",
+                "does not have to"
+              ],
+              "answer": "doesn't have to"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "We {{0}} forget to take out the trash.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "dürfen nicht",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „mu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "mustn't",
+                "must not"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "mustn't",
+                "must not"
+              ],
+              "answer": "mustn't"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Exercise 4: Trip to Stirling",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "Tomorrow is our trip to Stirling. We {{0}} bring a packed lunch.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "müssen",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "have to",
+                "must"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "have to",
+                "must"
+              ],
+              "answer": "have to"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "You {{0}} bring money, because the museum is free.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "müssen nicht",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "don't have to",
+                "do not have to"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "don't have to",
+                "do not have to"
+              ],
+              "answer": "don't have to"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "In the castle, you {{0}} touch the old swords!",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "dürfen nicht",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „mu…“ (1 Wort/Wörter)."
+              ],
+              "solutions": [
+                "mustn't",
+                "must not"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "mustn't",
+                "must not"
+              ],
+              "answer": "mustn't"
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "Everyone {{0}} listen to the tour guide.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "muss",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „ha…“ (2 Wort/Wörter)."
+              ],
+              "solutions": [
+                "has to",
+                "must"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "has to",
+                "must"
+              ],
+              "answer": "has to"
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "We {{0}} wear our school uniform on the trip.",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "müssen nicht",
+              "grammarHint": "Achte auf die passende Form.",
+              "hints": [
+                "Achte auf die passende Form.",
+                "Lösung beginnt mit „do…“ (3 Wort/Wörter)."
+              ],
+              "solutions": [
+                "don't have to",
+                "do not have to"
+              ],
+              "explanation": "Achte auf die passende Form.",
+              "acceptedAnswers": [
+                "don't have to",
+                "do not have to"
+              ],
+              "answer": "don't have to"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Exercise 5: Sentence Scramble",
+      "type": "single_sentence",
+      "instruction": "Löse die folgenden Aufgaben.",
+      "items": [
+        {
+          "id": "s1",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "feed / You / mustn't / the / animals.",
+              "grammarHint": "Bausteine: feed / You / mustn't / the / animals.",
+              "hints": [
+                "Nutze alle Wörter: feed / You / mustn't / the / animals.",
+                "Satzanfang: „You mustn't…“"
+              ],
+              "solutions": [
+                "You mustn't feed the animals.",
+                "You mustn't feed the animals"
+              ],
+              "explanation": "Vollständiger Satz: „You mustn't feed the animals.“.",
+              "acceptedAnswers": [
+                "You mustn't feed the animals.",
+                "You mustn't feed the animals"
+              ],
+              "answer": "You mustn't feed the animals."
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "have / We / up / to / early. / don't / get",
+              "grammarHint": "Bausteine: have / We / up / to / early. / don't / get",
+              "hints": [
+                "Nutze alle Wörter: have / We / up / to / early. / don't / get",
+                "Satzanfang: „We don't…“"
+              ],
+              "solutions": [
+                "We don't have to get up early.",
+                "We don't have to get up early"
+              ],
+              "explanation": "Vollständiger Satz: „We don't have to get up early.“.",
+              "acceptedAnswers": [
+                "We don't have to get up early.",
+                "We don't have to get up early"
+              ],
+              "answer": "We don't have to get up early."
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "She / wear / to / a / has / uniform.",
+              "grammarHint": "Bausteine: She / wear / to / a / has / uniform.",
+              "hints": [
+                "Nutze alle Wörter: She / wear / to / a / has / uniform.",
+                "Satzanfang: „She has…“"
+              ],
+              "solutions": [
+                "She has to wear a uniform.",
+                "She has to wear a uniform"
+              ],
+              "explanation": "Vollständiger Satz: „She has to wear a uniform.“.",
+              "acceptedAnswers": [
+                "She has to wear a uniform.",
+                "She has to wear a uniform"
+              ],
+              "answer": "She has to wear a uniform."
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "He / to / doesn't / me. / have / help",
+              "grammarHint": "Bausteine: He / to / doesn't / me. / have / help",
+              "hints": [
+                "Nutze alle Wörter: He / to / doesn't / me. / have / help",
+                "Satzanfang: „He doesn't…“"
+              ],
+              "solutions": [
+                "He doesn't have to help me.",
+                "He doesn't have to help me"
+              ],
+              "explanation": "Vollständiger Satz: „He doesn't have to help me.“.",
+              "acceptedAnswers": [
+                "He doesn't have to help me.",
+                "He doesn't have to help me"
+              ],
+              "answer": "He doesn't have to help me."
+            }
+          ]
+        },
+        {
+          "id": "s5",
+          "sentence": "{{0}}",
+          "gaps": [
+            {
+              "index": 0,
+              "prompt": "football / mustn't / here. / They / play",
+              "grammarHint": "Bausteine: football / mustn't / here. / They / play",
+              "hints": [
+                "Nutze alle Wörter: football / mustn't / here. / They / play",
+                "Satzanfang: „They mustn't…“"
+              ],
+              "solutions": [
+                "They mustn't play football here.",
+                "They mustn't play football here"
+              ],
+              "explanation": "Vollständiger Satz: „They mustn't play football here.“.",
+              "acceptedAnswers": [
+                "They mustn't play football here.",
+                "They mustn't play football here"
+              ],
+              "answer": "They mustn't play football here."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
